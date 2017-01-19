@@ -1,5 +1,5 @@
 ---
-title: "project.json 引用"
+title: "project.json 参考"
 description: "project.json 引用"
 keywords: .NET, .NET Core, project.json
 author: aL3891
