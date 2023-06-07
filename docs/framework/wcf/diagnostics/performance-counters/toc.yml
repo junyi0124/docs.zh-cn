@@ -1,0 +1,146 @@
+- name: 性能计数器
+  href: index.md
+  items:
+    - name: 操作性能计数器
+      href: operation-performance-counters.md
+      items:
+        - name: Calls（调用次数）
+          href: calls.md
+        - name: Calls Per Second（每秒调用次数）
+          href: calls-per-second.md
+        - name: Calls Outstanding（未完成的调用次数）
+          href: calls-outstanding.md
+        - name: Calls Failed（失败的调用次数）
+          href: calls-failed.md
+        - name: Calls Failed Per Second（每秒失败的调用次数）
+          href: calls-failed-per-second.md
+        - name: Calls Faulted（出错的调用次数）
+          href: calls-faulted.md
+        - name: Calls Faulted Per Second（每秒出错的调用次数）
+          href: calls-faulted-per-second.md
+        - name: 调用持续时间
+          href: calls-duration.md
+        - name: Security Validation and Authentication Failures（安全验证和身份验证失败次数）
+          href: security-validation-and-authentication-failures.md
+        - name: Security Validation and Authentication Failures Per Second（每秒安全验证和身份验证失败次数）
+          href: security-validation-and-authentication-failures-per-second.md
+        - name: Security Calls Not Authorized（未授权的安全调用次数）
+          href: security-calls-not-authorized.md
+        - name: Security Calls Not Authorized Per Second（每秒未授权的安全调用次数）
+          href: security-calls-not-authorized-per-second.md
+        - name: Transactions Flowed（流动的事务数）
+          href: transactions-flowed.md
+        - name: Transactions Flowed Per Second（每秒流动的事务数）
+          href: transactions-flowed-per-second.md
+    - name: 服务性能计数器
+      href: service-performance-counters.md
+      items:
+        - name: Calls（调用次数）
+          href: service-calls.md
+        - name: Calls Per Second（每秒调用次数）
+          href: service-calls-per-second.md
+        - name: Calls Outstanding（未完成的调用次数）
+          href: service-calls-outstanding.md
+        - name: Calls Failed（失败的调用次数）
+          href: service-calls-failed.md
+        - name: Calls Failed Per Second（每秒失败的调用次数）
+          href: service-calls-failed-per-second.md
+        - name: Calls Faulted（出错的调用次数）
+          href: service-calls-faulted.md
+        - name: Calls Faulted Per Second（每秒出错的调用次数）
+          href: service-calls-faulted-per-second.md
+        - name: 调用持续时间
+          href: service-calls-duration.md
+        - name: 实例数
+          href: instances.md
+        - name: 每秒实例数
+          href: instances-per-second.md
+        - name: 最大并发调用数的百分比
+          href: percent-of-max-concurrent-calls.md
+        - name: 最大并发实例数的百分比
+          href: percent-of-max-concurrent-instances.md
+        - name: 最大并发会话数的百分比
+          href: percent-of-max-concurrent-sessions.md
+        - name: Queue Dropped Messages（队列丢弃的消息数）
+          href: queue-dropped-messages.md
+        - name: 每秒丢弃的排队消息数
+          href: queue-dropped-messages-per-second.md
+        - name: Queued Poison Messages（已排队的病毒消息数）
+          href: queued-poison-messages.md
+        - name: 每秒排队病毒消息数
+          href: queued-poison-messages-per-second.md
+        - name: Queued Rejected Messages（已排队的被拒绝消息数）
+          href: queued-rejected-messages.md
+        - name: 每秒拒绝的排队消息数
+          href: queued-rejected-messages-per-second.md
+        - name: Reliable Messaging Messages Dropped（放置的可靠消息传递消息数）
+          href: reliable-messaging-messages-dropped.md
+        - name: Reliable Messaging Messages Dropped Per Second（每秒丢弃的可靠消息传递消息数）
+          href: reliable-messaging-messages-dropped-per-second.md
+        - name: Reliable Messaging Sessions Faulted（出错的可靠消息会话数）
+          href: reliable-messaging-sessions-faulted.md
+        - name: Reliable Messaging Sessions Faulted Per Second（每秒出错的可靠消息会话数）
+          href: reliable-messaging-sessions-faulted-per-second.md
+        - name: Security Calls Not Authorized（未授权的安全调用次数）
+          href: service-security-calls-not-authorized.md
+        - name: Security Calls Not Authorized Per Second（每秒未授权的安全调用次数）
+          href: service-security-calls-not-authorized-per-second.md
+        - name: Security Validation and Authentication Failures（安全验证和身份验证失败次数）
+          href: service-security-validation-and-authentication-failures.md
+        - name: Security Validation and Authentication Failures Per Second（每秒安全验证和身份验证失败次数）
+          href: service-security-validation-and-authentication-failures-per-second.md
+        - name: Transactions Flowed（流动的事务数）
+          href: service-transactions-flowed.md
+        - name: Transactions Flowed Per Second（每秒流动的事务数）
+          href: service-transactions-flowed-per-second.md
+        - name: Transacted Operations Aborted（已中止的事务处理操作次数）
+          href: transacted-operations-aborted.md
+        - name: Transacted Operations Aborted Per Second（每秒中止的事务处理操作次数）
+          href: transacted-operations-aborted-per-second.md
+        - name: Transacted Operations Committed（已提交的事务处理操作次数）
+          href: transacted-operations-committed.md
+        - name: Transacted Operations Committed Per Second（每秒提交的事务处理操作次数）
+          href: transacted-operations-committed-per-second.md
+        - name: Transacted Operations In Doubt（不确定的事务处理操作次数）
+          href: transacted-operations-in-doubt.md
+        - name: Transacted Operations In Doubt Per Second（每秒不确定的事务处理操作次数）
+          href: transacted-operations-in-doubt-per-second.md
+    - name: 终结点性能计数器
+      href: endpoint-performance-counters.md
+      items:
+        - name: Calls（调用次数）
+          href: endpoint-calls.md
+        - name: Calls Per Second（每秒调用次数）
+          href: endpoint-calls-per-second.md
+        - name: Calls Outstanding（未完成的调用次数）
+          href: endpoint-calls-outstanding.md
+        - name: Calls Failed（失败的调用次数）
+          href: endpoint-calls-failed.md
+        - name: Calls Failed Per Second（每秒失败的调用次数）
+          href: endpoint-calls-failed-per-second.md
+        - name: Calls Faulted（出错的调用次数）
+          href: endpoint-calls-faulted.md
+        - name: Calls Faulted Per Second（每秒出错的调用次数）
+          href: endpoint-calls-faulted-per-second.md
+        - name: 调用持续时间
+          href: endpoint-calls-duration.md
+        - name: Reliable Messaging Messages Dropped（放置的可靠消息传递消息数）
+          href: endpoint-reliable-messaging-messages-dropped.md
+        - name: Reliable Messaging Messages Dropped Per Second（每秒丢弃的可靠消息传递消息数）
+          href: endpoint-reliable-messaging-messages-dropped-per-second.md
+        - name: Reliable Messaging Sessions Faulted（出错的可靠消息会话数）
+          href: endpoint-reliable-messaging-sessions-faulted.md
+        - name: Reliable Messaging Sessions Faulted Per Second（每秒出错的可靠消息会话数）
+          href: endpoint-reliable-messaging-sessions-faulted-per-second.md
+        - name: Security Calls Not Authorized（未授权的安全调用次数）
+          href: endpoint-security-calls-not-authorized.md
+        - name: Security Calls Not Authorized Per Second（每秒未授权的安全调用次数）
+          href: endpoint-security-calls-not-authorized-per-second.md
+        - name: Security Validation and Authentication Failures（安全验证和身份验证失败次数）
+          href: endpoint-security-validation-and-authentication-failures.md
+        - name: Security Validation and Authentication Failures Per Second（每秒安全验证和身份验证失败次数）
+          href: endpoint-security-validation-and-authentication-failures-per-second.md
+        - name: Transactions Flowed（流动的事务数）
+          href: endpoint-transactions-flowed.md
+        - name: Transactions Flowed Per Second（每秒流动的事务数）
+          href: endpoint-transactions-flowed-per-second.md

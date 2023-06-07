@@ -1,0 +1,583 @@
+items:
+  - name: Docs
+    tocHref: /
+    topicHref: /
+    items:
+      - name: .NET
+        tocHref: /dotnet/
+        topicHref: /dotnet/index
+        items:
+          - name: .NET API 浏览器
+            tocHref: /dotnet/api/
+            topicHref: /dotnet/api/index
+          - name: .NET 应用程序体系结构指南
+            tocHref: /dotnet/architecture/
+            topicHref: /dotnet/architecture/index
+            items:
+              - name: 现代 ASP.NET Web 应用程序电子书
+                tocHref: /dotnet/architecture/modern-web-apps-azure/
+                topicHref: /dotnet/architecture/modern-web-apps-azure/index
+              - name: .NET 微服务 - 体系结构电子书
+                tocHref: /dotnet/architecture/microservices/
+                topicHref: /dotnet/architecture/microservices/index
+              - name: 云原生
+                tocHref: /dotnet/architecture/cloud-native/
+                topicHref: /dotnet/architecture/cloud-native/index
+              - name: 现代化 .NET 应用电子书
+                tocHref: /dotnet/architecture/modernize-with-azure-containers/
+                topicHref: /dotnet/architecture/modernize-with-azure-containers/index
+              - name: .NET 微服务 - DevOps 电子书
+                tocHref: /dotnet/architecture/containerized-lifecycle/
+                topicHref: /dotnet/architecture/containerized-lifecycle/index
+              - name: 无服务器应用电子书
+                tocHref: /dotnet/architecture/serverless/
+                topicHref: /dotnet/architecture/serverless/index
+              - name: Blazor for ASP.NET Web Forms 开发人员电子书
+                tocHref: /dotnet/architecture/blazor-for-web-forms-developers/
+                topicHref: /dotnet/architecture/blazor-for-web-forms-developers/index
+              - name: 适用于 WCF 开发人员的 ASP.NET Core gRPC
+                tocHref: /dotnet/architecture/grpc-for-wcf-developers/
+                topicHref: /dotnet/architecture/grpc-for-wcf-developers/index
+              - name: 对桌面应用进行现代化改造
+                tocHref: /dotnet/architecture/modernize-desktop/
+                topicHref: /dotnet/architecture/modernize-desktop/index
+          - name: .NET 基础知识
+            tocHref: /dotnet/fundamentals/
+            topicHref: /dotnet/fundamentals/index
+          - name: .NET 基础知识
+            tocHref: /dotnet/standard/
+            topicHref: /dotnet/fundamentals/index
+            items:
+              - name: .NET 中的程序集
+                tocHref: /dotnet/standard/assembly
+                topicHref: /dotnet/standard/assembly/index
+              - name: 开放源代码库指南
+                tocHref: /dotnet/standard/library-guidance/
+                topicHref: /dotnet/standard/library-guidance/index
+              - name: 异步编程模式
+                tocHref: /dotnet/standard/asynchronous-programming-patterns/
+                topicHref: /dotnet/standard/asynchronous-programming-patterns/index
+              - name: 集合和数据结构
+                tocHref: /dotnet/standard/collections/
+                topicHref: /dotnet/standard/collections/index
+                items:
+                  - name: 线程安全集合
+                    tocHref: /dotnet/standard/collections/thread-safe/
+                    topicHref: /dotnet/standard/collections/thread-safe/index
+              - name: Microsoft.Data.Sqlite
+                tocHref: /dotnet/standard/data/sqlite/
+                topicHref: /dotnet/standard/data/sqlite/index
+              - name: XML 文档和数据
+                tocHref: /dotnet/standard/data/xml/
+                topicHref: /dotnet/standard/data/xml/index
+              - name: 日期、时间和时区
+                tocHref: /dotnet/standard/datetime/
+                topicHref: /dotnet/standard/datetime/index
+              - name: 全球化和本地化
+                tocHref: /dotnet/standard/globalization-localization/
+                topicHref: /dotnet/standard/globalization-localization/index
+              - name: LINQ
+                tocHref: /dotnet/standard/linq/
+                topicHref: /dotnet/standard/linq/index
+              - name: .NET 中的安全性
+                tocHref: /dotnet/standard/security/
+                topicHref: /dotnet/standard/security/index
+              - name: 托管线程
+                tocHref: /dotnet/standard/threading/
+                topicHref: /dotnet/standard/threading/index
+          - name: .NET 基础知识
+            tocHref: /dotnet/core/
+            topicHref: /dotnet/fundamentals/index
+            items:
+              - name: 中断性变更
+                tocHref: /dotnet/core/compatibility/
+                topicHref: /dotnet/core/compatibility/index
+          - name: .NET Framework
+            tocHref: /dotnet/framework/
+            topicHref: /dotnet/framework/index
+            items:
+              - name: 加载项和扩展性
+                tocHref: /dotnet/framework/add-ins/
+                topicHref: /dotnet/framework/add-ins/index
+              - name: 其他 API
+                tocHref: /dotnet/framework/additional-apis/
+                topicHref: /dotnet/framework/additional-apis/index
+              - name: 应用程序域和程序集
+                tocHref: /dotnet/framework/app-domains/
+                topicHref: /dotnet/framework/app-domains/index
+              - name: 使用配置文件配置应用
+                tocHref: /dotnet/framework/configure-apps/
+                topicHref: /dotnet/framework/configure-apps/index
+                items:
+                  - name: 配置文件架构
+                    tocHref: /dotnet/framework/configure-apps/file-schema/
+                    topicHref: /dotnet/framework/configure-apps/file-schema/index
+                    items:
+                      - name: 编译器和语言提供程序设置架构
+                        tocHref: /dotnet/framework/configure-apps/file-schema/compiler/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/compiler/index
+                      - name: 密码设置架构
+                        tocHref: /dotnet/framework/configure-apps/file-schema/cryptography/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/cryptography/index
+                      - name: 网络设置架构
+                        tocHref: /dotnet/framework/configure-apps/file-schema/network/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/network/index
+                      - name: 运行时设置架构
+                        tocHref: /dotnet/framework/configure-apps/file-schema/runtime/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/runtime/index
+                      - name: 启动设置架构
+                        tocHref: /dotnet/framework/configure-apps/file-schema/startup/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/startup/index
+                      - name: 跟踪和调试设置架构
+                        tocHref: /dotnet/framework/configure-apps/file-schema/trace-debug/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/trace-debug/index
+                      - name: WCF 配置架构
+                        tocHref: /dotnet/framework/configure-apps/file-schema/wcf/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/wcf/index
+                      - name: WCF 指令语法
+                        tocHref: /dotnet/framework/configure-apps/file-schema/wcf-directive/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/wcf-directive/index
+                      - name: Web 设置架构
+                        tocHref: /dotnet/framework/configure-apps/file-schema/web/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/web/index
+                      - name: Windows Identity Foundation 配置架构
+                        tocHref: /dotnet/framework/configure-apps/file-schema/windows-identity-foundation/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/windows-identity-foundation/index
+                      - name: Windows Workflow Foundation 配置架构
+                        tocHref: /dotnet/framework/configure-apps/file-schema/windows-workflow-foundation
+                        topicHref: /dotnet/framework/configure-apps/file-schema/windows-workflow-foundation/index
+                      - name: Windows 窗体配置节
+                        tocHref: /dotnet/framework/configure-apps/file-schema/winforms/
+                        topicHref: /dotnet/framework/configure-apps/file-schema/winforms/index
+              - name: 数据和建模
+                tocHref: /dotnet/framework/data/
+                topicHref: /dotnet/framework/data/index
+                items:
+                  - name: ADO.NET
+                    tocHref: /dotnet/framework/data/adonet/
+                    topicHref: /dotnet/framework/data/adonet/index
+                    items:
+                      - name: 数据集、数据表和数据视图
+                        tocHref: /dotnet/framework/data/adonet/dataset-datatable-dataview/
+                        topicHref: /dotnet/framework/data/adonet/dataset-datatable-dataview/index
+                      - name: ADO.NET 实体框架
+                        tocHref: /dotnet/framework/data/adonet/ef/
+                        topicHref: /dotnet/framework/data/adonet/ef/index
+                        items:
+                          - name: 实体 SQL 语言参考
+                            tocHref: /dotnet/framework/data/adonet/ef/language-reference/
+                            topicHref: /dotnet/framework/data/adonet/ef/language-reference/index
+                      - name: SQL Server 和 ADO.NET
+                        tocHref: /dotnet/framework/data/adonet/sql/
+                        topicHref: /dotnet/framework/data/adonet/sql/index
+                        items:
+                          - name: LINQ to SQL
+                            tocHref: /dotnet/framework/data/adonet/sql/linq/
+                            topicHref: /dotnet/framework/data/adonet/sql/linq/index
+                  - name: 事务处理
+                    tocHref: /dotnet/framework/data/transactions/
+                    topicHref: /dotnet/framework/data/transactions/index
+                  - name: WCF 数据服务
+                    tocHref: /dotnet/framework/data/wcf/
+                    topicHref: /dotnet/framework/data/wcf/index
+              - name: 调试、跟踪和分析
+                tocHref: /dotnet/framework/debug-trace-profile/
+                topicHref: /dotnet/framework/debug-trace-profile/index
+              - name: 部署 .NET Framework
+                tocHref: /dotnet/framework/deployment/
+                topicHref: /dotnet/framework/deployment/index
+              - name: 通过 Docker 部署 .NET Framework 应用
+                tocHref: /dotnet/framework/docker/
+                topicHref: /dotnet/framework/docker/index
+              - name: 入门
+                tocHref: /dotnet/framework/get-started/
+                topicHref: /dotnet/framework/get-started/index
+              - name: 安装指南
+                tocHref: /dotnet/framework/install/
+                topicHref: /dotnet/framework/install/index
+              - name: 与非托管代码交互操作
+                tocHref: /dotnet/framework/interop/
+                topicHref: /dotnet/framework/interop/index
+              - name: Managed Extensibility Framework (MEF)
+                tocHref: /dotnet/framework/mef/
+                topicHref: /dotnet/framework/mef/index
+              - name: 迁移指南
+                tocHref: /dotnet/framework/migration-guide/
+                topicHref: /dotnet/framework/migration-guide/index
+              - name: 使用 .NET Native 编译应用
+                tocHref: /dotnet/framework/net-native/
+                topicHref: /dotnet/framework/net-native/index
+              - name: 网络编程
+                tocHref: /dotnet/framework/network-programming/
+                topicHref: /dotnet/framework/network-programming/index
+              - name: .NET Framework 性能
+                tocHref: /dotnet/framework/performance/
+                topicHref: /dotnet/framework/performance/index
+              - name: 动态编程
+                tocHref: /dotnet/framework/reflection-and-codedom/
+                topicHref: /dotnet/framework/reflection-and-codedom/index
+              - name: 桌面应用中的资源
+                tocHref: /dotnet/framework/resources/
+                topicHref: /dotnet/framework/resources/index
+              - name: .NET Framework 工具
+                tocHref: /dotnet/framework/tools/
+                topicHref: /dotnet/framework/tools/index
+              - name: UI 自动化基础知识
+                tocHref: /dotnet/framework/ui-automation/
+                topicHref: /dotnet/framework/ui-automation/index
+              - name: 非托管 API 参考
+                tocHref: /dotnet/framework/unmanaged-api/
+                topicHref: /dotnet/framework/unmanaged-api/index
+                items:
+                  - name: ALink API（非托管 API 参考）
+                    tocHref: /dotnet/framework/unmanaged-api/alink/
+                    topicHref: /dotnet/framework/unmanaged-api/alink/index
+                  - name: 验证码（非托管 API 参考）
+                    tocHref: /dotnet/framework/unmanaged-api/authenticode/
+                    topicHref: /dotnet/framework/unmanaged-api/authenticode/index
+                  - name: 调试（非托管 API 参考）
+                    tocHref: /dotnet/framework/unmanaged-api/debugging/
+                    topicHref: /dotnet/framework/unmanaged-api/debugging/index
+                  - name: 诊断符号存储区（非托管 API 参考）
+                    tocHref: /dotnet/framework/unmanaged-api/diagnostics/
+                    topicHref: /dotnet/framework/unmanaged-api/diagnostics/index
+                  - name: 合成（非托管 API 参考）
+                    tocHref: /dotnet/framework/unmanaged-api/fusion/
+                    topicHref: /dotnet/framework/unmanaged-api/fusion/index
+                  - name: 承载（非托管 API 参考）
+                    tocHref: /dotnet/framework/unmanaged-api/hosting/
+                    topicHref: /dotnet/framework/unmanaged-api/hosting/index
+                  - name: 元数据（非托管 API 参考）
+                    tocHref: /dotnet/framework/unmanaged-api/metadata/
+                    topicHref: /dotnet/framework/unmanaged-api/metadata/index
+                  - name: 分析（非托管 API 参考）
+                    tocHref: /dotnet/framework/unmanaged-api/profiling/
+                    topicHref: /dotnet/framework/unmanaged-api/profiling/index
+                  - name: 强命名（非托管 API 参考）
+                    tocHref: /dotnet/framework/unmanaged-api/strong-naming/
+                    topicHref: /dotnet/framework/unmanaged-api/strong-naming/index
+                  - name: Tlbexp 帮助器函数（非托管 API 参考）
+                    tocHref: /dotnet/framework/unmanaged-api/tlbexp/
+                    topicHref: /dotnet/framework/unmanaged-api/tlbexp/index
+              - name: Windows Communication Foundation
+                tocHref: /dotnet/framework/wcf/
+                topicHref: /dotnet/framework/wcf/index
+                items:
+                  - name: 管理和诊断
+                    tocHref: /dotnet/framework/wcf/diagnostics/
+                    topicHref: /dotnet/framework/wcf/diagnostics/index
+                    items:
+                      - name: 使用 ETW 进行分析跟踪
+                        tocHref: /dotnet/framework/wcf/diagnostics/etw/
+                        topicHref: /dotnet/framework/wcf/diagnostics/etw/index
+                      - name: WCF 中的事件日志记录
+                        tocHref: /dotnet/framework/wcf/diagnostics/event-logging/
+                        topicHref: /dotnet/framework/wcf/diagnostics/event-logging/index
+                      - name: 关于异常的参考信息
+                        tocHref: /dotnet/framework/wcf/diagnostics/exceptions-reference/
+                        topicHref: /dotnet/framework/wcf/diagnostics/exceptions-reference/index
+                      - name: WCF 性能计数器
+                        tocHref: /dotnet/framework/wcf/diagnostics/performance-counters/
+                        topicHref: /dotnet/framework/wcf/diagnostics/performance-counters/index
+                      - name: 跟踪
+                        tocHref: /dotnet/framework/wcf/diagnostics/tracing/
+                        topicHref: /dotnet/framework/wcf/diagnostics/tracing/index
+                      - name: 使用 Windows Management Instrumentation 进行诊断
+                        tocHref: /dotnet/framework/wcf/diagnostics/wmi/
+                        topicHref: /dotnet/framework/wcf/diagnostics/wmi/index
+                  - name: 扩展 WCF
+                    tocHref: /dotnet/framework/wcf/extending/
+                    topicHref: /dotnet/framework/wcf/extending/index
+                  - name: WCF 功能详细信息
+                    tocHref: /dotnet/framework/wcf/feature-details/
+                    topicHref: /dotnet/framework/wcf/feature-details/index
+                  - name: Windows Communication Foundation (WCF) 示例
+                    tocHref: /dotnet/framework/wcf/samples/
+                    topicHref: /dotnet/framework/wcf/samples/index
+              - name: .NET Framework 中的新增功能
+                tocHref: /dotnet/framework/whats-new/
+                topicHref: /dotnet/framework/whats-new/index
+              - name: 开发 Windows 服务应用程序
+                tocHref: /dotnet/framework/windows-services/
+                topicHref: /dotnet/framework/windows-services/index
+              - name: Windows Workflow Foundation
+                tocHref: /dotnet/framework/windows-workflow-foundation/
+                topicHref: /dotnet/framework/windows-workflow-foundation/index
+                items:
+                  - name: Windows 工作流 (WF) 示例
+                    tocHref: /dotnet/framework/windows-workflow-foundation/samples/
+                    topicHref: /dotnet/framework/windows-workflow-foundation/samples/index
+          - name: C# 指南
+            tocHref: /dotnet/csharp/
+            topicHref: /dotnet/csharp/index
+            items:
+              - name: C# 简介
+                tocHref: /dotnet/csharp/tutorials/intro-to-csharp/
+                topicHref: /dotnet/csharp/tutorials/intro-to-csharp/index
+              - name: 入门
+                tocHref: /dotnet/csharp/getting-started/
+                topicHref: /dotnet/csharp/getting-started/index
+                items:
+                  - name: C# 教程
+                    tocHref: /dotnet/csharp/tour-of-csharp/
+                    topicHref: /dotnet/csharp/tour-of-csharp/index
+              - name: 教程
+                tocHref: /dotnet/csharp/tutorials/
+                topicHref: /dotnet/csharp/tutorials/index
+              - name: 导览
+                tocHref: /dotnet/csharp/tour-of-csharp/
+                topicHref: /dotnet/csharp/tour-of-csharp/index
+              - name: 新增功能
+                tocHref: /dotnet/csharp/whats-new/
+                topicHref: /dotnet/csharp/whats-new/index
+              - name: .NET 编译器平台 SDK
+                tocHref: /dotnet/csharp/roslyn-sdk/
+                topicHref: /dotnet/csharp/roslyn-sdk/index
+              - name: 编程指南
+                tocHref: /dotnet/csharp/programming-guide/
+                topicHref: /dotnet/csharp/programming-guide/index
+                items:
+                  - name: C# 程序内部探究
+                    tocHref: /dotnet/csharp/programming-guide/inside-a-program/
+                    topicHref: /dotnet/csharp/programming-guide/inside-a-program/index
+                  - name: 数组
+                    tocHref: /dotnet/csharp/programming-guide/arrays/
+                    topicHref: /dotnet/csharp/programming-guide/arrays/index
+                  - name: 类和结构
+                    tocHref: /dotnet/csharp/programming-guide/classes-and-structs/
+                    topicHref: /dotnet/csharp/programming-guide/classes-and-structs/index
+                  - name: 委托
+                    tocHref: /dotnet/csharp/programming-guide/delegates/
+                    topicHref: /dotnet/csharp/programming-guide/delegates/index
+                  - name: 事件
+                    tocHref: /dotnet/csharp/programming-guide/events/
+                    topicHref: /dotnet/csharp/programming-guide/events/index
+                  - name: 异常和异常处理
+                    tocHref: /dotnet/csharp/programming-guide/exceptions/
+                    topicHref: /dotnet/csharp/programming-guide/exceptions/index
+                  - name: 文件系统和注册表
+                    tocHref: /dotnet/csharp/programming-guide/file-system/
+                    topicHref: /dotnet/csharp/programming-guide/file-system/index
+                  - name: 泛型
+                    tocHref: /dotnet/csharp/programming-guide/generics/
+                    topicHref: /dotnet/csharp/programming-guide/generics/index
+                  - name: 索引器
+                    tocHref: /dotnet/csharp/programming-guide/indexers/
+                    topicHref: /dotnet/csharp/programming-guide/indexers/index
+                  - name: 接口
+                    tocHref: /dotnet/csharp/programming-guide/interfaces/
+                    topicHref: /dotnet/csharp/programming-guide/interfaces/index
+                  - name: 互操作性
+                    tocHref: /dotnet/csharp/programming-guide/interop/
+                    topicHref: /dotnet/csharp/programming-guide/interop/index
+                  - name: Main() 和命令行参数
+                    tocHref: /dotnet/csharp/programming-guide/main-and-command-args/
+                    topicHref: /dotnet/csharp/programming-guide/main-and-command-args/index
+                  - name: 命名空间
+                    tocHref: /dotnet/csharp/programming-guide/namespaces/
+                    topicHref: /dotnet/csharp/programming-guide/namespaces/index
+                  - name: 编程概念
+                    tocHref: /dotnet/csharp/programming-guide/concepts/
+                    topicHref: /dotnet/csharp/programming-guide/concepts/index
+                    items:
+                      - name: 异步编程
+                        tocHref: /dotnet/csharp/programming-guide/concepts/async/
+                        topicHref: /dotnet/csharp/programming-guide/concepts/async/index
+                      - name: 特性
+                        tocHref: /dotnet/csharp/programming-guide/concepts/attributes/
+                        topicHref: /dotnet/csharp/programming-guide/concepts/attributes/index
+                      - name: 协变和逆变
+                        tocHref: /dotnet/csharp/programming-guide/concepts/covariance-contravariance/
+                        topicHref: /dotnet/csharp/programming-guide/concepts/covariance-contravariance/index
+                      - name: 表达式树
+                        tocHref: /dotnet/csharp/programming-guide/concepts/expression-trees/
+                        topicHref: /dotnet/csharp/programming-guide/concepts/expression-trees/index
+                      - name: LINQ
+                        tocHref: /dotnet/csharp/programming-guide/concepts/linq/
+                        topicHref: /dotnet/csharp/programming-guide/concepts/linq/index
+                      - name: 序列化
+                        tocHref: /dotnet/csharp/programming-guide/concepts/serialization/
+                        topicHref: /dotnet/csharp/programming-guide/concepts/serialization/index
+                      - name: 线程
+                        tocHref: /dotnet/csharp/programming-guide/concepts/threading/
+                        topicHref: /dotnet/csharp/programming-guide/concepts/threading/index
+                  - name: 语句、表达式和运算符
+                    tocHref: /dotnet/csharp/programming-guide/statements-expressions-operators/
+                    topicHref: /dotnet/csharp/programming-guide/statements-expressions-operators/index
+                  - name: 字符串
+                    tocHref: /dotnet/csharp/programming-guide/strings/
+                    topicHref: /dotnet/csharp/programming-guide/strings/index
+                  - name: 类型
+                    tocHref: /dotnet/csharp/programming-guide/types/
+                    topicHref: /dotnet/csharp/programming-guide/types/index
+                  - name: 不安全代码和指针
+                    tocHref: /dotnet/csharp/programming-guide/unsafe-code-pointers/
+                    topicHref: /dotnet/csharp/programming-guide/unsafe-code-pointers/index
+                  - name: XML 文档
+                    tocHref: /dotnet/csharp/programming-guide/xmldoc/
+                    topicHref: /dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments
+              - name: 语言参考
+                tocHref: /dotnet/csharp/language-reference/
+                topicHref: /dotnet/csharp/language-reference/index
+                items:
+                  - name: 关键字
+                    tocHref: /dotnet/csharp/language-reference/keywords/
+                    topicHref: /dotnet/csharp/language-reference/keywords/index
+                  - name: 运算符
+                    tocHref: /dotnet/csharp/language-reference/operators/
+                    topicHref: /dotnet/csharp/language-reference/operators/index
+                  - name: 特殊字符
+                    tocHref: /dotnet/csharp/language-reference/tokens/
+                    topicHref: /dotnet/csharp/language-reference/tokens/index
+                  - name: 预处理器指令
+                    tocHref: /dotnet/csharp/language-reference/preprocessor-directives/
+                    topicHref: /dotnet/csharp/language-reference/preprocessor-directives/index
+                  - name: 编译器选项
+                    tocHref: /dotnet/csharp/language-reference/compiler-options/
+                    topicHref: /dotnet/csharp/language-reference/compiler-options/index
+                  - name: 编译器错误
+                    tocHref: /dotnet/csharp/language-reference/compiler-messages/
+                    topicHref: /dotnet/csharp/language-reference/compiler-messages/index
+                  - name: C# 6.0 草稿规范
+                    tocHref: /dotnet/csharp/language-reference/language-specification/
+                    topicHref: /dotnet/csharp/language-reference/language-specification/index
+                  - name: C# 7.0 语言建议
+                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.0/
+                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.0/index
+                  - name: C# 7.1 语言建议
+                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/
+                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/index
+                  - name: C# 7.2 语言建议
+                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.2/
+                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.2/index
+                  - name: C# 7.3 语言建议
+                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.3/
+                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.3/index
+                  - name: C# 8.0 语言建议
+                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/
+                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/index
+          - name: F# 指南
+            tocHref: /dotnet/fsharp/
+            topicHref: /dotnet/fsharp/index
+          - name: Visual Basic 指南
+            tocHref: /dotnet/visual-basic/
+            topicHref: /dotnet/visual-basic/index
+            items:
+              - name: 入门
+                tocHref: /dotnet/visual-basic/getting-started/
+                topicHref: /dotnet/visual-basic/getting-started/index
+              - name: 开发应用程序
+                tocHref: /dotnet/visual-basic/developing-apps/
+                topicHref: /dotnet/visual-basic/developing-apps/index
+              - name: 编程概念
+                tocHref: /dotnet/visual-basic/programming-guide/concepts/
+                topicHref: /dotnet/visual-basic/programming-guide/concepts/index
+                items:
+                  - name: 异步编程
+                    tocHref: /dotnet/visual-basic/programming-guide/concepts/async/
+                    topicHref: /dotnet/visual-basic/programming-guide/concepts/async/index
+                  - name: 特性
+                    tocHref: /dotnet/visual-basic/programming-guide/concepts/attributes/
+                    topicHref: /dotnet/visual-basic/programming-guide/concepts/attributes/index
+                  - name: 表达式树
+                    tocHref: /dotnet/visual-basic/programming-guide/concepts/expression-trees/
+                    topicHref: /dotnet/visual-basic/programming-guide/concepts/expression-trees/index
+                  - name: LINQ
+                    tocHref: /dotnet/visual-basic/programming-guide/concepts/linq/
+                    topicHref: /dotnet/visual-basic/programming-guide/concepts/linq/index
+                  - name: 序列化
+                    tocHref: /dotnet/visual-basic/programming-guide/concepts/serialization/
+                    topicHref: /dotnet/visual-basic/programming-guide/concepts/serialization/index
+                  - name: 线程
+                    tocHref: /dotnet/visual-basic/programming-guide/concepts/threading/
+                    topicHref: /dotnet/visual-basic/programming-guide/concepts/threading/index
+              - name: 程序结构和代码约定
+                tocHref: /dotnet/visual-basic/programming-guide/program-structure/
+                topicHref: /dotnet/visual-basic/programming-guide/program-structure/program-structure-and-code-conventions
+              - name: 语言功能
+                tocHref: /dotnet/visual-basic/programming-guide/language-features/
+                topicHref: /dotnet/visual-basic/programming-guide/language-features/index
+                items:
+                  - name: 数组
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/arrays/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/arrays/index
+                  - name: 集合初始值设定项
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/collection-initializers/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/collection-initializers/index
+                  - name: 常数和枚举
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/constants-enums/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/constants-enums/index
+                  - name: 控制流
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/control-flow/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/control-flow/index
+                  - name: 数据类型
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/data-types/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/data-types/index
+                  - name: 已声明的元素
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/declared-elements/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/declared-elements/index
+                  - name: 委托
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/delegates/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/delegates/index
+                  - name: 早期绑定和晚期绑定
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/early-late-binding/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/early-late-binding/index
+                  - name: 事件
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/events/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/events/index
+                  - name: LINQ
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/linq/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/linq/index
+                  - name: 对象和类
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/objects-and-classes/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/objects-and-classes/index
+                  - name: 运算符和表达式
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/index
+                  - name: 过程
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/procedures/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/procedures/index
+                  - name: 字符串
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/strings/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/strings/index
+                  - name: 变量
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/variables/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/variables/index
+                  - name: XML
+                    tocHref: /dotnet/visual-basic/programming-guide/language-features/xml/
+                    topicHref: /dotnet/visual-basic/programming-guide/language-features/xml/index
+              - name: COM 互操作
+                tocHref: /dotnet/visual-basic/programming-guide/com-interop/
+                topicHref: /dotnet/visual-basic/programming-guide/com-interop/index
+              - name: 语言参考
+                tocHref: /dotnet/visual-basic/language-reference/
+                topicHref: /dotnet/visual-basic/language-reference/index
+              - name: 参考
+                tocHref: /dotnet/visual-basic/reference/
+                topicHref: /dotnet/visual-basic/reference/index
+          - name: ML.NET 指南
+            tocHref: /dotnet/machine-learning/
+            topicHref: /dotnet/machine-learning/index
+            items:
+              - name: 操作指南
+                tocHref: /dotnet/machine-learning/how-to-guides/
+                topicHref: /dotnet/machine-learning/how-to-guides/index
+              - name: 资源
+                tocHref: /dotnet/machine-learning/resources/
+                topicHref: /dotnet/machine-learning/resources/index
+              - name: 教程
+                tocHref: /dotnet/machine-learning/tutorials/
+                topicHref: /dotnet/machine-learning/tutorials/index
+          - name: .NET for Apache Spark 指南
+            tocHref: /dotnet/spark/
+            topicHref: /dotnet/spark/index
+          - name: Azure
+            tocHref: /dotnet/azure/
+            topicHref: /dotnet/azure/index
+            items:
+              - name: 面向 .NET 开发人员的 Azure
+                tocHref: /dotnet/azure/
+                topicHref: /dotnet/azure/index
+          - name: .NET IoT 库
+            tocHref: /dotnet/iot/
+            topicHref: /dotnet/iot/index

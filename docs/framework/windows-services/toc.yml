@@ -1,0 +1,34 @@
+- name: Windows 服务应用程序
+  href: index.md
+  items:
+    - name: Windows 服务应用程序介绍
+      href: introduction-to-windows-service-applications.md
+    - name: 演练：创建 Windows 服务应用
+      href: walkthrough-creating-a-windows-service-application-in-the-component-designer.md
+    - name: 服务应用程序编程体系结构
+      href: service-application-programming-architecture.md
+    - name: 如何：创建 Windows 服务
+      href: how-to-create-windows-services.md
+      items:
+        - name: 如何：以编程方式编写服务
+          href: how-to-write-services-programmatically.md
+        - name: 如何：将安装程序添加到服务应用程序
+          href: how-to-add-installers-to-your-service-application.md
+        - name: 如何：为服务指定安全上下文
+          href: how-to-specify-the-security-context-for-services.md
+        - name: 如何：安装和卸载服务
+          href: how-to-install-and-uninstall-services.md
+        - name: 如何：启动服务
+          href: how-to-start-services.md
+        - name: 如何：暂停 Windows 服务 (Visual Basic)
+          href: how-to-pause-a-windows-service-visual-basic.md
+        - name: 如何：继续 Windows 服务 (Visual Basic)
+          href: how-to-continue-a-windows-service-visual-basic.md
+        - name: 如何：调试 Windows 服务应用程序
+          href: how-to-debug-windows-service-applications.md
+        - name: 如何：记录关于服务的信息
+          href: how-to-log-information-about-services.md
+        - name: 疑难解答：调试 Windows 服务
+          href: troubleshooting-debugging-windows-services.md
+        - name: 疑难解答：服务应用程序无法安装
+          href: troubleshooting-service-application-wont-install.md

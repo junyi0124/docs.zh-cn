@@ -1,0 +1,35 @@
+- name: Visual Basic 语言规范
+  href: index.md
+  items:
+    - name: 介绍
+      href: ../../../../_vblang/spec/introduction.md
+    - name: 词法语法
+      href: ../../../../_vblang/spec/lexical-grammar.md
+    - name: 预处理指令
+      href: ../../../../_vblang/spec/preprocessing-directives.md
+    - name: 一般概念
+      href: ../../../../_vblang/spec/general-concepts.md
+    - name: 特性
+      href: ../../../../_vblang/spec/attributes.md
+    - name: 源文件和命名空间
+      href: ../../../../_vblang/spec/source-files-and-namespaces.md
+    - name: 类型
+      href: ../../../../_vblang/spec/types.md
+    - name: 转换
+      href: ../../../../_vblang/spec/conversions.md
+    - name: 类型成员
+      href: ../../../../_vblang/spec/type-members.md
+    - name: 语句
+      href: ../../../../_vblang/spec/statements.md
+    - name: 表达式
+      href: ../../../../_vblang/spec/expressions.md
+    - name: 文档注释
+      href: ../../../../_vblang/spec/documentation-comments.md
+    - name: 重载决策
+      href: ../../../../_vblang/spec/overload-resolution.md
+    - name: 语法
+      items:
+        - name: vb.html
+          href: 'https://ljw1004.github.io/vbspec/vb.html'
+        - name: vb.g4 - ANTLR format
+          href: 'https://ljw1004.github.io/vbspec/vb.g4?raw=true'

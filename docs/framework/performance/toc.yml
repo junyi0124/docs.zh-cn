@@ -1,0 +1,64 @@
+- name: 性能
+  href: index.md
+  items:
+    - name: 编写大型的响应式 .NET Framework 应用
+      href: writing-large-responsive-apps.md
+    - name: .NET Framework 应用程序中的缓存
+      href: caching-in-net-framework-applications.md
+    - name: 延迟初始化
+      href: lazy-initialization.md
+      items:
+        - name: 如何：执行对象的延迟初始化
+          href: how-to-perform-lazy-initialization-of-objects.md
+    - name: ETW Events in the .NET Framework
+      href: etw-events.md
+      items:
+        - name: 任务并行库和 PLINQ 中的 ETW 事件
+          href: etw-events-in-task-parallel-library-and-plinq.md
+        - name: 公共语言运行时中的 ETW 事件
+          href: etw-events-in-the-common-language-runtime.md
+          items:
+            - name: 控制 .NET Framework 日志记录
+              href: controlling-logging.md
+            - name: CLR ETW 提供程序
+              href: clr-etw-providers.md
+            - name: CLR ETW 关键字和级别
+              href: clr-etw-keywords-and-levels.md
+            - name: CLR ETW 事件
+              href: clr-etw-events.md
+              items:
+                - name: 运行时信息事件
+                  href: runtime-information-etw-events.md
+                - name: 异常 Thrown_V1 事件
+                  href: exception-thrown-v1-etw-event.md
+                - name: 争用事件
+                  href: contention-etw-events.md
+                - name: 线程池事件
+                  href: thread-pool-etw-events.md
+                - name: 加载程序事件
+                  href: loader-etw-events.md
+                - name: 方法事件
+                  href: method-etw-events.md
+                - name: 垃圾回收事件
+                  href: garbage-collection-etw-events.md
+                - name: JIT 跟踪事件
+                  href: jit-tracing-etw-events.md
+                - name: 互操作事件
+                  href: interop-etw-events.md
+                - name: ARM 事件
+                  href: application-domain-resource-monitoring-arm-etw-events.md
+                - name: 安全事件
+                  href: security-etw-events.md
+                - name: 堆栈事件
+                  href: stack-etw-event.md
+    - name: 可靠性
+      href: reliability.md
+      items:
+        - name: SQL Server 编程和宿主保护特性
+          href: sql-server-programming-and-host-protection-attributes.md
+        - name: 可靠性最佳做法
+          href: reliability-best-practices.md
+        - name: 受约束的执行区域
+          href: constrained-execution-regions.md
+    - name: 性能提示
+      href: performance-tips.md

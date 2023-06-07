@@ -1,0 +1,80 @@
+- name: 使用 .NET Native 编译引用
+  href: index.md
+  items:
+    - name: .NET Native 和编译
+      href: net-native-and-compilation.md
+    - name: 入门
+      href: getting-started-with-net-native.md
+      items:
+        - name: 示例：动态编程疑难解答
+          href: example-troubleshooting-dynamic-programming.md
+        - name: 示例：处理绑定数据时出现的异常
+          href: example-handling-exceptions-when-binding-data.md
+        - name: .NET 本机应用中的运行时异常
+          href: runtime-exceptions-in-net-native-apps.md
+    - name: 使用 .NET Native 衡量启动改善
+      href: measuring-startup-improvement-with-net-native.md
+    - name: 反射和 .NET Native
+      href: reflection-and-net-native.md
+      items:
+        - name: 利用反射的 API
+          href: apis-that-rely-on-reflection.md
+        - name: 反射 API 引用
+          href: net-native-reflection-api-reference.md
+          items:
+            - name: MissingInteropDataException 类
+              href: missinginteropdataexception-class-net-native.md
+            - name: MissingMetadataException 类
+              href: missingmetadataexception-class-net-native.md
+            - name: MissingRuntimeArtifactException 类
+              href: missingruntimeartifactexception-class-net-native.md
+        - name: 运行时指令 (rd.xml) 配置文件引用
+          href: runtime-directives-rd-xml-configuration-file-reference.md
+          items:
+            - name: 运行时指令元素
+              href: runtime-directive-elements.md
+              items:
+                - name: <Application> 元素
+                  href: application-element-net-native.md
+                - name: <Assembly> 元素
+                  href: assembly-element-net-native.md
+                - name: <AttributeImplies> 元素
+                  href: attributeimplies-element-net-native.md
+                - name: <Directives> 元素
+                  href: directives-element-net-native.md
+                - name: <Event> 元素
+                  href: event-element-net-native.md
+                - name: <Field> 元素
+                  href: field-element-net-native.md
+                - name: <GenericParameter> 元素
+                  href: genericparameter-element-net-native.md
+                - name: <ImpliesType> 元素
+                  href: impliestype-element-net-native.md
+                - name: <Library> 元素
+                  href: library-element-net-native.md
+                - name: <Method> 元素
+                  href: method-element-net-native.md
+                - name: <MethodInstantiation> 元素
+                  href: methodinstantiation-element-net-native.md
+                - name: <Namespace> 元素
+                  href: namespace-element-net-native.md
+                - name: <Parameter> 元素
+                  href: parameter-element-net-native.md
+                - name: <Property> 元素
+                  href: property-element-net-native.md
+                - name: <Subtypes> 元素
+                  href: subtypes-element-net-native.md
+                - name: <Type> 元素
+                  href: type-element-net-native.md
+                - name: <TypeInstantiation> 元素
+                  href: typeinstantiation-element-net-native.md
+                - name: <TypeParameter> 元素
+                  href: typeparameter-element-net-native.md
+            - name: 运行时指令策略设置
+              href: runtime-directive-policy-settings.md
+    - name: 序列化和元数据
+      href: serialization-and-metadata.md
+    - name: 将 Windows 应用商店应用迁移到 .NET Native
+      href: migrating-your-windows-store-app-to-net-native.md
+    - name: .NET Native 一般疑难解答
+      href: net-native-general-troubleshooting.md

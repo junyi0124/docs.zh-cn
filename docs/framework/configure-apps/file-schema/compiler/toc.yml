@@ -1,0 +1,14 @@
+- name: 编译器和语言提供程序设置架构
+  href: index.md
+  items:
+    - name: <system.codedom> 元素
+      href: system-codedom-element.md
+      items:
+        - name: <compilers> 元素
+          href: compilers-element.md
+          items:
+            - name: <compiler> 元素
+              href: compiler-element.md
+              items:
+                - name: <providerOption> 元素
+                  href: provideroption-element.md

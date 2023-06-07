@@ -1,0 +1,9 @@
+- name: Managed Extensibility Framework (MEF)
+  href: index.md
+  items:
+    - name: 特性化编程模型概述 (MEF)
+      href: attributed-programming-model-overview-mef.md
+    - name: 结构分析工具 (Mefx)
+      href: composition-analysis-tool-mefx.md
+    - name: 适用于 Windows 应用商店应用的 .NET 的 MEF
+      href: mef-for-net-for-windows-store-apps.md

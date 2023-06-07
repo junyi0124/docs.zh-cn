@@ -1,0 +1,72 @@
+### YamlMime:Landing
+title: Visual Basic 文档
+summary: Visual Basic 是 Microsoft 开发的一种面向对象的编程语言。 使用 Visual Basic 即可快速、轻松地创建类型安全的 .NET 应用。
+metadata:
+  title: Visual Basic 文档 - 入门、教程、参考。
+  description: 了解 .NET 中的 Visual Basic 编程 - 面向新手开发人员、刚开始接触 Visual Basic 的开发人员、以及经验丰富的 Visual Basic 开发人员
+  ms.topic: landing-page
+  ms.date: 08/13/2020
+  ms.custom: contperf-fy21q1
+  ms.openlocfilehash: 559b97e9c6b3a6b48eb05643ad3221a36b5b5a23
+  ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/15/2020
+  ms.locfileid: "97512614"
+landingContent:
+- title: 入门
+  linkLists:
+  - linkListType: download
+    links:
+    - text: 下载 .NET SDK
+      url: https://dotnet.microsoft.com/download
+  - linkListType: get-started
+    links:
+    - text: 使用 Visual Studio 创建 .NET Core 控制台应用程序
+      url: ../core/tutorials/with-visual-studio.md
+    - text: 在 Visual Studio 中创建 .NET Standard 库
+      url: ../core/tutorials/library-with-visual-studio.md
+    - text: 演练
+      url: walkthroughs.md
+    - text: 其他资源
+      url: getting-started/additional-resources.md
+- title: 基础
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 编程概念
+      url: programming-guide/concepts/index.md
+  - linkListType: whats-new
+    links:
+    - text: Visual Basic 中的新增功能
+      url: ./whats-new/index.md
+  - linkListType: concept
+    links:
+    - text: Visual Basic 应用的结构
+      url: programming-guide/program-structure/structure-of-a-visual-basic-program.md
+    - text: 语言功能
+      url: programming-guide/language-features/index.md
+    - text: 使用 Visual Basic 开发应用
+      url: developing-apps/index.md
+    - text: Windows 窗体应用
+      url: developing-apps/windows-forms/index.md
+  - linkListType: get-started
+    links:
+    - text: Q&A 上的 Visual Basic
+      url: /answers/topics/dotnet-visual-basic.html
+- title: 语言参考
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 索引
+      url: language-reference/index.md
+    - text: 关键字
+      url: language-reference/keywords/index.md
+    - text: 运算符
+      url: language-reference/operators/index.md
+    - text: 数据类型
+      url: language-reference/keywords/data-types-summary.md
+    - text: 字符串函数
+      url: language-reference/functions/string-functions.md
+    - text: 语言规范
+      url: reference/language-specification/index.md

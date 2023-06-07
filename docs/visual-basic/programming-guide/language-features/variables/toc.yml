@@ -1,0 +1,44 @@
+- name: 变量 (Visual Basic)
+  href: index.md
+  items:
+    - name: 变量声明
+      href: variable-declaration.md
+      items:
+        - name: 如何：创建新变量
+          href: how-to-create-a-new-variable.md
+        - name: 如何：创建固定值变量
+          href: how-to-create-a-variable-that-does-not-change-in-value.md
+        - name: 如何：将数据移入和移出变量
+          href: how-to-move-data-into-and-out-of-a-variable.md
+    - name: 对象变量
+      href: object-variables.md
+      items:
+        - name: 如何：加速访问具有长限定路径的对象
+          href: how-to-speed-up-access-to-an-object-with-a-long-qualification-path.md
+    - name: 对象变量声明
+      href: object-variable-declaration.md
+      items:
+        - name: 如何：访问对象的成员
+          href: how-to-access-members-of-an-object.md
+        - name: 对象变量赋值
+          href: object-variable-assignment.md
+          items:
+            - name: 如何：声明对象变量并为其分配对象
+              href: how-to-declare-an-object-variable-and-assign-an-object-to-it.md
+            - name: 如何：使对象变量不引用任何实例
+              href: how-to-make-an-object-variable-not-refer-to-any-instance.md
+        - name: 对象变量值
+          href: object-variable-values.md
+          items:
+            - name: 如何：引用对象的当前实例
+              href: how-to-refer-to-the-current-instance-of-an-object.md
+            - name: 如何：确定对象变量引用的类型
+              href: how-to-determine-what-type-an-object-variable-refers-to.md
+            - name: 如何：确定两个对象是否相关
+              href: how-to-determine-whether-two-objects-are-related.md
+            - name: 如何：确定两个对象是否相同
+              href: how-to-determine-whether-two-objects-are-identical.md
+    - name: 局部类型推理
+      href: local-type-inference.md
+    - name: 变量疑难解答
+      href: troubleshooting-variables.md

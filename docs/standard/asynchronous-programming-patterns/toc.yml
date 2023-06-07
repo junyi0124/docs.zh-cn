@@ -1,0 +1,51 @@
+- name: 异步编程模式
+  href: index.md
+  items:
+    - name: 基于任务的异步模式 (TAP)
+      href: task-based-asynchronous-pattern-tap.md
+      items:
+        - name: 实现基于任务的异步模式
+          href: implementing-the-task-based-asynchronous-pattern.md
+        - name: 使用基于任务的异步模式
+          href: consuming-the-task-based-asynchronous-pattern.md
+        - name: 与其他异步模式和类型互操作
+          href: interop-with-other-asynchronous-patterns-and-types.md
+    - name: 基于事件的异步模式 (EAP)
+      href: event-based-asynchronous-pattern-eap.md
+      items:
+        - name: 基于事件的异步模式概述
+          href: event-based-asynchronous-pattern-overview.md
+        - name: 实现基于事件的异步模式
+          href: implementing-the-event-based-asynchronous-pattern.md
+        - name: 实现基于事件的异步模式的最佳做法
+          href: best-practices-for-implementing-the-event-based-asynchronous-pattern.md
+        - name: 确定何时实现基于事件的异步模式
+          href: deciding-when-to-implement-the-event-based-asynchronous-pattern.md
+        - name: 如何：实现支持基于事件的异步模式的组件
+          href: component-that-supports-the-event-based-asynchronous-pattern.md
+        - name: 如何：实现基于事件的异步模式的客户端
+          href: how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md
+        - name: 如何：使用支持基于事件的异步模式的组件
+          href: how-to-use-components-that-support-the-event-based-asynchronous-pattern.md
+    - name: 异步编程模型 (APM)
+      href: asynchronous-programming-model-apm.md
+      items:
+        - name: 使用 IAsyncResult 调用异步方法
+          href: calling-asynchronous-methods-using-iasyncresult.md
+          items:
+            - name: 使用 AsyncWaitHandle 阻止应用程序的执行
+              href: blocking-application-execution-using-an-asyncwaithandle.md
+            - name: 通过结束异步操作来阻止应用程序执行
+              href: blocking-application-execution-by-ending-an-async-operation.md
+            - name: 轮询异步操作的状态
+              href: polling-for-the-status-of-an-asynchronous-operation.md
+            - name: 使用 AsyncCallback 委托结束异步操作
+              href: using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md
+              items:
+                - name: 使用 AsyncCallback 委托和状态对象
+                  href: using-an-asynccallback-delegate-and-state-object.md
+        - name: 使用委托进行异步编程
+          href: asynchronous-programming-using-delegates.md
+          items:
+            - name: 使用异步方式调用同步方法
+              href: calling-synchronous-methods-asynchronously.md

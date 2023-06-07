@@ -1,0 +1,13 @@
+- name: 事件
+  href: index.md
+  items:
+    - name: 演练：声明和引发事件
+      href: walkthrough-declaring-and-raising-events.md
+    - name: 演练：处理事件
+      href: walkthrough-handling-events.md
+    - name: 如何：声明自定义事件以避免阻止
+      href: how-to-declare-custom-events-to-avoid-blocking.md
+    - name: 如何：声明自定义事件以节省内存
+      href: how-to-declare-custom-events-to-conserve-memory.md
+    - name: 继承的事件处理程序疑难解答
+      href: troubleshooting-inherited-event-handlers.md

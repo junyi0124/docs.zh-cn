@@ -1,0 +1,31 @@
+- name: 非托管 API 参考
+  href: index.md
+  items:
+    - name: 常见数据类型
+      href: common-data-types-unmanaged-api-reference.md
+    - name: ALink API
+      href: alink/
+    - name: 验证码
+      href: authenticode/
+    - name: 常量
+      href: constants-unmanaged-api-reference.md
+    - name: 调试
+      href: debugging/
+    - name: 诊断符号存储区
+      href: diagnostics/
+    - name: 合成
+      href: fusion/
+    - name: 宿主
+      href: hosting/
+    - name: 元数据
+      href: metadata/
+    - name: 分析
+      href: profiling/
+    - name: 强命名
+      href: strong-naming/
+    - name: WMI 和性能计数器
+      href: wmi/
+    - name: Tlbexp Helper 函数
+      href: tlbexp/
+    - name: GUID_ManagedName 特性
+      href: guid-managedname-attribute.md

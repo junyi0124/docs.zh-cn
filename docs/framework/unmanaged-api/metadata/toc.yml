@@ -1,0 +1,591 @@
+- name: 元数据
+  href: index.md
+  items:
+    - name: 元数据接口
+      href: metadata-interfaces.md
+      items:
+        - name: ICeeGen 接口
+          href: iceegen-interface.md
+          items:
+            - name: AddSectionReloc 方法
+              href: iceegen-addsectionreloc-method.md
+            - name: AllocateMethodBuffer 方法
+              href: iceegen-allocatemethodbuffer-method.md
+            - name: ComputePointer 方法
+              href: iceegen-computepointer-method.md
+            - name: EmitString 方法
+              href: iceegen-emitstring-method.md
+            - name: GenerateCeeFile 方法
+              href: iceegen-generateceefile-method.md
+            - name: GenerateCeeMemoryImage 方法
+              href: iceegen-generateceememoryimage-method.md
+            - name: GetIlSection 方法
+              href: iceegen-getilsection-method.md
+            - name: GetIMapTokenIface 方法
+              href: iceegen-getimaptokeniface-method.md
+            - name: GetMethodBuffer 方法
+              href: iceegen-getmethodbuffer-method.md
+            - name: GetSectionBlock 方法
+              href: iceegen-getsectionblock-method.md
+            - name: GetSectionCreate 方法
+              href: iceegen-getsectioncreate-method.md
+            - name: GetSectionDataLen 方法
+              href: iceegen-getsectiondatalen-method.md
+            - name: GetString 方法
+              href: iceegen-getstring-method.md
+            - name: GetStringSection 方法
+              href: iceegen-getstringsection-method.md
+            - name: TruncateSection 方法
+              href: iceegen-truncatesection-method.md
+        - name: IHostFilter 接口
+          href: ihostfilter-interface.md
+          items:
+            - name: MarkToken 方法
+              href: ihostfilter-marktoken-method.md
+        - name: IMapToken 接口
+          href: imaptoken-interface.md
+          items:
+            - name: Map 方法
+              href: imaptoken-map-method.md
+        - name: IMetaDataAssemblyEmit 接口
+          href: imetadataassemblyemit-interface.md
+          items:
+            - name: DefineAssembly 方法
+              href: imetadataassemblyemit-defineassembly-method.md
+            - name: DefineAssemblyRef 方法
+              href: imetadataassemblyemit-defineassemblyref-method.md
+            - name: DefineExportedType 方法
+              href: imetadataassemblyemit-defineexportedtype-method.md
+            - name: DefineFile 方法
+              href: imetadataassemblyemit-definefile-method.md
+            - name: DefineManifestResource 方法
+              href: imetadataassemblyemit-definemanifestresource-method.md
+            - name: SetAssemblyProps 方法
+              href: imetadataassemblyemit-setassemblyprops-method.md
+            - name: SetAssemblyRefProps 方法
+              href: imetadataassemblyemit-setassemblyrefprops-method.md
+            - name: SetExportedTypeProps 方法
+              href: imetadataassemblyemit-setexportedtypeprops-method.md
+            - name: SetFileProps 方法
+              href: imetadataassemblyemit-setfileprops-method.md
+            - name: SetManifestResourceProps 方法
+              href: imetadataassemblyemit-setmanifestresourceprops-method.md
+        - name: IMetaDataAssemblyImport 接口
+          href: imetadataassemblyimport-interface.md
+          items:
+            - name: CloseEnum 方法
+              href: imetadataassemblyimport-closeenum-method.md
+            - name: EnumAssemblyRefs 方法
+              href: imetadataassemblyimport-enumassemblyrefs-method.md
+            - name: EnumExportedTypes 方法
+              href: imetadataassemblyimport-enumexportedtypes-method.md
+            - name: EnumFiles 方法
+              href: imetadataassemblyimport-enumfiles-method.md
+            - name: EnumManifestResources 方法
+              href: imetadataassemblyimport-enummanifestresources-method.md
+            - name: FindAssembliesByName 方法
+              href: imetadataassemblyimport-findassembliesbyname-method.md
+            - name: FindExportedTypeByName 方法
+              href: imetadataassemblyimport-findexportedtypebyname-method.md
+            - name: FindManifestResourceByName 方法
+              href: imetadataassemblyimport-findmanifestresourcebyname-method.md
+            - name: GetAssemblyFromScope 方法
+              href: imetadataassemblyimport-getassemblyfromscope-method.md
+            - name: GetAssemblyProps 方法
+              href: imetadataassemblyimport-getassemblyprops-method.md
+            - name: GetAssemblyRefProps 方法
+              href: imetadataassemblyimport-getassemblyrefprops-method.md
+            - name: GetExportedTypeProps 方法
+              href: imetadataassemblyimport-getexportedtypeprops-method.md
+            - name: GetFileProps 方法
+              href: imetadataassemblyimport-getfileprops-method.md
+            - name: GetManifestResourceProps 方法
+              href: imetadataassemblyimport-getmanifestresourceprops-method.md
+        - name: IMetaDataConverter 接口
+          href: imetadataconverter-interface.md
+          items:
+            - name: GetMetaDataFromTypeInfo 方法
+              href: imetadataconverter-getmetadatafromtypeinfo-method.md
+            - name: GetMetaDataFromTypeLib 方法
+              href: imetadataconverter-getmetadatafromtypelib-method.md
+            - name: GetTypeLibFromMetaData 方法
+              href: imetadataconverter-gettypelibfrommetadata-method.md
+        - name: IMetaDataDispenser 接口
+          href: imetadatadispenser-interface.md
+          items:
+            - name: DefineScope 方法
+              href: imetadatadispenser-definescope-method.md
+            - name: OpenScope 方法
+              href: imetadatadispenser-openscope-method.md
+            - name: OpenScopeOnMemory 方法
+              href: imetadatadispenser-openscopeonmemory-method.md
+        - name: IMetaDataDispenserEx 接口
+          href: imetadatadispenserex-interface.md
+          items:
+            - name: FindAssembly 方法
+              href: imetadatadispenserex-findassembly-method.md
+            - name: FindAssemblyModule 方法
+              href: imetadatadispenserex-findassemblymodule-method.md
+            - name: GetCORSystemDirectory 方法
+              href: imetadatadispenserex-getcorsystemdirectory-method.md
+            - name: GetOption 方法
+              href: imetadatadispenserex-getoption-method.md
+            - name: OpenScopeOnITypeInfo 方法
+              href: imetadatadispenserex-openscopeonitypeinfo-method.md
+            - name: SetOption 方法
+              href: imetadatadispenserex-setoption-method.md
+        - name: IMetaDataEmit 接口
+          href: imetadataemit-interface.md
+          items:
+            - name: ApplyEditAndContinue 方法
+              href: imetadataemit-applyeditandcontinue-method.md
+            - name: DefineCustomAttribute 方法
+              href: imetadataemit-definecustomattribute-method.md
+            - name: DefineEvent 方法
+              href: imetadataemit-defineevent-method.md
+            - name: DefineField 方法
+              href: imetadataemit-definefield-method.md
+            - name: DefineImportMember 方法
+              href: imetadataemit-defineimportmember-method.md
+            - name: DefineImportType 方法
+              href: imetadataemit-defineimporttype-method.md
+            - name: DefineMemberRef 方法
+              href: imetadataemit-definememberref-method.md
+            - name: DefineMethod 方法
+              href: imetadataemit-definemethod-method.md
+            - name: DefineMethodImpl 方法
+              href: imetadataemit-definemethodimpl-method.md
+            - name: DefineModuleRef 方法
+              href: imetadataemit-definemoduleref-method.md
+            - name: DefineNestedType 方法
+              href: imetadataemit-definenestedtype-method.md
+            - name: DefineParam 方法
+              href: imetadataemit-defineparam-method.md
+            - name: DefinePermissionSet 方法
+              href: imetadataemit-definepermissionset-method.md
+            - name: DefinePinvokeMap 方法
+              href: imetadataemit-definepinvokemap-method.md
+            - name: DefineProperty 方法
+              href: imetadataemit-defineproperty-method.md
+            - name: DefineSecurityAttributeSet 方法
+              href: imetadataemit-definesecurityattributeset-method.md
+            - name: DefineTypeDef 方法
+              href: imetadataemit-definetypedef-method.md
+            - name: DefineTypeRefByName 方法
+              href: imetadataemit-definetyperefbyname-method.md
+            - name: DefineUserString 方法
+              href: imetadataemit-defineuserstring-method.md
+            - name: DeleteClassLayout 方法
+              href: imetadataemit-deleteclasslayout-method.md
+            - name: DeleteFieldMarshal 方法
+              href: imetadataemit-deletefieldmarshal-method.md
+            - name: DeletePinvokeMap 方法
+              href: imetadataemit-deletepinvokemap-method.md
+            - name: DeleteToken 方法
+              href: imetadataemit-deletetoken-method.md
+            - name: GetSaveSize 方法
+              href: imetadataemit-getsavesize-method.md
+            - name: GetTokenFromSig 方法
+              href: imetadataemit-gettokenfromsig-method.md
+            - name: GetTokenFromTypeSpec 方法
+              href: imetadataemit-gettokenfromtypespec-method.md
+            - name: Merge 方法
+              href: imetadataemit-merge-method.md
+            - name: MergeEnd 方法
+              href: imetadataemit-mergeend-method.md
+            - name: Save 方法
+              href: imetadataemit-save-method.md
+            - name: SaveToMemory 方法
+              href: imetadataemit-savetomemory-method.md
+            - name: SaveToStream 方法
+              href: imetadataemit-savetostream-method.md
+            - name: SetClassLayout 方法
+              href: imetadataemit-setclasslayout-method.md
+            - name: SetCustomAttributeValue 方法
+              href: imetadataemit-setcustomattributevalue-method.md
+            - name: SetEventProps 方法
+              href: imetadataemit-seteventprops-method.md
+            - name: SetFieldMarshal 方法
+              href: imetadataemit-setfieldmarshal-method.md
+            - name: SetFieldProps 方法
+              href: imetadataemit-setfieldprops-method.md
+            - name: SetFieldRVA 方法
+              href: imetadataemit-setfieldrva-method.md
+            - name: SetHandler 方法
+              href: imetadataemit-sethandler-method.md
+            - name: SetMethodImplFlags 方法
+              href: imetadataemit-setmethodimplflags-method.md
+            - name: SetMethodProps 方法
+              href: imetadataemit-setmethodprops-method.md
+            - name: SetModuleProps 方法
+              href: imetadataemit-setmoduleprops-method.md
+            - name: SetParamProps 方法
+              href: imetadataemit-setparamprops-method.md
+            - name: SetParent 方法
+              href: imetadataemit-setparent-method.md
+            - name: SetPermissionSetProps 方法
+              href: imetadataemit-setpermissionsetprops-method.md
+            - name: SetPinvokeMap 方法
+              href: imetadataemit-setpinvokemap-method.md
+            - name: SetPropertyProps 方法
+              href: imetadataemit-setpropertyprops-method.md
+            - name: SetRVA 方法
+              href: imetadataemit-setrva-method.md
+            - name: SetTypeDefProps 方法
+              href: imetadataemit-settypedefprops-method.md
+            - name: TranslateSigWithScope 方法
+              href: imetadataemit-translatesigwithscope-method.md
+        - name: IMetaDataEmit2 接口
+          href: imetadataemit2-interface.md
+          items:
+            - name: DefineGenericParam 方法
+              href: imetadataemit2-definegenericparam-method.md
+            - name: DefineMethodSpec 方法
+              href: imetadataemit2-definemethodspec-method.md
+            - name: GetDeltaSaveSize 方法
+              href: imetadataemit2-getdeltasavesize-method.md
+            - name: ResetENCLog 方法
+              href: imetadataemit2-resetenclog-method.md
+            - name: SaveDelta 方法
+              href: imetadataemit2-savedelta-method.md
+            - name: SaveDeltaToMemory 方法
+              href: imetadataemit2-savedeltatomemory-method.md
+            - name: SaveDeltaToStream 方法
+              href: imetadataemit2-savedeltatostream-method.md
+            - name: SetGenericParamProps 方法
+              href: imetadataemit2-setgenericparamprops-method.md
+        - name: IMetaDataError 接口
+          href: imetadataerror-interface.md
+          items:
+            - name: OnError 方法
+              href: imetadataerror-onerror-method.md
+        - name: IMetaDataFilter 接口
+          href: imetadatafilter-interface.md
+          items:
+            - name: IsTokenMarked 方法
+              href: imetadatafilter-istokenmarked-method.md
+            - name: MarkToken 方法
+              href: imetadatafilter-marktoken-method.md
+            - name: UnmarkAll 方法
+              href: imetadatafilter-unmarkall-method.md
+        - name: IMetaDataImport 接口
+          href: imetadataimport-interface.md
+          items:
+            - name: CloseEnum 方法
+              href: imetadataimport-closeenum-method.md
+            - name: CountEnum 方法
+              href: imetadataimport-countenum-method.md
+            - name: EnumCustomAttributes 方法
+              href: imetadataimport-enumcustomattributes-method.md
+            - name: EnumEvents 方法
+              href: imetadataimport-enumevents-method.md
+            - name: EnumFields 方法
+              href: imetadataimport-enumfields-method.md
+            - name: EnumFieldsWithName 方法
+              href: imetadataimport-enumfieldswithname-method.md
+            - name: EnumInterfaceImpls 方法
+              href: imetadataimport-enuminterfaceimpls-method.md
+            - name: EnumMemberRefs 方法
+              href: imetadataimport-enummemberrefs-method.md
+            - name: EnumMembers 方法
+              href: imetadataimport-enummembers-method.md
+            - name: EnumMembersWithName 方法
+              href: imetadataimport-enummemberswithname-method.md
+            - name: EnumMethodImpls 方法
+              href: imetadataimport-enummethodimpls-method.md
+            - name: EnumMethods 方法
+              href: imetadataimport-enummethods-method.md
+            - name: EnumMethodSemantics 方法
+              href: imetadataimport-enummethodsemantics-method.md
+            - name: EnumMethodsWithName 方法
+              href: imetadataimport-enummethodswithname-method.md
+            - name: EnumModuleRefs 方法
+              href: imetadataimport-enummodulerefs-method.md
+            - name: EnumParams 方法
+              href: imetadataimport-enumparams-method.md
+            - name: EnumPermissionSets 方法
+              href: imetadataimport-enumpermissionsets-method.md
+            - name: EnumProperties 方法
+              href: imetadataimport-enumproperties-method.md
+            - name: EnumSignatures 方法
+              href: imetadataimport-enumsignatures-method.md
+            - name: EnumTypeDefs 方法
+              href: imetadataimport-enumtypedefs-method.md
+            - name: EnumTypeRefs 方法
+              href: imetadataimport-enumtyperefs-method.md
+            - name: EnumTypeSpecs 方法
+              href: imetadataimport-enumtypespecs-method.md
+            - name: EnumUnresolvedMethods 方法
+              href: imetadataimport-enumunresolvedmethods-method.md
+            - name: EnumUserStrings 方法
+              href: imetadataimport-enumuserstrings-method.md
+            - name: FindField 方法
+              href: imetadataimport-findfield-method.md
+            - name: FindMember 方法
+              href: imetadataimport-findmember-method.md
+            - name: FindMemberRef 方法
+              href: imetadataimport-findmemberref-method.md
+            - name: FindMethod 方法
+              href: imetadataimport-findmethod-method.md
+            - name: FindTypeDefByName 方法
+              href: imetadataimport-findtypedefbyname-method.md
+            - name: FindTypeRef 方法
+              href: imetadataimport-findtyperef-method.md
+            - name: GetClassLayout 方法
+              href: imetadataimport-getclasslayout-method.md
+            - name: GetCustomAttributeByName 方法
+              href: imetadataimport-getcustomattributebyname-method.md
+            - name: GetCustomAttributeProps 方法
+              href: imetadataimport-getcustomattributeprops-method.md
+            - name: GetEventProps 方法
+              href: imetadataimport-geteventprops-method.md
+            - name: GetFieldMarshal 方法
+              href: imetadataimport-getfieldmarshal-method.md
+            - name: GetFieldProps 方法
+              href: imetadataimport-getfieldprops-method.md
+            - name: GetInterfaceImplProps 方法
+              href: imetadataimport-getinterfaceimplprops-method.md
+            - name: GetMemberProps 方法
+              href: imetadataimport-getmemberprops-method.md
+            - name: GetMemberRefProps 方法
+              href: imetadataimport-getmemberrefprops-method.md
+            - name: GetMethodProps 方法
+              href: imetadataimport-getmethodprops-method.md
+            - name: GetMethodSemantics 方法
+              href: imetadataimport-getmethodsemantics-method.md
+            - name: GetModuleFromScope 方法
+              href: imetadataimport-getmodulefromscope-method.md
+            - name: GetModuleRefProps 方法
+              href: imetadataimport-getmodulerefprops-method.md
+            - name: GetNameFromToken 方法
+              href: imetadataimport-getnamefromtoken-method.md
+            - name: GetNativeCallConvFromSig 方法
+              href: imetadataimport-getnativecallconvfromsig-method.md
+            - name: GetNestedClassProps 方法
+              href: imetadataimport-getnestedclassprops-method.md
+            - name: GetParamForMethodIndex 方法
+              href: imetadataimport-getparamformethodindex-method.md
+            - name: GetParamProps 方法
+              href: imetadataimport-getparamprops-method.md
+            - name: GetPermissionSetProps 方法
+              href: imetadataimport-getpermissionsetprops-method.md
+            - name: GetPinvokeMap
+              href: imetadataimport-getpinvokemap-method.md
+            - name: GetPropertyProps 方法
+              href: imetadataimport-getpropertyprops-method.md
+            - name: GetRVA 方法
+              href: imetadataimport-getrva-method.md
+            - name: GetScopeProps 方法
+              href: imetadataimport-getscopeprops-method.md
+            - name: GetSigFromToken 方法
+              href: imetadataimport-getsigfromtoken-method.md
+            - name: GetTypeDefProps 方法
+              href: imetadataimport-gettypedefprops-method.md
+            - name: GetTypeRefProps 方法
+              href: imetadataimport-gettyperefprops-method.md
+            - name: GetTypeSpecFromToken 方法
+              href: imetadataimport-gettypespecfromtoken-method.md
+            - name: GetUserString 方法
+              href: imetadataimport-getuserstring-method.md
+            - name: IsGlobal 方法
+              href: imetadataimport-isglobal-method.md
+            - name: IsValidToken 方法
+              href: imetadataimport-isvalidtoken-method.md
+            - name: ResetEnum 方法
+              href: imetadataimport-resetenum-method.md
+            - name: ResolveTypeRef 方法
+              href: imetadataimport-resolvetyperef-method.md
+        - name: IMetaDataImport2 接口
+          href: imetadataimport2-interface.md
+          items:
+            - name: EnumGenericParamConstraints 方法
+              href: imetadataimport2-enumgenericparamconstraints-method.md
+            - name: EnumGenericParams 方法
+              href: imetadataimport2-enumgenericparams-method.md
+            - name: EnumMethodSpecs 方法
+              href: imetadataimport2-enummethodspecs-method.md
+            - name: GetGenericParamConstraintProps 方法
+              href: imetadataimport2-getgenericparamconstraintprops-method.md
+            - name: GetGenericParamProps 方法
+              href: imetadataimport2-getgenericparamprops-method.md
+            - name: GetMethodSpecProps 方法
+              href: imetadataimport2-getmethodspecprops-method.md
+            - name: GetPEKind 方法
+              href: imetadataimport2-getpekind-method.md
+            - name: GetVersionString 方法
+              href: imetadataimport2-getversionstring-method.md
+        - name: IMetaDataInfo 接口
+          href: imetadatainfo-interface.md
+          items:
+            - name: GetFileMapping 方法
+              href: imetadatainfo-getfilemapping-method.md
+        - name: IMetaDataTables 接口
+          href: imetadatatables-interface.md
+          items:
+            - name: GetBlob 方法
+              href: imetadatatables-getblob-method.md
+            - name: GetBlobHeapSize 方法
+              href: imetadatatables-getblobheapsize-method.md
+            - name: GetCodedTokenInfo 方法
+              href: imetadatatables-getcodedtokeninfo-method.md
+            - name: GetColumn 方法
+              href: imetadatatables-getcolumn-method.md
+            - name: GetColumnInfo 方法
+              href: imetadatatables-getcolumninfo-method.md
+            - name: GetGuid 方法
+              href: imetadatatables-getguid-method.md
+            - name: GetGuidHeapSize 方法
+              href: imetadatatables-getguidheapsize-method.md
+            - name: GetNextBlob 方法
+              href: imetadatatables-getnextblob-method.md
+            - name: GetNextGuid 方法
+              href: imetadatatables-getnextguid-method.md
+            - name: GetNextString 方法
+              href: imetadatatables-getnextstring-method.md
+            - name: GetNextUserString 方法
+              href: imetadatatables-getnextuserstring-method.md
+            - name: GetNumTables 方法
+              href: imetadatatables-getnumtables-method.md
+            - name: GetRow 方法
+              href: imetadatatables-getrow-method.md
+            - name: GetString 方法
+              href: imetadatatables-getstring-method.md
+            - name: GetStringHeapSize 方法
+              href: imetadatatables-getstringheapsize-method.md
+            - name: GetTableIndex 方法
+              href: imetadatatables-gettableindex-method.md
+            - name: GetTableInfo 方法
+              href: imetadatatables-gettableinfo-method.md
+            - name: GetUserString 方法
+              href: imetadatatables-getuserstring-method.md
+            - name: GetUserStringHeapSize 方法
+              href: imetadatatables-getuserstringheapsize-method.md
+        - name: IMetaDataTables2 接口
+          href: imetadatatables2-interface.md
+          items:
+            - name: GetMetaDataStorage 方法
+              href: imetadatatables2-getmetadatastorage-method.md
+            - name: GetMetaDataStreamInfo 方法
+              href: imetadatatables2-getmetadatastreaminfo-method.md
+        - name: IMetaDataValidate 接口
+          href: imetadatavalidate-interface.md
+          items:
+            - name: ValidateMetaData 方法
+              href: imetadatavalidate-validatemetadata-method.md
+            - name: ValidatorInit 方法
+              href: imetadatavalidate-validatorinit-method.md
+    - name: 元数据全局静态函数
+      href: metadata-global-static-functions.md
+    - name: 元数据枚举
+      href: metadata-enumerations.md
+      items:
+        - name: AssemblyFlags 枚举
+          href: assemblyflags-enumeration.md
+        - name: AssemblyRefFlags 枚举
+          href: assemblyrefflags-enumeration.md
+        - name: CeeSectionAttr 枚举
+          href: ceesectionattr-enumeration.md
+        - name: CeeSectionRelocType 枚举
+          href: ceesectionreloctype-enumeration.md
+        - name: COINITICOR 枚举
+          href: coiniticor-enumeration.md
+        - name: COINITIEE 枚举
+          href: coinitiee-enumeration.md
+        - name: CorArgType 枚举
+          href: corargtype-enumeration.md
+        - name: CorAssemblyFlags 枚举
+          href: corassemblyflags-enumeration.md
+        - name: CorAttributeTargets 枚举
+          href: corattributetargets-enumeration.md
+        - name: CorCallingConvention 枚举
+          href: corcallingconvention-enumeration.md
+        - name: CorCheckDuplicatesFor 枚举
+          href: corcheckduplicatesfor-enumeration.md
+        - name: CorDeclSecurity 枚举
+          href: cordeclsecurity-enumeration.md
+        - name: CorElementType Enumeration1
+          href: corelementtype-enumeration.md
+        - name: CorErrorIfEmitOutOfOrder 枚举
+          href: corerrorifemitoutoforder-enumeration.md
+        - name: CorEventAttr 枚举
+          href: coreventattr-enumeration.md
+        - name: CorFieldAttr 枚举
+          href: corfieldattr-enumeration.md
+        - name: CorFileFlags 枚举
+          href: corfileflags-enumeration.md
+        - name: CorFileMapping 枚举
+          href: corfilemapping-enumeration.md
+        - name: CorGenericParamAttr 枚举
+          href: corgenericparamattr-enumeration.md
+        - name: CorImportOptions 枚举
+          href: corimportoptions-enumeration.md
+        - name: CorLinkerOptions 枚举
+          href: corlinkeroptions-enumeration.md
+        - name: CorLocalRefPreservation 枚举
+          href: corlocalrefpreservation-enumeration.md
+        - name: CorManifestResourceFlags 枚举
+          href: cormanifestresourceflags-enumeration.md
+        - name: CorMethodAttr 枚举
+          href: cormethodattr-enumeration.md
+        - name: CorMethodImpl 枚举
+          href: cormethodimpl-enumeration.md
+        - name: CorMethodSemanticsAttr 枚举
+          href: cormethodsemanticsattr-enumeration.md
+        - name: CorNativeLinkFlags 枚举
+          href: cornativelinkflags-enumeration.md
+        - name: CorNativeLinkType 枚举
+          href: cornativelinktype-enumeration.md
+        - name: CorNativeType 枚举
+          href: cornativetype-enumeration.md
+        - name: CorNotificationForTokenMovement 枚举
+          href: cornotificationfortokenmovement-enumeration.md
+        - name: CorOpenFlags 枚举
+          href: coropenflags-enumeration.md
+        - name: CorParamAttr 枚举
+          href: corparamattr-enumeration.md
+        - name: CorPEKind 枚举
+          href: corpekind-enumeration.md
+        - name: CorPinvokeMap 枚举
+          href: corpinvokemap-enumeration.md
+        - name: CorPropertyAttr 枚举
+          href: corpropertyattr-enumeration.md
+        - name: CorRefToDefCheck 枚举
+          href: correftodefcheck-enumeration.md
+        - name: CorRegFlags 枚举
+          href: corregflags-enumeration.md
+        - name: CorSaveSize 枚举
+          href: corsavesize-enumeration.md
+        - name: CorSerializationType 枚举
+          href: corserializationtype-enumeration.md
+        - name: CorSetENC 枚举
+          href: corsetenc-enumeration.md
+        - name: CorThreadSafetyOptions 枚举
+          href: corthreadsafetyoptions-enumeration.md
+        - name: CorTokenType 枚举
+          href: cortokentype-enumeration.md
+        - name: CorTypeAttr 枚举
+          href: cortypeattr-enumeration.md
+        - name: CorUnmanagedCallingConvention 枚举
+          href: corunmanagedcallingconvention-enumeration.md
+        - name: CorValidatorModuleType 枚举
+          href: corvalidatormoduletype-enumeration.md
+        - name: COUNINITIEE 枚举
+          href: couninitiee-enumeration.md
+    - name: 元数据结构
+      href: metadata-structures.md
+      items:
+        - name: ASSEMBLYMETADATA 结构
+          href: assemblymetadata-structure.md
+        - name: COR_FIELD_OFFSET 结构
+          href: cor-field-offset-structure.md
+        - name: COR_NATIVE_LINK 结构
+          href: cor-native-link-structure.md
+        - name: CVStruct 结构
+          href: cvstruct-structure.md
+        - name: OSINFO 结构
+          href: osinfo-structure.md
+    - name: 元数据联合
+      href: metadata-unions.md
+      items:
+        - name: CeeSectionRelocExtra 联合
+          href: ceesectionrelocextra-union.md

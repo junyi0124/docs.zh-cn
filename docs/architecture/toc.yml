@@ -1,0 +1,23 @@
+- name: .NET 应用体系结构指南
+  href: index.yml
+- name: 电子书
+  expanded: true
+  items:
+    - name: 使用 ASP.NET Core 和 Microsoft Azure 构建新式 Web 应用程序
+      href: modern-web-apps-azure/
+    - name: 为 Azure 构建云本机 .NET 应用
+      href: cloud-native/
+    - name: 适用于 WCF 开发人员的 ASP.NET Core gRPC
+      href: grpc-for-wcf-developers/
+    - name: 面向 ASP.NET Web Forms 开发人员的 Blazor
+      href: blazor-for-web-forms-developers/
+    - name: 使用 Microsoft 平台和工具对 Docker 应用程序生命周期进行容器化
+      href: containerized-lifecycle/
+    - name: 使用 Azure 云和 Windows 容器现代化现有 .NET 应用程序
+      href: modernize-with-azure-containers/
+    - name: 使用 .NET Core 3.1 在 Windows 10 上对桌面应用进行现代化改造
+      href: modernize-desktop/
+    - name: .NET 微服务：适用于容器化 .NET 应用程序的体系结构
+      href: microservices/
+    - name: 无服务器应用：体系结构、模式和 Azure 实现
+      href: serverless/

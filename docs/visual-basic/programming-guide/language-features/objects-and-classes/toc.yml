@@ -1,0 +1,23 @@
+- name: 对象和类
+  href: index.md
+  items:
+    - name: 演练：定义类
+      href: walkthrough-defining-classes.md
+    - name: 重载属性和方法
+      href: overloaded-properties-and-methods.md
+    - name: 继承基础知识
+      href: inheritance-basics.md
+    - name: 对象生存期：如何创建和销毁对象
+      href: object-lifetime-how-objects-are-created-and-destroyed.md
+    - name: 对象初始值设定项：命名和匿名类型
+      href: object-initializers-named-and-anonymous-types.md
+      items:
+        - name: 如何：使用对象初始值设定项声明对象
+          href: how-to-declare-an-object-by-using-an-object-initializer.md
+    - name: 匿名类型
+      href: anonymous-types.md
+      items:
+        - name: 如何：推断匿名类型声明中的属性名和类型
+          href: how-to-infer-property-names-and-types-in-anonymous-type-declarations.md
+        - name: 匿名类型定义
+          href: anonymous-type-definition.md

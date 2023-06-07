@@ -1,0 +1,105 @@
+### YamlMime:Landing
+title: C# 文档
+summary: 了解如何在 .NET 平台上使用 C# 编程语言编写任何应用程序。
+metadata:
+  title: C# 文档 - 入门、教程、参考。
+  description: 了解 C# 编程 - 面向新手开发人员、刚开始接触 C# 的开发人员、以及经验丰富的 C# / .NET 开发人员
+  ms.topic: landing-page
+  ms.date: 11/19/2019
+  ms.openlocfilehash: 584db55455af54bcf7e91771e3598a7349091bee
+  ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/15/2020
+  ms.locfileid: "97512146"
+landingContent:
+- title: 了解如何使用 C# 编程
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 在线交互式 Hello World
+      url: tutorials/intro-to-csharp/hello-world.yml
+    - text: C# 中的数学和数字
+      url: tutorials/intro-to-csharp/numbers-in-csharp.yml
+    - text: 介绍性教程
+      url: tutorials/intro-to-csharp/index.md
+    - text: 使用 Visual Studio 创建 C# 应用
+      url: /visualstudio/get-started/csharp/tutorial-console
+    - text: Q&A 上的 C#
+      url: /answers/topics/dotnet-csharp.html
+  - linkListType: video
+    links:
+    - text: 什么是 C#？
+      url: https://channel9.msdn.com/Series/CSharp-101/What-is-C/player
+    - text: C# 101 视频系列
+      url: https://aka.ms/dotnet3-csharp
+  - linkListType: download
+    links:
+    - text: 下载 .NET SDK
+      url: https://dotnet.microsoft.com/download
+- title: C# 基础知识
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: C# 教程
+      url: tour-of-csharp/index.md
+    - text: C# 程序内部探究
+      url: programming-guide/inside-a-program/index.md
+    - text: Main() 和命令行参数
+      url: programming-guide/main-and-command-args/index.md
+  - linkListType: concept
+    links:
+    - text: C# 和 .NET 类型系统
+      url: programming-guide/types/index.md
+    - text: 语言集成查询 (LINQ)
+      url: linq/index.md
+    - text: async 和 await
+      url: programming-guide/concepts/async/index.md
+  - linkListType: tutorial
+    links:
+    - text: 面向对象的继承
+      url: tutorials/inheritance.md
+    - text: 使用 LINQ 查询数据
+      url: tutorials/working-with-linq.md
+    - text: 使用字符串内插设置文本格式
+      url: tutorials/string-interpolation.md
+    - text: 浏览所有教程
+      url: tutorials/index.md
+- title: C# 9.0 中的新增功能
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: C# 9.0 中的新增功能
+      url: whats-new/csharp-9.md
+- title: C# 9.0 中的新增功能
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: C# 9.0 中的新增功能
+      url: whats-new/csharp-9.md
+  - linkListType: tutorial
+    links:
+    - text: 浏览记录类型
+      url: tutorials/exploration/records.md
+    - text: 探索顶级语句
+      url: tutorials/exploration/top-level-statements.md
+    - text: 探索新模式
+      url: tutorials/exploration/patterns-objects.md
+  - linkListType: reference
+    links:
+    - text: C# 编译器中的重大更改
+      url: whats-new/breaking-changes.md
+- title: C# 语言参考
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 语言参考
+      url: language-reference/index.md
+    - text: C# 关键字
+      url: language-reference/keywords/index.md
+    - text: C# 运算符
+      url: language-reference/operators/index.md
+    - text: 配置语言版本
+      url: language-reference/configure-language-version.md
+    - text: C# 语言规范
+      url: ../../_csharplang/spec/introduction.md

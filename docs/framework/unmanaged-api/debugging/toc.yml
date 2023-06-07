@@ -1,0 +1,1659 @@
+- name: 调试
+  href: index.md
+  items:
+    - name: 调试 Coclass
+      href: debugging-coclasses.md
+      items:
+        - name: CorpubPublish Coclass
+          href: corpubpublish-coclass.md
+    - name: 调试接口
+      href: debugging-interfaces.md
+      items:
+        - name: ICLRDataEnumMemoryRegions 接口
+          href: iclrdataenummemoryregions-interface.md
+          items:
+            - name: EnumMemoryRegions 方法
+              href: iclrdataenummemoryregions-enummemoryregions-method.md
+        - name: ICLRDataEnumMemoryRegionsCallback 接口
+          href: iclrdataenummemoryregionscallback-interface.md
+          items:
+            - name: EnumMemoryRegion 方法
+              href: iclrdataenummemoryregionscallback-enummemoryregion-method.md
+        - name: ICLRDataTarget 接口
+          href: iclrdatatarget-interface.md
+          items:
+            - name: GetCurrentThreadID 方法
+              href: iclrdatatarget-getcurrentthreadid-method.md
+            - name: GetImageBase 方法
+              href: iclrdatatarget-getimagebase-method.md
+            - name: GetMachineType 方法
+              href: iclrdatatarget-getmachinetype-method.md
+            - name: GetPointerSize 方法
+              href: iclrdatatarget-getpointersize-method.md
+            - name: GetThreadContext 方法
+              href: iclrdatatarget-getthreadcontext-method.md
+            - name: GetTLSValue 方法
+              href: iclrdatatarget-gettlsvalue-method.md
+            - name: ReadVirtual 方法
+              href: iclrdatatarget-readvirtual-method.md
+            - name: Request 方法
+              href: iclrdatatarget-request-method.md
+            - name: SetThreadContext 方法
+              href: iclrdatatarget-setthreadcontext-method.md
+            - name: SetTLSValue 方法
+              href: iclrdatatarget-settlsvalue-method.md
+            - name: WriteVirtual 方法
+              href: iclrdatatarget-writevirtual-method.md
+        - name: ICLRDataTarget2 接口
+          href: iclrdatatarget2-interface.md
+          items:
+            - name: AllocVirtual 方法
+              href: iclrdatatarget2-allocvirtual-method.md
+            - name: FreeVirtual 方法
+              href: iclrdatatarget2-freevirtual-method.md
+        - name: ICLRDataTarget3 接口
+          href: iclrdatatarget3-interface.md
+          items:
+            - name: GetExceptionRecord 方法
+              href: iclrdatatarget3-getexceptionrecord-method.md
+            - name: GetExceptionContextRecord 方法
+              href: iclrdatatarget3-getexceptioncontextrecord-method.md
+            - name: GetExceptionThreadID 方法
+              href: iclrdatatarget3-getexceptionthreadid-method.md
+        - name: ICLRDebugging 接口
+          href: iclrdebugging-interface.md
+          items:
+            - name: OpenVirtualProcess 方法
+              href: iclrdebugging-openvirtualprocess-method.md
+            - name: CanUnloadNow 方法
+              href: iclrdebugging-canunloadnow-method.md
+        - name: ICLRDebuggingLibraryProvider 接口
+          href: iclrdebugginglibraryprovider-interface.md
+          items:
+            - name: ProvideLibrary 方法
+              href: iclrdebugginglibraryprovider-providelibrary-method.md
+        - name: ICLRMetadataLocator 接口
+          href: iclrmetadatalocator-interface.md
+          items:
+            - name: GetMetaData 方法
+              href: iclrmetadatalocator-getmetadata-method.md
+        - name: ICorDebug 接口
+          href: icordebug-interface.md
+          items:
+            - name: CanLaunchOrAttach 方法
+              href: icordebug-canlaunchorattach-method.md
+            - name: CreateProcess 方法
+              href: icordebug-createprocess-method.md
+            - name: DebugActiveProcess 方法
+              href: icordebug-debugactiveprocess-method.md
+            - name: EnumerateProcesses 方法
+              href: icordebug-enumerateprocesses-method.md
+            - name: GetProcess 方法
+              href: icordebug-getprocess-method.md
+            - name: Initialize 方法
+              href: icordebug-initialize-method.md
+            - name: SetManagedHandler 方法
+              href: icordebug-setmanagedhandler-method.md
+            - name: SetUnmanagedHandler 方法
+              href: icordebug-setunmanagedhandler-method.md
+            - name: Terminate 方法
+              href: icordebug-terminate-method.md
+        - name: ICorDebugAppDomain 接口
+          href: icordebugappdomain-interface.md
+          items:
+            - name: Attach 方法
+              href: icordebugappdomain-attach-method.md
+            - name: EnumerateAssemblies 方法
+              href: icordebugappdomain-enumerateassemblies-method.md
+            - name: EnumerateBreakpoints 方法
+              href: icordebugappdomain-enumeratebreakpoints-method.md
+            - name: EnumerateSteppers 方法
+              href: icordebugappdomain-enumeratesteppers-method.md
+            - name: GetID 方法
+              href: icordebugappdomain-getid-method.md
+            - name: GetModuleFromMetaDataInterface 方法
+              href: icordebugappdomain-getmodulefrommetadatainterface-method.md
+            - name: GetName 方法
+              href: icordebugappdomain-getname-method.md
+            - name: GetObject 方法
+              href: icordebugappdomain-getobject-method.md
+            - name: GetProcess 方法
+              href: icordebugappdomain-getprocess-method.md
+            - name: IsAttached 方法
+              href: icordebugappdomain-isattached-method.md
+        - name: ICorDebugAppDomain2 接口
+          href: icordebugappdomain2-interface.md
+          items:
+            - name: GetArrayOrPointerType 方法
+              href: icordebugappdomain2-getarrayorpointertype-method.md
+            - name: GetFunctionPointerType
+              href: icordebugappdomain2-getfunctionpointertype-method.md
+        - name: ICorDebugAppDomain3 接口
+          href: icordebugappdomain3-interface.md
+          items:
+            - name: GetCachedWinRTTypes 方法
+              href: icordebugappdomain3-getcachedwinrttypes-method.md
+            - name: GetCachedWinRTTypesForIIDs 方法
+              href: icordebugappdomain3-getcachedwinrttypesforiids-method.md
+        - name: ICorDebugAppDomain4 接口
+          href: icordebugappdomain4-interface.md
+          items:
+            - name: GetObjectForCCW 方法
+              href: icordebugappdomain4-getobjectforccw-method.md
+        - name: ICorDebugAppDomainEnum 接口
+          href: icordebugappdomainenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugappdomainenum-next-method.md
+        - name: ICorDebugArrayValue 接口
+          href: icordebugarrayvalue-interface.md
+          items:
+            - name: GetBaseIndicies 方法
+              href: icordebugarrayvalue-getbaseindicies-method.md
+            - name: GetCount 方法
+              href: icordebugarrayvalue-getcount-method.md
+            - name: GetDimensions 方法
+              href: icordebugarrayvalue-getdimensions-method.md
+            - name: GetElement 方法
+              href: icordebugarrayvalue-getelement-method.md
+            - name: GetElementAtPosition 方法
+              href: icordebugarrayvalue-getelementatposition-method.md
+            - name: GetElementType 方法
+              href: icordebugarrayvalue-getelementtype-method.md
+            - name: GetRank 方法
+              href: icordebugarrayvalue-getrank-method.md
+            - name: HasBaseIndicies 方法
+              href: icordebugarrayvalue-hasbaseindicies-method.md
+        - name: ICorDebugAssembly 接口
+          href: icordebugassembly-interface.md
+          items:
+            - name: EnumerateModules 方法
+              href: icordebugassembly-enumeratemodules-method.md
+            - name: GetAppDomain 方法
+              href: icordebugassembly-getappdomain-method.md
+            - name: GetCodeBase 方法
+              href: icordebugassembly-getcodebase-method.md
+            - name: GetName 方法
+              href: icordebugassembly-getname-method.md
+            - name: GetProcess 方法
+              href: icordebugassembly-getprocess-method.md
+        - name: ICorDebugAssembly2 接口
+          href: icordebugassembly2-interface.md
+          items:
+            - name: IsFullyTrusted 方法
+              href: icordebugassembly2-isfullytrusted-method.md
+        - name: “ICor调试程序集3”接口
+          href: icordebugassembly3-interface.md
+          items:
+            - name: EnumerateContainedAssemblies 方法
+              href: icordebugassembly3-enumeratecontainedassemblies-method.md
+            - name: GetContainerAssembly 方法
+              href: icordebugassembly3-getcontainerassembly-method.md
+        - name: ICorDebugAssemblyEnum 接口
+          href: icordebugassemblyenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugassemblyenum-next-method.md
+        - name: ICorDebugBlockingObjectEnum 接口
+          href: icordebugblockingobjectenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugblockingobjectenum-next-method.md
+        - name: ICorDebugBoxValue 接口
+          href: icordebugboxvalue-interface.md
+          items:
+            - name: GetObject 方法
+              href: icordebugboxvalue-getobject-method.md
+        - name: ICorDebugBreakpoint 接口
+          href: icordebugbreakpoint-interface.md
+          items:
+            - name: Activate 方法
+              href: icordebugbreakpoint-activate-method.md
+            - name: IsActive 方法
+              href: icordebugbreakpoint-isactive-method.md
+        - name: ICorDebugBreakpointEnum 接口
+          href: icordebugbreakpointenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugbreakpointenum-next-method.md
+        - name: ICorDebugChain 接口
+          href: icordebugchain-interface.md
+          items:
+            - name: EnumerateFrames 方法
+              href: icordebugchain-enumerateframes-method.md
+            - name: GetActiveFrame 方法
+              href: icordebugchain-getactiveframe-method.md
+            - name: GetCallee 方法
+              href: icordebugchain-getcallee-method.md
+            - name: GetCaller 方法
+              href: icordebugchain-getcaller-method.md
+            - name: GetContext 方法
+              href: icordebugchain-getcontext-method.md
+            - name: GetNext 方法
+              href: icordebugchain-getnext-method.md
+            - name: GetPrevious 方法
+              href: icordebugchain-getprevious-method.md
+            - name: GetReason 方法
+              href: icordebugchain-getreason-method.md
+            - name: GetRegisterSet 方法
+              href: icordebugchain-getregisterset-method.md
+            - name: GetStackRange 方法
+              href: icordebugchain-getstackrange-method.md
+            - name: GetThread 方法
+              href: icordebugchain-getthread-method.md
+            - name: IsManaged 方法
+              href: icordebugchain-ismanaged-method.md
+        - name: ICorDebugChainEnum 接口
+          href: icordebugchainenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugchainenum-next-method.md
+        - name: ICorDebugClass 接口
+          href: icordebugclass-interface.md
+          items:
+            - name: GetModule 方法
+              href: icordebugclass-getmodule-method.md
+            - name: GetStaticFieldValue 方法
+              href: icordebugclass-getstaticfieldvalue-method.md
+            - name: GetToken 方法
+              href: icordebugclass-gettoken-method.md
+        - name: ICorDebugClass2 接口
+          href: icordebugclass2-interface.md
+          items:
+            - name: GetParameterizedType 方法
+              href: icordebugclass2-getparameterizedtype-method.md
+            - name: SetJMCStatus 方法
+              href: icordebugclass2-setjmcstatus-method.md
+        - name: ICorDebugCode 接口
+          href: icordebugcode-interface1.md
+          items:
+            - name: CreateBreakpoint 方法
+              href: icordebugcode-createbreakpoint-method.md
+            - name: GetAddress 方法
+              href: icordebugcode-getaddress-method.md
+            - name: GetCode 方法
+              href: icordebugcode-getcode-method.md
+            - name: GetEnCRemapSequencePoints 方法
+              href: icordebugcode-getencremapsequencepoints-method.md
+            - name: GetFunction 方法
+              href: icordebugcode-getfunction-method.md
+            - name: GetILToNativeMapping 方法
+              href: icordebugcode-getiltonativemapping-method.md
+            - name: GetSize 方法
+              href: icordebugcode-getsize-method.md
+            - name: GetVersionNumber 方法
+              href: icordebugcode-getversionnumber-method.md
+            - name: IsIL 方法
+              href: icordebugcode-isil-method.md
+        - name: ICorDebugCode2 接口
+          href: icordebugcode2-interface.md
+          items:
+            - name: GetCodeChunks 方法
+              href: icordebugcode2-getcodechunks-method.md
+            - name: GetCompilerFlags 方法
+              href: icordebugcode2-getcompilerflags-method.md
+        - name: ICorDebugCode3 接口
+          href: icordebugcode3-interface.md
+          items:
+            - name: GetReturnValueLiveOffset 方法
+              href: icordebugcode3-getreturnvalueliveoffset-method.md
+        - name: ICorDebugCode4 接口
+          href: icordebugcode4-interface.md
+          items:
+            - name: EnumerateVariableHomes 方法
+              href: icordebugcode4-enumeratevariablehomes-method.md
+        - name: ICorDebugCodeEnum 接口
+          href: icordebugcodeenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugcodeenum-next-method.md
+        - name: ICorDebugComObjectValue 接口
+          href: icordebugcomobjectvalue-interface.md
+          items:
+            - name: GetCachedInterfacePointers 方法
+              href: icordebugcomobjectvalue-getcachedinterfacepointers-method.md
+            - name: GetCachedInterfaceTypes 方法
+              href: icordebugcomobjectvalue-getcachedinterfacetypes-method.md
+        - name: ICorDebugContext 接口
+          href: icordebugcontext-interface.md
+        - name: ICorDebugController 接口
+          href: icordebugcontroller-interface.md
+          items:
+            - name: CanCommitChanges 方法
+              href: icordebugcontroller-cancommitchanges-method.md
+            - name: CommitChanges 方法
+              href: icordebugcontroller-commitchanges-method.md
+            - name: Continue 方法
+              href: icordebugcontroller-continue-method.md
+            - name: Detach 方法
+              href: icordebugcontroller-detach-method.md
+            - name: EnumerateThreads 方法
+              href: icordebugcontroller-enumeratethreads-method.md
+            - name: HasQueuedCallbacks 方法
+              href: icordebugcontroller-hasqueuedcallbacks-method.md
+            - name: IsRunning 方法
+              href: icordebugcontroller-isrunning-method.md
+            - name: SetAllThreadsDebugState 方法
+              href: icordebugcontroller-setallthreadsdebugstate-method.md
+            - name: Stop 方法
+              href: icordebugcontroller-stop-method.md
+            - name: Terminate 方法
+              href: icordebugcontroller-terminate-method.md
+        - name: ICorDebugDataTarget 接口
+          href: icordebugdatatarget-interface.md
+          items:
+            - name: GetPlatform 方法
+              href: icordebugdatatarget-getplatform-method.md
+            - name: ReadVirtual 方法
+              href: icordebugdatatarget-readvirtual-method.md
+            - name: GetThreadContext 方法
+              href: icordebugdatatarget-getthreadcontext-method.md
+        - name: “ICor调试数据目标2”接口
+          href: icordebugdatatarget2-interface.md
+          items:
+            - name: CreateVirtualUnwinder 方法
+              href: icordebugdatatarget2-createvirtualunwinder-method.md
+            - name: EnumerateThreadIDs 方法
+              href: icordebugdatatarget2-enumeratethreadids-method.md
+            - name: GetImageFromPointer 方法
+              href: icordebugdatatarget2-getimagefrompointer-method.md
+            - name: GetImageLocation 方法
+              href: icordebugdatatarget2-getimagelocation-method.md
+            - name: GetSymbolProviderForImage 方法
+              href: icordebugdatatarget2-getsymbolproviderforimage-method.md
+        - name: ICorDebugDataTarget3 接口
+          href: icordebugdatatarget3-interface.md
+          items:
+            - name: GetLoadedModules 方法
+              href: icordebugdatatarget3-getloadedmodules-method.md
+        - name: “ICor调试调试事件”接口
+          href: icordebugdebugevent-interface.md
+          items:
+            - name: GetEventKind 方法
+              href: icordebugdebugevent-geteventkind-method.md
+            - name: GetThread 方法
+              href: icordebugdebugevent-getthread-method.md
+        - name: ICorDebugEditAndContinueErrorInfo 接口
+          href: icordebugeditandcontinueerrorinfo-interface.md
+          items:
+            - name: GetErrorCode 方法
+              href: icordebugeditandcontinueerrorinfo-geterrorcode-method.md
+            - name: GetModule 方法
+              href: icordebugeditandcontinueerrorinfo-getmodule-method.md
+            - name: GetString 方法
+              href: icordebugeditandcontinueerrorinfo-getstring-method.md
+            - name: GetToken 方法
+              href: icordebugeditandcontinueerrorinfo-gettoken-method.md
+        - name: ICorDebugEditAndContinueSnapshot 接口
+          href: icordebugeditandcontinuesnapshot-interface.md
+          items:
+            - name: CopyMetaData 方法
+              href: icordebugeditandcontinuesnapshot-copymetadata-method.md
+            - name: GetMvid 方法
+              href: icordebugeditandcontinuesnapshot-getmvid-method.md
+            - name: GetRoDataRVA 方法
+              href: icordebugeditandcontinuesnapshot-getrodatarva-method.md
+            - name: GetRwDataRVA 方法
+              href: icordebugeditandcontinuesnapshot-getrwdatarva-method.md
+            - name: SetILMap 方法
+              href: icordebugeditandcontinuesnapshot-setilmap-method.md
+            - name: SetPEBytes 方法
+              href: icordebugeditandcontinuesnapshot-setpebytes-method.md
+            - name: SetPESymbolBytes 方法
+              href: icordebugeditandcontinuesnapshot-setpesymbolbytes-method.md
+        - name: ICorDebugEnum 接口
+          href: icordebugenum-interface1.md
+          items:
+            - name: Clone 方法
+              href: icordebugenum-clone-method.md
+            - name: GetCount 方法
+              href: icordebugenum-getcount-method.md
+            - name: Reset 方法
+              href: icordebugenum-reset-method.md
+            - name: Skip 方法
+              href: icordebugenum-skip-method.md
+        - name: ICorDebugErrorInfoEnum 接口
+          href: icordebugerrorinfoenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugerrorinfoenum-next-method.md
+        - name: ICorDebugEval 接口
+          href: icordebugeval-interface.md
+          items:
+            - name: Abort 方法
+              href: icordebugeval-abort-method.md
+            - name: CallFunction 方法
+              href: icordebugeval-callfunction-method.md
+            - name: CreateValue 方法
+              href: icordebugeval-createvalue-method.md
+            - name: GetResult 方法
+              href: icordebugeval-getresult-method.md
+            - name: GetThread 方法
+              href: icordebugeval-getthread-method.md
+            - name: IsActive 方法
+              href: icordebugeval-isactive-method.md
+            - name: NewArray 方法
+              href: icordebugeval-newarray-method.md
+            - name: NewObject 方法
+              href: icordebugeval-newobject-method.md
+            - name: NewObjectNoConstructor 方法
+              href: icordebugeval-newobjectnoconstructor-method.md
+            - name: NewString 方法
+              href: icordebugeval-newstring-method.md
+        - name: ICorDebugEval2 接口
+          href: icordebugeval2-interface.md
+          items:
+            - name: CallParameterizedFunction 方法
+              href: icordebugeval2-callparameterizedfunction-method.md
+            - name: CreateValueForType 方法
+              href: icordebugeval2-createvaluefortype-method.md
+            - name: NewParameterizedArray 方法
+              href: icordebugeval2-newparameterizedarray-method.md
+            - name: NewParameterizedObject 方法
+              href: icordebugeval2-newparameterizedobject-method.md
+            - name: NewParameterizedObjectNoConstructor 方法
+              href: icordebugeval2-newparameterizedobjectnoconstructor-method.md
+            - name: NewStringWithLength 方法
+              href: icordebugeval2-newstringwithlength-method.md
+            - name: RudeAbort 方法
+              href: icordebugeval2-rudeabort-method.md
+        - name: “ICor调试异常调试事件”接口
+          href: icordebugexceptiondebugevent-interface.md
+          items:
+            - name: GetFlags 方法
+              href: icordebugexceptiondebugevent-getflags-method.md
+            - name: GetNativeIP 方法
+              href: icordebugexceptiondebugevent-getnativeip-method.md
+            - name: GetStackPointer 方法
+              href: icordebugexceptiondebugevent-getstackpointer-method.md
+        - name: ICorDebugExceptionObjectCallStackEnum 接口
+          href: icordebugexceptionobjectcallstackenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugexceptionobjectcallstackenum-next-method.md
+        - name: ICorDebugExceptionObjectValue 接口
+          href: icordebugexceptionobjectvalue-interface.md
+          items:
+            - name: EnumerateExceptionCallStack 方法
+              href: icordebugexceptionobjectvalue-enumerateexceptioncallstack-method.md
+        - name: ICorDebugFrame 接口
+          href: icordebugframe-interface.md
+          items:
+            - name: CreateStepper 方法
+              href: icordebugframe-createstepper-method.md
+            - name: GetCallee 方法
+              href: icordebugframe-getcallee-method.md
+            - name: GetCaller 方法
+              href: icordebugframe-getcaller-method.md
+            - name: GetChain 方法
+              href: icordebugframe-getchain-method.md
+            - name: GetCode 方法
+              href: icordebugframe-getcode-method.md
+            - name: GetFunction 方法
+              href: icordebugframe-getfunction-method.md
+            - name: GetFunctionToken 方法
+              href: icordebugframe-getfunctiontoken-method.md
+            - name: GetStackRange 方法
+              href: icordebugframe-getstackrange-method.md
+        - name: ICorDebugFrameEnum 接口
+          href: icordebugframeenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugframeenum-next-method.md
+        - name: ICorDebugFunction 接口
+          href: icordebugfunction-interface1.md
+          items:
+            - name: CreateBreakpoint 方法
+              href: icordebugfunction-createbreakpoint-method.md
+            - name: GetClass 方法
+              href: icordebugfunction-getclass-method.md
+            - name: GetCurrentVersionNumber 方法
+              href: icordebugfunction-getcurrentversionnumber-method.md
+            - name: GetILCode 方法
+              href: icordebugfunction-getilcode-method.md
+            - name: GetLocalVarSigToken 方法
+              href: icordebugfunction-getlocalvarsigtoken-method.md
+            - name: GetModule 方法
+              href: icordebugfunction-getmodule-method.md
+            - name: GetNativeCode 方法
+              href: icordebugfunction-getnativecode-method.md
+            - name: GetToken 方法
+              href: icordebugfunction-gettoken-method.md
+        - name: ICorDebugFunction2 接口
+          href: icordebugfunction2-interface.md
+          items:
+            - name: EnumerateNativeCode 方法
+              href: icordebugfunction2-enumeratenativecode-method.md
+            - name: GetJMCStatus 方法
+              href: icordebugfunction2-getjmcstatus-method.md
+            - name: GetVersionNumber 方法
+              href: icordebugfunction2-getversionnumber-method.md
+            - name: SetJMCStatus 方法
+              href: icordebugfunction2-setjmcstatus-method.md
+        - name: ICorDebugFunction3 接口
+          href: icordebugfunction3-interface.md
+          items:
+            - name: GetActiveReJitRequestILCode 方法
+              href: icordebugfunction3-getactiverejitrequestilcode-method.md
+        - name: ICorDebugFunctionBreakpoint 接口
+          href: icordebugfunctionbreakpoint-interface.md
+          items:
+            - name: GetFunction 方法
+              href: icordebugfunctionbreakpoint-getfunction-method.md
+            - name: GetOffset 方法
+              href: icordebugfunctionbreakpoint-getoffset-method.md
+        - name: ICorDebugGCReferenceEnum 接口
+          href: icordebuggcreferenceenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebuggcreferenceenum-next-method.md
+        - name: ICorDebugGenericValue 接口
+          href: icordebuggenericvalue-interface.md
+          items:
+            - name: GetValue 方法
+              href: icordebuggenericvalue-getvalue-method.md
+            - name: SetValue 方法
+              href: icordebuggenericvalue-setvalue-method.md
+        - name: ICorDebugGuidToTypeEnum 接口
+          href: icordebugguidtotypeenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugguidtotypeenum-next-method.md
+        - name: ICorDebugHandleValue 接口
+          href: icordebughandlevalue-interface.md
+          items:
+            - name: Dispose 方法
+              href: icordebughandlevalue-dispose-method.md
+            - name: GetHandleType 方法
+              href: icordebughandlevalue-gethandletype-method.md
+        - name: ICorDebugHeapEnum 接口
+          href: icordebugheapenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugheapenum-next-method.md
+        - name: ICorDebugHeapSegmentEnum 接口
+          href: icordebugheapsegmentenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugheapsegmentenum-next-method.md
+        - name: ICorDebugHeapValue 接口
+          href: icordebugheapvalue-interface.md
+          items:
+            - name: CreateRelocBreakpoint 方法
+              href: icordebugheapvalue-createrelocbreakpoint-method.md
+            - name: IsValid 方法
+              href: icordebugheapvalue-isvalid-method.md
+        - name: ICorDebugHeapValue2 接口
+          href: icordebugheapvalue2-interface1.md
+          items:
+            - name: CreateHandle 方法
+              href: icordebugheapvalue2-createhandle-method.md
+        - name: ICorDebugHeapValue3 接口
+          href: icordebugheapvalue3-interface.md
+          items:
+            - name: GetThreadOwningMonitorLock 方法
+              href: icordebugheapvalue3-getthreadowningmonitorlock-method.md
+            - name: GetMonitorEventWaitList 方法
+              href: icordebugheapvalue3-getmonitoreventwaitlist-method.md
+        - name: ICorDebugILCode 接口
+          href: icordebugilcode-interface.md
+          items:
+            - name: GetEHClauses 方法
+              href: icordebugilcode-getehclauses-method.md
+        - name: ICorDebugILCode2 接口
+          href: icordebugilcode2-interface.md
+          items:
+            - name: GetInstrumentedILMap 方法
+              href: icordebugilcode2-getinstrumentedilmap-method.md
+            - name: GetLocalVarSigToken 方法
+              href: icordebugilcode2-getlocalvarsigtoken-method.md
+        - name: ICorDebugILFrame 接口
+          href: icordebugilframe-interface.md
+          items:
+            - name: CanSetIP 方法
+              href: icordebugilframe-cansetip-method.md
+            - name: EnumerateArguments 方法
+              href: icordebugilframe-enumeratearguments-method.md
+            - name: EnumerateLocalVariables 方法
+              href: icordebugilframe-enumeratelocalvariables-method.md
+            - name: GetArgument 方法
+              href: icordebugilframe-getargument-method.md
+            - name: GetIP 方法
+              href: icordebugilframe-getip-method.md
+            - name: GetLocalVariable 方法
+              href: icordebugilframe-getlocalvariable-method.md
+            - name: GetStackDepth 方法
+              href: icordebugilframe-getstackdepth-method.md
+            - name: GetStackValue 方法
+              href: icordebugilframe-getstackvalue-method.md
+            - name: SetIP 方法
+              href: icordebugilframe-setip-method.md
+        - name: ICorDebugILFrame2 接口
+          href: icordebugilframe2-interface.md
+          items:
+            - name: EnumerateTypeParameters 方法
+              href: icordebugilframe2-enumeratetypeparameters-method.md
+            - name: RemapFunction 方法
+              href: icordebugilframe2-remapfunction-method.md
+        - name: ICorDebugILFrame3 接口
+          href: icordebugilframe3-interface.md
+          items:
+            - name: GetReturnValueForILOffset 方法
+              href: icordebugilframe3-getreturnvalueforiloffset-method.md
+        - name: ICorDebugILFrame4 接口
+          href: icordebugilframe4-interface.md
+          items:
+            - name: EnumerateLocalVariablesEx 方法
+              href: icordebugilframe4-enumeratelocalvariablesex-method.md
+            - name: GetCodeEx 方法
+              href: icordebugilframe4-getcodeex-method.md
+            - name: GetLocalVariableEx 方法
+              href: icordebugilframe4-getlocalvariableex-method.md
+        - name: ICorDebugInstanceFieldSymbol 接口
+          href: icordebuginstancefieldsymbol-interface.md
+          items:
+            - name: GetName 方法
+              href: icordebuginstancefieldsymbol-getname-method.md
+            - name: GetOffset 方法
+              href: icordebuginstancefieldsymbol-getoffset-method.md
+            - name: GetSize 方法
+              href: icordebuginstancefieldsymbol-getsize-method.md
+        - name: ICorDebugInternalFrame 接口
+          href: icordebuginternalframe-interface.md
+          items:
+            - name: GetFrameType 方法
+              href: icordebuginternalframe-getframetype-method.md
+        - name: ICorDebugInternalFrame2 接口
+          href: icordebuginternalframe2-interface.md
+          items:
+            - name: GetFrameAddress 方法
+              href: icordebuginternalframe2-getframeaddress-method.md
+            - name: IsCloserToLeaf 方法
+              href: icordebuginternalframe2-isclosertoleaf-method.md
+        - name: ICorDebugLoadedModule 接口
+          href: icordebugloadedmodule-interface.md
+          items:
+            - name: GetBaseAddress 方法
+              href: icordebugloadedmodule-getbaseaddress-method.md
+            - name: GetName 方法
+              href: icordebugloadedmodule-getname-method.md
+            - name: GetSize 方法
+              href: icordebugloadedmodule-getsize-method.md
+        - name: ICorDebugManagedCallback 接口
+          href: icordebugmanagedcallback-interface.md
+          items:
+            - name: Break 方法
+              href: icordebugmanagedcallback-break-method.md
+            - name: Breakpoint 方法
+              href: icordebugmanagedcallback-breakpoint-method.md
+            - name: BreakpointSetError 方法
+              href: icordebugmanagedcallback-breakpointseterror-method.md
+            - name: ControlCTrap 方法
+              href: icordebugmanagedcallback-controlctrap-method.md
+            - name: CreateAppDomain 方法
+              href: icordebugmanagedcallback-createappdomain-method.md
+            - name: CreateProcess 方法
+              href: icordebugmanagedcallback-createprocess-method.md
+            - name: CreateThread 方法
+              href: icordebugmanagedcallback-createthread-method.md
+            - name: DebuggerError 方法
+              href: icordebugmanagedcallback-debuggererror-method.md
+            - name: EditAndContinueRemap 方法
+              href: icordebugmanagedcallback-editandcontinueremap-method.md
+            - name: EvalComplete 方法
+              href: icordebugmanagedcallback-evalcomplete-method.md
+            - name: EvalException 方法
+              href: icordebugmanagedcallback-evalexception-method.md
+            - name: Exception 方法
+              href: icordebugmanagedcallback-exception-method.md
+            - name: ExitAppDomain 方法
+              href: icordebugmanagedcallback-exitappdomain-method.md
+            - name: ExitProcess 方法
+              href: icordebugmanagedcallback-exitprocess-method.md
+            - name: ExitThread 方法
+              href: icordebugmanagedcallback-exitthread-method.md
+            - name: LoadAssembly 方法
+              href: icordebugmanagedcallback-loadassembly-method.md
+            - name: LoadClass 方法
+              href: icordebugmanagedcallback-loadclass-method.md
+            - name: LoadModule 方法
+              href: icordebugmanagedcallback-loadmodule-method.md
+            - name: LogMessage 方法
+              href: icordebugmanagedcallback-logmessage-method.md
+            - name: LogSwitch 方法
+              href: icordebugmanagedcallback-logswitch-method.md
+            - name: NameChange 方法
+              href: icordebugmanagedcallback-namechange-method.md
+            - name: StepComplete 方法
+              href: icordebugmanagedcallback-stepcomplete-method.md
+            - name: UnloadAssembly 方法
+              href: icordebugmanagedcallback-unloadassembly-method.md
+            - name: UnloadClass 方法
+              href: icordebugmanagedcallback-unloadclass-method.md
+            - name: UnloadModule 方法
+              href: icordebugmanagedcallback-unloadmodule-method.md
+            - name: UpdateModuleSymbols 方法
+              href: icordebugmanagedcallback-updatemodulesymbols-method.md
+        - name: ICorDebugManagedCallback2 接口
+          href: icordebugmanagedcallback2-interface.md
+          items:
+            - name: ChangeConnection 方法
+              href: icordebugmanagedcallback2-changeconnection-method.md
+            - name: CreateConnection 方法
+              href: icordebugmanagedcallback2-createconnection-method.md
+            - name: DestroyConnection 方法
+              href: icordebugmanagedcallback2-destroyconnection-method.md
+            - name: Exception 方法
+              href: icordebugmanagedcallback2-exception-method.md
+            - name: ExceptionUnwind 方法
+              href: icordebugmanagedcallback2-exceptionunwind-method.md
+            - name: FunctionRemapComplete 方法
+              href: icordebugmanagedcallback2-functionremapcomplete-method.md
+            - name: FunctionRemapOpportunity 方法
+              href: icordebugmanagedcallback2-functionremapopportunity-method.md
+            - name: MDANotification 方法
+              href: icordebugmanagedcallback2-mdanotification-method.md
+        - name: ICorDebugManagedCallback3 接口
+          href: icordebugmanagedcallback3-interface.md
+          items:
+            - name: CustomNotification 方法
+              href: icordebugmanagedcallback3-customnotification-method.md
+        - name: ICorDebugMDA 接口
+          href: icordebugmda-interface.md
+          items:
+            - name: GetDescription 方法
+              href: icordebugmda-getdescription-method.md
+            - name: GetFlags 方法
+              href: icordebugmda-getflags-method.md
+            - name: GetName 方法
+              href: icordebugmda-getname-method.md
+            - name: GetOSThreadId 方法
+              href: icordebugmda-getosthreadid-method.md
+            - name: GetXML 方法
+              href: icordebugmda-getxml-method.md
+        - name: ICorDebugMemoryBuffer 接口
+          href: icordebugmemorybuffer-interface.md
+          items:
+            - name: GetSize 方法
+              href: icordebugmemorybuffer-getsize-method.md
+            - name: GetStartAddress 方法
+              href: icordebugmemorybuffer-getstartaddress-method.md
+        - name: ICorDebugMergedAssemblyRecord 接口
+          href: icordebugmergedassemblyrecord-interface.md
+          items:
+            - name: GetCulture 方法
+              href: icordebugmergedassemblyrecord-getculture-method.md
+            - name: GetIndex 方法
+              href: icordebugmergedassemblyrecord-getindex-method.md
+            - name: GetPublicKey 方法
+              href: icordebugmergedassemblyrecord-getpublickey-method.md
+            - name: GetPublicKeyToken 方法
+              href: icordebugmergedassemblyrecord-getpublickeytoken-method.md
+            - name: GetSimpleName 方法
+              href: icordebugmergedassemblyrecord-getsimplename-method.md
+            - name: GetVersion 方法
+              href: icordebugmergedassemblyrecord-getversion-method.md
+        - name: ICorDebugMetaDataLocator 接口
+          href: icordebugmetadatalocator-interface.md
+          items:
+            - name: GetMetaData 方法
+              href: icordebugmetadatalocator-getmetadata-method.md
+        - name: ICorDebugModule 接口
+          href: icordebugmodule-interface.md
+          items:
+            - name: CreateBreakpoint 方法
+              href: icordebugmodule-createbreakpoint-method.md
+            - name: EnableClassLoadCallbacks 方法
+              href: icordebugmodule-enableclassloadcallbacks-method.md
+            - name: EnableJITDebugging 方法
+              href: icordebugmodule-enablejitdebugging-method.md
+            - name: GetAssembly 方法
+              href: icordebugmodule-getassembly-method.md
+            - name: GetBaseAddress 方法
+              href: icordebugmodule-getbaseaddress-method.md
+            - name: GetClassFromToken 方法
+              href: icordebugmodule-getclassfromtoken-method.md
+            - name: GetEditAndContinueSnapshot 方法
+              href: icordebugmodule-geteditandcontinuesnapshot-method.md
+            - name: GetFunctionFromRVA 方法
+              href: icordebugmodule-getfunctionfromrva-method.md
+            - name: GetFunctionFromToken 方法
+              href: icordebugmodule-getfunctionfromtoken-method.md
+            - name: GetGlobalVariableValue 方法
+              href: icordebugmodule-getglobalvariablevalue-method.md
+            - name: GetMetaDataInterface 方法
+              href: icordebugmodule-getmetadatainterface-method.md
+            - name: GetName 方法
+              href: icordebugmodule-getname-method.md
+            - name: GetProcess 方法
+              href: icordebugmodule-getprocess-method.md
+            - name: GetSize 方法
+              href: icordebugmodule-getsize-method.md
+            - name: GetToken 方法
+              href: icordebugmodule-gettoken-method.md
+            - name: IsDynamic 方法
+              href: icordebugmodule-isdynamic-method.md
+            - name: IsInMemory 方法
+              href: icordebugmodule-isinmemory-method.md
+        - name: ICorDebugModule2 接口
+          href: icordebugmodule2-interface.md
+          items:
+            - name: ApplyChanges 方法
+              href: icordebugmodule2-applychanges-method.md
+            - name: GetJITCompilerFlags 方法
+              href: icordebugmodule2-getjitcompilerflags-method.md
+            - name: ResolveAssembly 方法
+              href: icordebugmodule2-resolveassembly-method.md
+            - name: SetJITCompilerFlags 方法
+              href: icordebugmodule2-setjitcompilerflags-method.md
+            - name: SetJMCStatus 方法
+              href: icordebugmodule2-setjmcstatus-method.md
+        - name: ICorDebugModule3 接口
+          href: icordebugmodule3-interface.md
+          items:
+            - name: 'ICorDebugModule3::CreateReaderForInMemorySymbols 方法'
+              href: icordebugmodule3-createreaderforinmemorysymbols-method.md
+        - name: ICorDebugModuleBreakpoint 接口
+          href: icordebugmodulebreakpoint-interface.md
+          items:
+            - name: GetModule 方法
+              href: icordebugmodulebreakpoint-getmodule-method.md
+        - name: ICorDebugModuleDebugEvent 接口
+          href: icordebugmoduledebugevent-interface.md
+          items:
+            - name: GetModule 方法
+              href: icordebugmoduledebugevent-getmodule-method.md
+        - name: ICorDebugModuleEnum 接口
+          href: icordebugmoduleenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugmoduleenum-next-method.md
+        - name: ICorDebugMutableDataTarget 接口
+          href: icordebugmutabledatatarget-interface.md
+          items:
+            - name: ContinueStatusChanged 方法
+              href: icordebugmutabledatatarget-continuestatuschanged-method.md
+            - name: SetThreadContext 方法
+              href: icordebugmutabledatatarget-setthreadcontext-method.md
+            - name: WriteVirtual 方法
+              href: icordebugmutabledatatarget-writevirtual-method.md
+        - name: ICorDebugNativeFrame 接口
+          href: icordebugnativeframe-interface.md
+          items:
+            - name: CanSetIP 方法
+              href: icordebugnativeframe-cansetip-method.md
+            - name: GetIP 方法
+              href: icordebugnativeframe-getip-method.md
+            - name: GetLocalDoubleRegisterValue 方法
+              href: icordebugnativeframe-getlocaldoubleregistervalue-method.md
+            - name: GetLocalMemoryRegisterValue 方法
+              href: icordebugnativeframe-getlocalmemoryregistervalue-method.md
+            - name: GetLocalMemoryValue 方法
+              href: icordebugnativeframe-getlocalmemoryvalue-method.md
+            - name: GetLocalRegisterMemoryValue 方法
+              href: icordebugnativeframe-getlocalregistermemoryvalue-method.md
+            - name: GetLocalRegisterValue 方法
+              href: icordebugnativeframe-getlocalregistervalue-method.md
+            - name: GetRegisterSet 方法
+              href: icordebugnativeframe-getregisterset-method.md
+            - name: SetIP 方法
+              href: icordebugnativeframe-setip-method.md
+        - name: ICorDebugNativeFrame2 接口
+          href: icordebugnativeframe2-interface.md
+          items:
+            - name: IsChild 方法
+              href: icordebugnativeframe2-ischild-method.md
+            - name: IsMatchingParentFrame 方法
+              href: icordebugnativeframe2-ismatchingparentframe-method.md
+            - name: GetStackParameterSize 方法
+              href: icordebugnativeframe2-getstackparametersize-method.md
+        - name: ICorDebugObjectEnum 接口
+          href: icordebugobjectenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugobjectenum-next-method.md
+        - name: ICorDebugObjectValue 接口
+          href: icordebugobjectvalue-interface.md
+          items:
+            - name: GetClass 方法
+              href: icordebugobjectvalue-getclass-method.md
+            - name: GetContext 方法
+              href: icordebugobjectvalue-getcontext-method.md
+            - name: GetFieldValue 方法
+              href: icordebugobjectvalue-getfieldvalue-method.md
+            - name: GetManagedCopy 方法
+              href: icordebugobjectvalue-getmanagedcopy-method.md
+            - name: GetVirtualMethod 方法
+              href: icordebugobjectvalue-getvirtualmethod-method.md
+            - name: IsValueClass 方法
+              href: icordebugobjectvalue-isvalueclass-method.md
+            - name: SetFromManagedCopy 方法
+              href: icordebugobjectvalue-setfrommanagedcopy-method.md
+        - name: ICorDebugObjectValue2 接口
+          href: icordebugobjectvalue2-interface.md
+          items:
+            - name: GetVirtualMethodAndType 方法
+              href: icordebugobjectvalue2-getvirtualmethodandtype-method.md
+        - name: ICorDebugProcess 接口
+          href: icordebugprocess-interface.md
+          items:
+            - name: ClearCurrentException 方法
+              href: icordebugprocess-clearcurrentexception-method.md
+            - name: EnableLogMessages 方法
+              href: icordebugprocess-enablelogmessages-method.md
+            - name: EnumerateAppDomains 方法
+              href: icordebugprocess-enumerateappdomains-method.md
+            - name: EnumerateObjects 方法
+              href: icordebugprocess-enumerateobjects-method.md
+            - name: GetHandle 方法
+              href: icordebugprocess-gethandle-method.md
+            - name: GetHelperThreadID 方法
+              href: icordebugprocess-gethelperthreadid-method.md
+            - name: GetID 方法
+              href: icordebugprocess-getid-method.md
+            - name: GetObject 方法
+              href: icordebugprocess-getobject-method.md
+            - name: GetThread 方法
+              href: icordebugprocess-getthread-method.md
+            - name: GetThreadContext 方法
+              href: icordebugprocess-getthreadcontext-method.md
+            - name: IsOSSuspended 方法
+              href: icordebugprocess-isossuspended-method.md
+            - name: IsTransitionStub 方法
+              href: icordebugprocess-istransitionstub-method.md
+            - name: ModifyLogSwitch 方法
+              href: icordebugprocess-modifylogswitch-method.md
+            - name: ReadMemory 方法
+              href: icordebugprocess-readmemory-method.md
+            - name: SetThreadContext 方法
+              href: icordebugprocess-setthreadcontext-method.md
+            - name: ThreadForFiberCookie 方法
+              href: icordebugprocess-threadforfibercookie-method.md
+            - name: WriteMemory 方法
+              href: icordebugprocess-writememory-method.md
+        - name: ICorDebugProcess2 接口
+          href: icordebugprocess2-interface1.md
+          items:
+            - name: ClearUnmanagedBreakpoint 方法
+              href: icordebugprocess2-clearunmanagedbreakpoint-method.md
+            - name: GetDesiredNGENCompilerFlags 方法
+              href: icordebugprocess2-getdesiredngencompilerflags-method.md
+            - name: GetReferenceValueFromGCHandle 方法
+              href: icordebugprocess2-getreferencevaluefromgchandle-method.md
+            - name: GetThreadForTaskID 方法
+              href: icordebugprocess2-getthreadfortaskid-method.md
+            - name: GetVersion 方法
+              href: icordebugprocess2-getversion-method.md
+            - name: SetDesiredNGENCompilerFlags 方法
+              href: icordebugprocess2-setdesiredngencompilerflags-method.md
+            - name: SetUnmanagedBreakpoint 方法
+              href: icordebugprocess2-setunmanagedbreakpoint-method.md
+        - name: ICorDebugProcess3 接口
+          href: icordebugprocess3-interface.md
+          items:
+            - name: SetEnableCustomNotification 方法
+              href: icordebugprocess3-setenablecustomnotification-method.md
+        - name: ICorDebugProcess4 接口
+          href: icordebugprocess4-interface.md
+          items:
+            - name: ProcessStateChanged 方法
+              href: icordebugprocess4-processstatechanged-method.md
+        - name: ICorDebugProcess5 接口
+          href: icordebugprocess5-interface.md
+          items:
+            - name: EnableNGenPolicy 方法
+              href: icordebugprocess5-enablengenpolicy-method.md
+            - name: EnumerateGCReferences 方法
+              href: icordebugprocess5-enumerategcreferences-method.md
+            - name: EnumerateHandles 方法
+              href: icordebugprocess5-enumeratehandles-method.md
+            - name: EnumerateHeap 方法
+              href: icordebugprocess5-enumerateheap-method.md
+            - name: EnumerateHeapRegions 方法
+              href: icordebugprocess5-enumerateheapregions-method.md
+            - name: GetArrayLayout 方法
+              href: icordebugprocess5-getarraylayout-method.md
+            - name: GetGCHeapInformation 方法
+              href: icordebugprocess5-getgcheapinformation-method.md
+            - name: GetObject 方法
+              href: icordebugprocess5-getobject-method.md
+            - name: GetTypeFields 方法
+              href: icordebugprocess5-gettypefields-method.md
+            - name: GetTypeForTypeID 方法
+              href: icordebugprocess5-gettypefortypeid-method.md
+            - name: GetTypeID 方法
+              href: icordebugprocess5-gettypeid-method.md
+            - name: GetTypeLayout 方法
+              href: icordebugprocess5-gettypelayout-method.md
+        - name: “ICor调试进程6”接口
+          href: icordebugprocess6-interface.md
+          items:
+            - name: DecodeEvent 方法
+              href: icordebugprocess6-decodeevent-method.md
+            - name: EnableVirtualModuleSplitting 方法
+              href: icordebugprocess6-enablevirtualmodulesplitting-method.md
+            - name: GetCode 方法
+              href: icordebugprocess6-getcode-method.md
+            - name: GetExportStepInfo 方法
+              href: icordebugprocess6-getexportstepinfo-method.md
+            - name: MarkDebuggerAttached 方法
+              href: icordebugprocess6-markdebuggerattached-method.md
+            - name: “进程状态已更改”方法
+              href: icordebugprocess6-processstatechanged-method.md
+        - name: ICorDebugProcess7 接口
+          href: icordebugprocess7-interface.md
+          items:
+            - name: SetWriteableMetadataUpdateMode 方法
+              href: icordebugprocess7-setwriteablemetadataupdatemode-method.md
+        - name: ICorDebugProcess8 接口
+          href: icordebugprocess8-interface.md
+          items:
+            - name: EnableExceptionCallbacksOutsideOfMyCode 方法
+              href: icordebugprocess8-enableexceptioncallbacksoutsideofmycode-method.md
+        - name: ICorDebugProcessEnum 接口
+          href: icordebugprocessenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugprocessenum-next-method.md
+        - name: ICorDebugReferenceValue 接口
+          href: icordebugreferencevalue-interface.md
+          items:
+            - name: Dereference 方法
+              href: icordebugreferencevalue-dereference-method.md
+            - name: DereferenceStrong 方法
+              href: icordebugreferencevalue-dereferencestrong-method.md
+            - name: GetValue 方法
+              href: icordebugreferencevalue-getvalue-method.md
+            - name: IsNull 方法
+              href: icordebugreferencevalue-isnull-method.md
+            - name: SetValue 方法
+              href: icordebugreferencevalue-setvalue-method.md
+        - name: ICorDebugRegisterSet 接口
+          href: icordebugregisterset-interface.md
+          items:
+            - name: GetRegisters 方法
+              href: icordebugregisterset-getregisters-method.md
+            - name: GetRegistersAvailable 方法
+              href: icordebugregisterset-getregistersavailable-method.md
+            - name: GetThreadContext 方法
+              href: icordebugregisterset-getthreadcontext-method.md
+            - name: SetRegisters 方法
+              href: icordebugregisterset-setregisters-method.md
+            - name: SetThreadContext 方法
+              href: icordebugregisterset-setthreadcontext-method.md
+        - name: ICorDebugRegisterSet2 接口
+          href: icordebugregisterset2-interface.md
+          items:
+            - name: GetRegisters 方法
+              href: icordebugregisterset2-getregisters-method.md
+            - name: GetRegistersAvailable 方法
+              href: icordebugregisterset2-getregistersavailable-method.md
+            - name: SetRegisters 方法
+              href: icordebugregisterset2-setregisters-method.md
+        - name: ICorDebugRemote 接口
+          href: icordebugremote-interface.md
+          items:
+            - name: 'ICorDebugRemote::CreateProcessEx 方法'
+              href: icordebugremote-createprocessex-method.md
+            - name: 'ICorDebugRemote::DebugActiveProcessEx 方法'
+              href: icordebugremote-debugactiveprocessex-method.md
+        - name: ICorDebugRemoteTarget 接口
+          href: icordebugremotetarget-interface.md
+          items:
+            - name: 'ICorDebugRemoteTarget::GetHostName 方法'
+              href: icordebugremotetarget-gethostname-method.md
+        - name: ICorDebugRuntimeUnwindableFrame 接口
+          href: icordebugruntimeunwindableframe-interface.md
+        - name: ICorDebugStackWalk 接口
+          href: icordebugstackwalk-interface.md
+          items:
+            - name: GetContext 方法
+              href: icordebugstackwalk-getcontext-method.md
+            - name: SetContext 方法
+              href: icordebugstackwalk-setcontext-method.md
+            - name: Next 方法
+              href: icordebugstackwalk-next-method.md
+            - name: GetFrame 方法
+              href: icordebugstackwalk-getframe-method.md
+        - name: ICorDebugStaticFieldSymbol 接口
+          href: icordebugstaticfieldsymbol-interface.md
+          items:
+            - name: GetAddress 方法
+              href: icordebugstaticfieldsymbol-getaddress-method.md
+            - name: GetName 方法
+              href: icordebugstaticfieldsymbol-getname-method.md
+            - name: GetSize 方法
+              href: icordebugstaticfieldsymbol-getsize-method.md
+        - name: ICorDebugStepper 接口
+          href: icordebugstepper-interface.md
+          items:
+            - name: Deactivate 方法
+              href: icordebugstepper-deactivate-method.md
+            - name: IsActive 方法
+              href: icordebugstepper-isactive-method.md
+            - name: SetInterceptMask 方法
+              href: icordebugstepper-setinterceptmask-method.md
+            - name: SetRangeIL 方法
+              href: icordebugstepper-setrangeil-method.md
+            - name: SetUnmappedStopMask 方法
+              href: icordebugstepper-setunmappedstopmask-method.md
+            - name: Step 方法
+              href: icordebugstepper-step-method.md
+            - name: StepOut 方法
+              href: icordebugstepper-stepout-method.md
+            - name: StepRange 方法
+              href: icordebugstepper-steprange-method.md
+        - name: ICorDebugStepper2 接口
+          href: icordebugstepper2-interface1.md
+          items:
+            - name: SetJMC 方法
+              href: icordebugstepper2-setjmc-method.md
+        - name: ICorDebugStepperEnum 接口
+          href: icordebugstepperenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugstepperenum-next-method.md
+        - name: ICorDebugStringValue 接口
+          href: icordebugstringvalue-interface.md
+          items:
+            - name: GetLength 方法
+              href: icordebugstringvalue-getlength-method.md
+            - name: GetString 方法
+              href: icordebugstringvalue-getstring-method.md
+        - name: ICorDebugSymbolProvider 接口
+          href: icordebugsymbolprovider-interface.md
+          items:
+            - name: GetAssemblyImageBytes 方法
+              href: icordebugsymbolprovider-getassemblyimagebytes-method.md
+            - name: GetAssemblyImageMetadata 方法
+              href: icordebugsymbolprovider-getassemblyimagemetadata-method.md
+            - name: GetCodeRange 方法
+              href: icordebugsymbolprovider-getcoderange-method.md
+            - name: GetInstanceFieldSymbols 方法
+              href: icordebugsymbolprovider-getinstancefieldsymbols-method.md
+            - name: GetMergedAssemblyRecords 方法
+              href: icordebugsymbolprovider-getmergedassemblyrecords-method.md
+            - name: GetMethodLocalSymbols 方法
+              href: icordebugsymbolprovider-getmethodlocalsymbols-method.md
+            - name: GetMethodParameterSymbols 方法
+              href: icordebugsymbolprovider-getmethodparametersymbols-method.md
+            - name: GetMethodProps 方法
+              href: icordebugsymbolprovider-getmethodprops-method.md
+            - name: GetObjectSize 方法
+              href: icordebugsymbolprovider-getobjectsize-method.md
+            - name: GetStaticFieldSymbols 方法
+              href: icordebugsymbolprovider-getstaticfieldsymbols-method.md
+            - name: GetTypeProps 方法
+              href: icordebugsymbolprovider-gettypeprops-method.md
+        - name: ICorDebugSymbolProvider2 接口
+          href: icordebugsymbolprovider2-interface.md
+          items:
+            - name: GetFrameProps 方法
+              href: icordebugsymbolprovider2-getframeprops-method.md
+            - name: GetGenericDictionaryInfo 方法
+              href: icordebugsymbolprovider2-getgenericdictionaryinfo-method.md
+        - name: ICorDebugThread 接口
+          href: icordebugthread-interface.md
+          items:
+            - name: ClearCurrentException 方法
+              href: icordebugthread-clearcurrentexception-method.md
+            - name: CreateEval 方法
+              href: icordebugthread-createeval-method.md
+            - name: CreateStepper 方法
+              href: icordebugthread-createstepper-method.md
+            - name: EnumerateChains 方法
+              href: icordebugthread-enumeratechains-method.md
+            - name: GetActiveChain 方法
+              href: icordebugthread-getactivechain-method.md
+            - name: GetActiveFrame 方法
+              href: icordebugthread-getactiveframe-method.md
+            - name: GetAppDomain 方法
+              href: icordebugthread-getappdomain-method.md
+            - name: GetCurrentException 方法
+              href: icordebugthread-getcurrentexception-method.md
+            - name: GetDebugState 方法
+              href: icordebugthread-getdebugstate-method.md
+            - name: GetHandle 方法
+              href: icordebugthread-gethandle-method.md
+            - name: GetID 方法
+              href: icordebugthread-getid-method.md
+            - name: GetObject 方法
+              href: icordebugthread-getobject-method.md
+            - name: GetProcess 方法
+              href: icordebugthread-getprocess-method.md
+            - name: GetRegisterSet 方法
+              href: icordebugthread-getregisterset-method.md
+            - name: GetUserState 方法
+              href: icordebugthread-getuserstate-method.md
+            - name: SetDebugState 方法
+              href: icordebugthread-setdebugstate-method.md
+        - name: ICorDebugThread2 接口
+          href: icordebugthread2-interface.md
+          items:
+            - name: GetActiveFunctions 方法
+              href: icordebugthread2-getactivefunctions-method.md
+            - name: GetConnectionID 方法
+              href: icordebugthread2-getconnectionid-method.md
+            - name: GetTaskID 方法
+              href: icordebugthread2-gettaskid-method.md
+            - name: GetVolatileOSThreadID 方法
+              href: icordebugthread2-getvolatileosthreadid-method.md
+            - name: InterceptCurrentException 方法
+              href: icordebugthread2-interceptcurrentexception-method.md
+        - name: ICorDebugThread3 接口
+          href: icordebugthread3-interface.md
+          items:
+            - name: CreateStackWalk 方法
+              href: icordebugthread3-createstackwalk-method.md
+            - name: GetActiveInternalFrames 方法
+              href: icordebugthread3-getactiveinternalframes-method.md
+        - name: ICorDebugThread4 接口
+          href: icordebugthread4-interface.md
+          items:
+            - name: GetBlockingObjects 方法
+              href: icordebugthread4-getblockingobjects-method.md
+            - name: HadUnhandledException 方法
+              href: icordebugthread4-hadunhandledexception-method.md
+            - name: GetCurrentCustomDebuggerNotification 方法
+              href: icordebugthread4-getcurrentcustomdebuggernotification-method.md
+        - name: ICorDebugThreadEnum 接口
+          href: icordebugthreadenum-interface1.md
+          items:
+            - name: Next 方法
+              href: icordebugthreadenum-next-method.md
+        - name: ICorDebugType 接口
+          href: icordebugtype-interface.md
+          items:
+            - name: EnumerateTypeParameters 方法
+              href: icordebugtype-enumeratetypeparameters-method.md
+            - name: GetBase 方法
+              href: icordebugtype-getbase-method.md
+            - name: GetClass 方法
+              href: icordebugtype-getclass-method.md
+            - name: GetFirstTypeParameter 方法
+              href: icordebugtype-getfirsttypeparameter-method.md
+            - name: GetRank 方法
+              href: icordebugtype-getrank-method.md
+            - name: GetStaticFieldValue 方法
+              href: icordebugtype-getstaticfieldvalue-method.md
+            - name: GetType 方法
+              href: icordebugtype-gettype-method.md
+        - name: ICorDebugType2 接口
+          href: icordebugtype2-interface.md
+          items:
+            - name: GetTypeID 方法
+              href: icordebugtype2-gettypeid-method.md
+        - name: ICorDebugTypeEnum 接口
+          href: icordebugtypeenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugtypeenum-next-method.md
+        - name: ICorDebugUnmanagedCallback 接口
+          href: icordebugunmanagedcallback-interface.md
+          items:
+            - name: DebugEvent 方法
+              href: icordebugunmanagedcallback-debugevent-method.md
+        - name: ICorDebugValue 接口
+          href: icordebugvalue-interface.md
+          items:
+            - name: CreateBreakpoint 方法
+              href: icordebugvalue-createbreakpoint-method.md
+            - name: GetAddress 方法
+              href: icordebugvalue-getaddress-method.md
+            - name: GetSize 方法
+              href: icordebugvalue-getsize-method.md
+            - name: GetType 方法
+              href: icordebugvalue-gettype-method.md
+        - name: ICorDebugValue2 接口
+          href: icordebugvalue2-interface.md
+          items:
+            - name: GetExactType 方法
+              href: icordebugvalue2-getexacttype-method.md
+        - name: ICorDebugValue3 接口
+          href: icordebugvalue3-interface.md
+          items:
+            - name: GetSize64 方法
+              href: icordebugvalue3-getsize64-method.md
+        - name: ICorDebugValueBreakpoint 接口
+          href: icordebugvaluebreakpoint-interface.md
+          items:
+            - name: GetValue 方法
+              href: icordebugvaluebreakpoint-getvalue-method.md
+        - name: ICorDebugValueEnum 接口
+          href: icordebugvalueenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugvalueenum-next-method.md
+        - name: ICorDebugVariableHome 接口
+          href: icordebugvariablehome-interface.md
+          items:
+            - name: GetArgumentIndex 方法
+              href: icordebugvariablehome-getargumentindex-method.md
+            - name: GetCode 方法
+              href: icordebugvariablehome-getcode-method.md
+            - name: GetLiveRange 方法
+              href: icordebugvariablehome-getliverange-method.md
+            - name: GetLocationType 方法
+              href: icordebugvariablehome-getlocationtype-method.md
+            - name: GetOffset 方法
+              href: icordebugvariablehome-getoffset-method.md
+            - name: GetRegister 方法
+              href: icordebugvariablehome-getregister-method.md
+            - name: GetSlotIndex 方法
+              href: icordebugvariablehome-getslotindex-method.md
+        - name: ICorDebugVariableHomeEnum 接口
+          href: icordebugvariablehomeenum-interface.md
+          items:
+            - name: Next 方法
+              href: icordebugvariablehomeenum-next-method.md
+        - name: ICorDebugVariableSymbol 接口
+          href: icordebugvariablesymbol-interface.md
+          items:
+            - name: GetName 方法
+              href: icordebugvariablesymbol-getname-method.md
+            - name: GetSize 方法
+              href: icordebugvariablesymbol-getsize-method.md
+            - name: GetSlotIndex 方法
+              href: icordebugvariablesymbol-getslotindex-method.md
+            - name: GetValue 方法
+              href: icordebugvariablesymbol-getvalue-method.md
+            - name: SetValue 方法
+              href: icordebugvariablesymbol-setvalue-method.md
+        - name: ICorDebugVirtualUnwinder 接口
+          href: icordebugvirtualunwinder-interface.md
+          items:
+            - name: GetContext 方法
+              href: icordebugvirtualunwinder-getcontext-method.md
+            - name: Next 方法
+              href: icordebugvirtualunwinder-next-method.md
+        - name: ICorPublish 接口
+          href: icorpublish-interface.md
+          items:
+            - name: EnumProcesses 方法
+              href: icorpublish-enumprocesses-method.md
+            - name: GetProcess 方法
+              href: icorpublish-getprocess-method.md
+        - name: ICorPublishAppDomain 接口
+          href: icorpublishappdomain-interface.md
+          items:
+            - name: GetID 方法
+              href: icorpublishappdomain-getid-method.md
+            - name: GetName 方法
+              href: icorpublishappdomain-getname-method.md
+        - name: ICorPublishAppDomainEnum 接口
+          href: icorpublishappdomainenum-interface.md
+          items:
+            - name: Next 方法
+              href: icorpublishappdomainenum-next-method.md
+        - name: ICorPublishEnum 接口
+          href: icorpublishenum-interface.md
+          items:
+            - name: Clone 方法
+              href: icorpublishenum-clone-method.md
+            - name: GetCount 方法
+              href: icorpublishenum-getcount-method.md
+            - name: Reset 方法
+              href: icorpublishenum-reset-method.md
+            - name: Skip 方法
+              href: icorpublishenum-skip-method.md
+        - name: ICorPublishProcess 接口
+          href: icorpublishprocess-interface.md
+          items:
+            - name: EnumAppDomains 方法
+              href: icorpublishprocess-enumappdomains-method.md
+            - name: GetDisplayName 方法
+              href: icorpublishprocess-getdisplayname-method.md
+            - name: GetProcessID 方法
+              href: icorpublishprocess-getprocessid-method.md
+            - name: IsManaged 方法
+              href: icorpublishprocess-ismanaged-method.md
+        - name: ICorPublishProcessEnum 接口
+          href: icorpublishprocessenum-interface.md
+          items:
+            - name: Next 方法
+              href: icorpublishprocessenum-next-method.md
+        - name: ISOSDacInterface 接口
+          href: isosdacinterface-interface.md
+          items:
+            - name: GetMethodDescData
+              href: isosdacinterface-getmethoddescdata-method.md
+            - name: GetMethodDescPtrFromIP
+              href: isosdacinterface-getmethoddescptrfromip-method.md
+            - name: GetModuleData
+              href: isosdacinterface-getmoduledata-method.md
+        - name: IXCLRDataMethodDefinition 接口
+          href: ixclrdatamethoddefinition-interface.md
+          items:
+            - name: StartEnumInstances
+              href: ixclrdatamethoddefinition-startenuminstances-method.md
+            - name: EnumInstance
+              href: ixclrdatamethoddefinition-enuminstance-method.md
+            - name: EndEnumInstances
+              href: ixclrdatamethoddefinition-endenuminstances-method.md
+        - name: IXCLRDataMethodInstance 接口
+          href: ixclrdatamethodinstance-interface.md
+          items:
+            - name: GetILAddressMap
+              href: ixclrdatamethodinstance-getiladdressmap-method.md
+            - name: GetRepresentativeEntryAddress
+              href: ixclrdatamethodinstance-getrepresentativeentryaddress-method.md
+        - name: IXCLRDataModule 接口
+          href: ixclrdatamodule-interface.md
+          items:
+            - name: GetMethodDefinitionByToken
+              href: ixclrdatamodule-getmethoddefinitionbytoken-method.md
+            - name: 请求
+              href: ixclrdatamodule-request-method.md
+            - name: GetVersionId
+              href: ixclrdatamodule-getversionid-method.md
+        - name: IXCLRDataProcess 接口
+          href: ixclrdataprocess-interface.md
+          items:
+            - name: GetRuntimeNameByAddress
+              href: ixclrdataprocess-getruntimenamebyaddress-method.md
+            - name: GetAppDomainByUniqueId
+              href: ixclrdataprocess-getappdomainbyuniqueid-method.md
+            - name: StartEnumModules
+              href: ixclrdataprocess-startenummodules-method.md
+            - name: EnumModule
+              href: ixclrdataprocess-enummodule-method.md
+            - name: EndEnumModules
+              href: ixclrdataprocess-endenummodules-method.md
+            - name: StartEnumMethodInstancesByAddress
+              href: ixclrdataprocess-startenummethodinstancesbyaddress-method.md
+            - name: EnumMethodInstanceByAddress
+              href: ixclrdataprocess-enummethodinstancebyaddress-method.md
+            - name: EndEnumMethodInstancesByAddress
+              href: ixclrdataprocess-endenummethodinstancesbyaddress-method.md
+    - name: 调试全局静态函数
+      href: debugging-global-static-functions.md
+      items:
+        - name: _EFN_GetManagedExcepStack 函数
+          href: efn-getmanagedexcepstack-function.md
+        - name: _EFN_GetManagedObjectFieldInfo 函数
+          href: efn-getmanagedobjectfieldinfo-function.md
+        - name: _EFN_GetManagedObjectName 函数
+          href: efn-getmanagedobjectname-function.md
+        - name: _EFN_StackTrace 函数
+          href: efn-stacktrace-function.md
+        - name: CLRDataCreateInstance 函数
+          href: clrdatacreateinstance-function.md
+        - name: PFN_CLRDataCreateInstance 函数指针
+          href: pfn-clrdatacreateinstance-function-pointer.md
+    - name: 调试枚举
+      href: debugging-enumerations.md
+      items:
+        - name: CLR_DEBUGGING_PROCESS_FLAGS 枚举
+          href: clr-debugging-process-flags-enumeration.md
+        - name: CLRDataEnumMemoryFlags 枚举
+          href: clrdataenummemoryflags-enumeration.md
+        - name: ClrDataSourceType 枚举
+          href: clrdatasourcetype-enumeration.md
+        - name: COR_PUB_ENUMPROCESS 枚举
+          href: cor-pub-enumprocess-enumeration.md
+        - name: CorDebugBlockingReason 枚举
+          href: cordebugblockingreason-enumeration.md
+        - name: CorDebugChainReason 枚举
+          href: cordebugchainreason-enumeration.md
+        - name: “Cor调试代码调用类型”枚举
+          href: cordebugcodeinvokekind-enumeration.md
+        - name: “Cor调试代码调用目的”枚举
+          href: cordebugcodeinvokepurpose-enumeration.md
+        - name: CorDebugCreateProcessFlags 枚举
+          href: cordebugcreateprocessflags-enumeration.md
+        - name: “Cor调试调试事件类型”枚举
+          href: cordebugdebugeventkind-enumeration.md
+        - name: “Cor调试解码事件标志窗口”枚举
+          href: cordebugdecodeeventflagswindows-enumeration.md
+        - name: CorDebugExceptionCallbackType 枚举
+          href: cordebugexceptioncallbacktype-enumeration.md
+        - name: CorDebugExceptionFlags 枚举
+          href: cordebugexceptionflags-enumeration.md
+        - name: CorDebugExceptionUnwindCallbackType 枚举
+          href: cordebugexceptionunwindcallbacktype-enumeration.md
+        - name: CorDebugGCType 枚举
+          href: cordebuggctype-enumeration.md
+        - name: CorDebugGenerationTypes 枚举
+          href: cordebuggenerationtypes-enumeration.md
+        - name: CorDebugHandleType 枚举
+          href: cordebughandletype-enumeration.md
+        - name: CorDebugIlToNativeMappingTypes 枚举
+          href: cordebugiltonativemappingtypes-enumeration.md
+        - name: CorDebugIntercept 枚举
+          href: cordebugintercept-enumeration.md
+        - name: CorDebugInterfaceVersion 枚举
+          href: cordebuginterfaceversion-enumeration.md
+        - name: CorDebugInternalFrameType 枚举
+          href: cordebuginternalframetype-enumeration.md
+        - name: CorDebugJITCompilerFlags 枚举
+          href: cordebugjitcompilerflags-enumeration.md
+        - name: CorDebugJITCompilerFlagsDeprecated 枚举
+          href: cordebugjitcompilerflagsdeprecated-enumeration.md
+        - name: CorDebugMappingResult 枚举
+          href: cordebugmappingresult-enumeration.md
+        - name: CorDebugMDAFlags 枚举
+          href: cordebugmdaflags-enumeration.md
+        - name: CorDebugNGenPolicy 枚举
+          href: cordebugngenpolicy-enumeration.md
+        - name: CorDebugPlatform 枚举
+          href: cordebugplatform-enumeration.md
+        - name: “Cor调试记录格式”枚举
+          href: cordebugrecordformat-enumeration.md
+        - name: CorDebugRegister 枚举
+          href: cordebugregister-enumeration.md
+        - name: CorDebugSetContextFlag 枚举
+          href: cordebugsetcontextflag-enumeration.md
+        - name: “Cor调试状态已更改”枚举
+          href: cordebugstatechange-enumeration.md
+        - name: CorDebugStepReason 枚举
+          href: cordebugstepreason-enumeration.md
+        - name: CorDebugThreadState 枚举
+          href: cordebugthreadstate-enumeration.md
+        - name: CorDebugUnmappedStop 枚举
+          href: cordebugunmappedstop-enumeration.md
+        - name: CorDebugUserState 枚举
+          href: cordebuguserstate-enumeration.md
+        - name: CorGCReferenceType 枚举
+          href: corgcreferencetype-enumeration.md
+        - name: ILCodeKind 枚举
+          href: ilcodekind-enumeration.md
+        - name: LoggingLevelEnum 枚举
+          href: logginglevelenum-enumeration.md
+        - name: LogSwitchCallReason 枚举
+          href: logswitchcallreason-enumeration.md
+        - name: VariableLocationType 枚举
+          href: variablelocationtype-enumeration.md
+        - name: WriteableMetadataUpdateMode 枚举
+          href: writeablemetadataupdatemode-enumeration.md
+    - name: 调试结构
+      href: debugging-structures.md
+      items:
+        - name: CLRDATA_ADDRESS_RANGE 结构
+          href: clrdata-address-range-structure.md
+        - name: CLRDATA_IL_ADDRESS_MAP 结构
+          href: clrdata-il-address-map-structure.md
+        - name: CLR_DEBUGGING_VERSION 结构
+          href: clr-debugging-version-structure.md
+        - name: CodeChunkInfo 结构
+          href: codechunkinfo-structure.md
+        - name: COR_ACTIVE_FUNCTION 结构
+          href: cor-active-function-structure.md
+        - name: COR_ARRAY_LAYOUT 结构
+          href: cor-array-layout-structure.md
+        - name: COR_DEBUG_IL_TO_NATIVE_MAP 结构
+          href: cor-debug-il-to-native-map-structure.md
+        - name: COR_DEBUG_STEP_RANGE 结构
+          href: cor-debug-step-range-structure.md
+        - name: COR_FIELD 结构
+          href: cor-field-structure.md
+        - name: COR_GC_REFERENCE 结构
+          href: cor-gc-reference-structure.md
+        - name: COR_HEAPINFO 结构
+          href: cor-heapinfo-structure.md
+        - name: COR_HEAPOBJECT 结构
+          href: cor-heapobject-structure.md
+        - name: COR_IL_MAP 结构
+          href: cor-il-map-structure.md
+        - name: COR_SEGMENT 结构
+          href: cor-segment-structure.md
+        - name: COR_TYPEID 结构
+          href: cor-typeid-structure.md
+        - name: COR_TYPE_LAYOUT 结构
+          href: cor-type-layout-structure.md
+        - name: COR_VERSION 结构
+          href: cor-version-structure.md
+        - name: CorDebugBlockingObject 结构
+          href: cordebugblockingobject-structure.md
+        - name: CorDebugEHClause 结构
+          href: cordebugehclause-structure.md
+        - name: CorDebugExceptionObjectStackFrame 结构
+          href: cordebugexceptionobjectstackframe-structure.md
+        - name: CorDebugGuidToTypeMapping 结构
+          href: cordebugguidtotypemapping-structure.md
+        - name: DacpGetModuleAddress 结构
+          href: dacpgetmoduleaddress-structure.md
+          items:
+            - name: 'DacpGetModuleAddress::Request 方法'
+              href: dacpgetmoduleaddress-request-method.md
+        - name: DacpMethodDescData 结构
+          href: dacpmethoddescdata-structure.md
+        - name: DacpModuleData 结构
+          href: dacpmoduledata-structure.md
+        - name: DacpReJitData 结构
+          href: dacprejitdata-structure.md
+        - name: StackTrace_SimpleContext 结构
+          href: stacktrace-simplecontext-structure.md
+    - name: Silverlight 调试
+      href: silverlight-debugging.md
+      items:
+        - name: CloseCLREnumeration 函数
+          href: closeclrenumeration-function.md
+        - name: CreateCoreClrDebugTarget 函数
+          href: createcoreclrdebugtarget-function.md
+        - name: CreateCordbObject 函数
+          href: createcordbobject-function.md
+        - name: CreateVersionStringFromModule 函数
+          href: createversionstringfrommodule-function.md
+        - name: CreateDebuggingInterfaceFromVersion 函数
+          href: createdebugginginterfacefromversion-function-for-silverlight.md
+        - name: CoreClrDebugProcInfo 结构
+          href: coreclrdebugprocinfo-structure.md
+        - name: CoreClrDebugRuntimeInfo 结构
+          href: coreclrdebugruntimeinfo-structure.md
+        - name: EnumerateCLRs 函数
+          href: enumerateclrs-function.md
+        - name: GetStartupNotificationEvent 函数
+          href: getstartupnotificationevent-function.md
+        - name: ICoreClrDebugTarget 接口
+          href: icoreclrdebugtarget-interface.md
+          items:
+            - name: 'ICoreClrDebugTarget::EnumProcesses 方法'
+              href: icoreclrdebugtarget-enumprocesses-method.md
+            - name: 'ICoreClrDebugTarget::EnumRuntimes 方法'
+              href: icoreclrdebugtarget-enumruntimes-method.md
+            - name: 'ICoreClrDebugTarget::FreeMemory 方法'
+              href: icoreclrdebugtarget-freememory-method.md
+        - name: InitDbgTransportManager 函数
+          href: initdbgtransportmanager-function.md
+        - name: ShutdownDbgTransportManager 函数
+          href: shutdowndbgtransportmanager-function.md

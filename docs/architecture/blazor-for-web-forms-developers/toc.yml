@@ -1,0 +1,31 @@
+- name: Blazor for ASP.NET Web Forms 开发人员电子书
+  href: index.md
+  items:
+    - name: 介绍
+      href: introduction.md
+    - name: 体系结构比较
+      href: architecture-comparison.md
+    - name: 托管模型
+      href: hosting-models.md
+    - name: 项目结构
+      href: project-structure.md
+    - name: 启动
+      href: app-startup.md
+    - name: 组件
+      href: components.md
+    - name: 页面、路由和布局
+      href: pages-routing-layouts.md
+    - name: 状态管理
+      href: state-management.md
+    - name: 窗体和验证
+      href: forms-validation.md
+    - name: 处理数据
+      href: data.md
+    - name: 中间件
+      href: middleware.md
+    - name: Configuration
+      href: config.md
+    - name: 安全性
+      href: security-authentication-authorization.md
+    - name: 迁移
+      href: migration.md

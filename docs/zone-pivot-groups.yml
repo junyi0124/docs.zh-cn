@@ -1,0 +1,45 @@
+### YamlMime:ZonePivotGroups
+groups:
+- id: operating-systems-set-one
+  title: 操作系统
+  prompt: 选择操作系统
+  pivots:
+  - id: os-windows
+    title: Windows
+  - id: os-linux
+    title: Linux
+  - id: os-macos
+    title: macOS
+- id: unit-testing-framework-set-one
+  title: 单元测试框架
+  prompt: 选择单元测试框架
+  pivots:
+  - id: mstest
+    title: MSTest
+  - id: xunit
+    title: xUnit
+  - id: nunit
+    title: NUnit
+- id: ide-set-one
+  title: IDE
+  prompt: 选择 IDE
+  pivots:
+  - id: vscode
+    title: Visual Studio Code
+  - id: visualstudio
+    title: Visual Studio
+- id: dotnet-version
+  title: .NET 版本
+  prompt: 选择 .NET 版本
+  pivots:
+  - id: dotnet-5-0
+    title: .NET 5.0
+  - id: dotnet-core-3-1
+    title: .NET Core 3.1
+metadata:
+  ms.openlocfilehash: 6ff0a47a104976f239b2a043cbeb675478ac693b
+  ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/10/2020
+  ms.locfileid: "94440049"

@@ -1,0 +1,2305 @@
+items:
+  - name: .NET 文档
+    href: index.yml
+  - name: 入门
+    items:
+      - name: Hello World
+        href: ../core/get-started.md
+      - name: 入门教程
+        href: ../standard/get-started.md
+      - name: .NET 101 视频
+        href: 'https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80'
+      - name: 如何安装
+        items:
+          - name: 概述
+            href: ../core/install/index.yml
+          - name: 在 Windows 上安装
+            href: ../core/install/windows.md
+          - name: 在 macOS 上安装
+            href: ../core/install/macos.md
+          - name: 在 Linux 上安装
+            items:
+              - name: 概述
+                href: ../core/install/linux.md
+              - name: Ubuntu
+                href: ../core/install/linux-ubuntu.md
+              - name: Alpine
+                href: ../core/install/linux-alpine.md
+              - name: CentOS
+                href: ../core/install/linux-centos.md
+              - name: Debian
+                href: ../core/install/linux-debian.md
+              - name: Fedora
+                href: ../core/install/linux-fedora.md
+              - name: OpenSUSE
+                href: ../core/install/linux-opensuse.md
+              - name: Redhat Enterprise Linux
+                href: ../core/install/linux-rhel.md
+              - name: SLES
+                href: ../core/install/linux-sles.md
+          - name: 删除过时的运行时和 SDK
+            href: ../core/install/remove-runtime-sdk-versions.md
+          - name: 管理 .NET 模板
+            href: ../core/install/templates.md
+          - name: macOS 公证问题
+            href: ../core/install/macos-notarization-issues.md
+          - name: 如何检查 .NET 版本
+            href: ../core/install/how-to-detect-installed-versions.md
+          - name: 安装本地化的 IntelliSense
+            href: ../core/install/localized-intellisense.md
+  - name: 概述
+    items:
+      - name: .NET 简介
+        href: ../core/introduction.md
+      - name: .NET 体系结构组件
+        href: ../standard/components.md
+      - name: .NET 类库
+        href: ../standard/class-libraries.md
+      - name: .NET Standard 概述
+        href: ../standard/net-standard.md
+      - name: 版本、补丁和支持
+        href: ../core/releases-and-support.md
+      - name: .NET 术语表
+        href: ../standard/glossary.md
+      - name: 教程
+        items:
+          - name: 使用 Visual Studio
+            items:
+              - name: 创建控制台应用
+                href: ../core/tutorials/with-visual-studio.md
+                displayName: 'tutorials, visual studio, vs'
+              - name: 调试应用
+                href: ../core/tutorials/debugging-with-visual-studio.md
+                displayName: 'tutorials, visual studio, vs'
+              - name: 发布应用
+                href: ../core/tutorials/publishing-with-visual-studio.md
+                displayName: 'tutorials, visual studio, vs'
+              - name: 创建库
+                href: ../core/tutorials/library-with-visual-studio.md
+                displayName: 'tutorials, visual studio, vs'
+              - name: 对库进行单元测试
+                href: ../core/tutorials/testing-library-with-visual-studio.md
+                displayName: 'tutorials, visual studio, vs'
+              - name: 安装并使用包
+                href: /nuget/quickstart/install-and-use-a-package-in-visual-studio
+                displayName: 'tutorials, visual studio, vs'
+              - name: 创建和发布包
+                href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
+                displayName: 'tutorials, visual studio, vs'
+          - name: 使用 Visual Studio Code
+            items:
+              - name: 创建控制台应用
+                href: ../core/tutorials/with-visual-studio-code.md
+                displayName: 'tutorials, visual studio code, vs code, cli'
+              - name: 调试应用
+                href: ../core/tutorials/debugging-with-visual-studio-code.md
+                displayName: 'tutorials, visual studio code, vs code'
+              - name: 发布应用
+                href: ../core/tutorials/publishing-with-visual-studio-code.md
+                displayName: 'tutorials, visual studio code, vs code'
+              - name: 创建库
+                href: ../core/tutorials/library-with-visual-studio-code.md
+                displayName: 'tutorials, visual studio code, vs code'
+              - name: 对库进行单元测试
+                href: ../core/tutorials/testing-library-with-visual-studio-code.md
+                displayName: 'tutorials, visual studio code, vs code'
+              - name: 安装并使用包
+                href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
+                displayName: 'tutorials, cli'
+              - name: 创建和发布包
+                href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
+                displayName: tutorials
+          - name: 使用 Visual Studio for Mac
+            items:
+              - name: 创建控制台应用
+                href: ../core/tutorials/with-visual-studio-mac.md
+                displayName: 'tutorials, visual studio for mac, vs for mac, cli'
+              - name: 调试应用
+                href: ../core/tutorials/debugging-with-visual-studio-mac.md
+                displayName: 'tutorials, visual studio for mac, vs for mac'
+              - name: 发布应用
+                href: ../core/tutorials/publishing-with-visual-studio-mac.md
+                displayName: 'tutorials, visual studio for mac, vs for mac'
+              - name: 创建库
+                href: ../core/tutorials/library-with-visual-studio-mac.md
+                displayName: 'tutorials, visual studio for mac, vs for mac'
+              - name: 对库进行单元测试
+                href: ../core/tutorials/testing-library-with-visual-studio-mac.md
+                displayName: 'tutorials, visual studio for mac, vs for mac'
+              - name: 安装并使用包
+                href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
+                displayName: 'tutorials, visual studio for mac, vs for mac'
+          - name: 更多教程
+            href: ../core/tutorials/index.md
+  - name: .NET 中的新增功能
+    items:
+      - name: .NET 5.0
+        items:
+          - name: 新增功能
+            href: ../core/dotnet-five.md
+          - name: 重大更改
+            href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 3.1
+        items:
+          - name: 新增功能
+            href: ../core/whats-new/dotnet-core-3-1.md
+          - name: 重大更改
+            href: ../core/compatibility/3.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 3.0
+        items:
+          - name: 新增功能
+            href: ../core/whats-new/dotnet-core-3-0.md
+          - name: 重大更改
+            href: ../core/compatibility/3.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 2.2
+        href: ../core/whats-new/dotnet-core-2-2.md
+      - name: .NET Core 2.1
+        items:
+          - name: 新增功能
+            href: ../core/whats-new/dotnet-core-2-1.md
+          - name: 重大更改
+            href: ../core/compatibility/2.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 2.0
+        href: ../core/whats-new/dotnet-core-2-0.md
+      - name: .NET Standard
+        href: ../standard/whats-new/whats-new-in-dotnet-standard.md
+  - name: 工具和诊断
+    items:
+      - name: 概述
+        displayName: 'diagnostics,tools,tooling,productivity,instrumentation'
+        href: tools-and-productivity.md
+      - name: .NET Core SDK
+        items:
+          - name: 概述
+            displayName: '.net sdk,software development kit,software dev kit,tool'
+            href: ../core/sdk.md
+          - name: 错误消息
+            items:
+              - name: NETSDK1005 和 NETSDK1047
+                href: ../core/tools/sdk-errors/netsdk1005.md
+              - name: NETSDK1013
+                href: ../core/tools/sdk-errors/netsdk1013.md
+              - name: NETSDK1022
+                href: ../core/tools/sdk-errors/netsdk1022.md
+              - name: NETSDK1059
+                href: ../core/tools/sdk-errors/netsdk1059.md
+              - name: NETSDK1071
+                href: ../core/tools/sdk-errors/netsdk1071.md
+              - name: NETSDK1073
+                href: ../core/tools/sdk-errors/netsdk1073.md
+              - name: NETSDK1079
+                href: ../core/tools/sdk-errors/netsdk1079.md
+              - name: NETSDK1145
+                href: ../core/tools/sdk-errors/netsdk1145.md
+      - name: .NET Core CLI
+        items:
+          - name: 概述
+            displayName: '.net cli,command-line interface,cli,tool'
+            href: ../core/tools/index.md
+          - name: 参考
+            items:
+              - name: dotnet
+                href: ../core/tools/dotnet.md
+              - name: dotnet build
+                href: ../core/tools/dotnet-build.md
+              - name: dotnet build-server
+                href: ../core/tools/dotnet-build-server.md
+              - name: dotnet clean
+                href: ../core/tools/dotnet-clean.md
+              - name: dotnet help
+                href: ../core/tools/dotnet-help.md
+              - name: dotnet migrate
+                href: ../core/tools/dotnet-migrate.md
+              - name: dotnet msbuild
+                href: ../core/tools/dotnet-msbuild.md
+              - name: dotnet new
+                href: ../core/tools/dotnet-new.md
+              - name: dotnet nuget
+                items:
+                  - name: dotnet nuget delete
+                    href: ../core/tools/dotnet-nuget-delete.md
+                  - name: dotnet nuget locals
+                    href: ../core/tools/dotnet-nuget-locals.md
+                  - name: dotnet nuget push
+                    href: ../core/tools/dotnet-nuget-push.md
+                  - name: dotnet nuget add source
+                    href: ../core/tools/dotnet-nuget-add-source.md
+                  - name: dotnet nuget disable source
+                    href: ../core/tools/dotnet-nuget-disable-source.md
+                  - name: dotnet nuget enable source
+                    href: ../core/tools/dotnet-nuget-enable-source.md
+                  - name: dotnet nuget list source
+                    href: ../core/tools/dotnet-nuget-list-source.md
+                  - name: dotnet nuget remove source
+                    href: ../core/tools/dotnet-nuget-remove-source.md
+                  - name: dotnet nuget update source
+                    href: ../core/tools/dotnet-nuget-update-source.md
+                  - name: dotnet nuget verify
+                    href: ../core/tools/dotnet-nuget-verify.md
+              - name: dotnet pack
+                href: ../core/tools/dotnet-pack.md
+              - name: dotnet publish
+                href: ../core/tools/dotnet-publish.md
+              - name: dotnet restore
+                href: ../core/tools/dotnet-restore.md
+              - name: dotnet run
+                href: ../core/tools/dotnet-run.md
+              - name: dotnet sln
+                href: ../core/tools/dotnet-sln.md
+              - name: dotnet store
+                href: ../core/tools/dotnet-store.md
+              - name: dotnet test
+                href: ../core/tools/dotnet-test.md
+              - name: dotnet tool
+                items:
+                  - name: dotnet tool install
+                    href: ../core/tools/dotnet-tool-install.md
+                  - name: dotnet tool list
+                    href: ../core/tools/dotnet-tool-list.md
+                  - name: dotnet tool restore
+                    href: ../core/tools/dotnet-tool-restore.md
+                  - name: dotnet tool run
+                    href: ../core/tools/dotnet-tool-run.md
+                  - name: dotnet tool search
+                    href: ../core/tools/dotnet-tool-search.md
+                  - name: dotnet tool uninstall
+                    href: ../core/tools/dotnet-tool-uninstall.md
+                  - name: dotnet tool update
+                    href: ../core/tools/dotnet-tool-update.md
+              - name: dotnet vstest
+                href: ../core/tools/dotnet-vstest.md
+              - name: dotnet-install 脚本
+                href: ../core/tools/dotnet-install-script.md
+              - name: 项目引用命令
+                items:
+                  - name: dotnet add reference
+                    href: ../core/tools/dotnet-add-reference.md
+                  - name: dotnet list reference
+                    href: ../core/tools/dotnet-list-reference.md
+                  - name: dotnet remove reference
+                    href: ../core/tools/dotnet-remove-reference.md
+              - name: 项目包命令
+                items:
+                  - name: dotnet add package
+                    href: ../core/tools/dotnet-add-package.md
+                  - name: dotnet list package
+                    href: ../core/tools/dotnet-list-package.md
+                  - name: dotnet remove package
+                    href: ../core/tools/dotnet-remove-package.md
+          - name: global.json 概述
+            href: ../core/tools/global-json.md
+          - name: 遥测
+            href: ../core/tools/telemetry.md
+          - name: 提升的访问权限
+            href: ../core/tools/elevated-access.md
+          - name: 启用 Tab 自动补全
+            href: ../core/tools/enable-tab-autocomplete.md
+          - name: 与 CLI 的持续集成
+            href: ../core/tools/using-ci-with-cli.md
+          - name: 使用 CLI 开发库
+            href: ../core/tutorials/libraries.md
+          - name: 创建 CLI 的模板
+            items:
+              - name: 自定义模板
+                href: ../core/tools/custom-templates.md
+              - name: 1 - 创建项模板
+                href: ../core/tutorials/cli-templates-create-item-template.md
+                displayName: 'tutorials, cli'
+              - name: 2 - 创建项目模板
+                href: ../core/tutorials/cli-templates-create-project-template.md
+                displayName: 'tutorials, cli'
+              - name: 3 - 创建模板包
+                href: ../core/tutorials/cli-templates-create-template-pack.md
+                displayName: 'tutorials, cli'
+      - name: 集成开发环境 (IDE)
+        items:
+          - name: Visual Studio
+            displayName: 'ide,integrated development environment,vs'
+            href: /visualstudio/windows/
+          - name: Visual Studio for Mac
+            displayName: 'ide,integrated development environment,vs for mac,macOS,Mac'
+            href: /visualstudio/mac/
+          - name: Visual Studio Code
+            displayName: 'ide,integrated development environment,code,vs code,oss ide,'
+            href: 'https://code.visualstudio.com/docs'
+      - name: MSBuild 和项目文件
+        items:
+          - name: 项目 SDK
+            items:
+              - name: 概述
+                href: ../core/project-sdk/overview.md
+              - name: 参考
+                items:
+                  - name: Microsoft.NET.Sdk
+                    href: ../core/project-sdk/msbuild-props.md
+                  - name: Microsoft.NET.Sdk.Web
+                    href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+                  - name: Microsoft.NET.Sdk.Razor
+                    href: /aspnet/core/razor-pages/sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - name: 目标框架
+            href: ../standard/frameworks.md
+          - name: csproj 格式的新增内容
+            href: ../core/tools/csproj.md
+          - name: 依赖项管理
+            href: ../core/tools/dependencies.md
+      - name: 全局和本地工具
+        items:
+          - name: 管理工具
+            displayName: 'global tool,local tool'
+            href: ../core/tools/global-tools.md
+          - name: 排查工具问题
+            displayName: 'global tool troubleshooting,local tool troubleshooting,'
+            href: ../core/tools/troubleshoot-usage-issues.md
+          - name: 为 CLI 创建工具
+            items:
+              - name: 1 - 创建工具
+                displayName: 'tools,tutorials,cli,create global tool,create local tool'
+                href: ../core/tools/global-tools-how-to-create.md
+              - name: 2 - 使用全局工具
+                displayName: 'tools,tutorials,cli,understand global tool'
+                href: ../core/tools/global-tools-how-to-use.md
+              - name: 3 - 使用本地工具
+                href: ../core/tools/local-tools-how-to-use.md
+                displayName: 'tools,tutorials,cli,local tool'
+      - name: 其他工具
+        items:
+          - name: 概述
+            href: ../core/additional-tools/index.md
+          - name: .NET 卸载工具
+            href: ../core/additional-tools/uninstall-tool.md
+          - name: 适用于扩展创建者的 .NET 安装工具
+            href: ../core/additional-tools/vscode-dotnet-runtime.md
+          - name: 生成自签名证书
+            href: ../core/additional-tools/self-signed-certificates-guide.md
+          - name: WCF Web 服务引用提供程序
+            href: ../core/additional-tools/wcf-web-service-reference-guide.md
+          - name: WCF 服务实用工具
+            displayName: dotnet-svcutil
+            href: ../core/additional-tools/dotnet-svcutil-guide.md
+          - name: WCF 服务 XML 序列化程序
+            displayName: dotnet-svcutil.xmlserializer
+            href: ../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
+          - name: XML 序列化程序生成器
+            displayName: 'sgen,sgen.exe,Microsoft.XmlSerializer.Generator,XmlSerializer'
+            href: ../core/additional-tools/xml-serializer-generator.md
+      - name: 诊断和检测
+        items:
+          - name: 概述
+            href: ../core/diagnostics/index.md
+          - name: 托管调试器
+            href: ../core/diagnostics/managed-debuggers.md
+          - name: 转储
+            items:
+              - name: 概述
+                displayName: dumps
+                href: ../core/diagnostics/dumps.md
+              - name: 调试 StackOverflow
+                href: ../core/diagnostics/debug-stackoverflow.md
+              - name: Linux 转储
+                href: ../core/diagnostics/debug-linux-dumps.md
+              - name: SOS 调试程序扩展
+                href: ../core/diagnostics/sos-debugging-extension.md
+          - name: EventCounters
+            items:
+              - name: 概述
+                displayName: EventCounters
+                href: ../core/diagnostics/event-counters.md
+              - name: .NET 中的已知计数器
+                href: ../core/diagnostics/available-counters.md
+          - name: EventPipe
+            href: ../core/diagnostics/eventpipe.md
+          - name: 日志记录和跟踪
+            items:
+              - name: 概述
+                displayName: logging and tracing
+                href: ../core/diagnostics/logging-tracing.md
+              - name: 已知事件提供程序
+                href: ../core/diagnostics/well-known-event-providers.md
+          - name: 运行时事件
+            items:
+              - name: 概述
+                href: ../fundamentals/diagnostics/runtime-events.md
+              - name: 争用事件
+                href: ../fundamentals/diagnostics/runtime-contention-events.md
+              - name: 异常事件
+                href: ../fundamentals/diagnostics/runtime-exception-events.md
+              - name: 垃圾回收事件
+                href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
+              - name: 互操作事件
+                href: ../fundamentals/diagnostics/runtime-interop-events.md
+              - name: 加载器和绑定器事件
+                href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
+              - name: 方法事件
+                href: ../fundamentals/diagnostics/runtime-method-events.md
+              - name: ThreadPool 事件
+                href: ../fundamentals/diagnostics/runtime-thread-events.md
+              - name: 类型系统事件
+                href: ../fundamentals/diagnostics/runtime-type-events.md
+          - name: 收集容器中的诊断
+            href: ../core/diagnostics/diagnostics-in-containers.md
+          - name: .NET Core CLI 全局工具
+            items:
+              - name: dotnet-counters
+                href: ../core/diagnostics/dotnet-counters.md
+              - name: dotnet-dump
+                href: ../core/diagnostics/dotnet-dump.md
+              - name: dotnet-gcdump
+                href: ../core/diagnostics/dotnet-gcdump.md
+              - name: dotnet-trace
+                href: ../core/diagnostics/dotnet-trace.md
+              - name: dotnet-symbol
+                href: ../core/diagnostics/dotnet-symbol.md
+              - name: dotnet-sos
+                href: ../core/diagnostics/dotnet-sos.md
+          - name: .NET Core 诊断教程
+            items:
+              - name: 在 Linux 中通过 PerfCollect 收集性能跟踪
+                href: ../core/diagnostics/trace-perfcollect-lttng.md
+              - name: 通过 EventCounters 获取 perf 指标
+                href: ../core/diagnostics/event-counter-perf.md
+              - name: 调试内存泄露
+                href: ../core/diagnostics/debug-memory-leak.md
+              - name: 调试高 CPU 使用率
+                href: ../core/diagnostics/debug-highcpu.md
+              - name: 调试死锁
+                href: ../core/diagnostics/debug-deadlock.md
+      - name: 代码分析
+        items:
+          - name: 概述
+            href: code-analysis/overview.md
+            displayName: 'code analysis, analyzers'
+          - name: 配置
+            items:
+              - name: 常规选项
+                href: code-analysis/configuration-options.md
+              - name: 配置文件
+                href: code-analysis/configuration-files.md
+              - name: 代码质量规则
+                items:
+                  - name: 规则选项
+                    href: code-analysis/code-quality-rule-options.md
+                  - name: 预定义配置
+                    href: code-analysis/predefined-configurations.md
+              - name: 代码样式规则
+                items:
+                  - name: 规则选项
+                    href: code-analysis/code-style-rule-options.md
+          - name: 规则引用
+            items:
+              - name: 代码质量规则
+                items:
+                  - name: 概述
+                    href: code-analysis/quality-rules/index.md
+                  - name: 设计规则
+                    items:
+                      - name: 概述
+                        displayName: design rules
+                        href: code-analysis/quality-rules/design-warnings.md
+                      - name: CA1000
+                        href: code-analysis/quality-rules/ca1000.md
+                      - name: CA1001
+                        href: code-analysis/quality-rules/ca1001.md
+                      - name: CA1002
+                        href: code-analysis/quality-rules/ca1002.md
+                      - name: CA1003
+                        href: code-analysis/quality-rules/ca1003.md
+                      - name: CA1005
+                        href: code-analysis/quality-rules/ca1005.md
+                      - name: CA1008
+                        href: code-analysis/quality-rules/ca1008.md
+                      - name: CA1010
+                        href: code-analysis/quality-rules/ca1010.md
+                      - name: CA1012
+                        href: code-analysis/quality-rules/ca1012.md
+                      - name: CA1014
+                        href: code-analysis/quality-rules/ca1014.md
+                      - name: CA1016
+                        href: code-analysis/quality-rules/ca1016.md
+                      - name: CA1017
+                        href: code-analysis/quality-rules/ca1017.md
+                      - name: CA1018
+                        href: code-analysis/quality-rules/ca1018.md
+                      - name: CA1019
+                        href: code-analysis/quality-rules/ca1019.md
+                      - name: CA1021
+                        href: code-analysis/quality-rules/ca1021.md
+                      - name: CA1024
+                        href: code-analysis/quality-rules/ca1024.md
+                      - name: CA1027
+                        href: code-analysis/quality-rules/ca1027.md
+                      - name: CA1028
+                        href: code-analysis/quality-rules/ca1028.md
+                      - name: CA1030
+                        href: code-analysis/quality-rules/ca1030.md
+                      - name: CA1031
+                        href: code-analysis/quality-rules/ca1031.md
+                      - name: CA1032
+                        href: code-analysis/quality-rules/ca1032.md
+                      - name: CA1033
+                        href: code-analysis/quality-rules/ca1033.md
+                      - name: CA1034
+                        href: code-analysis/quality-rules/ca1034.md
+                      - name: CA1036
+                        href: code-analysis/quality-rules/ca1036.md
+                      - name: CA1040
+                        href: code-analysis/quality-rules/ca1040.md
+                      - name: CA1041
+                        href: code-analysis/quality-rules/ca1041.md
+                      - name: CA1043
+                        href: code-analysis/quality-rules/ca1043.md
+                      - name: CA1044
+                        href: code-analysis/quality-rules/ca1044.md
+                      - name: CA1045
+                        href: code-analysis/quality-rules/ca1045.md
+                      - name: CA1046
+                        href: code-analysis/quality-rules/ca1046.md
+                      - name: CA1047
+                        href: code-analysis/quality-rules/ca1047.md
+                      - name: CA1050
+                        href: code-analysis/quality-rules/ca1050.md
+                      - name: CA1051
+                        href: code-analysis/quality-rules/ca1051.md
+                      - name: CA1052
+                        href: code-analysis/quality-rules/ca1052.md
+                      - name: CA1053
+                        href: code-analysis/quality-rules/ca1053.md
+                      - name: CA1054
+                        href: code-analysis/quality-rules/ca1054.md
+                      - name: CA1055
+                        href: code-analysis/quality-rules/ca1055.md
+                      - name: CA1056
+                        href: code-analysis/quality-rules/ca1056.md
+                      - name: CA1058
+                        href: code-analysis/quality-rules/ca1058.md
+                      - name: CA1060
+                        href: code-analysis/quality-rules/ca1060.md
+                      - name: CA1061
+                        href: code-analysis/quality-rules/ca1061.md
+                      - name: CA1062
+                        href: code-analysis/quality-rules/ca1062.md
+                      - name: CA1063
+                        href: code-analysis/quality-rules/ca1063.md
+                      - name: CA1064
+                        href: code-analysis/quality-rules/ca1064.md
+                      - name: CA1065
+                        href: code-analysis/quality-rules/ca1065.md
+                      - name: CA1066
+                        href: code-analysis/quality-rules/ca1066.md
+                      - name: CA1067
+                        href: code-analysis/quality-rules/ca1067.md
+                      - name: CA1068
+                        href: code-analysis/quality-rules/ca1068.md
+                      - name: CA1069
+                        href: code-analysis/quality-rules/ca1069.md
+                      - name: CA1070
+                        href: code-analysis/quality-rules/ca1070.md
+                  - name: 文档规则
+                    items:
+                      - name: 概述
+                        displayName: documentation rules
+                        href: code-analysis/quality-rules/documentation-warnings.md
+                      - name: CA1200
+                        href: code-analysis/quality-rules/ca1200.md
+                  - name: 全球化规则
+                    items:
+                      - name: 概述
+                        displayName: globalization rules
+                        href: code-analysis/quality-rules/globalization-warnings.md
+                      - name: CA1303
+                        href: code-analysis/quality-rules/ca1303.md
+                      - name: CA1304
+                        href: code-analysis/quality-rules/ca1304.md
+                      - name: CA1305
+                        href: code-analysis/quality-rules/ca1305.md
+                      - name: CA1307
+                        href: code-analysis/quality-rules/ca1307.md
+                      - name: CA1308
+                        href: code-analysis/quality-rules/ca1308.md
+                      - name: CA1309
+                        href: code-analysis/quality-rules/ca1309.md
+                      - name: CA1310
+                        href: code-analysis/quality-rules/ca1310.md
+                      - name: CA2101
+                        href: code-analysis/quality-rules/ca2101.md
+                  - name: 可移植性和互操作性规则
+                    items:
+                      - name: 概述
+                        displayName: portability and interoperability rules
+                        href: code-analysis/quality-rules/interoperability-warnings.md
+                      - name: CA1401
+                        href: code-analysis/quality-rules/ca1401.md
+                      - name: CA1416
+                        href: code-analysis/quality-rules/ca1416.md
+                      - name: CA1417
+                        href: code-analysis/quality-rules/ca1417.md
+                  - name: 可维护性规则
+                    items:
+                      - name: 概述
+                        displayName: maintainability rules
+                        href: code-analysis/quality-rules/maintainability-warnings.md
+                      - name: CA1501
+                        href: code-analysis/quality-rules/ca1501.md
+                      - name: CA1502
+                        href: code-analysis/quality-rules/ca1502.md
+                      - name: CA1505
+                        href: code-analysis/quality-rules/ca1505.md
+                      - name: CA1506
+                        href: code-analysis/quality-rules/ca1506.md
+                      - name: CA1507
+                        href: code-analysis/quality-rules/ca1507.md
+                      - name: CA1508
+                        href: code-analysis/quality-rules/ca1508.md
+                      - name: CA1509
+                        href: code-analysis/quality-rules/ca1509.md
+                  - name: 命名规则
+                    items:
+                      - name: 概述
+                        displayName: naming rules
+                        href: code-analysis/quality-rules/naming-warnings.md
+                      - name: CA1700
+                        href: code-analysis/quality-rules/ca1700.md
+                      - name: CA1707
+                        href: code-analysis/quality-rules/ca1707.md
+                      - name: CA1708
+                        href: code-analysis/quality-rules/ca1708.md
+                      - name: CA1710
+                        href: code-analysis/quality-rules/ca1710.md
+                      - name: CA1711
+                        href: code-analysis/quality-rules/ca1711.md
+                      - name: CA1712
+                        href: code-analysis/quality-rules/ca1712.md
+                      - name: CA1713
+                        href: code-analysis/quality-rules/ca1713.md
+                      - name: CA1714
+                        href: code-analysis/quality-rules/ca1714.md
+                      - name: CA1715
+                        href: code-analysis/quality-rules/ca1715.md
+                      - name: CA1716
+                        href: code-analysis/quality-rules/ca1716.md
+                      - name: CA1717
+                        href: code-analysis/quality-rules/ca1717.md
+                      - name: CA1720
+                        href: code-analysis/quality-rules/ca1720.md
+                      - name: CA1721
+                        href: code-analysis/quality-rules/ca1721.md
+                      - name: CA1724
+                        href: code-analysis/quality-rules/ca1724.md
+                      - name: CA1725
+                        href: code-analysis/quality-rules/ca1725.md
+                  - name: 性能规则
+                    items:
+                      - name: 概述
+                        displayName: performance rules
+                        href: code-analysis/quality-rules/performance-warnings.md
+                      - name: CA1802
+                        href: code-analysis/quality-rules/ca1802.md
+                      - name: CA1805
+                        href: code-analysis/quality-rules/ca1805.md
+                      - name: CA1806
+                        href: code-analysis/quality-rules/ca1806.md
+                      - name: CA1810
+                        href: code-analysis/quality-rules/ca1810.md
+                      - name: CA1812
+                        href: code-analysis/quality-rules/ca1812.md
+                      - name: CA1813
+                        href: code-analysis/quality-rules/ca1813.md
+                      - name: CA1814
+                        href: code-analysis/quality-rules/ca1814.md
+                      - name: CA1815
+                        href: code-analysis/quality-rules/ca1815.md
+                      - name: CA1819
+                        href: code-analysis/quality-rules/ca1819.md
+                      - name: CA1820
+                        href: code-analysis/quality-rules/ca1820.md
+                      - name: CA1821
+                        href: code-analysis/quality-rules/ca1821.md
+                      - name: CA1822
+                        href: code-analysis/quality-rules/ca1822.md
+                      - name: CA1823
+                        href: code-analysis/quality-rules/ca1823.md
+                      - name: CA1824
+                        href: code-analysis/quality-rules/ca1824.md
+                      - name: CA1825
+                        href: code-analysis/quality-rules/ca1825.md
+                      - name: CA1826
+                        href: code-analysis/quality-rules/ca1826.md
+                      - name: CA1827
+                        href: code-analysis/quality-rules/ca1827.md
+                      - name: CA1828
+                        href: code-analysis/quality-rules/ca1828.md
+                      - name: CA1829
+                        href: code-analysis/quality-rules/ca1829.md
+                      - name: CA1830
+                        href: code-analysis/quality-rules/ca1830.md
+                      - name: CA1831
+                        href: code-analysis/quality-rules/ca1831.md
+                      - name: CA1832
+                        href: code-analysis/quality-rules/ca1832.md
+                      - name: CA1833
+                        href: code-analysis/quality-rules/ca1833.md
+                      - name: CA1834
+                        href: code-analysis/quality-rules/ca1834.md
+                      - name: CA1835
+                        href: code-analysis/quality-rules/ca1835.md
+                      - name: CA1836
+                        href: code-analysis/quality-rules/ca1836.md
+                      - name: CA1837
+                        href: code-analysis/quality-rules/ca1837.md
+                      - name: CA1838
+                        href: code-analysis/quality-rules/ca1838.md
+                  - name: 发布规则
+                    items:
+                      - name: 概述
+                        displayName: publish rules
+                        href: code-analysis/quality-rules/publish-warnings.md
+                      - name: IL3000
+                        href: code-analysis/quality-rules/il3000.md
+                      - name: IL3001
+                        href: code-analysis/quality-rules/il3001.md
+                  - name: 可靠性规则
+                    items:
+                      - name: 概述
+                        displayName: reliability rules
+                        href: code-analysis/quality-rules/reliability-warnings.md
+                      - name: CA2000
+                        href: code-analysis/quality-rules/ca2000.md
+                      - name: CA2002
+                        href: code-analysis/quality-rules/ca2002.md
+                      - name: CA2007
+                        href: code-analysis/quality-rules/ca2007.md
+                      - name: CA2008
+                        href: code-analysis/quality-rules/ca2008.md
+                      - name: CA2009
+                        href: code-analysis/quality-rules/ca2009.md
+                      - name: CA2011
+                        href: code-analysis/quality-rules/ca2011.md
+                      - name: CA2012
+                        href: code-analysis/quality-rules/ca2012.md
+                      - name: CA2013
+                        href: code-analysis/quality-rules/ca2013.md
+                      - name: CA2014
+                        href: code-analysis/quality-rules/ca2014.md
+                      - name: CA2015
+                        href: code-analysis/quality-rules/ca2015.md
+                      - name: CA2016
+                        href: code-analysis/quality-rules/ca2016.md
+                  - name: 安全规则
+                    items:
+                      - name: 概述
+                        displayName: security rules
+                        href: code-analysis/quality-rules/security-warnings.md
+                      - name: CA2100
+                        href: code-analysis/quality-rules/ca2100.md
+                      - name: CA2109
+                        href: code-analysis/quality-rules/ca2109.md
+                      - name: CA2119
+                        href: code-analysis/quality-rules/ca2119.md
+                      - name: CA2153
+                        href: code-analysis/quality-rules/ca2153.md
+                      - name: CA2300
+                        href: code-analysis/quality-rules/ca2300.md
+                      - name: CA2301
+                        href: code-analysis/quality-rules/ca2301.md
+                      - name: CA2302
+                        href: code-analysis/quality-rules/ca2302.md
+                      - name: CA2305
+                        href: code-analysis/quality-rules/ca2305.md
+                      - name: CA2310
+                        href: code-analysis/quality-rules/ca2310.md
+                      - name: CA2311
+                        href: code-analysis/quality-rules/ca2311.md
+                      - name: CA2312
+                        href: code-analysis/quality-rules/ca2312.md
+                      - name: CA2315
+                        href: code-analysis/quality-rules/ca2315.md
+                      - name: CA2321
+                        href: code-analysis/quality-rules/ca2321.md
+                      - name: CA2322
+                        href: code-analysis/quality-rules/ca2322.md
+                      - name: CA2326
+                        href: code-analysis/quality-rules/ca2326.md
+                      - name: CA2327
+                        href: code-analysis/quality-rules/ca2327.md
+                      - name: CA2328
+                        href: code-analysis/quality-rules/ca2328.md
+                      - name: CA2329
+                        href: code-analysis/quality-rules/ca2329.md
+                      - name: CA2330
+                        href: code-analysis/quality-rules/ca2330.md
+                      - name: CA2350
+                        href: code-analysis/quality-rules/ca2350.md
+                      - name: CA2351
+                        href: code-analysis/quality-rules/ca2351.md
+                      - name: CA2352
+                        href: code-analysis/quality-rules/ca2352.md
+                      - name: CA2353
+                        href: code-analysis/quality-rules/ca2353.md
+                      - name: CA2354
+                        href: code-analysis/quality-rules/ca2354.md
+                      - name: CA2355
+                        href: code-analysis/quality-rules/ca2355.md
+                      - name: CA2356
+                        href: code-analysis/quality-rules/ca2356.md
+                      - name: CA2361
+                        href: code-analysis/quality-rules/ca2361.md
+                      - name: CA2362
+                        href: code-analysis/quality-rules/ca2362.md
+                      - name: CA3001
+                        href: code-analysis/quality-rules/ca3001.md
+                      - name: CA3002
+                        href: code-analysis/quality-rules/ca3002.md
+                      - name: CA3003
+                        href: code-analysis/quality-rules/ca3003.md
+                      - name: CA3004
+                        href: code-analysis/quality-rules/ca3004.md
+                      - name: CA3005
+                        href: code-analysis/quality-rules/ca3005.md
+                      - name: CA3006
+                        href: code-analysis/quality-rules/ca3006.md
+                      - name: CA3007
+                        href: code-analysis/quality-rules/ca3007.md
+                      - name: CA3008
+                        href: code-analysis/quality-rules/ca3008.md
+                      - name: CA3009
+                        href: code-analysis/quality-rules/ca3009.md
+                      - name: CA3010
+                        href: code-analysis/quality-rules/ca3010.md
+                      - name: CA3011
+                        href: code-analysis/quality-rules/ca3011.md
+                      - name: CA3012
+                        href: code-analysis/quality-rules/ca3012.md
+                      - name: CA3061
+                        href: code-analysis/quality-rules/ca3061.md
+                      - name: CA3075
+                        href: code-analysis/quality-rules/ca3075.md
+                      - name: CA3076
+                        href: code-analysis/quality-rules/ca3076.md
+                      - name: CA3077
+                        href: code-analysis/quality-rules/ca3077.md
+                      - name: CA3147
+                        href: code-analysis/quality-rules/ca3147.md
+                      - name: CA5350
+                        href: code-analysis/quality-rules/ca5350.md
+                      - name: CA5351
+                        href: code-analysis/quality-rules/ca5351.md
+                      - name: CA5358
+                        href: code-analysis/quality-rules/ca5358.md
+                      - name: CA5359
+                        href: code-analysis/quality-rules/ca5359.md
+                      - name: CA5360
+                        href: code-analysis/quality-rules/ca5360.md
+                      - name: CA5361
+                        href: code-analysis/quality-rules/ca5361.md
+                      - name: CA5362
+                        href: code-analysis/quality-rules/ca5362.md
+                      - name: CA5363
+                        href: code-analysis/quality-rules/ca5363.md
+                      - name: CA5364
+                        href: code-analysis/quality-rules/ca5364.md
+                      - name: CA5365
+                        href: code-analysis/quality-rules/ca5365.md
+                      - name: CA5366
+                        href: code-analysis/quality-rules/ca5366.md
+                      - name: CA5367
+                        href: code-analysis/quality-rules/ca5367.md
+                      - name: CA5368
+                        href: code-analysis/quality-rules/ca5368.md
+                      - name: CA5369
+                        href: code-analysis/quality-rules/ca5369.md
+                      - name: CA5370
+                        href: code-analysis/quality-rules/ca5370.md
+                      - name: CA5371
+                        href: code-analysis/quality-rules/ca5371.md
+                      - name: CA5372
+                        href: code-analysis/quality-rules/ca5372.md
+                      - name: CA5373
+                        href: code-analysis/quality-rules/ca5373.md
+                      - name: CA5374
+                        href: code-analysis/quality-rules/ca5374.md
+                      - name: CA5375
+                        href: code-analysis/quality-rules/ca5375.md
+                      - name: CA5376
+                        href: code-analysis/quality-rules/ca5376.md
+                      - name: CA5377
+                        href: code-analysis/quality-rules/ca5377.md
+                      - name: CA5378
+                        href: code-analysis/quality-rules/ca5378.md
+                      - name: CA5379
+                        href: code-analysis/quality-rules/ca5379.md
+                      - name: CA5380
+                        href: code-analysis/quality-rules/ca5380.md
+                      - name: CA5381
+                        href: code-analysis/quality-rules/ca5381.md
+                      - name: CA5382
+                        href: code-analysis/quality-rules/ca5382.md
+                      - name: CA5383
+                        href: code-analysis/quality-rules/ca5383.md
+                      - name: CA5384
+                        href: code-analysis/quality-rules/ca5384.md
+                      - name: CA5385
+                        href: code-analysis/quality-rules/ca5385.md
+                      - name: CA5386
+                        href: code-analysis/quality-rules/ca5386.md
+                      - name: CA5387
+                        href: code-analysis/quality-rules/ca5387.md
+                      - name: CA5388
+                        href: code-analysis/quality-rules/ca5388.md
+                      - name: CA5389
+                        href: code-analysis/quality-rules/ca5389.md
+                      - name: CA5390
+                        href: code-analysis/quality-rules/ca5390.md
+                      - name: CA5391
+                        href: code-analysis/quality-rules/ca5391.md
+                      - name: CA5392
+                        href: code-analysis/quality-rules/ca5392.md
+                      - name: CA5393
+                        href: code-analysis/quality-rules/ca5393.md
+                      - name: CA5394
+                        href: code-analysis/quality-rules/ca5394.md
+                      - name: CA5395
+                        href: code-analysis/quality-rules/ca5395.md
+                      - name: CA5396
+                        href: code-analysis/quality-rules/ca5396.md
+                      - name: CA5397
+                        href: code-analysis/quality-rules/ca5397.md
+                      - name: CA5398
+                        href: code-analysis/quality-rules/ca5398.md
+                      - name: CA5399
+                        href: code-analysis/quality-rules/ca5399.md
+                      - name: CA5400
+                        href: code-analysis/quality-rules/ca5400.md
+                      - name: CA5401
+                        href: code-analysis/quality-rules/ca5401.md
+                      - name: CA5402
+                        href: code-analysis/quality-rules/ca5402.md
+                      - name: CA5403
+                        href: code-analysis/quality-rules/ca5403.md
+                  - name: 用法规则
+                    items:
+                      - name: 概述
+                        displayName: usage rules
+                        href: code-analysis/quality-rules/usage-warnings.md
+                      - name: CA1801
+                        href: code-analysis/quality-rules/ca1801.md
+                      - name: CA1816
+                        href: code-analysis/quality-rules/ca1816.md
+                      - name: CA2200
+                        href: code-analysis/quality-rules/ca2200.md
+                      - name: CA2201
+                        href: code-analysis/quality-rules/ca2201.md
+                      - name: CA2207
+                        href: code-analysis/quality-rules/ca2207.md
+                      - name: CA2208
+                        href: code-analysis/quality-rules/ca2208.md
+                      - name: CA2211
+                        href: code-analysis/quality-rules/ca2211.md
+                      - name: CA2213
+                        href: code-analysis/quality-rules/ca2213.md
+                      - name: CA2214
+                        href: code-analysis/quality-rules/ca2214.md
+                      - name: CA2215
+                        href: code-analysis/quality-rules/ca2215.md
+                      - name: CA2216
+                        href: code-analysis/quality-rules/ca2216.md
+                      - name: CA2217
+                        href: code-analysis/quality-rules/ca2217.md
+                      - name: CA2218
+                        href: code-analysis/quality-rules/ca2218.md
+                      - name: CA2219
+                        href: code-analysis/quality-rules/ca2219.md
+                      - name: CA2224
+                        href: code-analysis/quality-rules/ca2224.md
+                      - name: CA2225
+                        href: code-analysis/quality-rules/ca2225.md
+                      - name: CA2226
+                        href: code-analysis/quality-rules/ca2226.md
+                      - name: CA2227
+                        href: code-analysis/quality-rules/ca2227.md
+                      - name: CA2229
+                        href: code-analysis/quality-rules/ca2229.md
+                      - name: CA2231
+                        href: code-analysis/quality-rules/ca2231.md
+                      - name: CA2234
+                        href: code-analysis/quality-rules/ca2234.md
+                      - name: CA2235
+                        href: code-analysis/quality-rules/ca2235.md
+                      - name: CA2237
+                        href: code-analysis/quality-rules/ca2237.md
+                      - name: CA2241
+                        href: code-analysis/quality-rules/ca2241.md
+                      - name: CA2242
+                        href: code-analysis/quality-rules/ca2242.md
+                      - name: CA2243
+                        href: code-analysis/quality-rules/ca2243.md
+                      - name: CA2244
+                        href: code-analysis/quality-rules/ca2244.md
+                      - name: CA2245
+                        href: code-analysis/quality-rules/ca2245.md
+                      - name: CA2246
+                        href: code-analysis/quality-rules/ca2246.md
+                      - name: CA2247
+                        href: code-analysis/quality-rules/ca2247.md
+                      - name: CA2248
+                        href: code-analysis/quality-rules/ca2248.md
+                      - name: CA2249
+                        href: code-analysis/quality-rules/ca2249.md
+              - name: 代码样式规则
+                items:
+                  - name: 概述
+                    href: code-analysis/style-rules/index.md
+                  - name: 语言规则
+                    items:
+                      - name: 概述
+                        displayName: language rules
+                        href: code-analysis/style-rules/language-rules.md
+                      - name: this 和 Me 首选项
+                        items:
+                          - name: IDE0003
+                            href: code-analysis/style-rules/ide0003-ide0009.md
+                          - name: IDE0009
+                            href: code-analysis/style-rules/ide0003-ide0009.md
+                      - name: 对类型使用语言关键字
+                        items:
+                          - name: IDE0049
+                            href: code-analysis/style-rules/ide0049.md
+                      - name: 修饰符首选项
+                        items:
+                          - name: 概述
+                            href: code-analysis/style-rules/modifier-preferences.md
+                          - name: IDE0036
+                            href: code-analysis/style-rules/ide0036.md
+                          - name: IDE0040
+                            href: code-analysis/style-rules/ide0040.md
+                          - name: IDE0044
+                            href: code-analysis/style-rules/ide0044.md
+                          - name: IDE0062
+                            href: code-analysis/style-rules/ide0062.md
+                          - name: IDE0064
+                            href: code-analysis/style-rules/ide0064.md
+                      - name: 括号首选项
+                        items:
+                          - name: IDE0047 和 IDE0048
+                            href: code-analysis/style-rules/ide0047-ide0048.md
+                      - name: 表达式级首选项
+                        items:
+                          - name: 概述
+                            href: code-analysis/style-rules/expression-level-preferences.md
+                          - name: IDE0010
+                            href: code-analysis/style-rules/ide0010.md
+                          - name: IDE0017
+                            href: code-analysis/style-rules/ide0017.md
+                          - name: IDE0018
+                            href: code-analysis/style-rules/ide0018.md
+                          - name: IDE0028
+                            href: code-analysis/style-rules/ide0028.md
+                          - name: IDE0032
+                            href: code-analysis/style-rules/ide0032.md
+                          - name: IDE0033
+                            href: code-analysis/style-rules/ide0033.md
+                          - name: IDE0034
+                            href: code-analysis/style-rules/ide0034.md
+                          - name: IDE0037
+                            href: code-analysis/style-rules/ide0037.md
+                          - name: IDE0039
+                            href: code-analysis/style-rules/ide0039.md
+                          - name: IDE0042
+                            href: code-analysis/style-rules/ide0042.md
+                          - name: IDE0045
+                            href: code-analysis/style-rules/ide0045.md
+                          - name: IDE0046
+                            href: code-analysis/style-rules/ide0046.md
+                          - name: IDE0050
+                            href: code-analysis/style-rules/ide0050.md
+                          - name: IDE0054
+                            href: code-analysis/style-rules/ide0054-ide0074.md
+                          - name: IDE0056
+                            href: code-analysis/style-rules/ide0056.md
+                          - name: IDE0057
+                            href: code-analysis/style-rules/ide0057.md
+                          - name: IDE0070
+                            href: code-analysis/style-rules/ide0070.md
+                          - name: IDE0071
+                            href: code-analysis/style-rules/ide0071.md
+                          - name: IDE0072
+                            href: code-analysis/style-rules/ide0072.md
+                          - name: IDE0074
+                            href: code-analysis/style-rules/ide0054-ide0074.md
+                          - name: IDE0075
+                            href: code-analysis/style-rules/ide0075.md
+                          - name: IDE0082
+                            href: code-analysis/style-rules/ide0082.md
+                          - name: IDE0090
+                            href: code-analysis/style-rules/ide0090.md
+                      - name: Null 检查首选项
+                        items:
+                          - name: 概述
+                            href: code-analysis/style-rules/null-checking-preferences.md
+                          - name: IDE0016
+                            href: code-analysis/style-rules/ide0016.md
+                          - name: IDE0029
+                            href: code-analysis/style-rules/ide0029-ide0030.md
+                          - name: IDE0030
+                            href: code-analysis/style-rules/ide0029-ide0030.md
+                          - name: IDE0031
+                            href: code-analysis/style-rules/ide0031.md
+                          - name: IDE0041
+                            href: code-analysis/style-rules/ide0041.md
+                          - name: IDE1005
+                            href: code-analysis/style-rules/ide1005.md
+                      - name: var 首选项
+                        items:
+                          - name: IDE0007
+                            href: code-analysis/style-rules/ide0007-ide0008.md
+                          - name: IDE0008
+                            href: code-analysis/style-rules/ide0007-ide0008.md
+                      - name: Expression-Bodied 成员
+                        items:
+                          - name: 概述
+                            href: code-analysis/style-rules/expression-bodied-members.md
+                          - name: IDE0021
+                            href: code-analysis/style-rules/ide0021.md
+                          - name: IDE0022
+                            href: code-analysis/style-rules/ide0022.md
+                          - name: IDE0023
+                            href: code-analysis/style-rules/ide0023-ide0024.md
+                          - name: IDE0024
+                            href: code-analysis/style-rules/ide0023-ide0024.md
+                          - name: IDE0025
+                            href: code-analysis/style-rules/ide0025.md
+                          - name: IDE0026
+                            href: code-analysis/style-rules/ide0026.md
+                          - name: IDE0027
+                            href: code-analysis/style-rules/ide0027.md
+                          - name: IDE0053
+                            href: code-analysis/style-rules/ide0053.md
+                          - name: IDE0061
+                            href: code-analysis/style-rules/ide0061.md
+                      - name: 模式匹配首选项
+                        items:
+                          - name: 概述
+                            href: code-analysis/style-rules/pattern-matching-preferences.md
+                          - name: IDE0019
+                            href: code-analysis/style-rules/ide0019.md
+                          - name: IDE0020
+                            href: code-analysis/style-rules/ide0020-ide0038.md
+                          - name: IDE0038
+                            href: code-analysis/style-rules/ide0020-ide0038.md
+                          - name: IDE0066
+                            href: code-analysis/style-rules/ide0066.md
+                          - name: IDE0078
+                            href: code-analysis/style-rules/ide0078.md
+                          - name: IDE0083
+                            href: code-analysis/style-rules/ide0083.md
+                          - name: IDE0084
+                            href: code-analysis/style-rules/ide0084.md
+                      - name: 代码块首选项
+                        items:
+                          - name: 概述
+                            href: code-analysis/style-rules/code-block-preferences.md
+                          - name: IDE0011
+                            href: code-analysis/style-rules/ide0011.md
+                          - name: IDE0063
+                            href: code-analysis/style-rules/ide0063.md
+                      - name: using 指令首选项
+                        items:
+                          - name: IDE0065
+                            href: code-analysis/style-rules/ide0065.md
+                      - name: 文件头首选项
+                        items:
+                          - name: IDE0073
+                            href: code-analysis/style-rules/ide0073.md
+                  - name: 不必要的代码规则
+                    items:
+                      - name: 概述
+                        href: code-analysis/style-rules/unnecessary-code-rules.md
+                      - name: IDE0001
+                        href: code-analysis/style-rules/ide0001.md
+                      - name: IDE0002
+                        href: code-analysis/style-rules/ide0002.md
+                      - name: IDE0004
+                        href: code-analysis/style-rules/ide0004.md
+                      - name: IDE0005
+                        href: code-analysis/style-rules/ide0005.md
+                      - name: IDE0035
+                        href: code-analysis/style-rules/ide0035.md
+                      - name: IDE0051
+                        href: code-analysis/style-rules/ide0051.md
+                      - name: IDE0052
+                        href: code-analysis/style-rules/ide0052.md
+                      - name: IDE0058
+                        href: code-analysis/style-rules/ide0058.md
+                      - name: IDE0059
+                        href: code-analysis/style-rules/ide0059.md
+                      - name: IDE0060
+                        href: code-analysis/style-rules/ide0060.md
+                      - name: IDE0079
+                        href: code-analysis/style-rules/ide0079.md
+                      - name: IDE0080
+                        href: code-analysis/style-rules/ide0080.md
+                      - name: IDE0081
+                        href: code-analysis/style-rules/ide0081.md
+                      - name: IDE0100
+                        href: code-analysis/style-rules/ide0100.md
+                      - name: IDE0110
+                        href: code-analysis/style-rules/ide0110.md
+                  - name: 杂项规则
+                    items:
+                      - name: IDE0076
+                        href: code-analysis/style-rules/ide0076.md
+                      - name: IDE0077
+                        href: code-analysis/style-rules/ide0077.md
+                  - name: 格式设置规则
+                    items:
+                      - name: 概述
+                        displayName: formatting rules
+                        href: code-analysis/style-rules/formatting-rules.md
+                  - name: 命名规则
+                    items:
+                      - name: 概述
+                        displayName: naming rules
+                        href: code-analysis/style-rules/naming-rules.md
+          - name: 平台兼容性分析器
+            href: ../standard/analyzers/platform-compat-analyzer.md
+          - name: API 分析器
+            href: ../standard/analyzers/api-analyzer.md
+          - name: 可移植性分析器
+            href: ../standard/analyzers/portability-analyzer.md
+  - name: 执行模型
+    items:
+      - name: 公共语言运行时 (CLR)
+        href: ../standard/clr.md
+      - name: 托管执行过程
+        href: ../standard/managed-execution-process.md
+      - name: .NET 中的程序集
+        href: ../standard/assembly/
+      - name: 元数据和自描述组件
+        href: ../standard/metadata-and-self-describing-components.md
+      - name: 依赖项加载
+        items:
+          - name: 依赖项加载
+            href: ../core/dependency-loading/overview.md
+          - name: 了解 AssemblyLoadContext
+            href: ../core/dependency-loading/understanding-assemblyloadcontext.md
+          - name: 依赖项加载详细信息
+            items:
+              - name: 默认依赖项探测
+                href: ../core/dependency-loading/default-probing.md
+              - name: 加载托管程序集
+                href: ../core/dependency-loading/loading-managed.md
+              - name: 加载附属程序集
+                href: ../core/dependency-loading/loading-resources.md
+              - name: 加载非托管库
+                href: ../core/dependency-loading/loading-unmanaged.md
+          - name: 教程
+            items:
+              - name: 使用插件创建 .NET Core 应用程序
+                href: ../core/tutorials/creating-app-with-plugin-support.md
+              - name: 如何在 .NET Core 中使用和调试程序集可卸载性
+                href: ../core/../standard/assembly/unloadability.md
+      - name: 版本控制
+        items:
+          - name: 概述
+            href: ../core/versions/index.md
+          - name: .NET Core 版本选择
+            href: ../core/versions/selection.md
+      - name: 运行时配置
+        items:
+          - name: 设置
+            href: ../core/run-time-config/index.md
+          - name: 编译设置
+            href: ../core/run-time-config/compilation.md
+          - name: 调试和分析设置
+            href: ../core/run-time-config/debugging-profiling.md
+          - name: 垃圾回收器设置
+            href: ../core/run-time-config/garbage-collector.md
+          - name: 全球化设置
+            href: ../core/run-time-config/globalization.md
+          - name: 网络设置
+            href: ../core/run-time-config/networking.md
+          - name: 线程设置
+            href: ../core/run-time-config/threading.md
+  - name: 部署模型
+    items:
+      - name: 概述
+        href: ../core/deploying/index.md
+      - name: 使用 Visual Studio 部署应用
+        href: ../core/deploying/deploy-with-vs.md
+      - name: 使用 CLI 发布应用
+        href: ../core/deploying/deploy-with-cli.md
+      - name: 使用 CLI 创建 NuGet 包
+        href: ../core/deploying/creating-nuget-packages.md
+      - name: 自包含部署运行时前滚
+        href: ../core/deploying/runtime-patch-selection.md
+      - name: 单个文件部署和可执行文件
+        href: ../core/deploying/single-file.md
+      - name: ReadyToRun
+        href: ../core/deploying/ready-to-run.md
+      - name: 裁剪独立部署
+        items:
+          - name: 概述和操作说明
+            href: ../core/deploying/trim-self-contained.md
+          - name: 选项
+            href: ../core/deploying/trimming-options.md
+      - name: 运行时包存储区
+        href: ../core/deploying/runtime-store.md
+      - name: 运行时标识符 (RID) 目录
+        href: ../core/rid-catalog.md
+      - name: 资源清单名称
+        href: ../core/resources/manifest-file-names.md
+      - name: Docker
+        items:
+          - name: .NET 和 Docker 简介
+            href: ../core/docker/introduction.md
+          - name: 使 .NET Core 应用程序容器化
+            href: ../core/docker/build-container.md
+          - name: Visual Studio 中的容器工具
+            href: /visualstudio/containers/overview
+  - name: 基本编码组件
+    items:
+      - name: 基类型概述
+        items:
+          - name: 常规类型系统和公共语言规范
+            href: ../standard/common-type-system.md
+          - name: 通用类型系统
+            href: ../standard/base-types/common-type-system.md
+          - name: 语言独立性
+            href: ../standard/language-independence.md
+          - name: 与语言无关的组件
+            href: ../standard/language-independence-and-language-independent-components.md
+          - name: .NET 中的类型转换
+            href: ../standard/base-types/type-conversion.md
+          - name: 类型转换表
+            href: ../standard/base-types/conversion-tables.md
+          - name: 在匿名类型和元组类型之间进行选择
+            href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
+          - name: 框架库
+            href: ../standard/framework-libraries.md
+          - name: 类库概述
+            href: ../standard/class-library-overview.md
+      - name: 泛型类型
+        items:
+          - name: 概述
+            href: ../standard/generics/index.md
+          - name: 泛型类型简介
+            href: ../standard/generics.md
+          - name: .NET 中的泛型集合
+            href: ../standard/generics/collections.md
+          - name: 用于操作数组和列表的泛型委托
+            href: ../standard/generics/delegates-for-manipulating-arrays-and-lists.md
+          - name: 泛型接口
+            href: ../standard/generics/interfaces.md
+          - name: 协变和逆变
+            href: ../standard/generics/covariance-and-contravariance.md
+      - name: 集合和数据结构
+        items:
+          - name: 概述
+            href: ../standard/collections/index.md
+            displayName: 'collections, data structures'
+          - name: 选择一个集合类
+            href: ../standard/collections/selecting-a-collection-class.md
+          - name: 常用的集合类型
+            href: ../standard/collections/commonly-used-collection-types.md
+          - name: 何时使用泛型集合
+            href: ../standard/collections/when-to-use-generic-collections.md
+          - name: 集合内的比较和排序
+            href: ../standard/collections/comparisons-and-sorts-within-collections.md
+          - name: 已排序的集合类型
+            href: ../standard/collections/sorted-collection-types.md
+          - name: 哈希表和字典集合类型
+            href: ../standard/collections/hashtable-and-dictionary-collection-types.md
+          - name: 线程安全集合
+            href: ../standard/collections/thread-safe/
+      - name: 委托和 lambda
+        href: ../standard/delegates-lambdas.md
+      - name: 事件
+        items:
+          - name: 概述
+            href: ../standard/events/index.md
+            displayName: events
+          - name: 引发和使用事件
+            href: ../standard/events/how-to-raise-and-consume-events.md
+          - name: 使用事件属性处理多个事件
+            href: ../standard/events/how-to-handle-multiple-events-using-event-properties.md
+          - name: 监视程序设计模式
+            items:
+              - name: 概述
+                href: ../standard/events/observer-design-pattern.md
+                displayName: Observer design pattern
+              - name: 最佳实践
+                href: ../standard/events/observer-design-pattern-best-practices.md
+              - name: 如何：实现提供程序
+                href: ../standard/events/how-to-implement-a-provider.md
+              - name: 如何：实现监视程序
+                href: ../standard/events/how-to-implement-an-observer.md
+      - name: 例外
+        items:
+          - name: 概述
+            href: ../standard/exceptions/index.md
+            displayName: exceptions
+          - name: 异常类和属性
+            href: ../standard/exceptions/exception-class-and-properties.md
+          - name: 操作指南
+            items:
+              - name: 使用 Try-Catch 块捕获异常
+                href: ../standard/exceptions/how-to-use-the-try-catch-block-to-catch-exceptions.md
+              - name: 在 catch 块中使用特定异常
+                href: ../standard/exceptions/how-to-use-specific-exceptions-in-a-catch-block.md
+              - name: 显式引发异常
+                href: ../standard/exceptions/how-to-explicitly-throw-exceptions.md
+              - name: 创建用户定义异常
+                href: ../standard/exceptions/how-to-create-user-defined-exceptions.md
+              - name: 使用本地化的异常消息创建用户定义的异常
+                href: ../standard/exceptions/how-to-create-localized-exception-messages.md
+              - name: 使用 finally 块
+                href: ../standard/exceptions/how-to-use-finally-blocks.md
+          - name: 使用用户筛选的异常处理程序
+            href: ../standard/exceptions/using-user-filtered-exception-handlers.md
+          - name: 处理 COM 互操作异常
+            href: ../standard/exceptions/handling-com-interop-exceptions.md
+          - name: 最佳实践
+            href: ../standard/exceptions/best-practices-for-exceptions.md
+      - name: 数字类型
+        href: ../standard/numerics.md
+      - name: 日期、时间和时区
+        href: ../standard/datetime/
+      - name: 属性
+        items:
+          - name: 概述
+            href: ../standard/attributes/index.md
+            displayName: attributes
+          - name: 应用属性
+            href: ../standard/attributes/applying-attributes.md
+          - name: 编写自定义属性
+            href: ../standard/attributes/writing-custom-attributes.md
+          - name: 检索存储在特性中的信息
+            href: ../standard/attributes/retrieving-information-stored-in-attributes.md
+  - name: 运行时库
+    items:
+      - name: 概述
+        href: ../standard/runtime-libraries-overview.md
+      - name: 设置数字、日期和其他类型的格式
+        items:
+          - name: 概述
+            href: ../standard/base-types/formatting-types.md
+          - name: 标准数字格式字符串
+            href: ../standard/base-types/standard-numeric-format-strings.md
+          - name: 自定义数字格式字符串
+            href: ../standard/base-types/custom-numeric-format-strings.md
+          - name: 标准日期和时间格式字符串
+            href: ../standard/base-types/standard-date-and-time-format-strings.md
+          - name: 自定义日期和时间格式字符串
+            href: ../standard/base-types/custom-date-and-time-format-strings.md
+          - name: 标准 TimeSpan 格式字符串
+            href: ../standard/base-types/standard-timespan-format-strings.md
+          - name: 自定义 TimeSpan 格式字符串
+            href: ../standard/base-types/custom-timespan-format-strings.md
+          - name: 枚举格式字符串
+            href: ../standard/base-types/enumeration-format-strings.md
+          - name: 复合格式设置
+            href: ../standard/base-types/composite-formatting.md
+          - name: 操作指南
+            items:
+              - name: 用前导零填充数字
+                href: ../standard/base-types/how-to-pad-a-number-with-leading-zeros.md
+              - name: 从某一日期提取星期几
+                href: ../standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.md
+              - name: 使用自定义数值格式提供程序
+                href: ../standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md
+              - name: 往返行程日期和时间值
+                href: ../standard/base-types/how-to-round-trip-date-and-time-values.md
+              - name: 显示日期和时间值中的毫秒
+                href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
+              - name: 用非公历日历显示日期
+                href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
+      - name: 使用字符串
+        items:
+          - name: .NET 中的字符编码
+            href: ../standard/base-types/character-encoding-introduction.md
+          - name: 如何使用字符编码类
+            href: ../standard/base-types/character-encoding.md
+          - name: 最佳做法
+            items:
+              - name: 比较字符串
+                href: ../standard/base-types/best-practices-strings.md
+              - name: 显示和保存有格式的数据
+                href: ../standard/base-types/best-practices-display-data.md
+          - name: .NET 5+ 中的行为变更 (Windows)
+            href: ../standard/base-types/string-comparison-net-5-plus.md
+          - name: 基本字符串操作
+            items:
+              - name: 概述
+                href: ../standard/base-types/basic-string-operations.md
+                displayName: string operations
+              - name: 创建新字符串
+                href: ../standard/base-types/creating-new.md
+              - name: 剪裁和删除字符
+                href: ../standard/base-types/trimming.md
+              - name: 填充字符串
+                href: ../standard/base-types/padding.md
+              - name: 比较方法
+                href: ../standard/base-types/comparing.md
+              - name: 更改大小写
+                href: ../standard/base-types/changing-case.md
+              - name: 字符串单独的部分
+                href: ../standard/base-types/divide-up-strings.md
+              - name: 使用 StringBuilder 类
+                href: ../standard/base-types/stringbuilder.md
+              - name: 如何：执行基本字符串控制
+                href: ../standard/base-types/basic-manipulations.md
+          - name: 分析（转换）字符串
+            items:
+              - name: 概述
+                href: ../standard/base-types/parsing-strings.md
+              - name: 分析数值字符串
+                href: ../standard/base-types/parsing-numeric.md
+              - name: 分析日期和时间字符串
+                href: ../standard/base-types/parsing-datetime.md
+              - name: 分析其他字符串
+                href: ../standard/base-types/parsing-other.md
+      - name: 正则表达式
+        items:
+          - name: 概述
+            href: ../standard/base-types/regular-expressions.md
+            displayName: regular expressions
+          - name: 语言参考
+            items:
+              - name: 概述
+                href: ../standard/base-types/regular-expression-language-quick-reference.md
+              - name: 字符转义
+                href: ../standard/base-types/character-escapes-in-regular-expressions.md
+              - name: 字符类
+                href: ../standard/base-types/character-classes-in-regular-expressions.md
+              - name: 定位点
+                href: ../standard/base-types/anchors-in-regular-expressions.md
+              - name: 分组构造
+                href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
+              - name: 数量词
+                href: ../standard/base-types/quantifiers-in-regular-expressions.md
+              - name: 向后引用构造
+                href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
+              - name: 替换构造
+                href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
+              - name: 替代
+                href: ../standard/base-types/substitutions-in-regular-expressions.md
+              - name: 正则表达式选项
+                href: ../standard/base-types/regular-expression-options.md
+              - name: 其他构造
+                href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
+          - name: 正则表达式最佳实践
+            href: ../standard/base-types/best-practices.md
+          - name: 正则表达式对象模型
+            href: ../standard/base-types/the-regular-expression-object-model.md
+          - name: 正则表达式行为
+            items:
+              - name: 概述
+                href: ../standard/base-types/details-of-regular-expression-behavior.md
+              - name: 回溯
+                href: ../standard/base-types/backtracking-in-regular-expressions.md
+              - name: 编译和重复使用
+                href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
+              - name: 线程安全
+                href: ../standard/base-types/thread-safety-in-regular-expressions.md
+          - name: 示例
+            items:
+              - name: 扫描 HREF
+                href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
+              - name: 更改日期格式
+                href: ../standard/base-types/regular-expression-example-changing-date-formats.md
+              - name: 从 URL 中提取协议和端口号
+                href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
+              - name: 从字符串中剥离无效字符
+                href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
+              - name: 验证字符串是否为有效的电子邮件格式
+                href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
+      - name: 序列化
+        items:
+          - name: 概述
+            href: ../standard/serialization/index.md
+          - name: JSON 序列化
+            items:
+              - name: 概述
+                href: ../standard/serialization/system-text-json-overview.md
+                displayName: json serialization
+              - name: 如何对 JSON 进行序列化和反序列化
+                href: ../standard/serialization/system-text-json-how-to.md
+              - name: 控制序列化行为
+                items:
+                  - name: 实例化 JsonSerializerOptions
+                    href: ../standard/serialization/system-text-json-configure-options.md
+                  - name: 启用不区分大小写的匹配
+                    href: ../standard/serialization/system-text-json-character-casing.md
+                  - name: 自定义属性名称和值
+                    href: ../standard/serialization/system-text-json-customize-properties.md
+                  - name: 忽略属性
+                    href: ../standard/serialization/system-text-json-ignore-properties.md
+                  - name: 允许无效的 JSON
+                    href: ../standard/serialization/system-text-json-invalid-json.md
+                  - name: 处理溢出 JSON
+                    href: ../standard/serialization/system-text-json-handle-overflow.md
+                  - name: 保留引用
+                    href: ../standard/serialization/system-text-json-preserve-references.md
+                  - name: 不可变类型和非公共访问器
+                    href: ../standard/serialization/system-text-json-immutability.md
+                  - name: 多态序列化
+                    href: ../standard/serialization/system-text-json-polymorphism.md
+              - name: 如何从 Newtonsoft.Json 迁移
+                href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+              - name: 高级
+                items:
+                  - name: 自定义字符编码
+                    href: ../standard/serialization/system-text-json-character-encoding.md
+                  - name: 自定义序列化程序和反序列化程序
+                    href: ../standard/serialization/write-custom-serializer-deserializer.md
+                  - name: 自定义转换器
+                    href: ../standard/serialization/system-text-json-converters-how-to.md
+          - name: 二进制序列化
+            items:
+              - name: 概述
+                href: ../standard/serialization/binary-serialization.md
+                displayName: binary serialization
+              - name: BinaryFormatter 安全指南
+                href: ../standard/serialization/binaryformatter-security-guide.md
+              - name: BinaryFormatter 事件源
+                href: ../standard/serialization/binaryformatter-event-source.md
+              - name: 序列化概念
+                href: ../standard/serialization/serialization-concepts.md
+              - name: 基本序列化
+                href: ../standard/serialization/basic-serialization.md
+              - name: 有选择的序列化
+                href: ../standard/serialization/selective-serialization.md
+              - name: 自定义序列化
+                href: ../standard/serialization/custom-serialization.md
+              - name: 序列化过程中的步骤
+                href: ../standard/serialization/steps-in-the-serialization-process.md
+              - name: 版本容错序列化
+                href: ../standard/serialization/version-tolerant-serialization.md
+              - name: 序列化准则
+                href: ../standard/serialization/serialization-guidelines.md
+              - name: 如何：对序列化数据进行分块
+                href: ../standard/serialization/how-to-chunk-serialized-data.md
+              - name: 如何：确定 .NET 标准对象是否可序列化
+                href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
+          - name: XML 和 SOAP 序列化
+            items:
+              - name: 概述
+                href: ../standard/serialization/xml-and-soap-serialization.md
+              - name: 深入了解 XML 序列化
+                href: ../standard/serialization/introducing-xml-serialization.md
+              - name: 示例
+                href: ../standard/serialization/examples-of-xml-serialization.md
+              - name: XML 架构定义工具
+                href: ../standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md
+              - name: 使用属性控制 XML 序列化
+                href: ../standard/serialization/controlling-xml-serialization-using-attributes.md
+              - name: 用来控制 XML 序列化的属性
+                href: ../standard/serialization/attributes-that-control-xml-serialization.md
+              - name: 使用 XML Web 服务进行 XML 序列化
+                href: ../standard/serialization/xml-serialization-with-xml-web-services.md
+              - name: 用来控制编码的 SOAP 序列化的属性
+                href: ../standard/serialization/attributes-that-control-encoded-soap-serialization.md
+              - name: 操作指南
+                items:
+                  - name: 序列化对象
+                    href: ../standard/serialization/how-to-serialize-an-object.md
+                  - name: 反序列化对象
+                    href: ../standard/serialization/how-to-deserialize-an-object.md
+                  - name: 使用 XML 架构定义工具生成类和 XML 架构文档
+                    href: ../standard/serialization/xml-schema-def-tool-gen.md
+                  - name: 控制派生类的序列化
+                    href: ../standard/serialization/how-to-control-serialization-of-derived-classes.md
+                  - name: 指定 XML 流的替代元素名称
+                    href: ../standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md
+                  - name: 限定 XML 元素和 XML 属性名
+                    href: ../standard/serialization/how-to-qualify-xml-element-and-xml-attribute-names.md
+                  - name: 将对象序列化为 SOAP 编码的 XML 流
+                    href: ../standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
+                  - name: 替代编码的 SOAP XML 序列化
+                    href: ../standard/serialization/how-to-override-encoded-soap-xml-serialization.md
+              - name: XML 序列化元素
+                items:
+                  - name: system.xml.serialization
+                    href: ../standard/serialization/system-xml-serialization-element.md
+                  - name: dateTimeSerialization
+                    href: ../standard/serialization/datetimeserialization-element.md
+                  - name: schemaImporterExtensions
+                    href: ../standard/serialization/schemaimporterextensions-element.md
+                  - name: schemaImporterExtensions 的 add 元素
+                    href: ../standard/serialization/add-element-for-schemaimporterextensions.md
+                  - name: xmlSerializer
+                    href: ../standard/serialization/xmlserializer-element.md
+              - name: 工具
+                items:
+                  - name: XML 序列化程序生成器工具 (Sgen.exe)
+                    href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
+                  - name: XML 架构定义工具 (Xsd.exe)
+                    href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
+      - name: 文件和流 I/O
+        items:
+          - name: 概述
+            href: ../standard/io/index.md
+          - name: Windows 系统中的文件路径格式
+            href: ../standard/io/file-path-formats.md
+          - name: 通用 I/O 任务
+            href: ../standard/io/common-i-o-tasks.md
+            items:
+              - name: 如何：复制目录
+                href: ../standard/io/how-to-copy-directories.md
+              - name: 如何：枚举目录和文件
+                href: ../standard/io/how-to-enumerate-directories-and-files.md
+              - name: 如何：对新建的数据文件进行读取和写入
+                href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
+              - name: 如何：打开并追加到日志文件
+                href: ../standard/io/how-to-open-and-append-to-a-log-file.md
+              - name: 如何：将文本写入文件
+                href: ../standard/io/how-to-write-text-to-a-file.md
+              - name: 如何：从文件中读取文本
+                href: ../standard/io/how-to-read-text-from-a-file.md
+              - name: 如何：从字符串中读取字符
+                href: ../standard/io/how-to-read-characters-from-a-string.md
+              - name: 如何：向字符串写入字符
+                href: ../standard/io/how-to-write-characters-to-a-string.md
+              - name: 如何：添加或删除访问控制列表条目
+                href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
+              - name: 如何：压缩和解压缩文件
+                href: ../standard/io/how-to-compress-and-extract-files.md
+              - name: 编写流
+                href: ../standard/io/composing-streams.md
+              - name: 如何：在 .NET Framework 流和 Windows 运行时流之间进行转换
+                href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
+          - name: 异步文件 I/O
+            href: ../standard/io/asynchronous-file-i-o.md
+          - name: 处理 I/O 错误
+            href: ../standard/io/handling-io-errors.md
+          - name: 独立存储
+            href: ../standard/io/isolated-storage.md
+            items:
+              - name: 隔离的类型
+                href: ../standard/io/types-of-isolation.md
+              - name: 如何：获取独立存储的存储区
+                href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
+              - name: 如何：枚举独立存储的存储区
+                href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
+              - name: 如何：删除独立存储中的存储区
+                href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
+              - name: 如何：预见独立存储中的空间不足条件
+                href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
+              - name: 如何：在独立存储中创建文件和目录
+                href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
+              - name: 如何：在独立存储中查找现有文件和目录
+                href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
+              - name: 如何：在独立存储中读取和写入文件
+                href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
+              - name: 如何：在独立存储中删除文件和目录
+                href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
+          - name: 管道
+            href: ../standard/io/pipe-operations.md
+            items:
+              - name: 如何：使用匿名管道进行本地进程间通信
+                href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
+              - name: 如何：使用命名管道进行网络进程间通信
+                href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
+          - name: 管道
+            href: ../standard/io/pipelines.md
+          - name: 使用缓冲区
+            href: ../standard/io/buffers.md
+          - name: 内存映射文件
+            href: ../standard/io/memory-mapped-files.md
+      - name: System.Console 类
+        href: ../standard/building-console-apps.md
+      - name: 依赖关系注入
+        items:
+          - name: 概述
+            href: ../core/extensions/dependency-injection.md
+            displayName: 'dependency injection,di,ioc,ioc container,dependency container,inversion of control'
+          - name: 使用依赖关系注入
+            href: ../core/extensions/dependency-injection-usage.md
+            displayName: 'use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control'
+          - name: 依赖关系注入指南
+            href: ../core/extensions/dependency-injection-guidelines.md
+            displayName: 'dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control'
+      - name: Configuration
+        items:
+          - name: 概述
+            href: ../core/extensions/configuration.md
+            displayName: 'configuration,config,configuration sources,config sources'
+          - name: 配置提供程序
+            href: ../core/extensions/configuration-providers.md
+            displayName: 'configuration providers,config providers'
+          - name: 实现自定义配置提供程序
+            href: ../core/extensions/custom-configuration-provider.md
+            displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
+          - name: 选项模式
+            href: ../core/extensions/options.md
+      - name: Logging
+        items:
+          - name: 概述
+            href: ../core/extensions/logging.md
+          - name: 日志记录提供程序
+            href: ../core/extensions/logging-providers.md
+          - name: 实现自定义日志记录提供程序
+            href: ../core/extensions/custom-logging-provider.md
+          - name: 高性能日志记录
+            href: ../core/extensions/high-performance-logging.md
+          - name: 控制台日志格式设置
+            href: ../core/extensions/console-log-formatter.md
+      - name: HostBuilder（泛型主机）
+        href: ../core/extensions/generic-host.md
+  - name: 数据访问
+    items:
+      - name: LINQ
+        href: ../standard/linq/
+      - name: XML 文档和数据
+        href: ../standard/data/xml/
+      - name: Microsoft.Data.Sqlite
+        href: ../standard/data/sqlite/
+      - name: Entity Framework Core
+        href: /ef/core/
+  - name: 并行处理、并发和异步
+    items:
+      - name: 概述
+        href: ../standard/parallel-processing-and-concurrency.md
+        displayName: 'Parallel processing, concurrency, async'
+      - name: 异步编程
+        items:
+          - name: 概述
+            href: ../standard/async.md
+          - name: 深层异步编程
+            href: ../standard/async-in-depth.md
+          - name: 异步编程模式
+            href: ../standard/asynchronous-programming-patterns/
+      - name: 并行编程
+        items:
+          - name: 概述
+            href: ../standard/parallel-programming/index.md
+          - name: 任务并行库 (TPL)
+            href: ../standard/parallel-programming/task-parallel-library-tpl.md
+            items:
+              - name: 数据并行度
+                href: ../standard/parallel-programming/data-parallelism-task-parallel-library.md
+                items:
+                  - name: 如何：编写简单的 Parallel.For 循环
+                    href: ../standard/parallel-programming/how-to-write-a-simple-parallel-for-loop.md
+                  - name: 如何：编写简单的 Parallel.ForEach 循环
+                    href: ../standard/parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
+                  - name: 如何：编写具有线程局部变量的 Parallel.For 循环
+                    href: ../standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md
+                  - name: 如何：使用分区本地变量编写 Parallel.ForEach 循环
+                    href: ../standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md
+                  - name: 如何：取消 Parallel.For 或 ForEach Loop
+                    href: ../standard/parallel-programming/how-to-cancel-a-parallel-for-or-foreach-loop.md
+                  - name: 如何：处理并行循环中的异常
+                    href: ../standard/parallel-programming/how-to-handle-exceptions-in-parallel-loops.md
+                  - name: 如何：加快小型循环体的速度
+                    href: ../standard/parallel-programming/how-to-speed-up-small-loop-bodies.md
+                  - name: 如何：使用并行类循环访问文件目录
+                    href: ../standard/parallel-programming/how-to-iterate-file-directories-with-the-parallel-class.md
+              - name: 基于任务的异步编程
+                href: ../standard/parallel-programming/task-based-asynchronous-programming.md
+                items:
+                  - name: 使用延续任务来链接任务
+                    href: ../standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md
+                  - name: 已附加和已分离的子任务
+                    href: ../standard/parallel-programming/attached-and-detached-child-tasks.md
+                  - name: 任务取消
+                    href: ../standard/parallel-programming/task-cancellation.md
+                  - name: 异常处理
+                    href: ../standard/parallel-programming/exception-handling-task-parallel-library.md
+                  - name: 如何：使用 Parallel.Invoke 执行并行操作
+                    href: ../standard/parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md
+                  - name: 如何：从任务中返回值
+                    href: ../standard/parallel-programming/how-to-return-a-value-from-a-task.md
+                  - name: 如何：取消任务及其子级
+                    href: ../standard/parallel-programming/how-to-cancel-a-task-and-its-children.md
+                  - name: 如何：创建预先计算的任务
+                    href: ../standard/parallel-programming/how-to-create-pre-computed-tasks.md
+                  - name: 如何：使用并行任务遍历二叉树
+                    href: ../standard/parallel-programming/how-to-traverse-a-binary-tree-with-parallel-tasks.md
+                  - name: 如何：解除嵌套任务的包装
+                    href: ../standard/parallel-programming/how-to-unwrap-a-nested-task.md
+                  - name: 如何：防止子任务附加到父任务
+                    href: ../standard/parallel-programming/how-to-prevent-a-child-task-from-attaching-to-its-parent.md
+              - name: 数据流
+                href: ../standard/parallel-programming/dataflow-task-parallel-library.md
+                items:
+                  - name: 如何：将消息写入数据流块和从数据流块读取消息
+                    href: ../standard/parallel-programming/how-to-write-messages-to-and-read-messages-from-a-dataflow-block.md
+                  - name: 如何：实现制造者-使用者数据流模式
+                    href: ../standard/parallel-programming/how-to-implement-a-producer-consumer-dataflow-pattern.md
+                  - name: 如何：在数据流块收到数据时执行操作
+                    href: ../standard/parallel-programming/how-to-perform-action-when-a-dataflow-block-receives-data.md
+                  - name: 演练：创建数据流管道
+                    href: ../standard/parallel-programming/walkthrough-creating-a-dataflow-pipeline.md
+                  - name: 如何：取消链接数据流块
+                    href: ../standard/parallel-programming/how-to-unlink-dataflow-blocks.md
+                  - name: 演练：在 Windows 窗体应用程序中使用数据流
+                    href: ../standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md
+                  - name: 如何：取消数据流块
+                    href: ../standard/parallel-programming/how-to-cancel-a-dataflow-block.md
+                  - name: 演练：创建自定义数据流块类型
+                    href: ../standard/parallel-programming/walkthrough-creating-a-custom-dataflow-block-type.md
+                  - name: 如何：使用 JoinBlock 从多个源读取数据
+                    href: ../standard/parallel-programming/how-to-use-joinblock-to-read-data-from-multiple-sources.md
+                  - name: 如何：指定数据流块中的并行度
+                    href: ../standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md
+                  - name: 如何：在数据流块中指定任务计划程序
+                    href: ../standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md
+                  - name: 演练：使用 BatchBlock 和 BatchedJoinBlock 提高效率
+                    href: ../standard/parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md
+              - name: 将 TPL 用于其他异步模式
+                items:
+                  - name: TPL 和传统 .NET 异步编程
+                    href: ../standard/parallel-programming/tpl-and-traditional-async-programming.md
+                  - name: 如何：在任务中包装 EAP 模式
+                    href: ../standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md
+              - name: 数据并行和任务并行中的潜在缺陷
+                href: ../standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md
+          - name: 并行 LINQ (PLINQ)
+            items:
+              - name: PLINQ 介绍
+                href: ../standard/parallel-programming/introduction-to-plinq.md
+              - name: 了解 PLINQ 中的加速
+                href: ../standard/parallel-programming/understanding-speedup-in-plinq.md
+              - name: PLINQ 中的顺序保留
+                href: ../standard/parallel-programming/order-preservation-in-plinq.md
+              - name: PLINQ 中的合并选项
+                href: ../standard/parallel-programming/merge-options-in-plinq.md
+              - name: PLINQ 的潜在缺陷
+                href: ../standard/parallel-programming/potential-pitfalls-with-plinq.md
+              - name: 如何：创建并执行简单的 PLINQ 查询
+                href: ../standard/parallel-programming/how-to-create-and-execute-a-simple-plinq-query.md
+              - name: 如何：在 PLINQ 查询中控制排序
+                href: ../standard/parallel-programming/how-to-control-ordering-in-a-plinq-query.md
+              - name: 如何：合并并行和顺序 LINQ 查询
+                href: ../standard/parallel-programming/how-to-combine-parallel-and-sequential-linq-queries.md
+              - name: 如何：处理 PLINQ 查询中的异常
+                href: ../standard/parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md
+              - name: 如何：取消 PLINQ 查询
+                href: ../standard/parallel-programming/how-to-cancel-a-plinq-query.md
+              - name: 如何：编写自定义 PLINQ 聚合函数
+                href: ../standard/parallel-programming/how-to-write-a-custom-plinq-aggregate-function.md
+              - name: 如何：在 PLINQ 中指定执行模式
+                href: ../standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md
+              - name: 如何：在 PLINQ 中指定合并选项
+                href: ../standard/parallel-programming/how-to-specify-merge-options-in-plinq.md
+              - name: 如何：使用 PLINQ 循环访问文件目录
+                href: ../standard/parallel-programming/how-to-iterate-file-directories-with-plinq.md
+              - name: 如何：衡量 PLINQ 查询性能
+                href: ../standard/parallel-programming/how-to-measure-plinq-query-performance.md
+              - name: PLINQ 数据示例
+                href: ../standard/parallel-programming/plinq-data-sample.md
+          - name: 用于并行编程的数据结构
+            href: ../standard/parallel-programming/data-structures-for-parallel-programming.md
+          - name: 并行诊断工具
+            href: ../standard/parallel-programming/parallel-diagnostic-tools.md
+          - name: PLINQ 和 TPL 的自定义分区程序
+            items:
+              - name: 概述
+                href: ../standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md
+                displayName: custom partitioners
+              - name: 如何：实现动态分区
+                href: ../standard/parallel-programming/how-to-implement-dynamic-partitions.md
+              - name: 如何：实现静态分区程序
+                href: ../standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md
+          - name: PLINQ 和 TPL 中的 Lambda 表达式
+            href: ../standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md
+          - name: 其他阅读材料
+            href: ../standard/parallel-programming/for-further-reading-parallel-programming.md
+      - name: 线程
+        href: ../standard/threading/
+  - name: 正在测试
+    displayName: 'xUnit,NUnit,MSTest,unit test,test,integration test,load test,smoke test, web test'
+    items:
+      - name: 概述
+        href: ../core/testing/index.md
+      - name: 单元测试最佳做法
+        href: ../core/testing/unit-testing-best-practices.md
+      - name: xUnit
+        items:
+          - name: C# 单元测试
+            href: ../core/testing/unit-testing-with-dotnet-test.md
+          - name: F# 单元测试
+            href: ../core/testing/unit-testing-fsharp-with-dotnet-test.md
+          - name: VB 单元测试
+            href: ../core/testing/unit-testing-visual-basic-with-dotnet-test.md
+          - name: 整理项目并用 xUnit 进行测试
+            href: ../core/tutorials/testing-with-cli.md
+            displayName: 'tutorials, cli'
+      - name: NUnit
+        items:
+          - name: C# 单元测试
+            href: ../core/testing/unit-testing-with-nunit.md
+          - name: F# 单元测试
+            href: ../core/testing/unit-testing-fsharp-with-nunit.md
+          - name: VB 单元测试
+            href: ../core/testing/unit-testing-visual-basic-with-nunit.md
+      - name: MSTest
+        items:
+          - name: C# 单元测试
+            href: ../core/testing/unit-testing-with-mstest.md
+          - name: F# 单元测试
+            href: ../core/testing/unit-testing-fsharp-with-mstest.md
+          - name: VB 单元测试
+            href: ../core/testing/unit-testing-visual-basic-with-mstest.md
+      - name: 运行选择性单元测试
+        href: ../core/testing/selective-unit-tests.md
+      - name: 对单元测试排序
+        href: ../core/testing/order-unit-tests.md
+      - name: 单元测试代码覆盖率
+        href: ../core/testing/unit-testing-code-coverage.md
+      - name: 对已发布的输出进行单元测试
+        href: ../core/testing/unit-testing-published-output.md
+      - name: 使用 Visual Studio 对 .NET Core 项目进行实时单元测试
+        href: /visualstudio/test/live-unit-testing-start
+  - name: 安全性
+    href: ../standard/security/
+  - name: 高级主题
+    items:
+      - name: 性能
+        items:
+          - name: 内存管理
+            items:
+              - name: 什么是“托管代码”？
+                href: ../standard/managed-code.md
+              - name: 自动内存管理
+                href: ../standard/automatic-memory-management.md
+              - name: 清理非托管资源
+                items:
+                  - name: 概述
+                    href: ../standard/garbage-collection/unmanaged.md
+                    displayName: 'unmanaged resources, memory management'
+                  - name: 实现 Dispose 方法
+                    href: ../standard/garbage-collection/implementing-dispose.md
+                    displayName: 'using, Dispose, dispose pattern, IDisposable'
+                  - name: 实现 DisposeAsync 方法
+                    href: ../standard/garbage-collection/implementing-disposeasync.md
+                    displayName: 'await using, DisposeAsync, async dispose pattern, IAsyncDisposable'
+                  - name: 使用实现 IDisposable 的对象
+                    href: ../standard/garbage-collection/using-objects.md
+              - name: 垃圾回收
+                items:
+                  - name: 概述
+                    href: ../standard/garbage-collection/index.md
+                    displayName: garbage collection
+                  - name: 基础知识
+                    href: ../standard/garbage-collection/fundamentals.md
+                  - name: 工作站和服务器垃圾回收
+                    href: ../standard/garbage-collection/workstation-server-gc.md
+                  - name: 后台垃圾回收
+                    href: ../standard/garbage-collection/background-gc.md
+                  - name: 大型对象堆
+                    href: ../standard/garbage-collection/large-object-heap.md
+                  - name: 垃圾回收和性能
+                    href: ../standard/garbage-collection/performance.md
+                  - name: 被动回收
+                    href: ../standard/garbage-collection/induced.md
+                  - name: 延迟模式
+                    href: ../standard/garbage-collection/latency.md
+                  - name: 针对共享 Web 承载优化
+                    href: ../standard/garbage-collection/optimization-for-shared-web-hosting.md
+                  - name: 垃圾回收通知
+                    href: ../standard/garbage-collection/notifications.md
+                  - name: 应用程序域资源监视
+                    href: ../standard/garbage-collection/app-domain-resource-monitoring.md
+                  - name: 弱引用
+                    href: ../standard/garbage-collection/weak-references.md
+          - name: 内存和跨度相关类型
+            items:
+              - name: 概述
+                href: ../standard/memory-and-spans/index.md
+              - name: 内存<T>和跨度<T>使用准则
+                href: ../standard/memory-and-spans/memory-t-usage-guidelines.md
+          - name: 启用了 SIMD 的类型
+            href: ../standard/simd.md
+      - name: 本机互操作性
+        items:
+          - name: 概述
+            href: ../standard/native-interop/index.md
+            displayName: Native interop
+          - name: P/Invoke
+            href: ../standard/native-interop/pinvoke.md
+          - name: 类型封送
+            href: ../standard/native-interop/type-marshaling.md
+          - name: 自定义结构封送
+            href: ../standard/native-interop/customize-struct-marshaling.md
+          - name: 自定义参数封送
+            href: ../standard/native-interop/customize-parameter-marshaling.md
+          - name: 互操作指南
+            href: ../standard/native-interop/best-practices.md
+          - name: 字符集和封送
+            href: ../standard/native-interop/charset.md
+          - name: 向 COM 公开 .NET Core 组件
+            href: ../core/native-interop/expose-components-to-com.md
+          - name: 从本机代码承载 .NET Core
+            href: ../core/tutorials/netcore-hosting.md
+          - name: COM 互操作
+            items:
+              - name: 概述
+                href: ../standard/native-interop/cominterop.md
+                displayName: COM interop
+              - name: COM 包装器
+                items:
+                  - name: 概述
+                    href: ../standard/native-interop/com-wrappers.md
+                    displayName: COM wrappers
+                  - name: 运行时可调用包装器
+                    href: ../standard/native-interop/runtime-callable-wrapper.md
+                  - name: COM 可调用包装
+                    href: ../standard/native-interop/com-callable-wrapper.md
+              - name: 为 COM 互操作限定 .NET 类型
+                href: ../standard/native-interop/qualify-net-types-for-interoperation.md
+          - name: 应用互操作特性
+            href: ../standard/native-interop/apply-interop-attributes.md
+          - name: 异常
+            href: ../standard/native-interop/exceptions-interoperability.md
+      - name: .NET Core 分发打包
+        href: ../core/distribution-packaging.md
+      - name: 全球化和本地化
+        href: ../standard/globalization-localization/
+      - name: 开放源代码库指南
+        href: ../standard/library-guidance/
+      - name: 框架设计准则
+        items:
+          - name: 概述
+            href: ../standard/design-guidelines/index.md
+          - name: 命名准则
+            href: ../standard/design-guidelines/naming-guidelines.md
+            items:
+              - name: 大小写约定
+                href: ../standard/design-guidelines/capitalization-conventions.md
+              - name: 通用命名约定
+                href: ../standard/design-guidelines/general-naming-conventions.md
+              - name: 程序集和 DLL 的名称
+                href: ../standard/design-guidelines/names-of-assemblies-and-dlls.md
+              - name: 命名空间的名称
+                href: ../standard/design-guidelines/names-of-namespaces.md
+              - name: 类、结构和接口的名称
+                href: ../standard/design-guidelines/names-of-classes-structs-and-interfaces.md
+              - name: 类型成员的名称
+                href: ../standard/design-guidelines/names-of-type-members.md
+              - name: 命名参数
+                href: ../standard/design-guidelines/naming-parameters.md
+              - name: 命名资源
+                href: ../standard/design-guidelines/naming-resources.md
+          - name: 类型设计准则
+            href: ../standard/design-guidelines/type.md
+            items:
+              - name: 在类和结构之间选择
+                href: ../standard/design-guidelines/choosing-between-class-and-struct.md
+              - name: 抽象类设计
+                href: ../standard/design-guidelines/abstract-class.md
+              - name: 静态类设计
+                href: ../standard/design-guidelines/static-class.md
+              - name: 接口设计
+                href: ../standard/design-guidelines/interface.md
+              - name: 结构设计
+                href: ../standard/design-guidelines/struct.md
+              - name: 枚举设计
+                href: ../standard/design-guidelines/enum.md
+              - name: 嵌套类型
+                href: ../standard/design-guidelines/nested-types.md
+          - name: 成员设计准则
+            href: ../standard/design-guidelines/member.md
+            items:
+              - name: 成员重载
+                href: ../standard/design-guidelines/member-overloading.md
+              - name: 属性设计
+                href: ../standard/design-guidelines/property.md
+              - name: 构造函数设计
+                href: ../standard/design-guidelines/constructor.md
+              - name: 事件设计
+                href: ../standard/design-guidelines/event.md
+              - name: 字段设计
+                href: ../standard/design-guidelines/field.md
+              - name: 扩展方法
+                href: ../standard/design-guidelines/extension-methods.md
+              - name: 运算符重载
+                href: ../standard/design-guidelines/operator-overloads.md
+              - name: 参数设计
+                href: ../standard/design-guidelines/parameter-design.md
+          - name: 扩展性的加载项
+            href: ../standard/design-guidelines/designing-for-extensibility.md
+            items:
+              - name: 未密封类
+                href: ../standard/design-guidelines/unsealed-classes.md
+              - name: 受保护的成员
+                href: ../standard/design-guidelines/protected-members.md
+              - name: 事件和回调
+                href: ../standard/design-guidelines/events-and-callbacks.md
+              - name: 虚拟成员
+                href: ../standard/design-guidelines/virtual-members.md
+              - name: 抽象（抽象类型和接口）
+                href: ../standard/design-guidelines/abstractions-abstract-types-and-interfaces.md
+              - name: 用于实现抽象的基类
+                href: ../standard/design-guidelines/base-classes-for-implementing-abstractions.md
+              - name: 密封
+                href: ../standard/design-guidelines/sealing.md
+          - name: 框架设计准则
+            href: ../standard/design-guidelines/exceptions.md
+            items:
+              - name: 异常引发
+                href: ../standard/design-guidelines/exception-throwing.md
+              - name: 使用标准异常类型
+                href: ../standard/design-guidelines/using-standard-exception-types.md
+              - name: 异常和性能
+                href: ../standard/design-guidelines/exceptions-and-performance.md
+          - name: 使用准则
+            href: ../standard/design-guidelines/usage-guidelines.md
+            items:
+              - name: 数组
+                href: ../standard/design-guidelines/arrays.md
+              - name: 特性
+                href: ../standard/design-guidelines/attributes.md
+              - name: 集合
+                href: ../standard/design-guidelines/guidelines-for-collections.md
+              - name: 序列化
+                href: ../standard/design-guidelines/serialization.md
+              - name: System.Xml 使用情况
+                href: ../standard/design-guidelines/system-xml-usage.md
+              - name: 相等运算符
+                href: ../standard/design-guidelines/equality-operators.md
+          - name: 常见设计模式
+            href: ../standard/design-guidelines/common-design-patterns.md
+            items:
+              - name: 依赖项属性
+                href: ../standard/design-guidelines/dependency-properties.md
+  - name: 迁移指南
+    items:
+      - name: 中断性变更
+        displayName: app compatibility
+        href: ../core/compatibility/
+      - name: 迁移
+        items:
+          - name: .NET Core 2.0 - 2.1
+            href: ../core/migration/20-21.md
+          - name: 从 project.json 迁移
+            href: ../core/migration/index.md
+          - name: project.json 和 csproj 之间的映射
+            href: ../core/tools/project-json-to-csproj.md
+          - name: CLI 变更概述
+            href: ../core/tools/cli-msbuild-architecture.md
+          - name: 从 DNX 迁移
+            href: ../core/migration/from-dnx.md
+      - name: 从 .NET Framework 移植
+        items:
+          - name: 概述
+            href: ../core/porting/index.md
+          - name: 分析第三方依赖项
+            href: ../core/porting/third-party-deps.md
+          - name: 移植库
+            href: ../core/porting/libraries.md
+          - name: 整理 .NET Core 的项目
+            href: ../core/porting/project-structure.md
+          - name: 不可用的技术
+            href: ../core/porting/net-framework-tech-unavailable.md
+          - name: 工具
+            href: ../core/porting/tools.md
+          - name: 使用 Windows 兼容包
+            href: ../core/porting/windows-compat-pack.md
+          - name: 移植 Windows 窗体项目
+            href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
+          - name: 移植 WPF 项目
+            href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
+          - name: 端口 C++/CLI 项目
+            href: ../core/porting/cpp-cli.md
+      - name: 为服务器应用选择 .NET 5 或 .NET Framework
+        href: ../standard/choosing-core-framework-server.md

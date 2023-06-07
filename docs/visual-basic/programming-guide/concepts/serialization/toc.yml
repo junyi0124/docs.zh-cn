@@ -1,0 +1,9 @@
+- name: 序列化
+  href: index.md
+  items:
+    - name: 如何：将对象数据写入 XML 文件
+      href: how-to-write-object-data-to-an-xml-file.md
+    - name: 如何：从 XML 文件读取对象数据
+      href: how-to-read-object-data-from-an-xml-file.md
+    - name: 演练：保留对象
+      href: walkthrough-persisting-an-object-in-visual-studio.md

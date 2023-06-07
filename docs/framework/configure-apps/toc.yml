@@ -1,0 +1,25 @@
+- name: 配置应用
+  href: index.md
+  items:
+    - name: 如何：使用 DEVPATH 查找程序集
+      href: how-to-locate-assemblies-by-using-devpath.md
+    - name: 重定向程序集版本
+      href: redirect-assembly-versions.md
+      items:
+        - name: 如何：启用和禁用自动绑定重定向
+          href: how-to-enable-and-disable-automatic-binding-redirection.md
+        - name: 程序集绑定重定向安全权限
+          href: assembly-binding-redirection-security-permission.md
+    - name: 指定程序集的位置
+      href: specify-assembly-location.md
+    - name: 配置加密类
+      href: configure-cryptography-classes.md
+      items:
+        - name: 将算法名称映射到加密类
+          href: map-algorithm-names-to-cryptography-classes.md
+        - name: 将对象标识符映射到加密算法
+          href: map-object-identifiers-to-cryptography-algorithms.md
+    - name: 如何：创建发行者策略
+      href: how-to-create-a-publisher-policy.md
+    - name: 配置文件架构
+      href: file-schema/index.md

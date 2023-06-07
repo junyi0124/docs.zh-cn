@@ -1,0 +1,35 @@
+- name: 已声明的元素
+  href: index.md
+  items:
+    - name: Declared Element Names
+      href: declared-element-names.md
+    - name: 已声明元素的特性
+      href: declared-element-characteristics.md
+      items:
+        - name: 生存期
+          href: lifetime.md
+        - name: 范围
+          href: scope.md
+          items:
+            - name: 如何：控制变量的范围
+              href: how-to-control-the-scope-of-a-variable.md
+            - name: 类型提升
+              href: type-promotion.md
+        - name: 访问级别
+          href: access-levels.md
+          items:
+            - name: 如何：控制变量的可用性
+              href: how-to-control-the-availability-of-a-variable.md
+        - name: References to Declared Elements
+          href: references-to-declared-elements.md
+        - name: 阴影操作
+          href: shadowing.md
+          items:
+            - name: 隐藏和重写之间的差异
+              href: differences-between-shadowing-and-overriding.md
+            - name: 如何：隐藏与变量同名的变量
+              href: how-to-hide-a-variable-with-the-same-name-as-your-variable.md
+            - name: 如何：隐藏继承的变量
+              href: how-to-hide-an-inherited-variable.md
+            - name: 如何：访问被派生类隐藏的变量
+              href: how-to-access-a-variable-hidden-by-a-derived-class.md

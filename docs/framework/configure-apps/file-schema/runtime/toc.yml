@@ -1,0 +1,121 @@
+- name: 运行时设置架构
+  href: index.md
+- name: 运行时配置
+  items:
+    - name: <runtime> 元素
+      href: runtime-element.md
+    - name: <alwaysFlowImpersonationPolicy> 元素
+      href: alwaysflowimpersonationpolicy-element.md
+    - name: <AppContextSwitchOverrides> 元素
+      href: appcontextswitchoverrides-element.md
+    - name: <appDomainManagerAssembly> 元素
+      href: appdomainmanagerassembly-element.md
+    - name: <appDomainManagerType> 元素
+      href: appdomainmanagertype-element.md
+    - name: <appDomainResourceMonitoring> 元素
+      href: appdomainresourcemonitoring-element.md
+    - name: <assemblyBinding> 元素
+      href: assemblybinding-element-for-runtime.md
+      items:
+        - name: <dependentAssembly> 元素
+          href: dependentassembly-element.md
+          items:
+            - name: <assemblyIdentity> 元素
+              href: assemblyidentity-element-for-runtime.md
+            - name: <bindingRedirect> 元素
+              href: bindingredirect-element.md
+            - name: <codeBase> 元素
+              href: codebase-element.md
+            - name: <publisherPolicy> 元素
+              href: publisherpolicy-element.md
+        - name: <probing> 元素
+          href: probing-element.md
+        - name: <qualifyAssembly> 元素
+          href: qualifyassembly-element.md
+        - name: <supportPortability> 元素
+          href: supportportability-element.md
+    - name: <bypassTrustedAppStrongNames> 元素
+      href: bypasstrustedappstrongnames-element.md
+    - name: <CompatSortNLSVersion> 元素
+      href: compatsortnlsversion-element.md
+    - name: <Crst_DisableSpinWait> 元素
+      href: crst-disablespinwait-element.md
+    - name: <developmentMode> 元素
+      href: developmentmode-element.md
+    - name: <disableCachingBindingFailures> 元素
+      href: disablecachingbindingfailures-element.md
+    - name: <disableCommitThreadStack> 元素
+      href: disablecommitthreadstack-element.md
+    - name: <disableFusionUpdatesFromADManager> 元素
+      href: disablefusionupdatesfromadmanager-element.md
+    - name: <EnableAmPmParseAdjustment> 元素
+      href: enableampmparseadjustment-element.md
+    - name: <enforceFIPSPolicy> 元素
+      href: enforcefipspolicy-element.md
+    - name: <etwEnable> 元素
+      href: etwenable-element.md
+    - name: <forcePerformanceCounterUniqueSharedMemoryReads> 元素
+      href: forceperformancecounteruniquesharedmemoryreads-element.md
+    - name: <gcAllowVeryLargeObjects> 元素
+      href: gcallowverylargeobjects-element.md
+    - name: <gcConcurrent> 元素
+      href: gcconcurrent-element.md
+    - name: <GCCpuGroup> 元素
+      href: gccpugroup-element.md
+    - name: <GCHeapAffinitizeMask> 元素
+      href: gcheapaffinitizemask-element.md
+    - name: <GCHeapCount> 元素
+      href: gcheapcount-element.md
+    - name: <GCLOHThreshold> 元素
+      href: gclohthreshold-element.md
+    - name: <GCNoAffinitize> 元素
+      href: gcnoaffinitize-element.md
+    - name: <gcServer> 元素
+      href: gcserver-element.md
+    - name: <generatePublisherEvidence> 元素
+      href: generatepublisherevidence-element.md
+    - name: <legacyCorruptedStateExceptionsPolicy> 元素
+      href: legacycorruptedstateexceptionspolicy-element.md
+    - name: <legacyImpersonationPolicy> 元素
+      href: legacyimpersonationpolicy-element.md
+    - name: <loadFromRemoteSources>
+      href: loadfromremotesources-element.md
+    - name: <NetFx40_LegacySecurityPolicy> 元素
+      href: netfx40-legacysecuritypolicy-element.md
+    - name: <NetFx40_PInvokeStackResilience> 元素
+      href: netfx40-pinvokestackresilience-element.md
+    - name: <NetFx45_CultureAwareComparerGetHashCode_LongStrings> 元素
+      href: netfx45-cultureawarecomparergethashcode-longstrings-element.md
+    - name: <PreferComInsteadOfManagedRemoting> 元素
+      href: prefercominsteadofmanagedremoting-element.md
+    - name: <relativeBindForResources> 元素
+      href: relativebindforresources-element.md
+    - name: <shadowCopyVerifyByTimestamp> 元素
+      href: shadowcopyverifybytimestamp-element.md
+    - name: <Thread_UseAllCpuGroups> 元素
+      href: thread-useallcpugroups-element.md
+    - name: <ThrowUnobservedTaskExceptions> 元素
+      href: throwunobservedtaskexceptions-element.md
+    - name: <TimeSpan_LegacyFormatMode> 元素
+      href: timespan-legacyformatmode-element.md
+    - name: <useLegacyJit> 元素
+      href: uselegacyjit-element.md
+    - name: <UseRandomizedStringHashAlgorithm> 元素
+      href: userandomizedstringhashalgorithm-element.md
+    - name: <UseSmallInternalThreadStacks> 元素
+      href: usesmallinternalthreadstacks-element.md
+- name: 运行时缓存
+  items:
+    - name: <system.runtime.caching> 元素
+      href: system-runtime-caching-element-cache-settings.md
+    - name: <memoryCache> 元素
+      href: memorycache-element-cache-settings.md
+    - name: <namedCaches> 元素
+      href: namedcaches-element-cache-settings.md
+      items:
+        - name: <add> 元素
+          href: add-element-for-namedcaches.md
+        - name: <clear> 元素
+          href: clear-element-for-namedcaches.md
+        - name: <remove> 元素
+          href: remove-element-for-namedcaches.md

@@ -1,0 +1,272 @@
+### YamlMime:Hub
+title: 面向 .NET 开发人员的 Azure
+summary: ".NET \U0001F49C Azure"
+brand: dotnet
+metadata:
+  title: 面向 .NET 开发人员的 Azure
+  description: 关于 Azure 上 .NET 的示例、教程和培训内容
+  ms.topic: hub-page
+  ms.prod: azure-dotnet
+  ms.date: 08/12/2020
+  ms.openlocfilehash: 0708f2429f9943e14a5d0b843d6c6f0e6b2232bc
+  ms.sourcegitcommit: a6bd4cad438fe479cbd112eae10f2cd449f06e40
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/08/2020
+  ms.locfileid: "91844551"
+highlightedContent:
+  items:
+  - itemType: overview
+    title: Azure 和 .NET 简介
+    url: intro.md
+  - itemType: quickstart
+    title: 在 Azure 中创建 ASP.NET Core Web 应用
+    url: /azure/app-service/quickstart-dotnetcore
+  - itemType: quickstart
+    title: 生成无服务器函数
+    url: /azure/azure-functions/functions-create-your-first-function-visual-studio
+  - itemType: tutorial
+    title: ASP.NET Core 和 Docker
+    url: /visualstudio/containers/container-tools?view=vs-2019
+  - itemType: deploy
+    title: 使用 Azure DevOps 部署 .NET 应用
+    url: /azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
+  - itemType: tutorial
+    title: 应用服务中的端到端身份验证
+    url: /azure/app-service/app-service-web-tutorial-auth-aad
+  - itemType: learn
+    title: 使用 Microsoft 标识保护自定义 API
+    url: /learn/modules/identity-secure-custom-api/
+  - itemType: learn
+    title: Azure 基础
+    url: /learn/paths/azure-fundamentals/
+conceptualContent:
+  title: 特别推荐的内容
+  summary: 学习开发利用各种 Azure 服务的 .NET 应用。
+  items:
+  - title: 创建 Web 应用
+    links:
+    - itemType: overview
+      text: 应用服务概述
+      url: /azure/app-service/overview
+    - itemType: overview
+      text: Azure Functions 概述
+      url: /azure/azure-functions/functions-overview
+    - itemType: learn
+      text: 使用 Azure 应用服务托管 Web 应用
+      url: /learn/modules/host-a-web-app-with-azure-app-service/
+    - itemType: learn
+      text: 使用 Visual Studio 开发、测试和部署 Azure 函数
+      url: /learn/modules/develop-test-deploy-azure-functions-with-visual-studio/
+    - itemType: learn
+      text: 使用 Azure API 管理来发布和管理 API
+      url: /learn/modules/publish-manage-apis-with-azure-api-management/
+    - itemType: tutorial
+      text: 使用应用服务和 Azure SQL 数据库的 ASP.NET Core Web 应用
+      url: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
+    - itemType: tutorial
+      text: 具有 ASP.NET 和 Azure SQL 数据库的托管标识
+      url: /azure/app-service/app-service-web-tutorial-connect-msi
+    - itemType: tutorial
+      text: Azure 应用服务中启用了 CORS 的 Web API
+      url: /azure/app-service/app-service-web-tutorial-rest-api
+  - title: 创建云原生应用
+    links:
+    - itemType: quickstart
+      text: 在 Kubernetes 中运行和调试微服务
+      url: /azure/dev-spaces/quickstart-netcore-visualstudio
+    - itemType: learn
+      text: 创建和部署云原生 ASP.NET Core 微服务
+      url: /learn/modules/microservices-aspnet-core/
+    - itemType: tutorial
+      text: 在 AKS 中部署和调试多个容器
+      url: /azure/dev-spaces/multi-service-netcore-visualstudio
+    - itemType: tutorial
+      text: 使用 Azure 应用配置的动态配置和功能标志
+      url: /azure/azure-app-configuration/use-feature-flags-dotnet-core
+    - itemType: how-to-guide
+      text: 将 .NET Core 应用部署到 Azure 容器注册表
+      url: /visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
+  - title: 创建移动应用
+    links:
+    - itemType: learn
+      text: 在 Xamarin 应用中使用 Azure 提供的 REST 服务
+      url: /learn/modules/consume-rest-services/
+    - itemType: quickstart
+      text: 使用 .NET SDK 和 Azure Cosmos DB 用于 MongoDB 的 API 创建 Xamarin.Forms 应用
+      url: /azure/cosmos-db/create-mongodb-xamarin
+    - itemType: quickstart
+      text: 结合使用 Azure Blob 存储客户端库与 Xamarin.Forms
+      url: /azure/storage/blobs/storage-quickstart-blobs-xamarin
+    - itemType: tutorial
+      text: 使用 ASP.NET Core 和 Azure 通知中心向 Xamarin.Forms 应用发送推送通知
+      url: /azure/notification-hubs/notification-hubs-backend-service-xamarin-forms
+    - itemType: concept
+      text: 在移动应用中添加身份验证并管理用户标识
+      url: /azure/developer/mobile-apps/authentication
+  - title: 使用存储和数据
+    links:
+    - itemType: concept
+      text: 选择适当的数据存储选项
+      url: /azure/architecture/guide/technology-choices/data-store-overview
+    - itemType: quickstart
+      text: 使用 .NET 查询 Azure SQL 数据库或 Azure SQL 托管实例
+      url: /azure/azure-sql/database/connect-query-dotnet-core
+    - itemType: quickstart
+      text: 使用 .NET 查询 Azure PostgreSQL
+      url: /azure/postgresql/connect-csharp
+    - itemType: concept
+      text: 在 Azure Cosmos DB 中使用存储库模式
+      url: https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-repository-net-sdk-v-1-0-4/
+    - itemType: tutorial
+      text: 连接并查询 Azure Database for PostgreSQL 数据库
+      url: /azure/postgresql/connect-csharp
+    - itemType: learn
+      text: 使用 Entity Framework Core 保留和检索关系数据
+      url: /learn/modules/persist-data-ef-core/
+    - itemType: learn
+      text: 在 Visual Studio Code 中使用 Azure Cosmos DB 构建 .NET Core 应用
+      url: /learn/modules/build-cosmos-db-app-with-vscode/
+    - itemType: learn
+      text: 使用 Azure Blob 存储来存储应用程序数据
+      url: /learn/modules/store-app-data-with-azure-blob-storage/
+  - title: 身份验证和安全性
+    links:
+    - itemType: overview
+      text: Microsoft 标识平台 (Azure AD) 概述
+      url: /azure/active-directory/develop/
+    - itemType: learn
+      text: 使用 OpenID Connect 和 Azure AD 保护应用程序的安全
+      url: /learn/modules/secure-app-with-oidc-and-azure-ad/
+    - itemType: learn
+      text: 使用 Microsoft 标识保护自定义 API
+      url: /learn/modules/identity-secure-custom-api/
+    - itemType: learn
+      text: 使用 ASP.NET Identity 框架保护 ASP.NET Core Web 应用
+      url: /learn/modules/secure-aspnet-core-identity/
+    - itemType: tutorial
+      text: 向 ASP.NET Web 应用添加 Microsoft 登录功能
+      url: /azure/active-directory/develop/tutorial-v2-asp-webapp
+    - itemType: tutorial
+      text: 应用服务中的端到端身份验证
+      url: /azure/app-service/app-service-web-tutorial-auth-aad
+    - itemType: tutorial
+      text: 将 Azure Key Vault 与 ASP.NET Core 一起使用
+      url: /azure/key-vault/tutorial-net-create-vault-azure-web-app
+    - itemType: tutorial
+      text: 将 Azure AD B2C 与 Web API 集成
+      url: /azure/active-directory-b2c/tutorial-single-page-app-webapi
+    - itemType: reference
+      text: 适用于 .NET 的 Azure 标识客户端库
+      url: /dotnet/api/overview/azure/identity-readme?view=azure-dotnet
+  - title: Azure 上的消息传送
+    links:
+    - itemType: overview
+      text: 使用 Azure 队列存储消息
+      url: /azure/storage/queues/storage-queues-introduction
+    - itemType: overview
+      text: 使用 Azure 服务总线进行应用程序之间的消息传递
+      url: /azure/service-bus-messaging
+    - itemType: overview
+      text: 使用事件中心流式传输大数据
+      url: /azure/event-hubs/event-hubs-about
+    - itemType: overview
+      text: 使用事件网格生成基于事件的应用程序
+      url: /azure/event-grid/overview
+    - itemType: quickstart
+      text: 使用 Azure 队列存储
+      url: /azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet
+    - itemType: quickstart
+      text: 使用 Azure 服务总线队列
+      url: /azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues
+    - itemType: quickstart
+      text: 通过 Azure 事件中心实时引入数据
+      url: /azure/event-hubs/event-hubs-dotnet-standard-getstarted-send
+    - itemType: quickstart
+      text: 使用事件网格路由自定义事件
+      url: /azure/event-grid/custom-event-quickstart
+  - title: 诊断和监控
+    links:
+    - itemType: overview
+      text: Azure Monitor
+      url: /azure/azure-monitor/overview
+    - itemType: learn
+      text: 在 Azure Web 应用中捕获并查看页面加载时间
+      url: /learn/modules/capture-page-load-times-application-insights/
+    - itemType: how-to-guide
+      text: 对 Azure 应用服务和 IIS 上的 ASP.NET Core 进行故障排除
+      url: /aspnet/core/test/troubleshoot-azure-iis
+    - itemType: how-to-guide
+      text: Application Insights 与 .NET Core ILogger
+      url: /azure/azure-monitor/app/ilogger
+    - itemType: how-to-guide
+      text: 适用于辅助角色服务应用程序的 Application Insights
+      url: /azure/azure-monitor/app/worker-service
+    - itemType: how-to-guide
+      text: 使用 Visual Studio 对 Azure 应用服务中的应用进行故障排除
+      url: /azure/app-service/troubleshoot-dotnet-visual-studio
+  - title: 迁移
+    links:
+    - itemType: concept
+      text: 选择 Azure 托管选项
+      url: ./migration/choose.md
+    - itemType: how-to-guide
+      text: 将 .NET Web 应用或服务迁移到 Azure 应用服务
+      url: ./migration/app-service.md
+    - itemType: how-to-guide
+      text: 将 ASP.NET 应用迁移到 Azure VM
+      url: ./migration/vm.md
+    - itemType: how-to-guide
+      text: 将 SQL Server 数据库迁移到 Azure
+      url: ./migration/sql.md
+  - title: 用于 .NET 的 Azure SDK
+    links:
+    - itemType: download
+      text: 包
+      url: packages.md
+    - itemType: concept
+      text: 应用的身份验证
+      url: authentication.md
+    - itemType: concept
+      text: Logging
+      url: logging.md
+    - itemType: sample
+      text: SDK 示例应用
+      url: /samples/dotnet/samples/azure-identity-resource-management-storage/
+    - itemType: download
+      text: 工具
+      url: tools.md
+    - itemType: reference
+      text: API 参考
+      url: /dotnet/api/overview/azure/?view=azure-dotnet
+additionalContent:
+  sections:
+  - title: .NET 和 Azure 社区资源
+    items:
+    - title: .NET
+      links:
+      - text: .NET 文档
+        url: /dotnet
+      - text: ASP.NET 文档
+        url: /aspnet
+    - title: 网络广播和节目
+      links:
+      - text: Azure Friday
+        url: https://azure.microsoft.com/resources/videos/azure-friday/
+      - text: The Cloud Native Show
+        url: https://channel9.msdn.com/Shows/The-Cloud-Native-Show
+      - text: On .NET
+        url: https://channel9.msdn.com/Shows/On-NET
+      - text: .NET Community Standup
+        url: https://dotnet.microsoft.com/platform/community/standup
+      - text: .NET 文档显示
+        url: https://dotnetdocs.dev
+    - title: 开放源
+      links:
+      - text: 用于 .NET 的 Azure SDK
+        url: https://github.com/Azure/azure-sdk-for-net
+      - text: Microsoft 标识 Web
+        url: https://github.com/AzureAD/microsoft-identity-web
+      - text: .NET 平台
+        url: https://github.com/dotnet/
+  footer: 参与 .NET 文档的编写。请参阅我们的[参与者指南](/contribute/dotnet/dotnet-contribute)。

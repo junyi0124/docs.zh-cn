@@ -1,0 +1,99 @@
+- name: 为 Azure 构建云本机 .NET 应用
+  href: index.md
+  items:
+    - name: 云本机应用程序简介
+      href: introduction.md
+      items:
+        - name: 定义云本机
+          href: definition.md
+        - name: 云本机的候选应用
+          href: candidate-apps.md
+    - name: 介绍 eShopOnContainers 参考应用
+      href: introduce-eshoponcontainers-reference-app.md
+      items:
+        - name: 将 eShopOnContainers 映射到 Azure 服务
+          href: map-eshoponcontainers-azure-services.md
+        - name: 将 eShopOnContainers 部署到 Azure
+          href: deploy-eshoponcontainers-azure.md
+        - name: 集中式配置
+          href: centralized-configuration.md
+    - name: 缩放云本机 .NET 应用程序
+      href: scale-applications.md
+      items:
+        - name: 利用容器和协调器
+          href: leverage-containers-orchestrators.md
+        - name: 利用无服务器函数
+          href: leverage-serverless-functions.md
+        - name: 合并容器和无服务器方法
+          href: combine-containers-serverless-approaches.md
+        - name: 在 Azure 中部署容器
+          href: deploy-containers-azure.md
+        - name: 缩放容器和无服务器应用程序
+          href: scale-containers-serverless.md
+        - name: 其他部署选项
+          href: other-deployment-options.md
+    - name: 云本机通信模式
+      href: communication-patterns.md
+      items:
+        - name: 前端客户端通信
+          href: front-end-communication.md
+        - name: 服务间的通信
+          href: service-to-service-communication.md
+        - name: gRPC
+          href: grpc.md
+        - name: 服务网格通信基础结构
+          href: service-mesh-communication-infrastructure.md
+    - name: 分布式数据
+      href: distributed-data.md
+      items:
+        - name: 关系与NoSQL 数据
+          href: relational-vs-nosql-data.md
+        - name: 缓存在云本机应用程序中
+          href: azure-caching.md
+        - name: Azure 中的 Elasticsearch
+          href: elastic-search-in-azure.md
+    - name: 云本机复原能力
+      href: resiliency.md
+      items:
+        - name: 应用程序复原能力模式
+          href: application-resiliency-patterns.md
+        - name: 通过 Azure 实现云基础结构复原能力
+          href: infrastructure-resiliency-azure.md
+        - name: 可复原通信
+          href: resilient-communications.md
+    - name: 监视和运行状况
+      href: monitoring-health.md
+      items:
+        - name: 可观测性模式
+          href: observability-patterns.md
+        - name: 使用弹性堆栈进行日志记录
+          href: logging-with-elastic-stack.md
+        - name: 在 Azure Kubernetes 服务中进行监视
+          href: monitoring-azure-kubernetes.md
+        - name: Azure Monitor
+          href: azure-monitor.md
+    - name: 标识
+      href: identity.md
+      items:
+        - name: 云本机应用中的身份验证和授权
+          href: authentication-authorization.md
+        - name: Azure Active Directory
+          href: azure-active-directory.md
+        - name: 标识服务器
+          href: identity-server.md
+    - name: 安全性
+      href: security.md
+      items:
+        - name: 云本机应用的 Azure 安全性
+          href: azure-security.md
+    - name: DevOps
+      href: devops.md
+      items:
+        - name: 特性标志
+          href: feature-flags.md
+        - name: 基础结构即代码
+          href: infrastructure-as-code.md
+        - name: 云本机应用程序捆绑包
+          href: application-bundles.md
+    - name: 总结
+      href: summary.md

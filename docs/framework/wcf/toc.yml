@@ -1,0 +1,245 @@
+- name: 使用 WCF 的面向服务的应用程序
+  href: index.md
+  items:
+    - name: Windows Communication Foundation 4.5 中的新增功能
+      href: whats-new.md
+    - name: WCF 简化功能
+      href: wcf-simplification-features.md
+    - name: 文档指南
+      href: guide-to-the-documentation.md
+    - name: 概念概述
+      href: conceptual-overview.md
+      items:
+        - name: 什么是 Windows Communication Foundation
+          href: whats-wcf.md
+        - name: Windows Communication Foundation 基础概念
+          href: fundamental-concepts.md
+        - name: Windows Communication Foundation 体系结构
+          href: architecture.md
+        - name: WCF and .NET Framework Client Profile
+          href: wcf-and-net-framework-client-profile.md
+    - name: 入门教程
+      href: getting-started-tutorial.md
+      items:
+        - name: 定义服务协定
+          href: how-to-define-a-wcf-service-contract.md
+        - name: 实现服务协定
+          href: how-to-implement-a-wcf-contract.md
+        - name: 托管和运行基本服务
+          href: how-to-host-and-run-a-basic-wcf-service.md
+        - name: 创建客户端
+          href: how-to-create-a-wcf-client.md
+        - name: 使用客户端
+          href: how-to-use-a-wcf-client.md
+        - name: 入门教程疑难解答
+          href: troubleshooting-the-getting-started-tutorial.md
+    - name: 基本 WCF 编程
+      href: basic-wcf-programming.md
+      items:
+        - name: 基本编程生命周期
+          href: basic-programming-lifecycle.md
+        - name: 设计和实现服务
+          href: designing-and-implementing-services.md
+          items:
+            - name: 设计服务协定
+              href: designing-service-contracts.md
+              items:
+                - name: 在协定和服务中指定和处理错误
+                  href: specifying-and-handling-faults-in-contracts-and-services.md
+                  items:
+                    - name: 定义和指定错误
+                      href: defining-and-specifying-faults.md
+                      items:
+                        - name: 如何：在服务协定中声明错误
+                          href: how-to-declare-faults-in-service-contracts.md
+                    - name: 发送和接收错误
+                      href: sending-and-receiving-faults.md
+                - name: 使用会话
+                  href: using-sessions.md
+                - name: 同步和异步操作
+                  href: synchronous-and-asynchronous-operations.md
+                  items:
+                    - name: 如何：实现异步服务操作
+                      href: how-to-implement-an-asynchronous-service-operation.md
+                - name: 可靠服务
+                  href: reliable-services.md
+                - name: 服务和事务
+                  href: services-and-transactions.md
+            - name: 实现服务协定
+              href: implementing-service-contracts.md
+              items:
+                - name: 指定服务运行时行为
+                  href: specifying-service-run-time-behavior.md
+        - name: 正在配置服务
+          href: configuring-services.md
+          items:
+            - name: 简化配置
+              href: simplified-configuration.md
+            - name: 使用配置文件配置服务
+              href: configuring-services-using-configuration-files.md
+            - name: 在代码中配置 WCF 服务
+              href: configuring-wcf-services-in-code.md
+            - name: 绑定
+              href: bindings.md
+              items:
+                - name: WCF 绑定概述
+                  href: bindings-overview.md
+                - name: 系统提供的绑定
+                  href: system-provided-bindings.md
+                - name: 使用绑定配置服务和客户端
+                  href: using-bindings-to-configure-services-and-clients.md
+                  items:
+                    - name: 如何：在代码中指定客户端绑定
+                      href: how-to-specify-a-client-binding-in-code.md
+                    - name: 如何：在配置中指定客户端绑定
+                      href: how-to-specify-a-client-binding-in-configuration.md
+                    - name: 如何：在代码中指定服务绑定
+                      href: how-to-specify-a-service-binding-in-code.md
+                    - name: 如何：在配置中指定服务绑定
+                      href: how-to-specify-a-service-binding-in-configuration.md
+                - name: 配置服务绑定
+                  href: configuring-bindings-for-wcf-services.md
+            - name: 终结点
+              href: endpoints.md
+              items:
+                - name: 终结点创建概述
+                  href: endpoint-creation-overview.md
+                - name: 指定终结点地址
+                  href: specifying-an-endpoint-address.md
+                - name: 发布元数据终结点
+                  href: publishing-metadata-endpoints.md
+            - name: 保证服务的安全
+              href: securing-services.md
+              items:
+                - name: 如何：使用 Windows 凭据保护服务的安全
+                  href: how-to-secure-a-service-with-windows-credentials.md
+                - name: 如何：设置安全模式
+                  href: how-to-set-the-security-mode.md
+                - name: 如何：指定客户端凭据类型
+                  href: how-to-specify-the-client-credential-type.md
+                - name: 如何：使用 PrincipalPermissionAttribute 类限制访问
+                  href: how-to-restrict-access-with-the-principalpermissionattribute-class.md
+                - name: 如何：在服务上模拟客户端
+                  href: how-to-impersonate-a-client-on-a-service.md
+                - name: 如何：检查安全性上下文
+                  href: how-to-examine-the-security-context.md
+                - name: 了解保护级别
+                  href: understanding-protection-level.md
+                - name: 如何：设置 ProtectionLevel 属性
+                  href: how-to-set-the-protectionlevel-property.md
+            - name: 创建 WS-I 基本配置文件 1.1 可互操作服务
+              href: creating-ws-i-basic-profile-1-1-interoperable-services.md
+        - name: 承载服务
+          href: hosting-services.md
+          items:
+            - name: 如何：在托管应用程序中承载 WCF 服务
+              href: how-to-host-a-wcf-service-in-a-managed-application.md
+            - name: 如何：在 .NET Framework 4 环境下运行的 IIS 中承载使用 .NET Framework 3.5 编写的 WCF 服务
+              href: host-a-wcf-service-net-framework-3-5-iis--net-framework-4.md
+        - name: 生成客户端
+          href: building-clients.md
+          items:
+            - name: WCF 客户端概述
+              href: wcf-client-overview.md
+            - name: 使用 WCF 客户端访问服务
+              href: accessing-services-using-a-wcf-client.md
+              items:
+                - name: 在可移植子集项目中添加服务引用
+                  href: add-service-reference-in-a-portable-subset-project.md
+                - name: 指定客户端运行时行为
+                  href: specifying-client-run-time-behavior.md
+                - name: 配置客户端行为
+                  href: configuring-client-behaviors.md
+            - name: 保证客户端的安全
+              href: securing-clients.md
+              items:
+                - name: 如何：指定客户端凭据值
+                  href: how-to-specify-client-credential-values.md
+        - name: 扩展性介绍
+          href: introduction-to-extensibility.md
+        - name: WCF 疑难解答快速入门
+          href: wcf-troubleshooting-quickstart.md
+        - name: WCF 错误处理
+          href: wcf-error-handling.md
+        - name: WCF 和 ASP.NET Web API
+          href: wcf-and-aspnet-web-api.md
+    - name: WCF 功能详细信息
+      href: feature-details/
+    - name: 扩展 WCF
+      href: extending/
+    - name: 指南与最佳做法
+      href: guidelines-and-best-practices.md
+      items:
+        - name: 最佳做法：数据协定版本管理
+          href: best-practices-data-contract-versioning.md
+        - name: 最佳做法：中介
+          href: best-practices-intermediaries.md
+        - name: 服务版本控制
+          href: service-versioning.md
+        - name: 负载平衡
+          href: load-balancing.md
+        - name: 控制资源使用并提高性能
+          href: controlling-resource-consumption-and-improving-performance.md
+        - name: 使用 ClickOnce 部署 WCF 应用程序
+          href: deploying-wcf-applications-with-clickonce.md
+    - name: 管理和诊断
+      href: diagnostics/
+    - name: WCF 所要求的操作系统资源
+      href: operating-system-resources-required-by-wcf.md
+    - name: 安装问题疑难解答
+      href: troubleshooting-setup-issues.md
+    - name: 从 .NET 远程处理迁移到 WCF
+      href: migrating-from-net-remoting-to-wcf.md
+    - name: 使用 WCF 开发工具
+      href: using-the-wcf-development-tools.md
+      items:
+        - name: WCF 服务主机 (WcfSvcHost.exe)
+          href: wcf-service-host-wcfsvchost-exe.md
+        - name: WCF 测试客户端 (WcfTestClient.exe)
+          href: wcf-test-client-wcftestclient-exe.md
+        - name: WCF Visual Studio 模板
+          href: wcf-vs-templates.md
+        - name: WCF 服务发布
+          href: wcf-service-publishing.md
+        - name: 重命名 WCF 服务
+          href: renaming-a-wcf-service.md
+        - name: 部署 WCF 库项目
+          href: deploying-a-wcf-library-project.md
+        - name: 控制 WCF 服务主机的自动启动
+          href: controlling-auto-launching-of-wcf-service-host.md
+        - name: 从 XML 生成数据类型类
+          href: generating-data-type-classes-from-xml.md
+    - name: Windows Communication Foundation 工具
+      href: tools.md
+      items:
+        - name: ServiceModel 元数据实用工具 (Svcutil.exe)
+          href: servicemodel-metadata-utility-tool-svcutil-exe.md
+        - name: “查找私钥”工具 (FindPrivateKey.exe)
+          href: find-private-key-tool-findprivatekey-exe.md
+        - name: ServiceModel 注册工具 (ServiceModelReg.exe)
+          href: servicemodelreg-exe.md
+        - name: 服务跟踪查看器工具 (SvcTraceViewer.exe)
+          href: service-trace-viewer-tool-svctraceviewer-exe.md
+        - name: 配置编辑器工具 (SvcConfigEditor.exe)
+          href: configuration-editor-tool-svcconfigeditor-exe.md
+        - name: COM+ 服务模块配置工具 (ComSvcConfig.exe)
+          href: com-service-model-configuration-tool-comsvcconfig-exe.md
+        - name: WS-AtomicTransaction 配置实用工具 (wsatConfig.exe)
+          href: ws-atomictransaction-configuration-utility-wsatconfig-exe.md
+          items:
+            - name: 解释 wsatConfig.exe 返回的错误代码
+              href: interpreting-error-codes-returned-by-wsatconfig-exe.md
+        - name: WS-AtomicTransaction 配置 MMC 管理单元
+          href: ws-atomictransaction-configuration-mmc-snap-in.md
+        - name: 工作流服务注册工具 (WFServicesReg.exe)
+          href: workflow-service-registration-tool-wfservicesreg-exe.md
+        - name: 协定优先工具
+          href: contract-first-tool.md
+    - name: Windows Communication Foundation 示例
+      href: samples/
+    - name: Windows Communication Foundation 词汇表
+      href: glossary.md
+    - name: 常规参考
+      href: general-reference.md
+    - name: 隐私信息
+      href: privacy-information.md

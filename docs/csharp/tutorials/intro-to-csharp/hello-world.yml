@@ -1,0 +1,280 @@
+### YamlMime:Tutorial
+title: Hello World - C# 交互式教程简介
+metadata:
+  title: Hello World - C# 交互式教程简介
+  description: 在本教程中，读者将使用浏览器通过交互方式了解 C#。 读者可以直接在浏览器中编写 C# 代码，并查看代码编译和运行结果。
+  audience: Developer
+  level: Beginner
+  ms.date: 08/24/2018
+  ms.topic: interactive-tutorial
+  nextTutorialHref: numbers-in-csharp.yml
+  nextTutorialTitle: C# 中的数字
+  displayType: two-column
+  interactive: csharp
+  ms.custom: mvc
+  ms.openlocfilehash: 72198287028c73f0e518d7bcfd0b694bb267e132
+  ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88812271"
+items:
+- durationInMinutes: 1
+  content: >
+    本教程通过交互方式介绍了 C#，读者可以使用浏览器编写 C#，并查看代码编译和运行结果。 具体包含一系列课程，最先介绍的就是“Hello World”程序。 这些课程介绍了 C# 语言的基础知识。
+- title: 运行首个 C# 程序
+  durationInMinutes: 2
+  content: >
+    在交互式窗口中，运行以下代码。 选择“进入焦点模式”按钮。 然后，在交互式窗口中键入以下代码块，并选择“运行”：
+
+
+    ```csharp
+
+    Console.WriteLine("Hello World!");
+
+    ```
+
+
+    祝贺你！ 已运行首个 C# 程序。 这是一个简单程序，可输出消息“Hello World!”。 它使用 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> 方法打印此消息。 `Console` 是表示控制台窗口的类型。 `WriteLine` 是 `Console` 类型的方法，负责将文本行打印到文本控制台。
+
+
+    接下来，将继续进一步探索。 本课程的其余部分探索了如何使用在 C# 中表示文本的 `string` 类型。 与 `Console` 类型一样，`string` 类型也包含方法。 `string` 方法处理的是文本。
+- title: 声明和使用变量
+  durationInMinutes: 3
+  content: >
+    首个程序在屏幕上打印出了 `string`“Hello World!” 。
+
+
+    > [!TIP]
+
+    > 在探索 C#（或任何编程语言）的过程中，可能会在编写代码时犯错。 编译器会发现并报告这些错误。 如果输出中有错误消息，请仔细比对示例代码和交互式窗口中的代码，看看要纠正哪些代码。
+
+    > 这样做有助于了解 C# 代码结构。
+
+
+    首个程序只能打印一条消息。 可以使用变量编写更实用的程序。 借助变量符号，可以使用不同的值运行同一代码。 试一试吧！ 将在交互式窗口中已编写的代码替换为以下代码：
+
+
+    ```csharp
+
+    string aFriend = "Bill";
+
+    Console.WriteLine(aFriend);
+
+    ```
+
+
+    第一行代码声明变量 `aFriend`，并为它分配值“Bill”。 第二行代码打印出姓名。
+
+
+    可以向声明的任何变量分配不同的值。 可以将姓名更改为自己一个好友的姓名。 在交互式窗口中已添加的代码后面，添加以下两行代码：
+
+
+    ```csharp
+
+    aFriend = "Maira";
+
+    Console.WriteLine(aFriend);
+
+    ```
+
+
+    可以看到，同一行代码根据 `aFriend` 变量中存储的值，打印两条不同的消息。
+
+
+    可能还会注意到，最后两条消息中没有“Hello”一词。 现在就来解决一下这个问题。  将负责打印消息的代码行修改为以下代码：
+
+
+    ```csharp
+
+    Console.WriteLine("Hello " + aFriend);
+
+    ```
+
+
+    再次选择“运行”，看看结果如何。
+
+
+    你一直在使用 `+` 从变量和常量字符串构建字符串。 但还有一种更好的方法。
+
+    你可以在 `{` 和 `}` 字符之间放置一个变量，以告诉 C# 将该文本替换为此变量的值。
+
+
+    这称为[字符串内插](../../language-reference/tokens/interpolated.md)。
+
+
+    如果在字符串的左引号前添加 `$`，则可以在大括号之间的字符串内包括变量，如 `aFriend`。 试一试：
+
+
+
+    ```csharp
+
+    Console.WriteLine($"Hello {aFriend}");
+
+    ```
+
+
+    再次选择“运行”，看看结果如何。 消息应该是“Hello Maira”，而不是“Hello {aFriend}”。
+- title: 使用字符串
+  durationInMinutes: 5
+  content: >
+    上次编辑是对字符串用途的初探。 接下来，将进一步探索。
+
+
+    不仅限于使用大括号之间的单个变量。 试运行以下代码：
+
+
+    ```csharp
+
+    string firstFriend = "Maria";
+
+    string secondFriend = "Sage";
+
+    Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
+
+    ```
+
+
+    当使用字符串进行更多探索时，你会发现字符串不仅仅是字母集合。 你可以使用 `Length` 得出字符串的长度。 `Length` 是字符串属性，可返回字符串中的字符数。 在交互式窗口的底部，添加以下代码：
+
+
+    ```csharp
+
+    Console.WriteLine($"The name {firstFriend} has {firstFriend.Length} letters.");
+
+    Console.WriteLine($"The name {secondFriend} has {secondFriend.Length} letters.");
+
+    ```
+
+
+    > [!TIP]
+
+    > 这是自行探索的良好时机。 已了解到，`Console.WriteLine()` 将文本写入屏幕。 也已学习了如何声明变量，以及如何串联字符串。 在交互式窗口中试一试吧。 该窗口有一个名为 IntelliSense 的功能，可为你提供操作建议。 在 `firstFriend` 中的 `d` 后键入一个 `.`。 你将看到可以使用的属性和方法的建议列表。
+- title: 发掘字符串的更多精彩用途
+  durationInMinutes: 5
+  content: >
+    一直在使用方法<xref:System.Console.WriteLine%2A?displayProperty=nameWithType> 打印消息。 方法是用于实现某操作的代码块。 它有名称，这样就可以访问方法了。
+
+
+    假设字符串具有你不想显示的前导或尾随空格。 你希望剪裁字符串中的空格。
+
+    <xref:System.String.Trim%2A> 方法及相关方法 <xref:System.String.TrimStart%2A> 和 <xref:System.String.TrimEnd%2A> 将完成这项工作。 你只需使用这些方法即可删除前导和尾随空格。 试运行以下代码：
+
+
+    ```csharp
+
+    string greeting = "      Hello World!       ";
+
+    Console.WriteLine($"[{greeting}]");
+
+
+    string trimmedGreeting = greeting.TrimStart();
+
+    Console.WriteLine($"[{trimmedGreeting}]");
+
+
+    trimmedGreeting = greeting.TrimEnd();
+
+    Console.WriteLine($"[{trimmedGreeting}]");
+
+
+    trimmedGreeting = greeting.Trim();
+
+    Console.WriteLine($"[{trimmedGreeting}]");
+
+    ```
+
+
+    方括号 `[` 和 `]` 帮助可视化 `Trim`、`TrimStart` 和 `TrimEnd` 方法的作用。 方括号出现在空格开始和结束的位置。
+
+
+    此示例强调了使用字符串时需要注意的几个重要概念。 控制字符串的方法返回的是新字符串对象，而不是就地进行修改。 可以看到，对任何 `Trim` 方法的所有调用都是返回新字符串，而不是更改原始消息。
+
+
+    还可以通过其他方法使用字符串。 例如，可能之前已在编辑器或字处理器中使用了搜索和替换命令。 <xref:System.String.Replace%2A> 方法在字符串中执行类似操作。 此方法搜索子字符串，并将它替换为其他文本。 <xref:System.String.Replace%2A> 方法需要使用两个参数。 这两个字符串用括号括住。 第一个字符串是要搜索的文本。 第二个字符串是替换后的文本。 亲自试一试吧。 添加以下代码。 当你在 `sayHello` 变量后面开始键入 `.Re` 时，键入它以查看提示：
+
+
+    ```csharp
+
+    string sayHello = "Hello World!";
+
+    Console.WriteLine(sayHello);
+
+    sayHello = sayHello.Replace("Hello", "Greetings");
+
+    Console.WriteLine(sayHello);
+
+    ```
+
+
+    还有两个实用方法，可以将字符串设为全部大写或小写。 试试运行以下代码。 在你开始键入 `To` 时，键入它以查看 IntelliSense 如何提供提示：
+
+
+    ```csharp
+
+    Console.WriteLine(sayHello.ToUpper());
+
+    Console.WriteLine(sayHello.ToLower());
+
+    ```
+- title: 搜索字符串
+  durationInMinutes: 10
+  content: >
+    搜索和替换操作的另一方面是，查找字符串中的文本。 可以使用 <xref:System.String.Contains%2A> 方法进行搜索。 此方法可确定字符串是否包含子字符串。 若要探索 <xref:System.String.Contains%2A>，请试运行以下代码：
+
+
+    ```csharp
+
+    string songLyrics = "You say goodbye, and I say hello";
+
+    Console.WriteLine(songLyrics.Contains("goodbye"));
+
+    Console.WriteLine(songLyrics.Contains("greetings"));
+
+    ```
+
+
+    <xref:System.String.Contains%2A> 方法返回布尔值，指明是否找到了要搜索的字符串。 布尔变量存储 `true` 或 `false` 值。 显示为文本输出时，它们为大写：分别为 `True` 和 `False`。 今后推出的课程将详细介绍布尔值。
+
+
+    ***挑战***
+
+
+    有两个类似方法 <xref:System.String.StartsWith%2A> 和 <xref:System.String.EndsWith%2A>，也可以在字符串中搜索子字符串。 这些方法搜索字符串开头或结尾的子字符串。 试着将上一示例修改为使用 <xref:System.String.StartsWith%2A> 和 <xref:System.String.EndsWith%2A>，而不是使用 <xref:System.String.Contains%2A>。 搜索字符串开头是否有“You”或“goodbye”。 搜索字符串末尾是否有“hello”或“goodbye”。
+
+
+    > [!NOTE]
+
+    > 针对字符串结尾文本测试时，请注意标点符号。 如果字符串以句点结尾，必须检查是否有以句点结尾的字符串。
+
+
+    如果字符串以“You”开头，以“hello”结尾的字符串，则应获得 `true`；如果以“goodbye”为开头或结尾，则获得 false。
+- title: 完成挑战
+  durationInMinutes: 3
+  content: >
+    最后是否生成如下代码？
+
+
+    ```csharp
+
+    string songLyrics = "You say goodbye, and I say hello";
+
+    Console.WriteLine(songLyrics.StartsWith("You"));
+
+    Console.WriteLine(songLyrics.StartsWith("goodbye"));
+
+
+    Console.WriteLine(songLyrics.EndsWith("hello"));
+
+    Console.WriteLine(songLyrics.EndsWith("goodbye"));
+
+    ```
+- content: >-
+    你已完成“C# 初探”C# 教程简介。 可选择下方的“C# 中的数字”链接开始下一个交互式教程，或者可访问 [.NET 站点](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)下载 .NET Core SDK，在计算机上创建项目，并继续编码。 请通过“后续步骤”部分返回到这些教程。
+
+
+    有关 `string` 类型的其他阅读材料：
+
+    - [字符串](../../programming-guide/strings/index.md)中的 [C# 编程指南](../../programming-guide/index.md)主题。
+
+    - [有关使用字符串的操作方法提示](../../how-to/index.md#working-with-strings)。

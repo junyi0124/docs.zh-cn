@@ -1,0 +1,146 @@
+- name: 扩展 WCF
+  href: index.md
+  items:
+    - name: 扩展 ServiceHost 和服务模块层
+      href: extending-servicehost-and-the-service-model-layer.md
+      items:
+        - name: 扩展客户端
+          href: extending-clients.md
+          items:
+            - name: 如何：检查或修改客户端上的消息
+              href: how-to-inspect-or-modify-messages-on-the-client.md
+            - name: 如何：检查或修改参数
+              href: how-to-inspect-or-modify-parameters.md
+        - name: 扩展调度程序
+          href: extending-dispatchers.md
+          items:
+            - name: 如何：检查和修改服务上的消息
+              href: how-to-inspect-and-modify-messages-on-the-service.md
+            - name: 如何：在企业中锁定终结点
+              href: how-to-lock-down-endpoints-in-the-enterprise.md
+        - name: 可扩展对象
+          href: extensible-objects.md
+        - name: 使用行为配置和扩展运行时
+          href: configuring-and-extending-the-runtime-with-behaviors.md
+        - name: 使用 ServiceHostFactory 扩展宿主
+          href: extending-hosting-using-servicehostfactory.md
+    - name: 扩展绑定
+      href: extending-bindings.md
+      items:
+        - name: 绑定和绑定元素
+          href: bindings-and-binding-elements.md
+        - name: 自定义绑定
+          href: custom-bindings.md
+          items:
+            - name: 如何：自定义系统提供的绑定
+              href: how-to-customize-a-system-provided-binding.md
+        - name: 创建用户定义的绑定
+          href: creating-user-defined-bindings.md
+    - name: 扩展通道层
+      href: extending-the-channel-layer.md
+      items:
+        - name: 通道模型概述
+          href: channel-model-overview.md
+          items:
+            - name: 客户端通道级编程
+              href: client-channel-level-programming.md
+            - name: 服务通道级编程
+              href: service-channel-level-programming.md
+            - name: 了解状态更改
+              href: understanding-state-changes.md
+            - name: 选择消息交换模式
+              href: choosing-a-message-exchange-pattern.md
+            - name: 处理异常和错误
+              href: handling-exceptions-and-faults.md
+        - name: 开发通道
+          href: developing-channels.md
+          items:
+            - name: 服务：通道侦听器和通道
+              href: service-channel-listeners-and-channels.md
+            - name: 客户端：通道工厂和通道
+              href: client-channel-factories-and-channels.md
+            - name: 创建 BindingElement
+              href: creating-a-bindingelement.md
+            - name: 配置和元数据支持
+              href: configuration-and-metadata-support.md
+        - name: 自定义编码器
+          href: custom-encoders.md
+        - name: 自定义流升级
+          href: custom-stream-upgrades.md
+    - name: 扩展安全性
+      href: extending-security.md
+      items:
+        - name: 指定自定义加密算法
+          href: specifying-a-custom-crypto-algorithm.md
+        - name: 自定义凭据和凭据验证
+          href: custom-credential-and-credential-validation.md
+          items:
+            - name: 演练：创建自定义客户端和服务凭据
+              href: walkthrough-creating-custom-client-and-service-credentials.md
+            - name: 如何：创建使用自定义证书验证程序的服务
+              href: how-to-create-a-service-that-employs-a-custom-certificate-validator.md
+            - name: 如何：创建自定义安全令牌提供程序
+              href: how-to-create-a-custom-security-token-provider.md
+            - name: 如何：创建自定义安全令牌身份验证器
+              href: how-to-create-a-custom-security-token-authenticator.md
+        - name: 自定义令牌
+          href: custom-tokens.md
+          items:
+            - name: 如何：创建自定义令牌
+              href: how-to-create-a-custom-token.md
+        - name: 自定义授权
+          href: custom-authorization.md
+          items:
+            - name: 如何：创建自定义授权策略
+              href: how-to-create-a-custom-authorization-policy.md
+            - name: 如何：为服务创建自定义授权管理器
+              href: how-to-create-a-custom-authorization-manager-for-a-service.md
+            - name: 如何：创建自定义声明
+              href: how-to-create-a-custom-claim.md
+            - name: 如何：比较声明
+              href: how-to-compare-claims.md
+            - name: 如何：创建自定义主体标识
+              href: how-to-create-a-custom-principal-identity.md
+        - name: 重写服务标识以便进行身份验证
+          href: overriding-the-identity-of-a-service-for-authentication.md
+        - name: 如何：创建自定义客户端标识验证工具
+          href: how-to-create-a-custom-client-identity-verifier.md
+        - name: 如何：使用独立的 X.509 证书进行签名和加密
+          href: how-to-use-separate-x-509-certificates-for-signing-and-encryption.md
+        - name: 如何：更改 X.509 证书私钥的加密提供程序
+          href: change-cryptographic-provider-x509-certificate-private-key.md
+    - name: 扩展元数据系统
+      href: extending-the-metadata-system.md
+      items:
+        - name: 导出 WCF 扩展的自定义元数据
+          href: exporting-custom-metadata-for-a-wcf-extension.md
+          items:
+            - name: 如何：导出自定义 WSDL
+              href: how-to-export-custom-wsdl.md
+            - name: 如何：导出自定义策略断言
+              href: how-to-export-custom-policy-assertions.md
+        - name: 导入 WCF 扩展的自定义元数据
+          href: importing-custom-metadata-for-a-wcf-extension.md
+          items:
+            - name: 如何：导入自定义 WSDL
+              href: how-to-import-custom-wsdl.md
+            - name: 如何：导人自定义策略断言
+              href: how-to-import-custom-policy-assertions.md
+            - name: 如何：编写 ServiceContractGenerator 的扩展
+              href: how-to-write-an-extension-for-the-servicecontractgenerator.md
+        - name: 通过自定义绑定发布和检索元数据
+          href: publishing-and-retrieving-metadata-over-a-custom-binding.md
+          items:
+            - name: WS-MetadataExchange 绑定
+              href: ws-metadataexchange-bindings.md
+            - name: 如何：配置自定义 WS-Metadata Exchange 绑定
+              href: how-to-configure-a-custom-ws-metadata-exchange-binding.md
+            - name: 如何：通过非 MEX 绑定检索元数据
+              href: how-to-retrieve-metadata-over-a-non-mex-binding.md
+    - name: 扩展编码器和序列化程序
+      href: extending-encoders-and-serializers.md
+      items:
+        - name: 数据协定代理项
+          href: data-contract-surrogates.md
+        - name: 自定义消息格式化程序
+          href: custom-message-formatters.md

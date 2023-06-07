@@ -1,36 +1,67 @@
 {
-  "need_generate_pdf": false,
   "need_generate_intellisense": false,
+  "need_preview_pull_request": true,
+  "need_pr_comments": false,
+  "need_generate_pdf_url_template": true,
+  "git_repository_branch_open_to_public_contributors": "live",
+  "need_generate_pdf": true,
+  "continue_with_document_error": true,
+  "contribution_branch_mappings": {
+    "live-sxs": "live"
+  },
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "live-sxs": [
+      "Publish",
+      "Pdf"
+    ],
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
   "docsets_to_publish": [
     {
       "docset_name": "core-docs",
       "build_source_folder": ".",
       "build_output_subfolder": ".",
       "locale": "zh-cn",
-      "version": 0,
+      "xref_query_tags": [
+        "/uwp/api"
+      ],
+      "monikers": [],
+      "filemap_share_depots": [
+        "VS.dotnet-api-docs"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "Tutorial": "Content"
       },
-      "build_entry_point": "docs"
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
-  "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/docs.zh-cn",
-  "git_repository_branch_open_to_public_contributors": "live",
+  "branches_to_filter": [
+    "live"
+  ],
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": true,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft.zh-cn",
-      "branch": "master"
-    },
-    {
-      "path_to_root": "api_ref",
-      "url": "https://github.com/docascode/coreapi.git",
       "branch": "master"
     },
     {
@@ -39,15 +70,46 @@
       "branch": "master"
     },
     {
+      "path_to_root": "_csharplang",
+      "url": "https://github.com/dotnet/csharplang.zh-cn",
+      "branch": "live-sxs",
+      "include_in_build": true
+    },
+    {
+      "path_to_root": "_vblang",
+      "url": "https://github.com/dotnet/vblang.zh-cn",
+      "branch": "live-sxs",
+      "include_in_build": true
+    },
+    {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/dotnet/docs",
-      "branch": "live"
+      "branch": "live",
+      "branch_mapping": {
+        "master": "master",
+        "live": "live"
+      }
+    },
+    {
+      "path_to_root": "machinelearning-samples",
+      "url": "https://github.com/dotnet/machinelearning-samples",
+      "branch": "master"
+    },
+    {
+      "path_to_root": "iot-samples",
+      "url": "https://github.com/MicrosoftDocs/dotnet-iot-assets",
+      "branch": "master"
+    },
+    {
+      "path_to_root": "dotnet-samples",
+      "url": "https://github.com/dotnet/samples",
+      "branch": "master",
+      "branch_mapping": {
+        "live": "live"
+      }
     }
   ],
-  "need_generate_pdf_url_template": false,
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
+  "docs_build_engine": {
+    "name": "docfx_v3"
   }
 }

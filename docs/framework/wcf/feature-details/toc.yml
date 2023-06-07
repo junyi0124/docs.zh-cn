@@ -1,0 +1,932 @@
+- name: WCF 功能详细信息
+  href: index.md
+  items:
+    - name: 工作流服务
+      href: workflow-services.md
+      items:
+        - name: 工作流服务概述
+          href: workflow-services-overview.md
+        - name: 创建长时间运行的工作流服务
+          href: creating-a-long-running-workflow-service.md
+        - name: 消息传递活动
+          href: messaging-activities.md
+        - name: 如何：使用消息传递活动创建工作流服务
+          href: how-to-create-a-workflow-service-with-messaging-activities.md
+        - name: 在工作流中使用协定
+          href: using-contracts-in-workflow.md
+        - name: 承载工作流服务概述
+          href: hosting-workflow-services-overview.md
+          items:
+            - name: 承载工作流服务
+              href: hosting-workflow-services.md
+            - name: 工作流服务主机内部机制
+              href: workflow-service-host-internals.md
+            - name: 工作流服务主机可扩展性
+              href: workflow-service-host-extensibility.md
+            - name: 工作流控制终结点
+              href: workflow-control-endpoint.md
+            - name: 如何：使用 Windows Server App Fabric 承载工作流服务
+              href: how-to-host-a-workflow-service-with-windows-server-app-fabric.md
+            - name: 配置 WorkflowServiceHost
+              href: configuring-workflowservicehost.md
+              items:
+                - name: 如何：使用 WorkflowServiceHost 配置永久性
+                  href: how-to-configure-persistence-with-workflowservicehost.md
+                - name: 如何：使用 WorkflowServiceHost 配置跟踪
+                  href: how-to-configure-tracking-with-workflowservicehost.md
+                - name: 如何：使用 WorkflowServiceHost 配置空闲行为
+                  href: how-to-configure-idle-behavior-with-workflowservicehost.md
+                - name: 如何：使用 WorkflowServiceHost 配置工作流未经处理的异常行为
+                  href: config-workflow-unhandled-exception-workflowservicehost.md
+        - name: 相关性
+          href: correlation.md
+          items:
+            - name: 相关概述
+              href: correlation-overview.md
+            - name: 持久双工
+              href: durable-duplex-correlation.md
+            - name: 请求-答复
+              href: request-reply-correlation.md
+            - name: 针对相关的疑难解答
+              href: troubleshooting-correlation.md
+        - name: 配置工作流服务中的序列化
+          href: configuring-serialization-in-a-workflow-service.md
+        - name: 如何：从工作流应用程序访问服务
+          href: how-to-access-a-service-from-a-workflow-application.md
+        - name: 无序消息处理
+          href: out-of-order-message-processing.md
+        - name: 使事务流入和流出工作流服务
+          href: flowing-transactions-into-and-out-of-workflow-services.md
+        - name: 更改发送活动的缓存共享级别
+          href: changing-the-cache-sharing-levels-for-send-activities.md
+        - name: 在工作流解决方案中添加服务引用
+          href: adding-a-service-reference-in-a-workflow-solution.md
+        - name: WorkflowServiceHost 中的并行版本控制
+          href: side-by-side-versioning-in-workflowservicehost.md
+    - name: 终结点：地址、绑定和协定
+      href: endpoints-addresses-bindings-and-contracts.md
+      items:
+        - name: 地址
+          href: endpoint-addresses.md
+        - name: 绑定
+          href: bindings.md
+          items:
+            - name: 配置系统提供的绑定
+              href: configuring-system-provided-bindings.md
+            - name: 在绑定上配置超时值
+              href: configuring-timeout-values-on-a-binding.md
+            - name: 创建使用 UDP 传输的多播应用程序
+              href: creating-multicasting-applications-using-the-udp-transport.md
+        - name: 协定
+          href: contracts.md
+          items:
+            - name: ServiceModel 属性和 ServiceDescription 引用
+              href: servicemodel-attributes-and-servicedescription-reference.md
+            - name: 请求-答复服务
+              href: request-reply-services.md
+            - name: 如何：创建请求-答复协定
+              href: how-to-create-a-request-reply-contract.md
+            - name: 单向服务
+              href: one-way-services.md
+            - name: 如何：创建单向协定
+              href: how-to-create-a-one-way-contract.md
+            - name: 双工服务
+              href: duplex-services.md
+            - name: 如何：创建双工协定
+              href: how-to-create-a-duplex-contract.md
+            - name: 如何：使用协定类创建服务
+              href: how-to-create-a-wcf-contract-with-a-class.md
+            - name: 如何：使用协定接口创建服务
+              href: how-to-create-a-service-with-a-contract-interface.md
+            - name: 使用 ServiceThrottlingBehavior 控制 WCF 服务性能
+              href: using-servicethrottlingbehavior-to-control-wcf-service-performance.md
+        - name: 如何：在配置中创建服务终结点
+          href: how-to-create-a-service-endpoint-in-configuration.md
+        - name: 如何：在代码中创建服务终结点
+          href: how-to-create-a-service-endpoint-in-code.md
+        - name: 如何：使用 Svcutil.exe 验证已编译的服务代码
+          href: how-to-use-svcutil-exe-to-validate-compiled-service-code.md
+        - name: 标准终结点
+          href: standard-endpoints.md
+    - name: 数据传输和序列化
+      href: data-transfer-and-serialization.md
+      items:
+        - name: 在服务协定中指定数据传输
+          href: specifying-data-transfer-in-service-contracts.md
+        - name: 使用数据协定
+          href: using-data-contracts.md
+          items:
+            - name: 如何：创建类或结构的基本数据协定
+              href: how-to-create-a-basic-data-contract-for-a-class-or-structure.md
+            - name: 可序列化类型
+              href: serializable-types.md
+            - name: 数据协定名称
+              href: data-contract-names.md
+            - name: 数据协定等效性
+              href: data-contract-equivalence.md
+            - name: 数据成员顺序
+              href: data-member-order.md
+            - name: 数据协定已知类型
+              href: data-contract-known-types.md
+            - name: 向前兼容的数据协定
+              href: forward-compatible-data-contracts.md
+            - name: 数据协定版本管理
+              href: data-contract-versioning.md
+            - name: 版本容错序列化回调
+              href: version-tolerant-serialization-callbacks.md
+            - name: 数据成员默认值
+              href: data-member-default-values.md
+            - name: 可互操作的对象引用
+              href: interoperable-object-references.md
+            - name: 数据协定序列化程序支持的类型
+              href: types-supported-by-the-data-contract-serializer.md
+              items:
+                - name: 数据协定中的集合类型
+                  href: collection-types-in-data-contracts.md
+                - name: 数据协定中的 XML 和 ADO.NET 类型
+                  href: xml-and-ado-net-types-in-data-contracts.md
+                - name: 数据协定中的枚举类型
+                  href: enumeration-types-in-data-contracts.md
+        - name: 数据协定序列化程序
+          href: data-contract-serializer.md
+          items:
+            - name: 序列化和反序列化
+              href: serialization-and-deserialization.md
+            - name: 架构导入和导出
+              href: schema-import-and-export.md
+              items:
+                - name: 导入架构以生成类
+                  href: importing-schema-to-generate-classes.md
+                - name: 从类导出架构
+                  href: exporting-schemas-from-classes.md
+                - name: 使用 SerializationBinder 控制序列化和反序列化
+                  href: controlling-serialization-and-deserialization-with-serializationbinder.md
+            - name: 使用数据协定解析程序
+              href: using-a-data-contract-resolver.md
+        - name: 使用 XmlSerializer 类
+          href: using-the-xmlserializer-class.md
+          items:
+            - name: 如何：使用 XmlSerializer 改善 WCF 客户端应用程序的启动时间
+              href: startup-time-of-wcf-client-applications-using-the-xmlserializer.md
+        - name: 使用消息约定
+          href: using-message-contracts.md
+        - name: 创建已签名和/或已加密的自定义标头
+          href: creating-a-custom-header-that-is-signed-and-or-encrypted.md
+        - name: 使用 Message 类
+          href: using-the-message-class.md
+        - name: 筛选
+          href: filtering.md
+        - name: 大型数据和流
+          href: large-data-and-streaming.md
+          items:
+            - name: 如何：启用流处理
+              href: how-to-enable-streaming.md
+        - name: 数据的安全考虑事项
+          href: security-considerations-for-data.md
+        - name: 数据传输体系结构概述
+          href: data-transfer-architectural-overview.md
+    - name: 会话、实例化和并发
+      href: sessions-instancing-and-concurrency.md
+      items:
+        - name: 如何：创建要求会话的服务
+          href: how-to-create-a-service-that-requires-sessions.md
+        - name: 如何：控制服务实例化
+          href: how-to-control-service-instancing.md
+        - name: 单并发模式中的有序消息处理
+          href: ordered-processing-of-messages-in-single-concurrency-mode.md
+    - name: 传输
+      href: transports.md
+      items:
+        - name: 选择传输方式
+          href: choosing-a-transport.md
+        - name: 选择消息编码器
+          href: choosing-a-message-encoder.md
+        - name: 流消息传输
+          href: streaming-message-transfer.md
+        - name: 配置 HTTP 和 HTTPS
+          href: configuring-http-and-https.md
+        - name: 如何：用受限预留替换 WCF URL 预留
+          href: how-to-replace-the-wcf-url-reservation-with-a-restricted-reservation.md
+        - name: 传输配额
+          href: transport-quotas.md
+        - name: 使用 NAT 和防火墙
+          href: working-with-nats-and-firewalls.md
+        - name: Net.TCP 端口共享
+          href: net-tcp-port-sharing.md
+          items:
+            - name: 如何：启用 Net.TCP 端口共享服务
+              href: how-to-enable-the-net-tcp-port-sharing-service.md
+            - name: 如何：配置 WCF 服务以使用端口共享
+              href: how-to-configure-a-wcf-service-to-use-port-sharing.md
+            - name: 配置 Net.TCP 端口共享服务
+              href: configuring-the-net-tcp-port-sharing-service.md
+        - name: 使用字节流编码器编码二进制对象
+          href: encoding-binary-objects-with-bytestream-encoder.md
+    - name: 队列和可靠会话
+      href: queues-and-reliable-sessions.md
+      items:
+        - name: 可靠会话
+          href: reliable-sessions.md
+          items:
+            - name: 可靠会话概述
+              href: reliable-sessions-overview.md
+            - name: 如何：在可靠会话内交换消息
+              href: how-to-exchange-messages-within-a-reliable-session.md
+            - name: 如何：在可靠会话内保护消息
+              href: how-to-secure-messages-within-reliable-sessions.md
+            - name: 如何：使用 HTTPS 创建自定义可靠会话绑定
+              href: how-to-create-a-custom-reliable-session-binding-with-https.md
+            - name: 可靠会话的最佳做法
+              href: best-practices-for-reliable-sessions.md
+        - name: WCF 中的队列
+          href: queues-in-wcf.md
+          items:
+            - name: 队列概述
+              href: queues-overview.md
+            - name: 在 WCF 中排队
+              href: queuing-in-wcf.md
+              items:
+                - name: 服务终结点和队列寻址
+                  href: service-endpoints-and-queue-addressing.md
+                - name: 承载排队应用程序的 Web
+                  href: web-hosting-a-queued-application.md
+            - name: 如何：使用 WCF 终结点交换排队消息
+              href: how-to-exchange-queued-messages-with-wcf-endpoints.md
+            - name: 如何：与 WCF 终结点和消息队列应用程序交换消息
+              href: how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md
+            - name: 在会话中对排队消息进行分组
+              href: grouping-queued-messages-in-a-session.md
+            - name: 在事务中对消息进行批处理
+              href: batching-messages-in-a-transaction.md
+            - name: 使用死信队列处理消息传输故障
+              href: using-dead-letter-queues-to-handle-message-transfer-failures.md
+            - name: 病毒消息处理
+              href: poison-message-handling.md
+            - name: Windows Vista、Windows Server 2003 和 Windows XP 在排队功能方面的差异
+              href: diff-in-queue-in-vista-server-2003-windows-xp.md
+            - name: 使用传输安全保护消息
+              href: securing-messages-using-transport-security.md
+            - name: 使用消息安全保护消息
+              href: securing-messages-using-message-security.md
+            - name: 排队消息处理疑难解答
+              href: troubleshooting-queued-messaging.md
+            - name: 排队通信的最佳做法
+              href: best-practices-for-queued-communication.md
+    - name: 事务
+      href: transactions-in-wcf.md
+      items:
+        - name: Windows Communication Foundation 事务概述
+          href: transactions-overview.md
+        - name: 事务模型
+          href: transaction-models.md
+        - name: System.ServiceModel 中的事务性支持
+          href: transactional-support-in-system-servicemodel.md
+          items:
+            - name: ServiceModel 事务属性
+              href: servicemodel-transaction-attributes.md
+            - name: ServiceModel 事务配置
+              href: servicemodel-transaction-configuration.md
+            - name: 启用事务流
+              href: enabling-transaction-flow.md
+            - name: 如何：创建事务性服务
+              href: how-to-create-a-transactional-service.md
+            - name: 诊断事务应用程序
+              href: diagnosing-transactional-applications.md
+            - name: 比较 COM+ 和 ServiceModel 中的事务
+              href: comparing-transactions-in-com-and-servicemodel.md
+            - name: 集成企业服务事务性组件
+              href: integrating-enterprise-services-transactional-components.md
+        - name: 使用 WS-AtomicTransaction
+          href: using-ws-atomictransaction.md
+          items:
+            - name: 配置 WS-Atomic 事务支持
+              href: configuring-ws-atomic-transaction-support.md
+    - name: 安全性
+      href: security.md
+      items:
+        - name: 安全性概述
+          href: security-overview.md
+        - name: 安全性概念
+          href: security-concepts.md
+          items:
+            - name: WCF 中使用的安全概念
+              href: security-concepts-used-in-wcf.md
+            - name: 分布式应用程序安全
+              href: distributed-application-security.md
+            - name: 安全术语
+              href: wcf-security-terminology.md
+        - name: 常用安全方案
+          href: common-security-scenarios.md
+          items:
+            - name: 不安全的 Internet 客户端和服务
+              href: internet-unsecured-client-and-service.md
+            - name: 不安全的 Intranet 客户端和服务
+              href: intranet-unsecured-client-and-service.md
+            - name: 匿名客户端的传输安全性
+              href: transport-security-with-an-anonymous-client.md
+            - name: 通过基本身份验证确保的传输安全
+              href: transport-security-with-basic-authentication.md
+            - name: 通过 Windows 身份验证确保的传输安全
+              href: transport-security-with-windows-authentication.md
+            - name: 利用证书身份验证的传输安全
+              href: transport-security-with-certificate-authentication.md
+            - name: 匿名客户端的消息安全
+              href: message-security-with-an-anonymous-client.md
+            - name: 用户名客户端的消息安全
+              href: message-security-with-a-user-name-client.md
+            - name: 使用证书客户端的消息安全
+              href: message-security-with-a-certificate-client.md
+            - name: Windows 客户端的消息安全
+              href: message-security-with-a-windows-client.md
+            - name: 没有凭据协商的 Windows 客户端的消息安全
+              href: message-security-with-a-windows-client-without-credential-negotiation.md
+            - name: 使用相互证书的消息安全
+              href: message-security-with-mutual-certificates.md
+            - name: 使用已颁发令牌的消息安全
+              href: message-security-with-issued-tokens.md
+            - name: 受信任的子系统
+              href: trusted-subsystem.md
+        - name: 安全行为
+          href: security-behaviors-in-wcf.md
+        - name: 绑定与安全
+          href: bindings-and-security.md
+          items:
+            - name: 使用自定义绑定的安全功能
+              href: security-capabilities-with-custom-bindings.md
+              items:
+                - name: SecurityBindingElement 身份验证模式
+                  href: securitybindingelement-authentication-modes.md
+                - name: 如何：使用 SecurityBindingElement 创建自定义绑定
+                  href: how-to-create-a-custom-binding-using-the-securitybindingelement.md
+                - name: 如何：为指定的身份验证模式创建 SecurityBindingElement
+                  href: how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md
+                - name: 如何：在 WSFederationHttpBinding 上禁用安全会话
+                  href: how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md
+                - name: 如何：启用消息重放检测
+                  href: how-to-enable-message-replay-detection.md
+                - name: 如何：创建支持凭据
+                  href: how-to-create-a-supporting-credential.md
+                - name: 如何：设置签名确认
+                  href: how-to-set-up-a-signature-confirmation.md
+                - name: 如何：设置最大时钟偏差
+                  href: how-to-set-a-max-clock-skew.md
+                - name: 如何：禁用数字签名的加密
+                  href: how-to-disable-encryption-of-digital-signatures.md
+        - name: 保护服务和客户端的安全
+          href: securing-services-and-clients.md
+          items:
+            - name: WCF 安全编程
+              href: programming-wcf-security.md
+              items:
+                - name: 选择凭据类型
+                  href: selecting-a-credential-type.md
+                - name: 如何：使用用户名和密码进行身份验证
+                  href: how-to-authenticate-with-a-user-name-and-password.md
+            - name: 传输安全
+              href: transport-security.md
+              items:
+                - name: 传输安全概述
+                  href: transport-security-overview.md
+                - name: HTTP 传输安全
+                  href: http-transport-security.md
+                - name: 了解 HTTP 身份验证
+                  href: understanding-http-authentication.md
+                - name: 将模拟用于传输安全
+                  href: using-impersonation-with-transport-security.md
+                - name: 如何：使用 SSL 证书配置端口
+                  href: how-to-configure-a-port-with-an-ssl-certificate.md
+                - name: 如何：使用 SSL 配置承载 IIS 的 WCF 服务
+                  href: how-to-configure-an-iis-hosted-wcf-service-with-ssl.md
+            - name: 消息安全
+              href: message-security-in-wcf.md
+              items:
+                - name: 如何：使用 X.509 证书保证服务的安全
+                  href: how-to-secure-a-service-with-an-x-509-certificate.md
+                - name: 如何：使用传输安全和消息凭据
+                  href: how-to-use-transport-security-and-message-credentials.md
+                - name: 当 Web 场中承载 WCF 服务时防止重放攻击
+                  href: preventing-replay-attacks-when-a-wcf-service-is-hosted-in-a-web-farm.md
+            - name: 安全会话
+              href: secure-sessions.md
+              items:
+                - name: 安全对话和安全会话
+                  href: secure-conversations-and-secure-sessions.md
+                - name: 如何：创建安全会话
+                  href: how-to-create-a-secure-session.md
+                - name: 如何：为安全会话创建安全上下文令牌
+                  href: how-to-create-a-security-context-token-for-a-secure-session.md
+                - name: 安全会话的安全注意事项
+                  href: security-considerations-for-secure-sessions.md
+            - name: 使用证书
+              href: working-with-certificates.md
+              items:
+                - name: 如何：获取证书
+                  href: how-to-obtain-a-certificate-wcf.md
+                - name: 如何：使用 MMC 管理单元查看证书
+                  href: how-to-view-certificates-with-the-mmc-snap-in.md
+                - name: 如何：检索证书的指纹
+                  href: how-to-retrieve-the-thumbprint-of-a-certificate.md
+                - name: 如何：使 X.509 证书可由 WCF 访问
+                  href: how-to-make-x-509-certificates-accessible-to-wcf.md
+                - name: 如何：创建开发期间使用的临时证书
+                  href: how-to-create-temporary-certificates-for-use-during-development.md
+                - name: 如何：指定用于验证签名的证书颁发机构证书链
+                  href: specify-the-certificate-authority-chain-verify-signatures-wcf.md
+                - name: HTTPS、通过 TCP 的 SSL 与 SOAP 安全之间的证书验证差异
+                  href: cert-val-diff-https-ssl-over-tcp-and-soap.md
+                - name: Internet Explorer 完成的与 WCF 完成的服务证书验证之间的差异
+                  href: diff-service-certificate-validation-ie-and-wcf.md
+                - name: 如何：以一致的方式引用 X.509 证书
+                  href: how-to-consistently-reference-x-509-certificates.md
+        - name: 身份验证
+          href: authentication-in-wcf.md
+          items:
+            - name: 如何：使用 ASP.NET 成员资格提供程序
+              href: how-to-use-the-aspnet-membership-provider.md
+            - name: 如何：使用自定义用户名和密码验证程序
+              href: how-to-use-a-custom-user-name-and-password-validator.md
+            - name: 如何：使用相同类型的多个安全令牌
+              href: how-to-use-multiple-security-tokens-of-the-same-type.md
+            - name: 服务标识和身份验证
+              href: service-identity-and-authentication.md
+            - name: 安全协商和超时
+              href: security-negotiation-and-timeouts.md
+            - name: 调试 Windows 身份验证错误
+              href: debugging-windows-authentication-errors.md
+            - name: 对 WCF 使用多个身份验证方案
+              href: using-multiple-authentication-schemes-with-wcf.md
+        - name: 授权
+          href: authorization-in-wcf.md
+          items:
+            - name: 访问控制机制
+              href: access-control-mechanisms.md
+            - name: 如何：将 ASP.NET 角色提供程序与服务一起使用
+              href: how-to-use-the-aspnet-role-provider-with-a-service.md
+            - name: 如何：将 ASP.NET 授权管理器角色提供程序与服务一起使用
+              href: how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md
+            - name: 使用标识模型管理声明和授权
+              href: managing-claims-and-authorization-with-the-identity-model.md
+              items:
+                - name: 声明和令牌
+                  href: claims-and-tokens.md
+                - name: 声明和拒绝访问资源
+                  href: claims-and-denying-access-to-resources.md
+                - name: 声明创建和资源值
+                  href: claim-creation-and-resource-values.md
+            - name: 委托和模拟
+              href: delegation-and-impersonation-with-wcf.md
+        - name: 联合令牌与颁发的令牌
+          href: federation-and-issued-tokens.md
+          items:
+            - name: 联合
+              href: federation.md
+            - name: 联合与信任
+              href: federation-and-trust.md
+            - name: 如何：创建联合客户端
+              href: how-to-create-a-federated-client.md
+            - name: 如何：在联合身份验证服务上配置凭据
+              href: how-to-configure-credentials-on-a-federation-service.md
+            - name: 如何：创建 WSFederationHttpBinding
+              href: how-to-create-a-wsfederationhttpbinding.md
+            - name: 如何：创建安全令牌服务
+              href: how-to-create-a-security-token-service.md
+            - name: 安全断言标记语言 (SAML) 令牌和声明
+              href: saml-tokens-and-claims.md
+            - name: 如何：配置本地颁发者
+              href: how-to-configure-a-local-issuer.md
+            - name: 如何：创建双工联合绑定
+              href: how-to-create-a-duplex-federated-binding.md
+        - name: 审核
+          href: auditing-security-events.md
+          items:
+            - name: 如何：审核安全事件
+              href: how-to-audit-wcf-security-events.md
+        - name: 安全指导和最佳做法
+          href: security-guidance-and-best-practices.md
+          items:
+            - name: 安全性的最佳做法
+              href: best-practices-for-security-in-wcf.md
+            - name: 安全注意事项
+              href: security-considerations-in-wcf.md
+              items:
+                - name: 信息泄露
+                  href: information-disclosure.md
+                - name: 特权提升
+                  href: elevation-of-privilege.md
+                - name: 拒绝服务
+                  href: denial-of-service.md
+                - name: 篡改
+                  href: tampering.md
+                - name: 重播攻击
+                  href: replay-attacks.md
+                - name: 不支持的方案
+                  href: unsupported-scenarios.md
+            - name: 性能注意事项
+              href: performance-considerations.md
+              items:
+                - name: 在 ClaimSet 中查找声明
+                  href: finding-claims-in-a-claimset.md
+                - name: 数字签名的加密
+                  href: encryption-of-digital-signatures.md
+        - name: 身份验证的扩展保护概述
+          href: extended-protection-for-authentication-overview.md
+          items:
+            - name: 扩展保护身份验证示例自述文件
+              href: readme-for-extended-protection-authentication-sample.md
+    - name: 对等网络
+      href: peer-to-peer-networking.md
+      items:
+        - name: 对等通道方案
+          href: peer-channel-scenarios.md
+        - name: 对等通道概念
+          href: peer-channel-concepts.md
+          items:
+            - name: 对等网格
+              href: peer-meshes.md
+            - name: 对等节点
+              href: peer-nodes.md
+            - name: 对等通道安全性
+              href: peer-channel-security.md
+            - name: 对等解析程序
+              href: peer-resolvers.md
+              items:
+                - name: CustomPeerResolverService 内部：客户端注册
+                  href: inside-the-custompeerresolverservice-client-registrations.md
+        - name: 生成对等通道应用程序
+          href: building-a-peer-channel-application.md
+          items:
+            - name: 将 NetTcpBinding 应用程序转换为对等通道应用程序
+              href: converting-a-nettcpbinding-application-to-a-peer-channel-application.md
+            - name: 限制消息分布
+              href: limiting-message-distribution.md
+            - name: 添加联机和脱机状态
+              href: adding-online-and-offline-status.md
+            - name: 保护对等通道应用程序
+              href: securing-peer-channel-applications.md
+    - name: 元数据
+      href: metadata.md
+      items:
+        - name: 元数据体系结构概述
+          href: metadata-architecture-overview.md
+        - name: 元数据格式
+          href: metadata-formats.md
+        - name: 导出和导入元数据
+          href: exporting-and-importing-metadata.md
+          items:
+            - name: 如何：将元数据导入服务终结点
+              href: how-to-import-metadata-into-service-endpoints.md
+            - name: 如何：从服务终结点导出元数据
+              href: how-to-export-metadata-from-service-endpoints.md
+            - name: ServiceDescription 和 WSDL 引用
+              href: servicedescription-and-wsdl-reference.md
+            - name: 如何：使用 Svcutil.exe 将元数据从已编译的服务代码中导出
+              href: how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md
+        - name: 发布元数据
+          href: publishing-metadata.md
+          items:
+            - name: 如何：使用配置文件发布服务的元数据
+              href: how-to-publish-metadata-for-a-service-using-a-configuration-file.md
+            - name: 如何：使用代码发布服务的元数据
+              href: how-to-publish-metadata-for-a-service-using-code.md
+        - name: 检索元数据
+          href: retrieving-metadata.md
+          items:
+            - name: 如何：使用 Svcutil.exe 下载元数据文档
+              href: how-to-use-svcutil-exe-to-download-metadata-documents.md
+            - name: 如何：使用 MetadataResolver 动态获取绑定元数据
+              href: how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically.md
+            - name: 如何：使用 MetadataExchangeClient 检索元数据
+              href: how-to-use-metadataexchangeclient-to-retrieve-metadata.md
+        - name: 使用元数据
+          href: using-metadata.md
+          items:
+            - name: 了解生成的客户端代码
+              href: understanding-generated-client-code.md
+            - name: 如何：检索元数据并实现兼容服务
+              href: how-to-retrieve-metadata-and-implement-a-compliant-service.md
+            - name: 根据服务元数据生成 WCF 客户端
+              href: generating-a-wcf-client-from-service-metadata.md
+        - name: 元数据的安全注意事项
+          href: security-considerations-with-metadata.md
+          items:
+            - name: 如何：保护元数据终结点
+              href: how-to-secure-metadata-endpoints.md
+            - name: 如何：授权时允许元数据请求
+              href: how-to-allow-metadata-requests-while-authorizing.md
+    - name: 客户端
+      href: clients.md
+      items:
+        - name: WCF 客户端体系结构
+          href: client-architecture.md
+        - name: 使用 WCF 客户端访问服务
+          href: accessing-services-using-a-client.md
+          items:
+            - name: 如何：使用单向和请求-答复协定访问服务
+              href: how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md
+            - name: 如何：使用双工协定访问服务
+              href: how-to-access-services-with-a-duplex-contract.md
+            - name: 如何：访问 WSE 3.0 服务
+              href: how-to-access-a-wse-3-0-service-with-a-wcf-client.md
+            - name: 如何：使用 ChannelFactory
+              href: how-to-use-the-channelfactory.md
+            - name: 通道工厂和缓存
+              href: channel-factory-and-caching.md
+            - name: 如何：以异步方式调用服务操作
+              href: how-to-call-wcf-service-operations-asynchronously.md
+            - name: 中间层客户端应用程序
+              href: middle-tier-client-applications.md
+            - name: 如何：使用通道工厂以异步方式调用操作
+              href: how-to-call-operations-asynchronously-using-a-channel-factory.md
+            - name: 使用 Windows Store 应用商店客户端应用访问 WCF 服务
+              href: accessing-wcf-services-with-a-windows-store-client-app.md
+            - name: 如何：创建通道工厂并用它创建和管理通道
+              href: how-to-create-a-channel-factory-and-use-it-to-create-and-manage-channels.md
+        - name: WCF 客户端配置
+          href: client-configuration.md
+    - name: 宿主
+      href: hosting.md
+      items:
+        - name: 在 Internet 信息服务中承载
+          href: hosting-in-internet-information-services.md
+          items:
+            - name: 部署承载于 Internet 信息服务中的 WCF 服务
+              href: deploying-an-internet-information-services-hosted-wcf-service.md
+            - name: WCF 服务和 ASP.NET
+              href: wcf-services-and-aspnet.md
+            - name: Internet 信息服务承载最佳实践
+              href: internet-information-services-hosting-best-practices.md
+            - name: 如何：在 IIS 中承载 WCF 服务
+              href: how-to-host-a-wcf-service-in-iis.md
+            - name: 为 Windows Communication Foundation 配置 Internet Information Services 7.0
+              href: configuring-iis-for-wcf.md
+        - name: 在 Windows 进程激活服务中承载
+          href: hosting-in-windows-process-activation-service.md
+          items:
+            - name: WAS 激活体系结构
+              href: was-activation-architecture.md
+            - name: 配置 WAS 以用于 WCF
+              href: configuring-the-wpa--service-for-use-with-wcf.md
+            - name: 如何：安装和配置 WCF 激活组件
+              href: how-to-install-and-configure-wcf-activation-components.md
+            - name: 如何：在 WAS 中承载 WCF 服务
+              href: how-to-host-a-wcf-service-in-was.md
+        - name: 在 Windows 服务应用程序中承载
+          href: hosting-in-a-windows-service-application.md
+          items:
+            - name: 如何：在托管 Windows 服务中承载 WCF 服务
+              href: how-to-host-a-wcf-service-in-a-managed-windows-service.md
+        - name: 在托管应用程序中承载
+          href: hosting-in-a-managed-application.md
+        - name: IIS 和 WAS 中的基于配置的激活
+          href: configuration-based-activation-in-iis-and-was.md
+        - name: 支持多个 IIS 站点绑定
+          href: supporting-multiple-iis-site-bindings.md
+        - name: System.Web.Routing 集成
+          href: system-web-routing-integration.md
+    - name: 部分信任
+      href: partial-trust.md
+      items:
+        - name: 支持的部署方案
+          href: supported-deployment-scenarios.md
+        - name: 部分信任功能兼容性
+          href: partial-trust-feature-compatibility.md
+        - name: 部分信任最佳实践
+          href: partial-trust-best-practices.md
+    - name: 互操作性和集成
+      href: interoperability-and-integration.md
+      items:
+        - name: Web 服务协议互操作性指南
+          href: web-services-protocols-interoperability-guide.md
+          items:
+            - name: 系统提供的互操作性绑定支持的 Web 服务协议
+              href: web-services-protocols-supported-by-system-provided-interoperability-bindings.md
+            - name: 消息协议
+              href: messaging-protocols.md
+            - name: 数据协定架构参考
+              href: data-contract-schema-reference.md
+            - name: WSDL 和策略
+              href: wsdl-and-policy.md
+            - name: 安全协议版本 1.0
+              href: security-protocols-version-1-0.md
+            - name: 安全协议
+              href: security-protocols.md
+            - name: 可靠消息传送协议版本 1.0
+              href: reliable-messaging-protocol-version-1-0.md
+            - name: 可靠消息传送协议版本 1.1
+              href: reliable-messaging-protocol-version-1-1.md
+            - name: 事务协议版本 1.0
+              href: transaction-protocols-version-1-0.md
+            - name: 事务协议
+              href: transaction-protocols.md
+            - name: 上下文交换协议
+              href: context-exchange-protocol.md
+            - name: 在联合方案中混合信任协议
+              href: mixing-trust-protocols-in-federated-scenarios.md
+        - name: 与 COM+ 应用程序集成
+          href: integrating-with-com-plus-applications.md
+          items:
+            - name: 与 COM+ 应用程序集成的概述
+              href: integrating-with-com-plus-applications-overview.md
+            - name: 如何：使用 COM+ 服务模型配置工具
+              href: how-to-use-the-com-service-model-configuration-tool.md
+            - name: 如何：配置 COM+ 服务设置
+              href: how-to-configure-com-service-settings.md
+            - name: 如何：部署 COM+ 集成应用程序
+              href: how-to-deploy-a-com-integration-application.md
+        - name: 与 COM 应用程序集成
+          href: integrating-with-com-applications.md
+          items:
+            - name: COM 应用程序集成概述
+              href: integrating-with-com-applications-overview.md
+            - name: 如何：注册和配置服务名字对象
+              href: how-to-register-and-configure-a-service-moniker.md
+            - name: 如何：使用未注册的 Windows Communication Foundation 服务名字对象
+              href: use-the-wcf-service-moniker-without-registration.md
+            - name: 如何：将服务名字对象用于 WSDL 协定
+              href: how-to-use-a-service-moniker-with-wsdl-contracts.md
+            - name: 如何：将服务名字对象与元数据交换协定一起使用
+              href: how-to-use-a-service-moniker-with-metadata-exchange-contracts.md
+            - name: 如何：指定通道安全凭据
+              href: how-to-specify-channel-security-credentials.md
+        - name: 将 .NET 远程处理应用程序迁移到 WCF
+          href: migrating-net-remoting-applications-to-wcf.md
+        - name: 与 Web Services Enhancements 3.0 的互操作性
+          href: interoperability-with-web-services-enhancements-3-0.md
+          items:
+            - name: 如何：配置 WCF 服务以与 WSE 3.0 客户端进行互操作
+              href: how-to-configure-wcf-services-to-interoperate-with-wse-3-0-clients.md
+            - name: 如何：配置 WCF 客户端以与 WSE3.0 服务进行互操作
+              href: how-to-configure-a-wcf-client-to-interoperate-with-wse3-0-services.md
+        - name: 将 WSE 3.0 Web 服务迁移到 WCF
+          href: migrating-wse-3-0-web-services-to-wcf.md
+        - name: 与 ASP.NET Web 服务的互操作性
+          href: interop-with-aspnet-web-services.md
+          items:
+            - name: 如何：配置 WCF 服务以与 ASP.NET Web 服务客户端进行互操作
+              href: config-wcf-service-with-aspnet-web-service.md
+        - name: 将 ASP.NET Web 服务迁移到 WCF
+          href: migrating-aspnet-web-services-to-wcf.md
+          items:
+            - name: 基于目标和使用的标准比较 ASP.NET Web 服务与 WCF
+              href: comparing-aspnet-web-services-to-wcf-based-on-purpose-and-standards-used.md
+            - name: 从开发的角度比较 ASP.NET Web 服务与 WCF
+              href: comparing-aspnet-web-services-to-wcf-based-on-development.md
+            - name: Windows Communication Foundation 使用展望：轻松实现未来的集成
+              href: anticipating-adopting-the-wcf-easing-future-integration.md
+            - name: Windows Communication Foundation 使用展望：轻松实现未来的迁移
+              href: anticipating-adopting-wcf-migration.md
+            - name: 采用 Windows Communication Foundation
+              href: adopting-wcf.md
+        - name: 与 POX 应用程序的互操作性
+          href: interoperability-with-pox-applications.md
+    - name: WCF Web HTTP 编程模型
+      href: wcf-web-http-programming-model.md
+      items:
+        - name: WCF Web HTTP 编程模型概述
+          href: wcf-web-http-programming-model-overview.md
+        - name: WCF Web HTTP 编程对象模型
+          href: wcf-web-http-programming-object-model.md
+        - name: 如何：创建基本 WCF Web HTTP 服务
+          href: how-to-create-a-basic-wcf-web-http-service.md
+        - name: 如何：向 SOAP 和 Web 客户端公开协定
+          href: how-to-expose-a-contract-to-soap-and-web-clients.md
+        - name: UriTemplate 和 UriTemplateTable
+          href: uritemplate-and-uritemplatetable.md
+        - name: 如何：使用 WCF Web HTTP 编程模型创建返回任意数据的服务
+          href: service-returns-arbitrary-data-using-the-wcf-web.md
+        - name: 如何：使用 WCF REST 编程模型创建接受任意数据的服务
+          href: create-a-service-arbitrary-data-using-wcf.md
+        - name: 对 WCF Web HTTP 服务的缓存支持
+          href: caching-support-for-wcf-web-http-services.md
+        - name: WCF Web HTTP 服务帮助页
+          href: wcf-web-http-service-help-page.md
+        - name: WCF Web HTTP 格式设置
+          href: wcf-web-http-formatting.md
+        - name: WCF Web HTTP 错误处理
+          href: wcf-web-http-error-handling.md
+        - name: 使用 JSONP
+          href: using-jsonp.md
+        - name: 从 WCF 服务调用 REST 样式服务
+          href: calling-a-rest-style-service-from-a-wcf-service.md
+    - name: WCF 联合
+      href: wcf-syndication.md
+      items:
+        - name: WCF 联合概述
+          href: wcf-syndication-overview.md
+        - name: 联合体系结构
+          href: architecture-of-syndication.md
+        - name: WCF 联合对象模型如何映射到 Atom 和 RSS
+          href: how-the-wcf-syndication-object-model-maps-to-atom-and-rss.md
+        - name: 如何：创建基本 RSS 源
+          href: how-to-create-a-basic-rss-feed.md
+        - name: 如何：创建基本 Atom 源
+          href: how-to-create-a-basic-atom-feed.md
+        - name: 如何：作为 Atom 和 RSS 公开源
+          href: how-to-expose-a-feed-as-both-atom-and-rss.md
+        - name: 联合扩展性
+          href: syndication-extensibility.md
+    - name: AJAX 集成和 JSON 支持
+      href: ajax-integration-and-json-support.md
+      items:
+        - name: 为 ASP.NET AJAX 创建 WCF 服务
+          href: creating-wcf-services-for-aspnet-ajax.md
+          items:
+            - name: 如何：创建和访问支持 AJAX 的 WCF 服务
+              href: create-an-ajax-wcf-asp-net-client.md
+            - name: 如何：在不使用配置的情况下添加 ASP.NET AJAX 终结点
+              href: how-to-add-an-aspnet-ajax-endpoint-without-using-configuration.md
+            - name: 如何：使用配置来添加 ASP.NET AJAX 终结点
+              href: how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md
+            - name: 如何：在 ASP.NET AJAX 终结点的 HTTP POST 和 HTTP GET 请求之间进行选择
+              href: http-post-and-http-get-requests-for-aspnet-ajax-endpoints.md
+        - name: 创建不使用 ASP.NET 的 WCF AJAX 服务
+          href: creating-wcf-ajax-services-without-aspnet.md
+        - name: 对 JSON 和其他数据传输格式的支持
+          href: support-for-json-and-other-data-transfer-formats.md
+          items:
+            - name: 独立 JSON 序列化
+              href: stand-alone-json-serialization.md
+            - name: 如何：对 JSON 数据进行序列化和反序列化
+              href: how-to-serialize-and-deserialize-json-data.md
+            - name: JSON 和 XML 之间的映射
+              href: mapping-between-json-and-xml.md
+            - name: 使用消息级编程在 Json 中序列化
+              href: serializing-in-json-with-message-level-programming.md
+        - name: 如何：将支持 AJAX 的 ASP.NET Web 服务迁移到 WCF
+          href: how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf.md
+    - name: WCF Discovery
+      href: wcf-discovery.md
+      items:
+        - name: WCF Discovery 概述
+          href: wcf-discovery-overview.md
+        - name: WCF Discovery 对象模型
+          href: wcf-discovery-object-model.md
+        - name: Discovery Find 和 FindCriteria
+          href: discovery-find-and-findcriteria.md
+        - name: 如何：以编程方式向 WCF 服务和客户端添加可发现性
+          href: how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md
+        - name: 实现发现代理
+          href: implementing-a-discovery-proxy.md
+          items:
+            - name: 如何：实现发现代理
+              href: how-to-implement-a-discovery-proxy.md
+            - name: 如何：实现向发现代理注册的可发现的服务
+              href: discoverable-service-that-registers-with-the-discovery-proxy.md
+            - name: 如何：实现使用发现代理查找服务的客户端应用程序
+              href: client-app-discovery-proxy-to-find-a-service.md
+            - name: 如何：测试发现代理
+              href: how-to-test-the-discovery-proxy.md
+            - name: 如何：确定探测请求的发现版本
+              href: how-to-determine-the-discovery-version-of-a-probe-request.md
+        - name: 发现版本控制
+          href: discovery-versioning.md
+        - name: 在配置文件中配置发现
+          href: configuring-discovery-in-a-configuration-file.md
+        - name: 使用 Discovery 客户端通道
+          href: using-the-discovery-client-channel.md
+        - name: 通过 Discovery 客户端通道使用自定义绑定
+          href: using-a-custom-binding-with-the-discovery-client-channel.md
+        - name: 发现公告和公告客户端
+          href: discovery-announcements-and-announcement-client.md
+        - name: DiscoveryClient 和 DynamicEndpoint
+          href: discoveryclient-and-dynamicendpoint.md
+    - name: 路由
+      href: routing.md
+      items:
+        - name: 路由简介
+          href: routing-introduction.md
+        - name: 路由服务
+          href: routing-service.md
+        - name: 路由协定
+          href: routing-contracts.md
+        - name: 消息筛选器
+          href: message-filters.md
+          items:
+            - name: 选择筛选器
+              href: choosing-a-filter.md
+            - name: 自定义筛选器
+              href: custom-filters.md
+            - name: 如何：使用筛选器
+              href: how-to-use-filters.md
+        - name: 路由方案
+          href: routing-scenarios.md
+          items:
+            - name: 如何：服务版本控制
+              href: how-to-service-versioning.md
+            - name: 如何：服务数据分区
+              href: how-to-service-data-partitioning.md
+            - name: 如何：动态更新
+              href: how-to-dynamic-update.md
+            - name: 如何：错误处理
+              href: how-to-error-handling.md
+    - name: WCF 和国际化域名
+      href: wcf-and-internationalized-domain-names.md
+    - name: WCF 和 WebSocket
+      href: wcf-and-websockets.md
+      items:
+        - name: 使用 NetHttpBinding
+          href: using-the-nethttpbinding.md
+        - name: 如何：创建通过 WebSocket 进行通信的 WCF 服务
+          href: how-to-create-a-wcf-service-that-communicates-over-websockets.md
+    - name: 错误处理
+      href: error-handling.md

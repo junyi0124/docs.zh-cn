@@ -1,0 +1,75 @@
+- name: 安全性
+  href: index.md
+  items:
+    - name: 安全性的基础概念
+      href: key-security-concepts.md
+    - name: .NET Core FIPS 合规性
+      href: fips-compliance.md
+    - name: 基于角色的安全性
+      href: role-based-security.md
+      items:
+        - name: 主体和标识对象
+          href: principal-and-identity-objects.md
+        - name: 如何：创建 WindowsPrincipal 对象
+          href: how-to-create-a-windowsprincipal-object.md
+        - name: 如何：创建 GenericPrincipal 和 GenericIdentity 对象
+          href: how-to-create-genericprincipal-and-genericidentity-objects.md
+        - name: 替换 Principal 对象
+          href: replacing-a-principal-object.md
+        - name: 模拟与恢复
+          href: impersonating-and-reverting.md
+    - name: 加密模型
+      items:
+        - name: 概述
+          href: cryptography-model.md
+        - name: 跨平台加密
+          href: cross-platform-cryptography.md
+        - name: 加密服务
+          href: cryptographic-services.md
+        - name: 生成加密和解密的密钥
+          href: generating-keys-for-encryption-and-decryption.md
+        - name: 如何：将非对称密钥存储在密钥容器中
+          href: how-to-store-asymmetric-keys-in-a-key-container.md
+        - name: 加密数据
+          href: encrypting-data.md
+        - name: 解密数据
+          href: decrypting-data.md
+        - name: 加密签名
+          href: cryptographic-signatures.md
+        - name: 使用哈希代码确保数据完整性
+          href: ensuring-data-integrity-with-hash-codes.md
+        - name: 如何：用对称密钥对 XML 元素进行加密
+          href: how-to-encrypt-xml-elements-with-symmetric-keys.md
+        - name: 如何：用对称密钥对 XML 元素进行解密
+          href: how-to-decrypt-xml-elements-with-symmetric-keys.md
+        - name: 如何：用非对称密钥对 XML 元素进行加密
+          href: how-to-encrypt-xml-elements-with-asymmetric-keys.md
+        - name: 如何：用非对称密钥对 XML 元素进行解密
+          href: how-to-decrypt-xml-elements-with-asymmetric-keys.md
+        - name: 如何：使用 X.509 证书加密 XML 元素
+          href: how-to-encrypt-xml-elements-with-x-509-certificates.md
+        - name: 如何：使用 X.509 证书解密 XML 元素
+          href: how-to-decrypt-xml-elements-with-x-509-certificates.md
+        - name: 如何：使用数字签名为 XML 文档签名
+          href: how-to-sign-xml-documents-with-digital-signatures.md
+        - name: 如何：验证 XML 文档的数字签名
+          href: how-to-verify-the-digital-signatures-of-xml-documents.md
+        - name: 如何：使用数据保护
+          href: how-to-use-data-protection.md
+        - name: 如何：访问硬件加密设备
+          href: how-to-access-hardware-encryption-devices.md
+        - name: 演练：创建加密应用程序
+          href: walkthrough-creating-a-cryptographic-application.md
+    - name: 代码安全维护指南
+      href: secure-coding-guidelines.md
+      items:
+        - name: 保护状态数据
+          href: securing-state-data.md
+        - name: 安全性和用户输入
+          href: security-and-user-input.md
+        - name: 安全和争用条件
+          href: security-and-race-conditions.md
+        - name: 安全性和进行中的代码生成
+          href: security-and-on-the-fly-code-generation.md
+        - name: 使用填充对 CBC 模式对称解密的漏洞进行计时
+          href: vulnerabilities-cbc-mode.md

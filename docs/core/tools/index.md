@@ -1,104 +1,108 @@
 ---
-title: ".NET Core 命令行接口 (CLI) 工具"
-description: "命令行接口 (CLI) 的定义及其主要功能的概述"
-keywords: "CLI, CLI 工具, .NET, .NET Core"
-author: blackdwarf
-ms.author: mairaw
-manager: wpickett
-ms.date: 10/06/2016
-ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
-ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
-translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 3a3326f96cf69d0ac466e52107597d80c2790b62
-
+title: .NET CLI
+titleSuffix: ''
+description: .NET CLI 及其功能概述。
+ms.topic: overview
+ms.date: 02/13/2020
+ms.openlocfilehash: 6a12e2d16afe36092c10e14a7465fa3bdbb23f32
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94633851"
 ---
+# <a name="net-cli-overview"></a>.NET CLI 概述
 
-# <a name="net-core-commandline-interface-tools"></a>.NET Core 命令行接口工具
+本文适用于： ✔️ .NET Core 2.1 SDK 及更高版本
 
-.NET Core 命令行接口 (CLI) 工具是用于开发 .NET Core 应用程序的新型基础性跨平台工具链。 “基础性”在于它是可以在其中生成其他更高级别工具（如集成开发环境 (IDE)、编辑器和生成 orchestrator）的主层。 
+.NET 命令行接口 (CLI) 工具是用于开发、生成、运行和发布 .NET 应用程序的跨平台工具链。
 
-此外，默认情况下，它是跨平台的，每个受支持平台上的外围应用都相同。 这意味着，如果了解如何使用此工具，便可以在任何受支持的平台以相同方式使用它。 
+.NET CLI 附带了 [.NET SDK](../sdk.md)。 若要了解如何安装 .NET SDK，请参阅[安装 .NET Core](../install/windows.md)。
 
-## <a name="installation"></a>安装
-与任何工具一样，首先应将工具安装到计算机上。 根据具体情况，可以使用本机安装程序安装 CLI 或使用 shell 脚本安装。
+## <a name="cli-commands"></a>CLI 命令
 
-本机安装程序主要用于开发人员的计算机。 可以使用所有受支持的平台的本机安装机制发布 CLI，例如 Ubuntu 上的 DEB 或 Windows 上的 MSI 包。 这些安装程序将根据需要为用户安装并设置环境，以便在安装完成后可立即使用 CLI。 但是，这些安装程序也需要对计算机的管理权限。 有关安装说明信息，请参阅 [.NET Core 入门页](https://aka.ms/dotnetcoregs)。
-
-另一方面，安装脚本不需要管理权限。 但是，它们也不会在计算机上安装任何系统必备组件；需要手动安装所有系统必备组件。 这些脚本主要用于设置生成服务器或希望安装工具但没有管理权限的情况（请务必注意上述系统必备组件注意事项）。 可以在[安装脚本引用主题](dotnet-install-script.md)中找到详细信息。 如果对如何在持续集成 (CI) 生成服务器上设置 CLI 感兴趣，可以查看 [CI 服务器的 CLI](using-ci-with-cli.md) 主题。 
-
-默认情况下，CLI 将以并行 (SxS) 方式安装。 这意味着多个版本的 CLI 工具在任何给定时间内可在一台计算机上共存。 有关如何使用正确版本的详细信息，请参阅[驱动程序](#driver)部分。 
-
-### <a name="what-commands-come-in-the-box"></a>框中有哪些命令？
 默认安装以下命令：
 
-* [new](dotnet-new.md)
-* [restore](dotnet-restore.md)
-* [run](dotnet-run.md)
-* [build](dotnet-build.md)
-* [test](dotnet-test.md)
-* [publish](dotnet-publish.md)
-* [pack](dotnet-pack.md)
+### <a name="basic-commands"></a>基本命令
 
-此外，还有一种方法可以基于每个项目导入更多命令并添加自己的命令。 有关详细信息，请参阅[扩展性部分](#extensibility)。 
+- [`new`](dotnet-new.md)
+- [`restore`](dotnet-restore.md)
+- [`build`](dotnet-build.md)
+- [`publish`](dotnet-publish.md)
+- [`run`](dotnet-run.md)
+- [`test`](dotnet-test.md)
+- [`vstest`](dotnet-vstest.md)
+- [`pack`](dotnet-pack.md)
+- [`migrate`](dotnet-migrate.md)
+- [`clean`](dotnet-clean.md)
+- [`sln`](dotnet-sln.md)
+- [`help`](dotnet-help.md)
+- [`store`](dotnet-store.md)
 
-## <a name="working-with-the-cli"></a>使用 CLI
+### <a name="project-modification-commands"></a>项目修改命令
 
-开始了解更多详细信息之前，我们来看看从 10,000 英尺的视图中使用 CLI 的情形。 以下示例利用 CLI 标准安装中的多个命令来初始化新的简单控制台应用程序、还原依赖项、生成应用程序，然后运行该应用程序。 
+- [`add package`](dotnet-add-package.md)
+- [`add reference`](dotnet-add-reference.md)
+- [`remove package`](dotnet-remove-package.md)
+- [`remove reference`](dotnet-remove-reference.md)
+- [`list reference`](dotnet-list-reference.md)
 
-```console
-dotnet new
-dotnet restore
-dotnet build --output /stuff
-dotnet /stuff/new.dll
+### <a name="advanced-commands"></a>高级命令
+
+- [`nuget delete`](dotnet-nuget-delete.md)
+- [`nuget locals`](dotnet-nuget-locals.md)
+- [`nuget push`](dotnet-nuget-push.md)
+- [`msbuild`](dotnet-msbuild.md)
+- [`dotnet install script`](dotnet-install-script.md)
+
+### <a name="tool-management-commands"></a>工具管理命令
+
+- [`tool install`](dotnet-tool-install.md)
+- [`tool list`](dotnet-tool-list.md)
+- [`tool update`](dotnet-tool-update.md)
+- [`tool restore`](global-tools.md#install-a-local-tool) 自 .NET Core SDK 3.0 起可用。
+- [`tool run`](global-tools.md#invoke-a-local-tool) 自 .NET Core SDK 3.0 起可用。
+- [`tool uninstall`](dotnet-tool-uninstall.md)
+
+工具是控制台应用程序，它们从 NuGet 包中安装并从命令提示符处进行调用。 你可自行编写工具，也可安装由第三方编写的工具。 工具也称为全局工具、工具路径工具和本地工具。 有关详细信息，请参阅 [.NET 工具概述](global-tools.md)。
+
+## <a name="command-structure"></a>命令结构
+
+CLI 命令结构包含[驱动程序（“dotnet”）](#driver)和[命令](#command)，还可能包含命令[参数](#arguments)和[选项](#options)。 在大部分 CLI 操作中可看到此模式，例如创建新控制台应用并从命令行运行该应用，因为从名为 *my_app* 的目录中执行时，显示以下命令：
+
+```dotnetcli
+dotnet new console
+dotnet build --output /build_output
+dotnet /build_output/my_app.dll
 ```
 
-如上例中所示，其中有一种使用 CLI 工具的模式。 在该模式中，我们可以确定每个命令的三大主要部分：
-
-1. [驱动程序（“dotnet”）](#driver)
-2. [命令或“谓词”](#the-verb)
-3. [命令参数](#the-arguments)
-
 ### <a name="driver"></a>驱动程序
-驱动器名为 [dotnet](dotnet.md)。 这是调用的第一部分。 该驱动程序有以下两项职责：
 
-1. 运行可移植应用
-2. 执行谓词
+驱动程序名为 [dotnet](dotnet.md)，并具有两项职责，即运行[依赖于框架的应用](../deploying/index.md)或执行命令。
 
-它所执行的职责取决于命令行上指定的内容。 在第一种情况下，需要指定可移植应用 DLL，`dotnet` 将以如下方式运行该 DLL：`dotnet /path/to/your.dll`。 
+若要运行依赖于框架的应用，请在驱动程序后指定应用，例如，`dotnet /path/to/my_app.dll`。 从应用的 DLL 驻留的文件夹执行命令时，只需执行 `dotnet my_app.dll` 即可。 如果要使用特定版本的 .NET 运行时，请使用 `--fx-version <VERSION>` 选项（请参阅 [dotnet 命令](dotnet.md)参考）。
 
-在第二种情况下，驱动程序将尝试调用指定命令。 这将启动 CLI 命令执行过程。 首先，驱动程序确定所需工具的版本。 可在 [global.json](global-json.md) 文件中使用 `version` 属性指定版本。 如果不可用，驱动程序将查找安装在磁盘上的工具的最新版本并使用该版本。 确定版本后，将立即执行该命令。 
+为驱动程序提供命令时，`dotnet.exe` 启动 CLI 命令执行过程。 例如：
 
-### <a name="the-verb"></a>“谓词”
-谓词仅仅是执行操作的命令。 `dotnet build` 生成代码。 `dotnet publish` 发布代码。 以按约定命名的控制台应用程序实现谓词：`dotnet-{verb}`。 在表示谓词的控制台应用程序中实现所有逻辑。 
+```dotnetcli
+dotnet build
+```
 
-### <a name="the-arguments"></a>参数
-在命令行上传递的参数是正被调用的实际谓词/命令的参数。 例如，键入 `dotnet publish --output publishedapp` 时，会将 `--output` 参数传递给 `publish` 命令。 
+首先，驱动程序确定要使用的 SDK 版本。 如果没有 [global.json](global-json.md) 文件，则使用可用的最新版本 SDK。 这有可能是预览版或稳定版，具体取决于计算机上的最新版本。  确定 SDK 版本后，它便会执行命令。
 
-## <a name="types-of-application-portability"></a>应用程序可移植性的类型
-CLI 以两种主要方式实现应用程序的可移植性：
+### <a name="command"></a>命令
 
-1. 可随处运行 .NET Core 的完全可移植应用程序已安装
-2. 独立部署
+由命令执行操作。 例如，`dotnet build` 生成代码。 `dotnet publish` 发布代码。 使用 `dotnet {command}` 约定将命令作为控制台应用程序实现。
 
-可在 [.NET Core 应用程序部署](../deploying/index.md)主题中了解以上两点的详细信息。 
+### <a name="arguments"></a>自变量
 
-## <a name="migration-from-dnx"></a>从 DNX 迁移
-如果在 .NET Core 1.0 RC1 中使用 DNX，你可能会想发生的情况以及这些新工具与 DNX 工具之间的联系。 简言之，DNX 工具已替换为 .NET Core CLI 工具。 如果具有现有项目或者只想了解命令如何映射，则可以查看 [DNX 与 CLI 间的迁移](../migrating-from-dnx.md)主题获取所有详细信息。 
+在命令行上传递的参数是被调用的命令的参数。 例如，执行 `dotnet publish my_app.csproj` 时，`my_app.csproj` 参数指示要发布的项目，并被传递到 `publish` 命令。
 
-## <a name="extensibility"></a>扩展性
-当然，并非要在工作流中使用的每个工具都将成为核心 CLI 工具的一部分。 但是，.NET Core CLI 具备可使你为项目指定其他工具的扩展性模型。 有关详细信息，请参阅 [.NET Core CLI 扩展性模型](extensibility.md)主题。
+### <a name="options"></a>选项
 
-## <a name="summary"></a>摘要
-本文简短改善了 CLI 最重要的功能。 通过使用本站点上的引用和概念性主题可了解详细信息。 此外，还可以使用其他资源：
-* [dotnet/CLI](https://github.com/dotnet/cli/) GitHub 存储库
-* [入门说明](https://aka.ms/dotnetcoregs/)
+在命令行上传递的选项是被调用的命令的选项。 例如，执行 `dotnet publish --output /build_output` 时，`--output` 选项及其值被传递到 `publish` 命令。
 
+## <a name="see-also"></a>请参阅
 
-
-<!--HONumber=Nov16_HO3-->
-
-
+- [dotnet/sdk GitHub 存储库](https://github.com/dotnet/sdk/)
+- [.NET 安装指南](../install/windows.md)

@@ -1,0 +1,243 @@
+- name: 可访问性
+  href: index.md
+  items:
+    - name: 辅助功能最佳方案
+      href: accessibility-best-practices.md
+    - name: UI 自动化基础知识
+      href: ui-automation-fundamentals.md
+      items:
+        - name: UI 自动化概述
+          href: ui-automation-overview.md
+        - name: UI 自动化和 Microsoft Active Accessibility
+          href: ui-automation-and-microsoft-active-accessibility.md
+        - name: UI 自动化树概述
+          href: ui-automation-tree-overview.md
+        - name: UI 自动化控件模式概述
+          href: ui-automation-control-patterns-overview.md
+        - name: UI 自动化属性概述
+          href: ui-automation-properties-overview.md
+        - name: UI 自动化事件概述
+          href: ui-automation-events-overview.md
+        - name: UI 自动化安全性概述
+          href: ui-automation-security-overview.md
+        - name: 使用 UI 自动化进行自动化测试
+          href: using-ui-automation-for-automated-testing.md
+    - name: 托管代码的 UI 自动化提供程序
+      href: ui-automation-providers-for-managed-code.md
+      items:
+        - name: 服务器端 UI 自动化提供程序的实现
+          href: server-side-ui-automation-provider-implementation.md
+        - name: UI 自动化提供程序概述
+          href: ui-automation-providers-overview.md
+        - name: 客户端 UI 自动化提供程序的实现
+          href: client-side-ui-automation-provider-implementation.md
+        - name: 帮助主题
+          href: ui-automation-providers-for-managed-code-how-to-topics.md
+          items:
+            - name: 公开服务器端 UI 自动化提供程序
+              href: expose-a-server-side-ui-automation-provider.md
+            - name: 从 UI 自动化提供程序返回属性
+              href: return-properties-from-a-ui-automation-provider.md
+            - name: 从 UI 自动化提供程序中引发事件
+              href: raise-events-from-a-ui-automation-provider.md
+            - name: 在 UI 自动化片段提供程序中启用导航
+              href: enable-navigation-in-a-ui-automation-fragment-provider.md
+            - name: 在 UI 自动化提供程序中支持控件模式
+              href: support-control-patterns-in-a-ui-automation-provider.md
+            - name: 创建客户端 UI 自动化提供程序
+              href: create-a-client-side-ui-automation-provider.md
+            - name: 在客户端应用程序中实现 UI 自动化提供程序
+              href: implement-ui-automation-providers-in-a-client-application.md
+    - name: 托管代码的 UI 自动化客户端
+      href: ui-automation-clients-for-managed-code.md
+      items:
+        - name: UI 自动化和屏幕缩放
+          href: ui-automation-and-screen-scaling.md
+        - name: UI 自动化对标准控件的支持
+          href: ui-automation-support-for-standard-controls.md
+        - name: 客户端的 UI 自动化事件
+          href: ui-automation-events-for-clients.md
+        - name: 在 UI 自动化客户端中缓存
+          href: caching-in-ui-automation-clients.md
+        - name: 客户端的 UI 自动化属性
+          href: ui-automation-properties-for-clients.md
+        - name: UI 自动化客户端的控件模式映射
+          href: control-pattern-mapping-for-ui-automation-clients.md
+        - name: 客户端的 UI 自动化控件模式
+          href: ui-automation-control-patterns-for-clients.md
+        - name: 获取 UI 自动化元素
+          href: obtaining-ui-automation-elements.md
+        - name: UI 自动化线程处理问题
+          href: ui-automation-threading-issues.md
+        - name: 帮助主题
+          href: ui-automation-clients-for-managed-code-how-to-topics.md
+          items:
+            - name: 基于属性条件查找 UI 自动化元素
+              href: find-a-ui-automation-element-based-on-a-property-condition.md
+            - name: 使用 TreeWalker 在 UI 自动化元素之间导航
+              href: navigate-among-ui-automation-elements-with-treewalker.md
+            - name: 查找列表项的 UI 自动化元素
+              href: find-a-ui-automation-element-for-a-list-item.md
+            - name: 获取 UI 自动化元素的属性
+              href: get-ui-automation-element-properties.md
+            - name: 在 UI 自动化中使用缓存
+              href: use-caching-in-ui-automation.md
+            - name: 订阅 UI 自动化事件
+              href: subscribe-to-ui-automation-events.md
+            - name: 注册客户端提供程序程序集
+              href: register-a-client-side-provider-assembly.md
+            - name: 使用 AutomationID 属性
+              href: use-the-automationid-property.md
+    - name: UI 自动化控件模式
+      href: ui-automation-control-patterns.md
+      items:
+        - name: 实现 UI 自动化 Dock 控件模式
+          href: implementing-the-ui-automation-dock-control-pattern.md
+        - name: 实现 UI 自动化 ExpandCollapse 控件模式
+          href: implementing-the-ui-automation-expandcollapse-control-pattern.md
+        - name: 实现 UI 自动化 Grid 控件模式
+          href: implementing-the-ui-automation-grid-control-pattern.md
+        - name: 实现 UI 自动化 GridItem 控件模式
+          href: implementing-the-ui-automation-griditem-control-pattern.md
+        - name: 实现 UI 自动化 Invoke 控件模式
+          href: implementing-the-ui-automation-invoke-control-pattern.md
+        - name: 实现 UI 自动化 MultipleView 控件模式
+          href: implementing-the-ui-automation-multipleview-control-pattern.md
+        - name: 实现 UI 自动化 RangeValue 控件模式
+          href: implementing-the-ui-automation-rangevalue-control-pattern.md
+        - name: 实现 UI 自动化 Scroll 控件模式
+          href: implementing-the-ui-automation-scroll-control-pattern.md
+        - name: 实现 UI 自动化 ScrollItem 控件模式
+          href: implementing-the-ui-automation-scrollitem-control-pattern.md
+        - name: 实现 UI 自动化 Selection 控件模式
+          href: implementing-the-ui-automation-selection-control-pattern.md
+        - name: 实现 UI 自动化 SelectionItem 控件模式
+          href: implementing-the-ui-automation-selectionitem-control-pattern.md
+        - name: 实现 UI 自动化 Table 控件模式
+          href: implementing-the-ui-automation-table-control-pattern.md
+        - name: 实现 UI 自动化 TableItem 控件模式
+          href: implementing-the-ui-automation-tableitem-control-pattern.md
+        - name: 实现 UI 自动化 Toggle 控件模式
+          href: implementing-the-ui-automation-toggle-control-pattern.md
+        - name: 实现 UI 自动化 Transform 控件模式
+          href: implementing-the-ui-automation-transform-control-pattern.md
+        - name: 实现 UI 自动化 Value 控件模式
+          href: implementing-the-ui-automation-value-control-pattern.md
+        - name: 实现 UI 自动化 Window 控件模式
+          href: implementing-the-ui-automation-window-control-pattern.md
+        - name: 帮助主题
+          href: ui-automation-control-patterns-how-to-topics.md
+          items:
+            - name: 使用 UI 自动化公开表的内容
+              href: expose-the-content-of-a-table-using-ui-automation.md
+            - name: 获取受支持的 UI 自动化控件模式
+              href: get-supported-ui-automation-control-patterns.md
+            - name: 使用 UI 自动化获取复选框的切换状态
+              href: get-the-toggle-state-of-a-check-box-using-ui-automation.md
+            - name: 使用 UI 自动化调用控件
+              href: invoke-a-control-using-ui-automation.md
+            - name: 移动 UI 自动化元素
+              href: move-a-ui-automation-element.md
+    - name: UI 自动化文本模式
+      href: ui-automation-text-pattern.md
+      items:
+        - name: UI 自动化 TextPattern 概述
+          href: ui-automation-textpattern-overview.md
+        - name: TextPattern 和嵌入式对象概述
+          href: textpattern-and-embedded-objects-overview.md
+        - name: 帮助主题
+          href: ui-automation-text-pattern-how-to-topics.md
+          items:
+            - name: 使用 UI 自动化向文本框添加内容
+              href: add-content-to-a-text-box-using-ui-automation.md
+            - name: 使用 UI 自动化查找和突出显示文本
+              href: find-and-highlight-text-using-ui-automation.md
+            - name: 使用 UI 自动化获取文本特性
+              href: obtain-text-attributes-using-ui-automation.md
+            - name: 使用 UI 自动化获取混合文本特性的详细信息
+              href: obtain-mixed-text-attribute-details-using-ui-automation.md
+            - name: 使用 UI 自动化遍历文本
+              href: traverse-text-using-ui-automation.md
+            - name: 使用 UI 自动化访问嵌入式对象
+              href: access-embedded-objects-using-ui-automation.md
+    - name: UI 自动化控件类型
+      href: ui-automation-control-types.md
+      items:
+        - name: UI 自动化控件类型概述
+          href: ui-automation-control-types-overview.md
+        - name: UI 自动化对 Button 控件类型的支持
+          href: ui-automation-support-for-the-button-control-type.md
+        - name: UI 自动化对 Calendar 控件类型的支持
+          href: ui-automation-support-for-the-calendar-control-type.md
+        - name: UI 自动化对 CheckBox 控件类型的支持
+          href: ui-automation-support-for-the-checkbox-control-type.md
+        - name: UI 自动化对 ComboBox 控件类型的支持
+          href: ui-automation-support-for-the-combobox-control-type.md
+        - name: UI 自动化对 DataGrid 控件类型的支持
+          href: ui-automation-support-for-the-datagrid-control-type.md
+        - name: UI 自动化对 DataItem 控件类型的支持
+          href: ui-automation-support-for-the-dataitem-control-type.md
+        - name: UI 自动化对 Document 控件类型的支持
+          href: ui-automation-support-for-the-document-control-type.md
+        - name: UI 自动化对 Edit 控件类型的支持
+          href: ui-automation-support-for-the-edit-control-type.md
+        - name: UI 自动化对 Group 控件类型的支持
+          href: ui-automation-support-for-the-group-control-type.md
+        - name: UI 自动化对 Header 控件类型的支持
+          href: ui-automation-support-for-the-header-control-type.md
+        - name: UI 自动化对 HeaderItem 控件类型的支持
+          href: ui-automation-support-for-the-headeritem-control-type.md
+        - name: UI 自动化对 Hyperlink 控件类型的支持
+          href: ui-automation-support-for-the-hyperlink-control-type.md
+        - name: UI 自动化对 Image 控件类型的支持
+          href: ui-automation-support-for-the-image-control-type.md
+        - name: UI 自动化对 List 控件类型的支持
+          href: ui-automation-support-for-the-list-control-type.md
+        - name: UI 自动化对 ListItem 控件类型的支持
+          href: ui-automation-support-for-the-listitem-control-type.md
+        - name: UI 自动化对 Menu 控件类型的支持
+          href: ui-automation-support-for-the-menu-control-type.md
+        - name: UI 自动化对 MenuBar 控件类型的支持
+          href: ui-automation-support-for-the-menubar-control-type.md
+        - name: UI 自动化对 MenuItem 控件类型的支持
+          href: ui-automation-support-for-the-menuitem-control-type.md
+        - name: UI 自动化对 Pane 控件类型的支持
+          href: ui-automation-support-for-the-pane-control-type.md
+        - name: UI 自动化对 ProgressBar 控件类型的支持
+          href: ui-automation-support-for-the-progressbar-control-type.md
+        - name: UI 自动化对 RadioButton 控件类型的支持
+          href: ui-automation-support-for-the-radiobutton-control-type.md
+        - name: UI 自动化对 ScrollBar 控件类型的支持
+          href: ui-automation-support-for-the-scrollbar-control-type.md
+        - name: UI 自动化对 Separator 控件类型的支持
+          href: ui-automation-support-for-the-separator-control-type.md
+        - name: UI 自动化对 Slider 控件类型的支持
+          href: ui-automation-support-for-the-slider-control-type.md
+        - name: UI 自动化对 Spinner 控件类型的支持
+          href: ui-automation-support-for-the-spinner-control-type.md
+        - name: UI 自动化对 SplitButton 控件类型的支持
+          href: ui-automation-support-for-the-splitbutton-control-type.md
+        - name: UI 自动化对 StatusBar 控件类型的支持
+          href: ui-automation-support-for-the-statusbar-control-type.md
+        - name: UI 自动化对 Tab 控件类型的支持
+          href: ui-automation-support-for-the-tab-control-type.md
+        - name: UI 自动化对 TabItem 控件类型的支持
+          href: ui-automation-support-for-the-tabitem-control-type.md
+        - name: UI 自动化对 Table 控件类型的支持
+          href: ui-automation-support-for-the-table-control-type.md
+        - name: UI 自动化对 Text 控件类型的支持
+          href: ui-automation-support-for-the-text-control-type.md
+        - name: UI 自动化对 Thumb 控件类型的支持
+          href: ui-automation-support-for-the-thumb-control-type.md
+        - name: UI 自动化对 TitleBar 控件类型的支持
+          href: ui-automation-support-for-the-titlebar-control-type.md
+        - name: UI 自动化对 ToolBar 控件类型的支持
+          href: ui-automation-support-for-the-toolbar-control-type.md
+        - name: UI 自动化对 ToolTip 控件类型的支持
+          href: ui-automation-support-for-the-tooltip-control-type.md
+        - name: UI 自动化对 Tree 控件类型的支持
+          href: ui-automation-support-for-the-tree-control-type.md
+        - name: UI 自动化对 TreeItem 控件类型的支持
+          href: ui-automation-support-for-the-treeitem-control-type.md
+        - name: UI 自动化对 Window 控件类型的支持
+          href: ui-automation-support-for-the-window-control-type.md

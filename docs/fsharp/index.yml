@@ -1,0 +1,97 @@
+### YamlMime:Landing
+title: F# 文档
+summary: 了解如何在 .NET 上使用 F# 编程语言编写任何应用程序。
+metadata:
+  title: F# 文档 - 入门、教程、参考。
+  description: 了解 F# 编程 - 面向刚接触 F# 和对 F# / .NET 有丰富经验的开发人员
+  ms.topic: landing-page
+  author: cartermp
+  ms.author: phcart
+  ms.date: 08/29/2020
+  ms.openlocfilehash: 308f91c4bc8f199410dac1c45ad54dc2feb1c1f4
+  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96599045"
+landingContent:
+- title: 了解如何使用 F# 编程
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: F# 是什么？
+      url: what-is-fsharp.md
+    - text: 安装 F#
+      url: get-started/install-fsharp.md
+    - text: Visual Studio 中的 F# 入门
+      url: get-started/get-started-visual-studio.md
+    - text: Visual Studio Code 中的 F# 入门
+      url: get-started/get-started-vscode.md
+  - linkListType: download
+    links:
+    - text: 下载 .NET Core SDK
+      url: https://dotnet.microsoft.com/download
+  - linkListType: get-started
+    links:
+    - text: Q&A 上的 F#
+      url: /answers/topics/dotnet-fsharp.html
+- title: F# 基础知识
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: F# 教程
+      url: tour.md
+    - text: F# 中的函数编程简介
+      url: introduction-to-functional-programming/index.md
+    - text: 第一类函数
+      url: introduction-to-functional-programming/first-class-functions.md
+  - linkListType: concept
+    links:
+    - text: F# 样式指南
+      url: style-guide/index.md
+    - text: F# 代码格式设置准则
+      url: style-guide/formatting.md
+    - text: F# 编码约定
+      url: style-guide/conventions.md
+  - linkListType: tutorial
+    links:
+    - text: F# 中的异步编程
+      url: tutorials/asynchronous-and-concurrent-programming/async.md
+- title: F# 中的新增功能
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: F# 5.0 中的新增功能
+      url: whats-new/fsharp-50.md
+    - text: F# 4.7 中的新增功能
+      url: whats-new/fsharp-47.md
+    - text: F# 4.6 中的新增功能
+      url: whats-new/fsharp-46.md
+    - text: F# 4.5 中的新增功能
+      url: whats-new/fsharp-45.md
+- title: F# 语言参考
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 语言参考
+      url: language-reference/index.md
+    - text: 关键字参考
+      url: language-reference/keyword-reference.md
+    - text: 符号和运算符参考
+      url: language-reference/symbol-and-operator-reference/index.md
+    - text: 函数
+      url: language-reference/functions/index.md
+    - text: F# 类型
+      url: language-reference/fsharp-types.md
+- title: F# 工具
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: F# Interactive
+      url: tools/fsharp-interactive/index.md
+- title: F# 核心库参考
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: FSharp.Core API 参考
+      url: https://fsharp.github.io/fsharp-core-docs/

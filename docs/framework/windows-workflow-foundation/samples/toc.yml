@@ -1,0 +1,108 @@
+- name: Windows 工作流示例
+  href: index.md
+  items:
+    - name: 应用程序
+      href: application.md
+      items:
+        - name: 文档审批过程
+          href: document-approval-process.md
+        - name: 企业采购过程
+          href: corporate-purchase-process.md
+        - name: 招聘流程
+          href: hiring-process.md
+        - name: 可视工作流跟踪
+          href: visual-workflow-tracking.md
+        - name: 挂起的实例管理
+          href: suspended-instance-management.md
+    - name: Basic
+      href: basic.md
+      items:
+        - name: 内置活动
+          href: built-in-activities.md
+          items:
+            - name: 使用 TryCatch 在 Flowchart 活动中进行错误处理
+              href: fault-handling-in-a-flowchart-activity-using-trycatch.md
+            - name: 从 XAML 加载
+              href: load-from-xaml.md
+            - name: 使用 Pick 活动
+              href: using-the-pick-activity.md
+        - name: 自定义活动
+          href: custom-activities.md
+          items:
+            - name: Code-Bodied
+              href: code-bodied.md
+              items:
+                - name: 使用本机活动的自定义复合
+                  href: custom-composite-using-native-activity.md
+            - name: 自定义活动设计器
+              href: custom-activity-designers.md
+              items:
+                - name: 自定义复合设计器 — 工作流项演示器
+                  href: custom-composite-designers-workflow-item-presenter.md
+                - name: 自定义复合设计器 — 工作流项演示器
+                  href: custom-composite-designers-workflow-items-presenter.md
+                - name: 在自定义设计器中使用 ExpressionTextBox
+                  href: using-the-expressiontextbox-in-a-custom-activity-designer.md
+                - name: 使用编辑范围
+                  href: using-editing-scope.md
+        - name: Designer
+          href: designer.md
+          items:
+            - name: 删除设计器添加到 XAML 文件的视图状态
+              href: removing-the-view-state-the-designer-adds-to-an-xaml-file.md
+            - name: 编程模型项树
+              href: programming-model-item-tree.md
+            - name: 属性网格扩展性
+              href: property-grid-extensibility.md
+        - name: 重新承载设计器
+          href: designer-rehosting.md
+        - name: 执行
+          href: execution.md
+          items:
+            - name: 创建和运行工作流实例
+              href: creating-and-running-a-workflow-instance.md
+            - name: WorkflowHostingEndpoint 恢复书签
+              href: workflowhostingendpoint-resume-bookmark.md
+            - name: WorkflowHostingEndpoint 的书签解析程序
+              href: bookmark-resolver-for-workflowhostingendpoint.md
+        - name: 跟踪
+          href: tracking.md
+          items:
+            - name: 自定义跟踪
+              href: custom-tracking.md
+            - name: 在 Windows 事件跟踪中跟踪事件
+              href: tracking-events-into-event-tracing-in-windows.md
+            - name: SQL 跟踪
+              href: sql-tracking.md
+    - name: 方案
+      href: scenario.md
+      items:
+        - name: 活动库
+          href: activity-library.md
+          items:
+            - name: SendMail 自定义活动
+              href: sendmail-custom-activity.md
+            - name: 限制并行 ForEach
+              href: throttled-parallel-foreach.md
+            - name: 数据库访问活动
+              href: database-access-activities.md
+            - name: .NET Framework 4.5 中的外部化策略活动
+              href: externalized-policy-activity-in-net-framework-4-5.md
+            - name: 非泛型 ForEach
+              href: non-generic-foreach.md
+            - name: 非泛型 ParallelForEach
+              href: non-generic-parallelforeach.md
+            - name: 获取 WorkflowInstanceId
+              href: get-workflowinstanceid.md
+        - name: Services
+          items:
+            - name: 访问 OperationContext
+              href: accessing-operationcontext.md
+            - name: LINQ 消息查询相关性
+              href: linq-message-query-correlation.md
+            - name: 异步通信
+              href: asynchronous-communication.md
+        - name: XAML 中的 WPF 和 WF 集成
+          href: wpf-and-wf-integration-in-xaml.md
+        - name: 外部 RuleSet 工具包
+          href: external-ruleset-toolkit.md

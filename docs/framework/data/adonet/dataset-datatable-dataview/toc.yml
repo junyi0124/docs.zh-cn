@@ -1,0 +1,157 @@
+- name: 数据集、数据表和数据视图
+  href: index.md
+  items:
+    - name: 安全指南
+      href: security-guidance.md
+    - name: 创建数据集
+      href: creating-a-dataset.md
+    - name: 将数据表添加到数据集中
+      href: adding-a-datatable-to-a-dataset.md
+    - name: 添加 DataRelation
+      href: adding-datarelations.md
+    - name: 导航 DataRelation
+      href: navigating-datarelations.md
+    - name: 合并数据集内容
+      href: merging-dataset-contents.md
+    - name: 复制数据集内容
+      href: copying-dataset-contents.md
+    - name: 处理数据集事件
+      href: handling-dataset-events.md
+    - name: 类型化数据集
+      href: typed-datasets.md
+      items:
+        - name: 生成强类型化数据集
+          href: generating-strongly-typed-datasets.md
+        - name: 为类型化的数据集进行批注
+          href: annotating-typed-datasets.md
+    - name: DataTables
+      href: datatables.md
+      items:
+        - name: 创建数据表
+          href: creating-a-datatable.md
+        - name: 数据表架构定义
+          href: datatable-schema-definition.md
+          items:
+            - name: 向数据表添加列
+              href: adding-columns-to-a-datatable.md
+            - name: 创建表达式列
+              href: creating-expression-columns.md
+            - name: 创建 AutoIncrement 列
+              href: creating-autoincrement-columns.md
+            - name: 定义主键
+              href: defining-primary-keys.md
+            - name: 数据表约束
+              href: datatable-constraints.md
+        - name: 操作数据表中的数据
+          href: manipulating-data-in-a-datatable.md
+          items:
+            - name: 将数据添加到数据表中
+              href: adding-data-to-a-datatable.md
+            - name: 查看数据表中的数据
+              href: viewing-data-in-a-datatable.md
+            - name: 加载方法
+              href: the-load-method.md
+            - name: 数据表编辑
+              href: datatable-edits.md
+            - name: 行状态和行版本
+              href: row-states-and-row-versions.md
+            - name: DataRow 删除
+              href: datarow-deletion.md
+            - name: 行错误信息
+              href: row-error-information.md
+            - name: AcceptChange 和 RejectChange
+              href: acceptchanges-and-rejectchanges.md
+        - name: 处理数据表事件
+          href: handling-datatable-events.md
+    - name: DataTableReader
+      href: datatablereaders.md
+      items:
+        - name: 创建 DataReader
+          href: creating-a-datareader.md
+        - name: 导航数据表
+          href: navigating-datatables.md
+    - name: DataView
+      href: dataviews.md
+      items:
+        - name: 创建数据视图
+          href: creating-a-dataview.md
+        - name: 对数据进行排序和筛选
+          href: sorting-and-filtering-data.md
+        - name: DataRow 和 DataRowView
+          href: datarows-and-datarowviews.md
+        - name: 查找行
+          href: finding-rows.md
+        - name: ChildView 和关系
+          href: childviews-and-relations.md
+        - name: 修改 DataView
+          href: modifying-dataviews.md
+        - name: 处理数据视图事件
+          href: handling-dataview-events.md
+        - name: 管理 DataView
+          href: managing-dataviews.md
+        - name: 从数据视图中创建数据表
+          href: creating-a-datatable-from-a-dataview.md
+    - name: 在数据集中使用 XML
+      href: using-xml-in-a-dataset.md
+      items:
+        - name: DiffGrams
+          href: diffgrams.md
+        - name: 从 XML 加载数据集
+          href: loading-a-dataset-from-xml.md
+        - name: 写入数据集内容作为 XML 数据
+          href: writing-dataset-contents-as-xml-data.md
+        - name: 从 XML 加载数据集架构信息
+          href: loading-dataset-schema-information-from-xml.md
+        - name: 写入数据集架构信息作为 XSD
+          href: writing-dataset-schema-information-as-xsd.md
+        - name: 数据集和 XmlDataDocument 同步
+          href: dataset-and-xmldatadocument-synchronization.md
+          items:
+            - name: 将数据集和 XmlDataDocument 同步
+              href: synchronizing-a-dataset-with-an-xmldatadocument.md
+            - name: 对数据集执行 XPath 查询
+              href: performing-an-xpath-query-on-a-dataset.md
+            - name: 将 XSLT 转换应用于 DataSet
+              href: applying-an-xslt-transform-to-a-dataset.md
+        - name: 嵌套 DataRelation
+          href: nesting-datarelations.md
+        - name: 从 XML 架构派生数据集关系结构 (XSD)
+          href: deriving-dataset-relational-structure-from-xml-schema-xsd.md
+          items:
+            - name: 将关键 XML 架构 (XSD) 约束映射到数据集约束
+              href: mapping-xml-schema-xsd-constraints-to-dataset-constraints.md
+              items:
+                - name: 将唯一 XML 架构 (XSD) 约束映射到数据集约束
+                  href: map-unique-xml-schema-xsd-constraints-to-dataset-constraints.md
+                - name: 将关键 XML 架构 (XSD) 约束映射到数据集约束
+                  href: map-key-xml-schema-xsd-constraints-to-dataset-constraints.md
+                - name: 将 keyref XML 架构 (XSD) 约束映射到数据集约束
+                  href: map-keyref-xml-schema-xsd-constraints-to-dataset-constraints.md
+            - name: 从 XML 架构生成数据集关系 (XSD)
+              href: generating-dataset-relations-from-xml-schema-xsd.md
+              items:
+                - name: 映射嵌套架构元素之间的隐式关系
+                  href: map-implicit-relations-between-nested-schema-elements.md
+                - name: 映射为嵌套元素指定的关系
+                  href: map-relations-specified-for-nested-elements.md
+                - name: 指定无嵌套的元素之间的关系
+                  href: specify-relations-between-elements-with-no-nesting.md
+            - name: XML 架构约束和关系
+              href: xml-schema-constraints-and-relationships.md
+        - name: 从 XML 推断数据集关系结构
+          href: inferring-dataset-relational-structure-from-xml.md
+          items:
+            - name: 数据集架构接口过程摘要
+              href: summary-of-the-dataset-schema-inference-process.md
+            - name: 推断表
+              href: inferring-tables.md
+            - name: 推断列
+              href: inferring-columns.md
+            - name: 推断关系
+              href: inferring-relationships.md
+            - name: 推断元素文本
+              href: inferring-element-text.md
+            - name: 推断限制
+              href: inference-limitations.md
+    - name: 通过 XML Web 服务使用数据集
+      href: consuming-a-dataset-from-an-xml-web-service.md

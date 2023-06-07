@@ -1,0 +1,19 @@
+- name: 线程安全集合
+  href: index.md
+  items:
+    - name: BlockingCollection 概述
+      href: blockingcollection-overview.md
+    - name: 何时使用线程安全集合
+      href: when-to-use-a-thread-safe-collection.md
+    - name: 如何：在 BlockingCollection 中逐个添加和取出项
+      href: how-to-add-and-take-items.md
+    - name: 如何：使用 ForEach 移除 BlockingCollection 中的项
+      href: how-to-use-foreach-to-remove.md
+    - name: 如何：在 ConcurrentDictionary 中添加和移除项
+      href: how-to-add-and-remove-items.md
+    - name: 如何：向集合添加限制和阻塞功能
+      href: how-to-add-bounding-and-blocking.md
+    - name: 如何：在管道中使用阻塞集合的数组
+      href: how-to-use-arrays-of-blockingcollections.md
+    - name: 如何：使用 ConcurrentBag 创建目标池
+      href: how-to-create-an-object-pool.md

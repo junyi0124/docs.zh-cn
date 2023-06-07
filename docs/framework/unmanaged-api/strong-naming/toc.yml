@@ -1,0 +1,57 @@
+- name: 强命名
+  href: index.md
+  items:
+    - name: GetHashFromAssemblyFile 函数
+      href: gethashfromassemblyfile-function.md
+    - name: GetHashFromAssemblyFileW 函数
+      href: gethashfromassemblyfilew-function.md
+    - name: GetHashFromBlob 函数
+      href: gethashfromblob-function.md
+    - name: GetHashFromFile 函数
+      href: gethashfromfile-function.md
+    - name: GetHashFromFileW 函数
+      href: gethashfromfilew-function.md
+    - name: GetHashFromHandle 函数
+      href: gethashfromhandle-function.md
+    - name: PublicKeyBlob 结构
+      href: publickeyblob-structure.md
+    - name: StrongNameCompareAssemblies 函数
+      href: strongnamecompareassemblies-function.md
+    - name: StrongNameErrorInfo 函数
+      href: strongnameerrorinfo-function.md
+    - name: StrongNameFreeBuffer 函数
+      href: strongnamefreebuffer-function.md
+    - name: StrongNameGetBlob 函数
+      href: strongnamegetblob-function.md
+    - name: StrongNameGetBlobFromImage 函数
+      href: strongnamegetblobfromimage-function.md
+    - name: StrongNameGetPublicKey 函数
+      href: strongnamegetpublickey-function.md
+    - name: StrongNameHashSize 函数
+      href: strongnamehashsize-function.md
+    - name: StrongNameKeyDelete 函数
+      href: strongnamekeydelete-function.md
+    - name: StrongNameKeyGen 函数
+      href: strongnamekeygen-function.md
+    - name: StrongNameKeyGenEx 函数
+      href: strongnamekeygenex-function.md
+    - name: StrongNameKeyInstall 函数
+      href: strongnamekeyinstall-function.md
+    - name: StrongNameSignatureGeneration 函数
+      href: strongnamesignaturegeneration-function.md
+    - name: StrongNameSignatureGenerationEx 函数
+      href: strongnamesignaturegenerationex-function.md
+    - name: StrongNameSignatureSize 函数
+      href: strongnamesignaturesize-function.md
+    - name: StrongNameSignatureVerification 函数
+      href: strongnamesignatureverification-function.md
+    - name: StrongNameSignatureVerificationEx 函数
+      href: strongnamesignatureverificationex-function.md
+    - name: StrongNameSignatureVerificationFromImage 函数
+      href: strongnamesignatureverificationfromimage-function.md
+    - name: StrongNameTokenFromAssembly 函数
+      href: strongnametokenfromassembly-function.md
+    - name: StrongNameTokenFromAssemblyEx 函数
+      href: strongnametokenfromassemblyex-function.md
+    - name: StrongNameTokenFromPublicKey 函数
+      href: strongnametokenfrompublickey-function.md

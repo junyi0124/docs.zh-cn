@@ -1,0 +1,225 @@
+- name: .NET Framework 中的网络编程
+  href: index.md
+  items:
+    - name: 网络编程操作说明主题
+      href: network-programming-how-to-topics.md
+    - name: 可插入协议简介
+      href: introducing-pluggable-protocols.md
+    - name: 正在请求数据...
+      href: requesting-data.md
+      items:
+        - name: 创建 Internet 请求
+          href: creating-internet-requests.md
+        - name: 如何：请求网页并以数据流的形式检索结果
+          href: how-to-request-a-web-page-and-retrieve-the-results-as-a-stream.md
+        - name: 如何：使用 WebRequest 类请求数据
+          href: how-to-request-data-using-the-webrequest-class.md
+        - name: 如何：使用 WebRequest 类发送数据
+          href: how-to-send-data-using-the-webrequest-class.md
+        - name: 如何：检索与 WebRequest 匹配的特定于协议的 WebResponse
+          href: how-to-retrieve-a-protocol-specific-webresponse-that-matches-a-webrequest.md
+        - name: 在网络上使用流
+          href: using-streams-on-the-network.md
+        - name: 发出异步请求
+          href: making-asynchronous-requests.md
+        - name: 处理错误
+          href: handling-errors.md
+    - name: 对可插入协议进行编程
+      href: programming-pluggable-protocols.md
+      items:
+        - name: 如何：使用 WebRequest 注册自定义协议
+          href: how-to-register-a-custom-protocol-using-webrequest.md
+        - name: 如何：转换 WebRequest 以访问协议特定属性
+          href: how-to-typecast-a-webrequest-to-access-protocol-specific-properties.md
+        - name: 从 WebRequest 派生
+          href: deriving-from-webrequest.md
+        - name: 从 WebResponse 派生
+          href: deriving-from-webresponse.md
+    - name: 使用应用程序协议
+      href: using-application-protocols.md
+      items:
+        - name: HTTP
+          href: http.md
+        - name: 如何：访问 HTTP 特定的属性
+          href: how-to-access-http-specific-properties.md
+        - name: 管理连接
+          href: managing-connections.md
+          items:
+            - name: 连接分组
+              href: connection-grouping.md
+            - name: 如何：将用户信息分配给组连接
+              href: how-to-assign-user-information-to-group-connections.md
+        - name: TCP-UDP
+          href: tcp-udp.md
+          items:
+            - name: 使用 TCP 服务
+              href: using-tcp-services.md
+            - name: 使用 UDP 服务
+              href: using-udp-services.md
+        - name: 套接字
+          href: sockets.md
+          items:
+            - name: 如何：创建套接字
+              href: how-to-create-a-socket.md
+            - name: 使用客户端套接字
+              href: using-client-sockets.md
+              items:
+                - name: 使用同步客户端套接字
+                  href: using-a-synchronous-client-socket.md
+                - name: 使用异步客户端套接字
+                  href: using-an-asynchronous-client-socket.md
+            - name: 使用套接字侦听
+              href: listening-with-sockets.md
+              items:
+                - name: 使用同步服务器套接字
+                  href: using-a-synchronous-server-socket.md
+                - name: 使用异步服务器套接字
+                  href: using-an-asynchronous-server-socket.md
+            - name: Socket 代码示例
+              href: socket-code-examples.md
+              items:
+                - name: 同步客户端套接字示例
+                  href: synchronous-client-socket-example.md
+                - name: 同步服务器套接字示例
+                  href: synchronous-server-socket-example.md
+                - name: 异步客户端套接字示例
+                  href: asynchronous-client-socket-example.md
+                - name: 异步服务器套接字示例
+                  href: asynchronous-server-socket-example.md
+        - name: FTP
+          href: ftp.md
+          items:
+            - name: 如何：使用 FTP 下载文件
+              href: how-to-download-files-with-ftp.md
+            - name: 如何：使用 FTP 上传文件
+              href: how-to-upload-files-with-ftp.md
+            - name: 如何：使用 FTP 列出目录内容
+              href: how-to-list-directory-contents-with-ftp.md
+        - name: 了解 WebRequest 问题和异常
+          href: understanding-webrequest-problems-and-exceptions.md
+    - name: Internet 协议版本 6
+      href: internet-protocol-version-6.md
+      items:
+        - name: IPv6 寻址
+          href: ipv6-addressing.md
+        - name: IPv6 路由
+          href: ipv6-routing.md
+        - name: IPv6 自动配置
+          href: ipv6-auto-configuration.md
+        - name: 启用和禁用 IPv6
+          href: enabling-and-disabling-ipv6.md
+        - name: 如何：修改计算机配置文件以启用 IPv6 支持
+          href: how-to-modify-the-computer-configuration-file-to-enable-ipv6-support.md
+    - name: 配置 Internet 应用程序
+      href: configuring-internet-applications.md
+    - name: .NET Framework 中的网络跟踪
+      href: network-tracing.md
+      items:
+        - name: 解释网络跟踪
+          href: interpreting-network-tracing.md
+        - name: 启用网络跟踪
+          href: enabling-network-tracing.md
+        - name: 如何：配置网络跟踪
+          href: how-to-configure-network-tracing.md
+    - name: 网络应用程序的缓存管理
+      href: cache-management-for-network-applications.md
+      items:
+        - name: 缓存策略
+          href: cache-policy.md
+        - name: 基于位置的缓存策略
+          href: location-based-cache-policies.md
+        - name: 基于时间的缓存策略
+          href: time-based-cache-policies.md
+          items:
+            - name: 缓存策略交互 — 最长使用期限和最长过期时间
+              href: cache-policy-interaction-maximum-age-and-maximum-staleness.md
+            - name: 缓存策略交互 — 最长使用期限和最低新鲜度
+              href: cache-policy-interaction-maximum-age-and-minimum-freshness.md
+        - name: 配置网络应用程序中的缓存
+          href: configuring-caching-in-network-applications.md
+          items:
+            - name: 如何：为应用程序设置基于位置的缓存策略
+              href: how-to-set-a-location-based-cache-policy-for-an-application.md
+            - name: 如何：为应用程序设置默认基于时间的缓存策略
+              href: how-to-set-the-default-time-based-cache-policy-for-an-application.md
+            - name: 如何：自定义基于时间的缓存策略
+              href: how-to-customize-a-time-based-cache-policy.md
+            - name: 如何：为请求设置缓存策略
+              href: how-to-set-cache-policy-for-a-request.md
+    - name: 网络编程中的安全性
+      href: security-in-network-programming.md
+      items:
+        - name: 传输层安全性 (TLS) 最佳做法
+          href: tls.md
+        - name: 使用安全套接字层
+          href: using-secure-sockets-layer.md
+          items:
+            - name: 证书选择和验证
+              href: certificate-selection-and-validation.md
+        - name: Internet 身份验证
+          href: internet-authentication.md
+          items:
+            - name: 基本和摘要式身份验证
+              href: basic-and-digest-authentication.md
+            - name: NTLM 和 Kerberos 身份验证
+              href: ntlm-and-kerberos-authentication.md
+        - name: Web 和套接字权限
+          href: web-and-socket-permissions.md
+    - name: System.Net 类的最佳实践
+      href: best-practices-for-system-net-classes.md
+    - name: 通过代理访问 Internet
+      href: accessing-the-internet-through-a-proxy.md
+      items:
+        - name: 代理配置
+          href: proxy-configuration.md
+        - name: 自动代理检测
+          href: automatic-proxy-detection.md
+        - name: 如何：使 WebRequest 能够使用代理以与 Internet 通信
+          href: how-to-enable-a-webrequest-to-use-a-proxy-to-communicate-with-the-internet.md
+        - name: 如何：重写全局代理选择
+          href: how-to-override-a-global-proxy-selection.md
+    - name: NetworkInformation
+      href: networkinformation.md
+      items:
+        - name: 如何：检测网络可用性和地址更改
+          href: how-to-detect-network-availability-and-address-changes.md
+        - name: 如何：获取接口和协议信息
+          href: how-to-get-interface-and-protocol-information.md
+        - name: 如何：Ping 主机
+          href: how-to-ping-a-host.md
+    - name: 对 2.0 版中的 System.Uri 命名空间的更改
+      href: changes-to-the-system-uri-namespace-in-version-2-0.md
+    - name: System.Uri 中的国际资源标识符支持
+      href: international-resource-identifier-support-in-system-uri.md
+    - name: 版本 3.5 中的套接字性能增强
+      href: socket-performance-enhancements-in-version-3-5.md
+    - name: 对等名称解析协议
+      href: peer-name-resolution-protocol.md
+      items:
+        - name: 对等名称和 PNRP ID
+          href: peer-names-and-pnrp-ids.md
+        - name: 对等名称发布和解析
+          href: peer-name-publication-and-resolution.md
+        - name: PNRP 云
+          href: pnrp-clouds.md
+        - name: PNRP 缓存
+          href: pnrp-caches.md
+        - name: 应用程序开发中的 PNRP
+          href: pnrp-in-application-development.md
+    - name: 对等协作
+      href: peer-to-peer-collaboration.md
+      items:
+        - name: 关于 System.Net.PeerToPeer.Collaboration 命名空间
+          href: about-the-system-net-peertopeer-collaboration-namespace.md
+        - name: 对等网络方案
+          href: peer-to-peer-networking-scenarios.md
+    - name: 3.5 SP1 版本中对 HttpWebRequest 的 NTLM 身份验证的更改
+      href: changes-to-ntlm-authentication-for-httpwebrequest-in-version-3-5-sp1.md
+    - name: 带有扩展保护的集成 Windows 身份验证
+      href: integrated-windows-authentication-with-extended-protection.md
+    - name: 使用 IPv6 和 Teredo 的 NAT 遍历
+      href: nat-traversal-using-ipv6-and-teredo.md
+    - name: Windows 应用商店应用的网络隔离
+      href: network-isolation-for-windows-store-apps.md
+    - name: 网络编程示例
+      href: network-programming-samples.md

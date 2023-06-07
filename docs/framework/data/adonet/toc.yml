@@ -1,0 +1,342 @@
+- name: ADO.NET
+  href: index.md
+- name: ADO.NET 新增功能
+  href: whats-new.md
+- name: ADO.NET 概述
+  href: ado-net-overview.md
+  items:
+    - name: ADO.NET 体系结构
+      href: ado-net-architecture.md
+    - name: ADO.NET 技术选项和准则
+      href: ado-net-technology-options-and-guidelines.md
+    - name: LINQ 和 ADO.NET
+      href: linq-and-ado-net.md
+    - name: .NET Framework 数据提供程序
+      href: data-providers.md
+    - name: ADO.NET 数据集
+      href: ado-net-datasets.md
+    - name: ADO.NET 中的并行执行
+      href: side-by-side-execution.md
+    - name: ADO.NET 代码示例
+      href: ado-net-code-examples.md
+- name: 保证 ADO.NET 应用程序的安全
+  href: securing-ado-net-applications.md
+  items:
+    - name: 安全性概述
+      href: security-overview.md
+    - name: 安全数据访问
+      href: secure-data-access.md
+    - name: 保证客户端应用程序的安全
+      href: secure-client-applications.md
+    - name: 代码访问安全性和 ADO.NET
+      href: code-access-security.md
+    - name: 隐私和数据安全性
+      href: privacy-and-data-security.md
+- name: ADO.NET 中的数据类型映射
+  href: data-type-mappings-in-ado-net.md
+  items:
+    - name: SQL Server 数据类型映射
+      href: sql-server-data-type-mappings.md
+    - name: OLE DB 数据类型映射
+      href: ole-db-data-type-mappings.md
+    - name: ODBC 数据类型映射
+      href: odbc-data-type-mappings.md
+    - name: Oracle 数据类型映射
+      href: oracle-data-type-mappings.md
+    - name: 浮点数
+      href: floating-point-numbers.md
+- name: 在 ADO.NET 中检索和修改数据
+  href: retrieving-and-modifying-data.md
+  items:
+    - name: 连接到数据源
+      href: connecting-to-a-data-source.md
+      items:
+        - name: 建立连接
+          href: establishing-the-connection.md
+        - name: 连接事件
+          href: connection-events.md
+    - name: 连接字符串
+      href: connection-strings.md
+      items:
+        - name: 连接字符串生成器
+          href: connection-string-builders.md
+        - name: 连接字符串和配置文件
+          href: connection-strings-and-configuration-files.md
+        - name: 连接字符串语法
+          href: connection-string-syntax.md
+        - name: 保护连接信息
+          href: protecting-connection-information.md
+    - name: 连接池
+      href: connection-pooling.md
+      items:
+        - name: SQL Server 连接池 (ADO.NET)
+          href: sql-server-connection-pooling.md
+        - name: OLE DB、ODBC 和 Oracle 连接池
+          href: ole-db-odbc-and-oracle-connection-pooling.md
+    - name: 命令和参数
+      href: commands-and-parameters.md
+      items:
+        - name: 执行命令
+          href: executing-a-command.md
+        - name: 配置参数和参数数据类型
+          href: configuring-parameters-and-parameter-data-types.md
+        - name: 使用 CommandBuilder 生成命令
+          href: generating-commands-with-commandbuilders.md
+        - name: 从数据库获取单一值
+          href: obtaining-a-single-value-from-a-database.md
+        - name: 使用命令修改数据
+          href: using-commands-to-modify-data.md
+          items:
+            - name: 更新数据源中的数据
+              href: updating-data-in-a-data-source.md
+            - name: 执行目录操作
+              href: performing-catalog-operations.md
+    - name: DataAdapter 和 DataReader
+      href: dataadapters-and-datareaders.md
+      items:
+        - name: 使用 DataReader 检索 ADO 数据
+          href: retrieving-data-using-a-datareader.md
+        - name: 从 DataAdapter 填充数据集
+          href: populating-a-dataset-from-a-dataadapter.md
+        - name: DataAdapter 参数
+          href: dataadapter-parameters.md
+        - name: 将现有约束添加到数据集
+          href: adding-existing-constraints-to-a-dataset.md
+        - name: DataAdapter 数据表和 DataColumn 映射
+          href: dataadapter-datatable-and-datacolumn-mappings.md
+        - name: 通过查询结果分页
+          href: paging-through-a-query-result.md
+        - name: 使用 DataAdapter 更新数据源
+          href: updating-data-sources-with-dataadapters.md
+        - name: 处理 DataAdapter 事件
+          href: handling-dataadapter-events.md
+        - name: 使用 DataAdapter 执行批处理操作
+          href: performing-batch-operations-using-dataadapters.md
+    - name: 事务和并发性
+      href: transactions-and-concurrency.md
+      items:
+        - name: 本地事务
+          href: local-transactions.md
+        - name: 分布式事务
+          href: distributed-transactions.md
+        - name: System.Transactions 与 SQL Server 的集成
+          href: system-transactions-integration-with-sql-server.md
+        - name: 开放式并发
+          href: optimistic-concurrency.md
+    - name: 检索标识或自动编号值
+      href: retrieving-identity-or-autonumber-values.md
+    - name: 检索二进制数据
+      href: retrieving-binary-data.md
+    - name: 使用存储过程修改数据
+      href: modifying-data-with-stored-procedures.md
+    - name: 检索数据库架构信息
+      href: retrieving-database-schema-information.md
+      items:
+        - name: GetSchema 和架构集合
+          href: getschema-and-schema-collections.md
+        - name: 架构限制
+          href: schema-restrictions.md
+        - name: 公共架构集合
+          href: common-schema-collections.md
+        - name: SQL Server 架构集合
+          href: sql-server-schema-collections.md
+        - name: Oracle 架构集合
+          href: oracle-schema-collections.md
+        - name: ODBC 架构集合
+          href: odbc-schema-collections.md
+        - name: OLE DB 架构集合
+          href: ole-db-schema-collections.md
+    - name: DbProviderFactories
+      href: dbproviderfactories.md
+      items:
+        - name: 工厂模型概述
+          href: factory-model-overview.md
+        - name: 获取 DbProviderFactory
+          href: obtaining-a-dbproviderfactory.md
+        - name: DbConnection、DbCommand 和 DbException
+          href: dbconnection-dbcommand-and-dbexception.md
+        - name: 使用 DbDataAdapter 修改数据
+          href: modifying-data-with-a-dbdataadapter.md
+    - name: ADO.NET 中的数据跟踪
+      href: data-tracing.md
+    - name: 性能计数器
+      href: performance-counters.md
+    - name: 异步编程
+      href: asynchronous-programming.md
+    - name: SqlClient 流支持
+      href: sqlclient-streaming-support.md
+    - name: LINQ to DataSet
+      href: linq-to-dataset.md
+      items:
+        - name: 入门
+          href: getting-started-linq-to-dataset.md
+          items:
+            - name: LINQ to DataSet 概述
+              href: linq-to-dataset-overview.md
+            - name: 将数据加载到数据集中
+              href: loading-data-into-a-dataset.md
+            - name: 下载示例数据库
+              href: downloading-sample-databases-linq-to-dataset.md
+            - name: 如何：在 Visual Studio 中创建 LINQ to DataSet 项目
+              href: how-to-create-a-linq-to-dataset-project-in-vs.md
+        - name: 编程指南
+          href: programming-guide-linq-to-dataset.md
+          items:
+            - name: 在 LINQ to DataSet 中查询
+              href: queries-in-linq-to-dataset.md
+            - name: 查询数据集
+              href: querying-datasets-linq-to-dataset.md
+              items:
+                - name: 单表查询
+                  href: single-table-queries-linq-to-dataset.md
+                - name: 跨表查询
+                  href: cross-table-queries-linq-to-dataset.md
+                - name: 查询类型化数据集
+                  href: querying-typed-datasets.md
+            - name: 比较 DataRow
+              href: comparing-datarows-linq-to-dataset.md
+            - name: 从查询创建数据表
+              href: creating-a-datatable-from-a-query-linq-to-dataset.md
+            - name: 如何：在泛型 T 不是 DataRow 的位置实现 CopyToDataTable<T>
+              href: implement-copytodatatable-where-type-not-a-datarow.md
+            - name: 泛型字段和 SetField 方法
+              href: generic-field-and-setfield-methods-linq-to-dataset.md
+            - name: 数据绑定和 LINQ to DataSet
+              href: data-binding-and-linq-to-dataset.md
+              items:
+                - name: 创建 DataView 对象
+                  href: creating-a-dataview-object-linq-to-dataset.md
+                - name: 使用 DataView 进行筛选
+                  href: filtering-with-dataview-linq-to-dataset.md
+                - name: 使用 DataView 进行排序
+                  href: sorting-with-dataview-linq-to-dataset.md
+                - name: 在 DataView 中查询 DataRowView 集合
+                  href: querying-the-datarowview-collection-in-a-dataview.md
+                - name: DataView 性能
+                  href: dataview-performance.md
+                - name: 如何：将 DataView 对象绑定到 Windows 窗体 DataGridView 控件
+                  href: how-to-bind-a-dataview-object-to-a-winforms-datagridview-control.md
+            - name: 调试 LINQ to DataSet 查询
+              href: debugging-linq-to-dataset-queries.md
+            - name: 安全性
+              href: security-linq-to-dataset.md
+            - name: LINQ to DataSet 示例
+              href: linq-to-dataset-examples.md
+              items:
+                - name: 查询表达式示例
+                  href: query-expression-examples-linq-to-dataset.md
+                  items:
+                    - name: 投影
+                      href: query-expression-syntax-examples-projection-linq-to-dataset.md
+                    - name: 限制
+                      href: query-expression-syntax-examples-restriction-linq-to-dataset.md
+                    - name: 分区
+                      href: query-expression-syntax-examples-partitioning.md
+                    - name: 中间件排序
+                      href: query-expression-syntax-examples-ordering-linq-to-dataset.md
+                    - name: 元素运算符
+                      href: query-expression-syntax-examples-element-operators.md
+                    - name: 聚合运算符
+                      href: query-expression-syntax-examples-aggregate-operators.md
+                    - name: 联接运算符
+                      href: query-expression-syntax-examples-join-operators.md
+                - name: 基于方法的查询示例
+                  href: method-based-query-examples-linq-to-dataset.md
+                  items:
+                    - name: 投影
+                      href: method-based-query-syntax-examples-projection.md
+                    - name: 分区
+                      href: method-based-query-syntax-examples-partitioning-linq.md
+                    - name: 中间件排序
+                      href: method-based-query-syntax-examples-ordering-linq-to-dataset.md
+                    - name: 集合运算符
+                      href: method-based-query-syntax-examples-set-operators.md
+                    - name: 转换运算符
+                      href: method-based-query-syntax-examples-conversion-operators.md
+                    - name: 元素运算符
+                      href: method-based-query-syntax-examples-element-operators.md
+                    - name: 聚合运算符
+                      href: method-based-query-syntax-examples-aggregate-operators.md
+                    - name: 联接
+                      href: method-based-query-syntax-examples-join-linq-to-dataset.md
+                - name: 数据集特定的运算符示例
+                  href: dataset-specific-operator-examples-linq-to-dataset.md
+- name: 实体数据模型
+  href: entity-data-model.md
+  items:
+    - name: 实体数据模型关键概念
+      href: entity-data-model-key-concepts.md
+    - name: 实体数据模型：命名空间
+      href: entity-data-model-namespaces.md
+    - name: 实体数据模型：基元数据类型
+      href: entity-data-model-primitive-data-types.md
+    - name: 实体数据模型：继承
+      href: entity-data-model-inheritance.md
+    - name: 关联端
+      href: association-end.md
+    - name: 关联端重数
+      href: association-end-multiplicity.md
+    - name: Association Set — 关联集
+      href: association-set.md
+    - name: 关联集端
+      href: association-set-end.md
+    - name: 关联类型
+      href: association-type.md
+    - name: Complex Type — 复杂类型
+      href: complex-type.md
+    - name: Entity Container — 实体容器
+      href: entity-container.md
+    - name: 实体键
+      href: entity-key.md
+    - name: 实体集
+      href: entity-set.md
+    - name: Entity Type — 实体类型
+      href: entity-type.md
+    - name: facet
+      href: facet.md
+    - name: 外键属性
+      href: foreign-key-property.md
+    - name: 模型声明函数
+      href: model-declared-function.md
+    - name: 模型定义函数
+      href: model-defined-function.md
+    - name: Navigation Property — 导航属性
+      href: navigation-property.md
+    - name: property
+      href: property.md
+    - name: 引用完整性约束
+      href: referential-integrity-constraint.md
+- name: Oracle 和 ADO.NET
+  href: oracle-and-adonet.md
+  items:
+    - name: 系统要求
+      href: system-requirements-for-the-dotnet-data-provider-for-oracle.md
+    - name: Oracle BFILE
+      href: oracle-bfiles.md
+    - name: Oracle LOB
+      href: oracle-lobs.md
+    - name: Oracle REF CURSOR
+      href: oracle-ref-cursors.md
+      items:
+        - name: REF CURSOR 示例
+          href: ref-cursor-examples.md
+        - name: OracleDataReader 中的 REF CURSOR 参数
+          href: ref-cursor-parameters-in-an-oracledatareader.md
+        - name: 使用 OracleDataReader 从多个 REF CURSOR 中检索数据
+          href: retrieving-data-from-multiple-ref-cursors.md
+        - name: 使用一个或多个 REF CURSOR 填充数据集
+          href: filling-a-dataset-using-one-or-more-ref-cursors.md
+    - name: OracleTypes
+      href: oracletypes.md
+    - name: Oracle 序列
+      href: oracle-sequences.md
+    - name: Oracle 数据类型映射
+      href: oracle-data-type-mappings.md
+    - name: Oracle 分布式事务
+      href: oracle-distributed-transactions.md
+- name: ADO.NET 实体框架
+  href: ef/
+- name: SQL Server 和 ADO.NET
+  href: sql/
+- name: 数据集、数据表和数据视图
+  href: dataset-datatable-dataview/

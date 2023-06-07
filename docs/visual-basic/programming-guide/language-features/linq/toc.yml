@@ -1,0 +1,23 @@
+- name: Visual Basic 中的 LINQ
+  href: index.md
+  items:
+    - name: LINQ 简介
+      href: introduction-to-linq.md
+    - name: 如何：使用 LINQ 查询数据库
+      href: how-to-query-a-database-by-using-linq.md
+    - name: 如何：使用 LINQ 调用存储过程
+      href: how-to-call-a-stored-procedure-by-using-linq.md
+    - name: 如何：使用 LINQ 修改数据库中的数据
+      href: how-to-modify-data-in-a-database-by-using-linq.md
+    - name: 如何：通过 LINQ 使用联接合并数据
+      href: how-to-combine-data-with-linq-by-using-joins.md
+    - name: 如何：使用 LINQ 对查询结果进行排序
+      href: how-to-sort-query-results-by-using-linq.md
+    - name: 如何：使用 LINQ 筛选查询结果
+      href: how-to-filter-query-results-by-using-linq.md
+    - name: 如何：使用 LINQ 对数据进行计数、求和与求平均值计算
+      href: how-to-count-sum-or-average-data-by-using-linq.md
+    - name: 如何：使用 LINQ 查找查询结果中的最小值或最大值
+      href: how-to-find-the-minimum-or-maximum-value-in-a-query-result.md
+    - name: 如何：以特定类型返回 LINQ 查询结果
+      href: how-to-return-a-linq-query-result-as-a-specific-type.md

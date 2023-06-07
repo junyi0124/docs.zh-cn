@@ -1,0 +1,57 @@
+- name: 动态编程
+  href: index.md
+  items:
+    - name: 反射
+      href: reflection.md
+      items:
+        - name: 查看类型信息
+          href: viewing-type-information.md
+        - name: 反射类型和泛型类型
+          href: reflection-and-generic-types.md
+        - name: 如何：使用反射检查和实例化泛型类型
+          href: how-to-examine-and-instantiate-generic-types-with-reflection.md
+        - name: 反射的安全注意事项
+          href: security-considerations-for-reflection.md
+        - name: 动态加载和使用类型
+          href: dynamically-loading-and-using-types.md
+        - name: 如何：将程序集加载到仅反射上下文中
+          href: how-to-load-assemblies-into-the-reflection-only-context.md
+        - name: 如何：使用反映获取类型和成员信息
+          href: get-type-member-information.md
+        - name: 访问自定义特性
+          href: accessing-custom-attributes.md
+        - name: 指定完全限定的类型名称
+          href: specifying-fully-qualified-type-names.md
+        - name: 如何：使用反射将委托挂钩
+          href: how-to-hook-up-a-delegate-using-reflection.md
+        - name: .NET Framework 中用于 Windows 应用商店应用程序的反射
+          href: reflection-for-windows-store-apps.md
+    - name: 发出动态方法和程序集
+      href: emitting-dynamic-methods-and-assemblies.md
+      items:
+        - name: 反射发出中的安全问题
+          href: security-issues-in-reflection-emit.md
+        - name: 演练：在部分信任应用场景中发出代码
+          href: walkthrough-emitting-code-in-partial-trust-scenarios.md
+        - name: 如何：定义和执行动态方法
+          href: how-to-define-and-execute-dynamic-methods.md
+        - name: 如何：使用反射发出定义泛型类型
+          href: how-to-define-a-generic-type-with-reflection-emit.md
+        - name: 如何：用反射发出定义泛型方法
+          href: how-to-define-a-generic-method-with-reflection-emit.md
+        - name: 动态类型生成的可回收程序集
+          href: collectible-assemblies.md
+    - name: 动态语言运行时概述
+      href: dynamic-language-runtime-overview.md
+    - name: 动态源代码生成和编译
+      items:
+        - name: 概述
+          href: dynamic-source-code-generation-and-compilation.md
+        - name: 使用 CodeDOM
+          href: using-the-codedom.md
+        - name: 根据 CodeDOM 图生成和编译源代码
+          href: generating-and-compiling-source-code-from-a-codedom-graph.md
+        - name: 使用 CodeDOM 创建 XML 文档文件
+          href: how-to-create-an-xml-documentation-file-using-codedom.md
+        - name: 使用 CodeDOM 创建类
+          href: how-to-create-a-class-using-codedom.md

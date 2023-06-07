@@ -1,0 +1,42 @@
+- name: Visual Basic 中的 XML
+  href: index.md
+  items:
+    - name: LINQ to XML 概述
+      href: overview-of-linq-to-xml.md
+    - name: 创建 XML
+      href: creating-xml.md
+      items:
+        - name: XML 文本概述
+          href: xml-literals-overview.md
+        - name: XML 中的嵌入式表达式
+          href: embedded-expressions-in-xml.md
+        - name: 已声明的 XML 元素和属性的名称
+          href: names-of-declared-xml-elements-and-attributes.md
+        - name: XML 文本和 XML 1.0 规范
+          href: xml-literals-and-the-xml-1-0-specification.md
+        - name: XML 文本中的空白
+          href: white-space-in-xml-literals.md
+        - name: 如何：创建 XML 文本
+          href: how-to-create-xml-literals.md
+        - name: 如何：在 XML 文本中嵌入表达式
+          href: how-to-embed-expressions-in-xml-literals.md
+    - name: 操作 XML
+      href: manipulating-xml.md
+      items:
+        - name: 如何：从文件、字符串或流加载 XML
+          href: how-to-load-xml-from-a-file-string-or-stream.md
+        - name: 如何：使用 LINQ 转换 XML
+          href: how-to-transform-xml-by-using-linq.md
+        - name: 如何：修改 XML 文本
+          href: how-to-modify-xml-literals.md
+    - name: 访问 XML
+      href: accessing-xml.md
+      items:
+        - name: 如何：访问 XML 子代元素
+          href: how-to-access-xml-descendant-elements.md
+        - name: 如何：访问 XML 子元素
+          href: how-to-access-xml-child-elements.md
+        - name: 如何：访问 XML 属性
+          href: how-to-access-xml-attributes.md
+        - name: 如何：声明和使用 XML 命名空间前缀
+          href: how-to-declare-and-use-xml-namespace-prefixes.md

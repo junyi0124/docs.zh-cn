@@ -1,0 +1,89 @@
+- name: 适用于 WCF 开发人员的 gRPC
+  href: index.md
+  items:
+    - name: 介绍
+      href: introduction.md
+    - name: gRPC 概述
+      href: grpc-overview.md
+      items:
+        - name: gRPC 如何处理 RPC
+          href: approach.md
+        - name: 接口定义语言
+          href: interface-definition-language.md
+        - name: 网络协议
+          href: network-protocols.md
+        - name: 我们为什么建议适用于 WCF 开发人员的 gRPC
+          href: Why-grpc.md
+    - name: 协议缓冲区
+      href: protocol-buffers.md
+      items:
+        - name: Protobuf 消息
+          href: protobuf-messages.md
+        - name: Protobuf 标量数据类型
+          href: protobuf-data-types.md
+        - name: Protobuf 嵌套类型
+          href: protobuf-nested-types.md
+        - name: 列表和数组的重复字段
+          href: protobuf-repeated.md
+        - name: Protobuf 保留字段
+          href: protobuf-reserved.md
+        - name: 变量类型的 Protobuf Any 和 OneOf 字段
+          href: protobuf-any-oneof.md
+        - name: Protobuf 枚举
+          href: protobuf-enums.md
+        - name: 词典的 Protobuf 映射
+          href: protobuf-maps.md
+    - name: 将 WCF 服务与 gRPC 比较
+      href: wcf-services-to-grpc-comparison.md
+      items:
+        - name: WCF 终结点和 gRPC 方法
+          href: wcf-endpoints-grpc-methods.md
+        - name: WCF 绑定和传输
+          href: wcf-bindings.md
+        - name: RPC 类型
+          href: rpc-types.md
+        - name: 元数据
+          href: metadata.md
+        - name: 错误处理
+          href: error-handling.md
+        - name: WS-* 协议
+          href: ws-protocols.md
+    - name: 将 WCF 解决方案迁移到 gRPC
+      href: migrate-wcf-to-grpc.md
+      items:
+        - name: 创建新的 ASP.NET Core gRPC 项目
+          href: create-project.md
+        - name: 将 WCF 请求-答复服务迁移到 gRPC
+          href: migrate-request-reply.md
+        - name: 将 WCF 双工服务迁移到 gRPC
+          href: migrate-duplex-services.md
+        - name: gRPC 流式处理服务与重复字段
+          href: streaming-versus-repeated.md
+        - name: 客户端库
+          href: client-libraries.md
+    - name: gRPC 应用程序中的安全性
+      href: security.md
+      items:
+        - name: 调用凭据
+          href: call-credentials.md
+        - name: 通道凭据
+          href: channel-credentials.md
+        - name: 加密
+          href: encryption.md
+    - name: 生产中的 gRPC
+      href: grpc-in-production.md
+      items:
+        - name: 自承载应用程序
+          href: self-hosted.md
+        - name: Docker
+          href: docker.md
+        - name: Kubernetes
+          href: kubernetes.md
+        - name: 服务网格
+          href: service-mesh.md
+        - name: 负载均衡
+          href: load-balancing.md
+        - name: 应用程序性能管理
+          href: application-performance-management.md
+    - name: 附录
+      href: appendix.md

@@ -1,0 +1,11 @@
+- name: 访问应用程序设置
+  href: index.md
+  items:
+    - name: 如何：创建用户设置的属性网格
+      href: how-to-create-property-grids-for-user-settings.md
+    - name: 如何：永久保存用户设置
+      href: how-to-persist-user-settings.md
+    - name: 如何：更改用户设置
+      href: how-to-change-user-settings.md
+    - name: 如何：读取应用程序设置
+      href: how-to-read-application-settings.md

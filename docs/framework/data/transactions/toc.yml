@@ -1,0 +1,38 @@
+- name: 事务处理
+  href: index.md
+  items:
+    - name: 事务基础知识
+      href: transaction-fundamentals.md
+    - name: 由 System.Transactions 提供的功能
+      href: features-provided-by-system-transactions.md
+      items:
+        - name: 编写事务应用程序
+          href: writing-a-transactional-application.md
+          items:
+            - name: 使用事务范围实现隐式事务
+              href: implementing-an-implicit-transaction-using-transaction-scope.md
+            - name: 使用 CommittableTransaction 执行显式事务
+              href: implementing-an-explicit-transaction-using-committabletransaction.md
+            - name: 使用 DependentTransaction 管理并发
+              href: managing-concurrency-with-dependenttransaction.md
+            - name: 与企业服务和 COM+ 事务的互操作性
+              href: interoperability-with-enterprise-services-and-com-transactions.md
+            - name: 事务管理升级
+              href: transaction-management-escalation.md
+            - name: 诊断跟踪
+              href: diagnostic-traces.md
+            - name: 在 ASP.NET 中使用 System.Transactions
+              href: using-system-transactions-in-aspnet.md
+        - name: 实现资源管理器
+          href: implementing-a-resource-manager.md
+          items:
+            - name: 在事务中将资源登记为参与者
+              href: enlisting-resources-as-participants-in-a-transaction.md
+            - name: 在单阶段和多阶段中提交事务
+              href: committing-a-transaction-in-single-phase-and-multi-phase.md
+            - name: 执行恢复
+              href: performing-recovery.md
+            - name: 访问资源时的安全信任级别
+              href: security-trust-levels-in-accessing-resources.md
+            - name: 使用单阶段提交和可提升的单阶段通知进行优化
+              href: optimization-spc-and-promotable-spn.md

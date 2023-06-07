@@ -1,0 +1,104 @@
+- name: 与非托管代码交互操作
+  href: index.md
+  items:
+    - name: 向 .NET Framework 公开 COM 组件
+      href: exposing-com-components.md
+      items:
+        - name: 将类型库当作程序集导入
+          href: importing-a-type-library-as-an-assembly.md
+        - name: 如何：添加对类型库的引用
+          href: how-to-add-references-to-type-libraries.md
+        - name: 如何：从类型库生成互操作程序集
+          href: how-to-generate-interop-assemblies-from-type-libraries.md
+        - name: 编译互操作项目
+          href: compiling-an-interop-project.md
+        - name: 部署互操作应用程序
+          href: deploying-an-interop-application.md
+        - name: COM 互操作示例：.NET 客户端和 COM 服务器
+          href: com-interop-sample-net-client-and-com-server.md
+    - name: 向 COM 公开 .NET Framework 组件
+      href: exposing-dotnet-components-to-com.md
+      items:
+        - name: 将 COM 的程序集打包
+          href: packaging-an-assembly-for-com.md
+        - name: 向 COM 注册程序集
+          href: registering-assemblies-with-com.md
+        - name: 如何：从 COM 引用 .NET 类型
+          href: how-to-reference-net-types-from-com.md
+        - name: COM 互操作示例：COM 客户端和 .NET 服务器
+          href: com-interop-sample-com-client-and-net-server.md
+    - name: 使用非托管 DLL 函数
+      href: consuming-unmanaged-dll-functions.md
+      items:
+        - name: 标识 DLL 中的函数
+          href: identifying-functions-in-dlls.md
+        - name: 创建用于容纳 DLL 函数的类
+          href: creating-a-class-to-hold-dll-functions.md
+        - name: 在托管代码中创建原型
+          href: creating-prototypes-in-managed-code.md
+          items:
+            - name: 指定入口点
+              href: specifying-an-entry-point.md
+            - name: 指定字符集
+              href: specifying-a-character-set.md
+            - name: 平台调用示例
+              href: platform-invoke-examples.md
+        - name: 调用 DLL 函数
+          href: calling-a-dll-function.md
+          items:
+            - name: 传递结构
+              href: passing-structures.md
+            - name: 回调函数
+              href: callback-functions.md
+            - name: 如何：实现回调函数
+              href: how-to-implement-callback-functions.md
+    - name: 互操作封送处理
+      href: interop-marshaling.md
+      items:
+        - name: 默认封送处理行为
+          href: default-marshaling-behavior.md
+          items:
+            - name: 可直接复制到本机结构中的类型和非直接复制到本机结构中的类型
+              href: blittable-and-non-blittable-types.md
+            - name: 复制和锁定
+              href: copying-and-pinning.md
+            - name: 数组的默认封送处理
+              href: default-marshaling-for-arrays.md
+            - name: 对象的默认封送处理
+              href: default-marshaling-for-objects.md
+            - name: 字符串的默认封送处理
+              href: default-marshaling-for-strings.md
+        - name: 用平台调用封送数据
+          href: marshaling-data-with-platform-invoke.md
+          items:
+            - name: 封送处理字符串
+              href: marshaling-strings.md
+            - name: MsgBox 示例
+              href: msgbox-sample.md
+            - name: 封送类、结构和联合
+              href: marshaling-classes-structures-and-unions.md
+            - name: 封送处理不同类型的数组
+              href: marshaling-different-types-of-arrays.md
+            - name: 将委托作为回调方法进行封送
+              href: marshaling-a-delegate-as-a-callback-method.md
+        - name: 用 COM 互操作对数据进行封送处理
+          href: marshaling-data-with-com-interop.md
+          items:
+            - name: 如何：手动创建包装器
+              href: how-to-create-wrappers-manually.md
+            - name: 如何：将托管代码 DCOM 迁移到 WCF
+              href: how-to-migrate-managed-code-dcom-to-wcf.md
+    - name: 如何：映射 HRESULT 和异常
+      href: how-to-map-hresults-and-exceptions.md
+    - name: 如何：创建 COM 包装
+      href: how-to-create-com-wrappers.md
+    - name: 类型等效性和嵌入的互操作类型
+      href: type-equivalence-and-embedded-interop-types.md
+    - name: 如何：使用 Tlbimp.exe 生成主互操作程序集
+      href: how-to-generate-primary-interop-assemblies-using-tlbimp-exe.md
+    - name: 如何：注册主互操作程序集
+      href: how-to-register-primary-interop-assemblies.md
+    - name: 免注册 COM 互操作
+      href: registration-free-com-interop.md
+    - name: 如何：配置基于 .NET Framework 的 COM 组件以进行免注册激活
+      href: configure-net-framework-based-com-components-for-reg.md

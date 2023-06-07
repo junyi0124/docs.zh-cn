@@ -1,0 +1,97 @@
+### YamlMime:Landing
+title: ML.NET 文档
+summary: 了解如何使用开放源代码 ML.NET 生成自定义机器学习模型，并将它们集成到应用程序中。 通过教程、代码示例等说明操作方法。
+metadata:
+  title: ML.NET 文档 - 教程和 API 参考
+  description: 了解如何使用开放源代码 ML.NET 生成自定义机器学习模型，并将它们集成到应用程序中。 通过教程、代码示例等说明操作方法。
+  ms.prod: dotnet-ml
+  ms.topic: landing-page
+  ms.collection: collection
+  author: natke
+  ms.author: nakersha
+  ms.date: 10/30/2019
+  ms.openlocfilehash: da58d7b94ebb0d56e98d07055c6d2e9f42cc7830
+  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96599637"
+landingContent:
+- title: ML.NET 基础知识
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什么是 ML.NET？
+      url: how-does-mldotnet-work.md
+  - linkListType: video
+    links:
+    - text: 机器学习基础知识
+      url: https://channel9.msdn.com/Series/MLNET/MLNET-Machine-Learning-Introduction-1-of-8
+  - linkListType: concept
+    links:
+    - text: 机器学习任务和算法
+      url: resources/tasks.md
+    - text: 如何选择算法
+      url: how-to-choose-an-ml-net-algorithm.md
+  - linkListType: get-started
+    links:
+    - text: Q&A 上的 ML.NET
+      url: /answers/topics/dotnet-mlnet.html
+- title: 10 分钟入门
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: ML.NET API 入门（代码优先）
+      url: https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro
+    - text: 在 Visual Studio 中设置 Model Builder（低代码）
+      url: how-to-guides/install-model-builder.md
+    - text: 在 macOS、Windows 或 Linux 上安装 CLI（低代码）
+      url: how-to-guides/install-ml-net-cli.md
+- title: 教程
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 分析网站评论情绪（模型生成器）
+      url: tutorials/sentiment-analysis-model-builder.md
+    - text: 预测价格（模型生成器）
+      url: tutorials/predict-prices-with-model-builder.md
+    - text: 对卫生违规行为分类（模型生成器和 SQL Server）
+      url: tutorials/health-violation-classification-model-builder.md
+    - text: 对支持问题进行分类 (API)
+      url: tutorials/github-issue-classification.md
+    - text: 使用图像分类 API (API) 分类图像
+      url: tutorials/image-classification-api-transfer-learning.md
+    - text: 使用模型组合 (API) 分类图像
+      url: tutorials/image-classification.md
+    - text: 检测图像中的对象 (API)
+      url: tutorials/object-detection-onnx.md
+    - text: 检测产品销售中的异常 (API)
+      url: tutorials/sales-anomaly-detection.md
+    - text: 预测自行车租赁需求（API 和 SQL Server）
+      url: tutorials/time-series-demand-forecasting.md
+    - text: 生成电影推荐系统 (API)
+      url: tutorials/movie-recommendation.md
+- title: 操作指南
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 从各种源加载数据
+      url: how-to-guides/load-data-ml-net.md
+    - text: 准备建模的数据
+      url: how-to-guides/prepare-data-ml-net.md
+    - text: 训练和评估模型
+      url: how-to-guides/train-machine-learning-model-ml-net.md
+    - text: 使用经过训练的模型进行预测
+      url: how-to-guides/machine-learning-model-predictions-ml-net.md
+    - text: 保存和加载经过训练的模型
+      url: how-to-guides/save-load-machine-learning-models-ml-net.md
+    - text: 重新训练模型
+      url: how-to-guides/retrain-model-ml-net.md
+- title: 参考
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: ML.NET API 引用
+      url: ../../api/index.md?view=ml-dotnet
+    - text: ML.NET 示例
+      url: https://github.com/dotnet/machinelearning-samples

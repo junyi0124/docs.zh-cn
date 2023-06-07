@@ -1,0 +1,117 @@
+- name: 语言集成查询 (LINQ)
+  href: index.md
+  items:
+    - name: LINQ 介绍
+      href: introduction-to-linq.md
+    - name: LINQ 入门
+      href: getting-started-with-linq.md
+      items:
+        - name: 编写第一个 LINQ 查询
+          href: writing-your-first-linq-query.md
+        - name: 基本查询操作
+          href: basic-query-operations.md
+        - name: 支持 LINQ 的 Visual Basic 功能
+          href: features-that-support-linq.md
+        - name: 查询操作中的类型关系
+          href: type-relationships-in-query-operations.md
+        - name: 演练：编写查询
+          href: walkthrough-writing-queries.md
+        - name: 如何：创建项列表
+          href: how-to-create-a-list-of-items.md
+    - name: 标准查询运算符概述
+      href: standard-query-operators-overview.md
+      items:
+        - name: 标准查询运算符的查询表达式语法
+          href: query-expression-syntax-for-standard-query-operators.md
+        - name: 标准查询运算符按执行方式的分类
+          href: classification-of-standard-query-operators-by-manner-of-execution.md
+        - name: 对数据进行排序
+          href: sorting-data.md
+        - name: Set 运算
+          href: set-operations.md
+        - name: 筛选数据
+          href: filtering-data.md
+        - name: 限定符运算
+          href: quantifier-operations.md
+        - name: 投影运算
+          href: projection-operations.md
+        - name: 数据分区
+          href: partitioning-data.md
+        - name: 联接运算
+          href: join-operations.md
+        - name: 数据分组
+          href: grouping-data.md
+        - name: 生成运算
+          href: generation-operations.md
+        - name: 相等运算
+          href: equality-operations.md
+        - name: 元素运算
+          href: element-operations.md
+        - name: 转换数据类型
+          href: converting-data-types.md
+        - name: 串联运算
+          href: concatenation-operations.md
+        - name: 聚合运算
+          href: aggregation-operations.md
+- name: LINQ to Objects
+  href: linq-to-objects.md
+  items:
+    - name: LINQ 和字符串
+      href: linq-and-strings.md
+      items:
+        - name: 如何：对某个词在某一字符串中出现的次数进行计数 (LINQ)
+          href: how-to-count-occurrences-of-a-word-in-a-string-linq.md
+        - name: 如何：查询包含一组指定词语的句子 (LINQ)
+          href: how-to-query-for-sentences-that-contain-a-specified-set-of-words.md
+        - name: 如何：查询字符串中的字符 (LINQ)
+          href: how-to-query-for-characters-in-a-string-linq.md
+        - name: 如何将 LINQ 查询与正则表达式合并在一起
+          href: how-to-combine-linq-queries-with-regular-expressions.md
+        - name: 如何：查找两个列表之间的差集 (LINQ)
+          href: how-to-find-the-set-difference-between-two-lists-linq.md
+        - name: 如何：按任意词或字段对文本数据进行排序或筛选 (LINQ)
+          href: how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
+        - name: 如何：重新排列带分隔符的文件的字段 (LINQ)
+          href: how-to-reorder-the-fields-of-a-delimited-file.md
+        - name: 如何：组合和比较字符串集合 (LINQ)
+          href: how-to-combine-and-compare-string-collections-linq.md
+        - name: 如何：从多个源填充对象集合 (LINQ)
+          href: how-to-populate-object-collections-from-multiple-sources-linq.md
+        - name: 如何：使用组将一个文件拆分成多个文件 (LINQ)
+          href: how-to-split-a-file-into-many-files-by-using-groups-linq.md
+        - name: 如何：联接不同文件中的内容 (LINQ)
+          href: how-to-join-content-from-dissimilar-files-linq.md
+        - name: 如何：在 CSV 文本文件中计算列值 (LINQ)
+          href: how-to-compute-column-values-in-a-csv-text-file-linq.md
+    - name: LINQ 和反射
+      href: linq-and-reflection.md
+      items:
+        - name: 如何：使用反射查询程序集的元数据 (LINQ)
+          href: how-to-query-an-assembly-s-metadata-with-reflection-linq.md
+    - name: LINQ 和文件目录
+      href: linq-and-file-directories.md
+      items:
+        - name: 如何：查询具有指定属性或名称的文件
+          href: how-to-query-for-files-with-a-specified-attribute-or-name.md
+        - name: 如何：按扩展名对文件进行分组 (LINQ)
+          href: how-to-group-files-by-extension-linq.md
+        - name: 如何：查询一组文件夹中的总字节数 (LINQ)
+          href: how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders.md
+        - name: 如何：比较两个文件夹的内容 (LINQ)
+          href: how-to-compare-the-contents-of-two-folders-linq.md
+        - name: 如何：查询最大的文件或目录树中的文件 (LINQ)
+          href: how-to-query-for-the-largest-file-or-files-in-a-directory-tree.md
+        - name: 如何：在目录树中查询重复文件 (LINQ)
+          href: how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
+        - name: 如何：查询文件夹中的文件的内容 (LINQ)
+          href: how-to-query-the-contents-of-files-in-a-folder-linq.md
+        - name: 如何：使用 LINQ 查询 ArrayList
+          href: how-to-query-an-arraylist-with-linq.md
+        - name: 如何：为 LINQ 查询添加自定义方法
+          href: how-to-add-custom-methods-for-linq-queries.md
+- name: LINQ to ADO.NET（门户网站页）
+  href: linq-to-adonet-portal-page.md
+- name: 启用数据源以进行 LINQ 查询
+  href: enabling-a-data-source-for-linq-querying.md
+- name: 对 LINQ 的 Visual Studio IDE 和工具支持
+  href: visual-studio-ide-and-tools-support-for-linq.md

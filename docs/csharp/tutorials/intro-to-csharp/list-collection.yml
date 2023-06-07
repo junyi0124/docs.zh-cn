@@ -1,0 +1,215 @@
+### YamlMime:Tutorial
+title: 了解如何使用泛型列表类型管理数据集合
+metadata:
+  title: 数据集合 - C# 交互教程简介
+  description: 在本教程中，读者将使用浏览器通过交互方式了解 C#。 读者可以直接在浏览器中编写 C# 代码，并查看代码编译和运行结果。
+  audience: Developer
+  ms.custom: mvc
+  ms.topic: interactive-tutorial
+  ms.date: 10/23/2018
+  level: Beginner
+  displayType: two-column
+  interactive: csharp
+  ms.openlocfilehash: 26fded8a82771672825825ce5d617ef200f18542
+  ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/07/2020
+  ms.locfileid: "91805097"
+items:
+- durationInMinutes: 1
+  content: >
+    本教程通过交互方式介绍了 C#，读者可以使用浏览器编写 C# 代码，并查看代码编译和运行结果。 它包含一系列有关创建、修改和探索集合和数组的课程。
+- title: 创建列表
+  durationInMinutes: 2
+  content: >
+    在交互式窗口中，运行以下代码。 选择“进入焦点模式”按钮。 然后，在交互式窗口中键入以下代码块（将 `<name>` 替换为自己的名称），再选择“运行”：
+
+
+    ```csharp
+
+    var names = new List<string> { "<name>", "Ana", "Felipe" };
+
+    foreach (var name in names)
+
+    {
+      Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+
+    ```
+
+
+    如果在环境中运行此操作，则应改为按照[本地版本](arrays-and-collections.md)的说明进行操作。
+
+
+    你已创建了一个字符串列表，在该列表中添加了三个名称，并打印了所有大写的名称。 循环读取整个列表需要用到在前面的教程中学到的概念。
+
+
+    用于显示名称的代码使用[字符串内插](../../language-reference/tokens/interpolated.md)功能。 如果 `string` 前面有 `$`符号，可以在字符串声明中嵌入 C# 代码。 实际字符串使用自己生成的值替换该 C# 代码。 在此示例中，`{name.ToUpper()}` 被替换为各个转换为大写字母的名称，因为调用了 <xref:System.String.ToUpper%2A?displayProperty=nameWithType> 方法。
+
+
+    接下来将进一步探索。
+- title: 修改列表内容
+  durationInMinutes: 3
+  content: >
+    创建的集合使用 <xref:System.Collections.Generic.List%601> 类型。 此类型存储一系列元素。 元素类型是在尖括号内指定。
+
+
+    <xref:System.Collections.Generic.List%601> 类型的一个重要方面是，既可以扩大，也可以收缩，方便用户添加或删除元素。 在显示其内容后，通过修改内容，可以查看结果。 在已编写的代码下方添加以下代码（在输出内容的循环下方）：
+
+
+    ```csharp
+
+    Console.WriteLine();
+
+    names.Add("Maria");
+
+    names.Add("Bill");
+
+    names.Remove("Ana");
+
+    foreach (var name in names)
+
+    {
+      Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+
+    ```
+
+
+    又向列表的末尾添加了两个名称。 同时，也删除了一个名称。 此代码块的输出显示初始内容，然后输出一个空行和新内容。
+
+
+    借助 <xref:System.Collections.Generic.List%601>，还可以按索引引用各项。 使用 `[` 和 `]` 令牌访问这些项。 在已编写的代码下方添加以下代码，再试运行看看：
+
+
+    ```csharp
+
+    Console.WriteLine($"My name is {names[0]}.");
+
+    Console.WriteLine($"I've added {names[2]} and {names[3]} to the list.");
+
+    ```
+
+
+    不得访问超出列表末尾的项。 可以使用 <xref:System.Collections.Generic.List%601.Count%2A> 属性确定列表长度。 添加以下代码，试运行看看：
+
+
+    ```csharp
+
+    Console.WriteLine($"The list has {names.Count} people in it");
+
+    ```
+
+
+    再次选择“运行”，看看结果如何。 在 C# 中，索引是从 0 开始编制，因此最大有效索引是用列表项数减 1 计算得出。
+- title: 搜索列表并进行排序
+  durationInMinutes: 5
+  content: >
+    我们的示例使用的列表较小，但大家的应用程序创建的列表通常可能会包含更多元素，有时可能会包含数以千计的元素。 若要在更大的集合中查找元素，需要在列表中搜索不同的项。 <xref:System.Collections.Generic.List%601.IndexOf%2A> 方法可搜索项，并返回此项的索引。 如果项不在列表中，`IndexOf` 将返回 `-1`。 试试此方法，看看它是如何工作的。  在当前已编写的代码下方添加以下代码：
+
+
+    ```csharp
+
+    var index = names.IndexOf("Felipe");
+
+    if (index != -1)
+      Console.WriteLine($"The name {names[index]} is at index {index}");
+
+    var notFound = names.IndexOf("Not Found");
+
+    Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+
+    ```
+
+
+    可能无法确定列表是否包含某项，因此，应始终检查 <xref:System.Collections.Generic.List%601.IndexOf%2A> 返回的索引。 如果索引为 `-1`，则找不到相应项。
+
+
+    还可以对列表中的项进行排序。 <xref:System.Collections.Generic.List%601.Sort%2A> 方法按正常顺序（如果是字符串则按字母顺序）对列表中的所有项进行排序。 添加以下代码，再试运行看看：
+
+
+    ```csharp
+
+    names.Sort();
+
+    foreach (var name in names)
+
+    {
+      Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+
+    ```
+- title: 其他类型的列表
+  durationInMinutes: 5
+  content: >
+    到目前为止，大家一直在列表中使用 `string` 类型。 接下来，将让 <xref:System.Collections.Generic.List%601> 使用其他类型。 那就生成一组数字吧。 删除迄今为止编写的代码，并将其替换为以下代码：
+
+
+    ```csharp
+
+    var fibonacciNumbers = new List<int> {1, 1};
+
+    ```
+
+
+    这会创建一个整数列表，并将头两个整数设置为值 1。 斐波纳契数列，一串以两个 1 开头的数字。 斐波那契数列中的每个数字都是前两个数字之和。 添加以下代码：
+
+
+    ```csharp
+
+    var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+
+    var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+
+    fibonacciNumbers.Add(previous + previous2);
+
+
+    foreach(var item in fibonacciNumbers)
+        Console.WriteLine(item);
+    ```
+
+
+    按“运行”，看看结果如何；
+- title: 挑战
+  durationInMinutes: 10
+  content: >
+    看看能不能将本课程中的一些概念与前面的课程融会贯通。 使用斐波那契数列，扩展当前生成的程序。 试着编写代码，生成此序列中的前 20 个数字。 （作为提示，第 20 个斐波纳契数是 6765。）
+- title: 完成挑战
+  durationInMinutes: 3
+  content: >
+    最后是否生成如下代码？
+
+
+    ```csharp
+
+    var fibonacciNumbers = new List<int> {1, 1};
+
+
+    while (fibonacciNumbers.Count < 20)
+
+    {
+        var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+        var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+        fibonacciNumbers.Add(previous + previous2);
+    }
+
+    foreach(var item in fibonacciNumbers)
+        Console.WriteLine(item);
+    ```
+
+
+    在循环的每次迭代中，取此列表中的最后两个整数进行求和，并将计算出的总和值添加到列表中。 循环会一直重复运行到列表中有 20 个项为止。
+- content: >-
+    你已完成列表交互式教程。 这是 C# 交互式教程的最终简介。 可以访问 [.NET 站点](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)下载 .NET Core SDK，在计算机上创建项目，并继续编码。 请通过“后续步骤”部分返回到这些教程。
+
+
+    可以在以下文章中了解有关 [.NET 集合](../../../standard/collections/index.md)的详细信息：
+
+    - [选择集合类型](../../../standard/collections/selecting-a-collection-class.md)
+
+    - [常用的集合类型](../../../standard/collections/commonly-used-collection-types.md)
+
+    - [何时使用泛型集合](../../../standard/collections/when-to-use-generic-collections.md)

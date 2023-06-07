@@ -1,0 +1,80 @@
+- name: 处理驱动器、目录和文件
+  href: index.md
+  items:
+    - name: 使用 Visual Basic 访问文件
+      href: file-access.md
+      items:
+        - name: 从文件读取
+          href: reading-from-files.md
+          items:
+            - name: 如何：读取文本文件
+              href: how-to-read-from-text-files.md
+            - name: 如何：读取逗号分隔的文本文件
+              href: how-to-read-from-comma-delimited-text-files.md
+            - name: 如何：读取固定宽度的文本文件
+              href: how-to-read-from-fixed-width-text-files.md
+            - name: 如何：读取具有多种格式的文本文件
+              href: how-to-read-from-text-files-with-multiple-formats.md
+            - name: 如何：读取二进制文件
+              href: how-to-read-from-binary-files.md
+            - name: 如何：使用 StreamReader 读取文件中的文本
+              href: how-to-read-text-from-files-with-a-streamreader.md
+        - name: 写入文件
+          href: writing-to-files.md
+          items:
+            - name: 如何：向文件写入文本
+              href: how-to-write-text-to-files.md
+            - name: 如何：向文本文件追加内容
+              href: how-to-append-to-text-files.md
+            - name: 如何：写入二进制文件
+              href: how-to-write-to-binary-files.md
+            - name: 如何：将文本写入“我的文档”目录中的文件
+              href: how-to-write-text-to-files-in-the-my-documents-directory.md
+            - name: 如何：使用 StreamWriter 向文件中写入文本
+              href: how-to-write-text-to-files-with-a-streamwriter.md
+        - name: 创建、删除和移动文件和目录
+          href: creating-deleting-and-moving-files-and-directories.md
+          items:
+            - name: 如何：将具有特定模式的文件复制到目录中
+              href: how-to-copy-files-with-a-specific-pattern-to-a-directory.md
+            - name: 如何：在同一目录中创建文件副本
+              href: how-to-create-a-copy-of-a-file-in-the-same-directory.md
+            - name: 如何：在不同的目录中创建文件的副本
+              href: how-to-create-a-copy-of-a-file-in-a-different-directory.md
+            - name: 如何：创建文件
+              href: how-to-create-a-file.md
+            - name: 如何：删除文件
+              href: how-to-delete-a-file.md
+            - name: 如何：查找具有特定模式的文件
+              href: how-to-find-files-with-a-specific-pattern.md
+            - name: 如何：移动文件
+              href: how-to-move-a-file.md
+            - name: 如何：重命名文件
+              href: how-to-rename-a-file.md
+            - name: 如何：将目录复制到另一个目录
+              href: how-to-copy-a-directory-to-another-directory.md
+            - name: 如何：创建目录
+              href: how-to-create-a-directory.md
+            - name: 如何：查找具有特定模式的子目录
+              href: how-to-find-subdirectories-with-a-specific-pattern.md
+            - name: 如何：获取目录中的文件集合
+              href: how-to-get-the-collection-of-files-in-a-directory.md
+            - name: 如何：检索“我的文档”目录中的内容
+              href: how-to-retrieve-the-contents-of-the-my-documents-directory.md
+            - name: 如何：分析文件路径
+              href: how-to-parse-file-paths.md
+        - name: 使用 TextFieldParser 对象分析文本文件
+          href: parsing-text-files-with-the-textfieldparser-object.md
+        - name: 文件编码
+          href: file-encodings.md
+        - name: 疑难解答：读取和写入文本文件
+          href: troubleshooting-reading-from-and-writing-to-text-files.md
+    - name: .NET Framework 文件 I/O 和文件系统基础知识
+      href: basics-of-net-framework-file-io-and-the-file-system.md
+      items:
+        - name: 在 .NET Framework 文件 I/O 和文件系统中使用的类
+          href: classes-used-in-net-framework-file-io-and-the-file-system.md
+    - name: 演练：使用 .NET Framework 方法操作文件
+      href: walkthrough-manipulating-files-by-using-net-framework-methods.md
+    - name: 演练：操作文件和目录
+      href: walkthrough-manipulating-files-and-directories.md

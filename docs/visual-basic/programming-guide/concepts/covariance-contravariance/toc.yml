@@ -1,0 +1,17 @@
+- name: 协变和逆变
+  href: index.md
+  items:
+    - name: 泛型接口中的变体
+      href: variance-in-generic-interfaces.md
+      items:
+        - name: 创建变体泛型接口
+          href: creating-variant-generic-interfaces.md
+        - name: 在泛型集合的接口中使用变体
+          href: using-variance-in-interfaces-for-generic-collections.md
+    - name: 委托中的变体
+      href: variance-in-delegates.md
+      items:
+        - name: 使用委托中的变体
+          href: using-variance-in-delegates.md
+        - name: 对 Func 和 Action 泛型委托使用变体
+          href: using-variance-for-func-and-action-generic-delegates.md

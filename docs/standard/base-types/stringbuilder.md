@@ -1,259 +1,127 @@
 ---
-title: "使用 StringBuilder 类"
-description: "使用 StringBuilder 类"
-keywords: ".NET、.NET Core"
-author: stevehoag
-manager: wpickett
-ms.date: 07/26/2016
-ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
-ms.assetid: f4f5d1c7-d84d-4867-810f-2708cd6de0da
-translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 1e8453b78827d8c02f29135ddfb832956ab40f3c
-
+title: 使用 .NET 中的 StringBuilder 类
+description: 了解如何使用 .NET 中的 StringBuilder 类。 无需创建新对象即可使用此类来修改字符串。
+ms.date: 03/30/2017
+dev_langs:
+- csharp
+- vb
+- cpp
+helpviewer_keywords:
+- Remove method
+- strings [.NET], capacities
+- StringBuilder object
+- Replace method
+- AppendFormat method
+- Append method
+- Insert method
+- strings [.NET], StringBuilder object
+ms.assetid: 5c14867c-9a99-45bc-ae7f-2686700d377a
+ms.openlocfilehash: 54878f737faaedf4c9a176719f4ff83813a80201
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734213"
 ---
+# <a name="using-the-stringbuilder-class-in-net"></a>使用 .NET 中的 StringBuilder 类
 
-# <a name="using-the-stringbuilder-class"></a>使用 StringBuilder 类
+<xref:System.String> 对象不可变。 每次使用 <xref:System.String?displayProperty=nameWithType> 类中的方法之一，都要在内存中新建字符串对象，这就需要为新对象分配新空间。 在需要重复修改字符串的情况下，与新建 <xref:System.String> 对象关联的开销可能会非常大。 若要修改字符串（而不新建对象），可以使用 <xref:System.Text.StringBuilder?displayProperty=nameWithType> 类。 例如，如果在循环中将许多字符串连接在一起，使用 <xref:System.Text.StringBuilder> 类可以提升性能。  
+  
+## <a name="importing-the-systemtext-namespace"></a>导入 System.Text 命名空间  
 
-[String](xref:System.String) 对象是不可变的。 每次使用 [System.String](xref:System.String) 类中的一个方法时，都要在内存中创建一个新的字符串对象，这就需要为该新对象分配新的空间。 在需要对字符串执行重复修改的情况下，与创建新 [String](xref:System.String) 对象关联的开销可能非常大。 如果要修改字符串而不创建新的对象，则可以使用 [System.Text.StringBuilder](xref:System.Text.StringBuilder) 类。 例如，在一次循环中将许多字符串连接在一起时，使用 [StringBuilder](xref:System.Text.StringBuilder) 类可以提升性能。
+ <xref:System.Text.StringBuilder> 类位于 <xref:System.Text> 命名空间中。  为了避免必须在代码中提供完全限定的类型名称，可以导入 <xref:System.Text> 命名空间：  
+  
+ [!code-cpp[Conceptual.StringBuilder#11](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#11)]
+ [!code-csharp[Conceptual.StringBuilder#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#11)]
+ [!code-vb[Conceptual.StringBuilder#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#11)]  
+  
+## <a name="instantiating-a-stringbuilder-object"></a>实例化 StringBuilder 对象  
 
-## <a name="importing-the-systemtext-namespace"></a>导入 System.Text 命名空间
+ 通过使用重载的构造函数方法之一初始化变量，可以新建 <xref:System.Text.StringBuilder> 类的实例，如下面的示例所示。  
+  
+ [!code-cpp[Conceptual.StringBuilder#1](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#1)]
+ [!code-csharp[Conceptual.StringBuilder#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#1)]
+ [!code-vb[Conceptual.StringBuilder#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#1)]  
+  
+## <a name="setting-the-capacity-and-length"></a>设置容量和长度  
 
-[StringBuilder](xref:System.Text.StringBuilder) 类位于 [System.Text](xref:System.Text) 命名空间。 为了避免必须在代码中提供完全限定的类型名称，可以导入 [System.Text](xref:System.Text) 命名空间： 
+ 虽然 <xref:System.Text.StringBuilder> 是动态对象，支持扩展它封装的字符串中的字符数，但可以指定值，作为对象可保留的字符数上限。 此值称为“对象容量”，不得将它与当前 <xref:System.Text.StringBuilder> 保留的字符串长度相混淆。 例如，可以使用长度为 5 的字符串“Hello”新建 <xref:System.Text.StringBuilder> 类的实例，同时可以指定此对象的最大容量为 25。 修改 <xref:System.Text.StringBuilder> 时，除非达到容量，否则对象不会为自己重新分配空间。 当达到容量时，将自动分配新的空间且容量翻倍。 可以使用重载的构造函数之一，指定 <xref:System.Text.StringBuilder> 类的容量。 下面的示例指定可以将 `myStringBuilder` 对象增加到最多 25 个空间。  
+  
+ [!code-cpp[Conceptual.StringBuilder#2](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#2)]
+ [!code-csharp[Conceptual.StringBuilder#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#2)]
+ [!code-vb[Conceptual.StringBuilder#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#2)]  
+  
+ 另外，还可以使用读/写 <xref:System.Text.StringBuilder.Capacity%2A> 属性，设置对象的长度上限。 下面的示例使用 **Capacity** 属性来定义对象的最大长度。  
+  
+ [!code-cpp[Conceptual.StringBuilder#3](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#3)]
+ [!code-csharp[Conceptual.StringBuilder#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#3)]
+ [!code-vb[Conceptual.StringBuilder#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#3)]  
+  
+ <xref:System.Text.StringBuilder.EnsureCapacity%2A> 方法可用于检查当前 StringBuilder 的容量。 如果容量大于传递的值，则不进行任何更改；但是，如果容量小于传递的值，则会更改当前的容量以使其与传递的值匹配。  
+  
+ 也可以查看或设置 <xref:System.Text.StringBuilder.Length%2A> 属性。 如果将 **Length** 属性设置为大于 **Capacity** 属性的值，则自动将 **Capacity** 属性更改为与 **Length** 属性相同的值。 如果将 **Length** 属性设置为小于当前 **StringBuilder** 对象内的字符串长度的值，则会缩短该字符串。  
+  
+## <a name="modifying-the-stringbuilder-string"></a>修改 StringBuilder 字符串  
 
-```csharp
-using System;
-using System.Text;
-```
+ 下表列出了可用于修改 **StringBuilder** 内容的方法。  
+  
+|方法名称|使用|  
+|-----------------|---------|  
+|<xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType>|将信息追加到当前 **StringBuilder** 的末尾。|  
+|<xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>|用带格式文本替换字符串中传递的格式说明符。|  
+|<xref:System.Text.StringBuilder.Insert%2A?displayProperty=nameWithType>|将字符串或对象插入到当前 **StringBuilder** 的指定索引中。|  
+|<xref:System.Text.StringBuilder.Remove%2A?displayProperty=nameWithType>|从当前 **StringBuilder** 中删除指定数量的字符。|  
+|<xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType>|将当前 StringBuilder 中出现的所有指定字符或字符串替换为其他的指定字符或字符串。|  
+  
+### <a name="append"></a>追加  
 
-```vb
-Imports System.Text
-```
+ Append 方法可用于将对象的文本或字符串表示形式添加到当前 StringBuilder 表示的字符串末尾。 下面的示例将 **StringBuilder** 对象初始化为“Hello World”，然后将一些文本追加到该对象的末尾。 将根据需要自动分配空间。  
+  
+ [!code-cpp[Conceptual.StringBuilder#4](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#4)]
+ [!code-csharp[Conceptual.StringBuilder#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#4)]
+ [!code-vb[Conceptual.StringBuilder#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#4)]  
+  
+### <a name="appendformat"></a>AppendFormat  
 
-## <a name="instantiating-a-stringbuilder-object"></a>实例化 StringBuilder 对象
+ <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> 方法将文本添加到 <xref:System.Text.StringBuilder> 对象末尾。 它调用要设置格式的一个或多个对象的 <xref:System.IFormattable> 实现，支持复合格式功能（有关详细信息，请参阅[复合格式](composite-formatting.md)）。 因此，它接受数字、日期和时间以及枚举值的标准格式字符串、数字以及日期和时间值的自定义格式字符串，以及为自定义类型定义的格式字符串。 （有关格式化的信息，请参阅[格式设置类型](formatting-types.md)。）此方法可用于自定义变量格式，并将这些值追加到 <xref:System.Text.StringBuilder>。 下面的示例使用 <xref:System.Text.StringBuilder.AppendFormat%2A> 方法，将格式为货币值的整数值添加到 <xref:System.Text.StringBuilder> 对象末尾。  
+  
+ [!code-cpp[Conceptual.StringBuilder#5](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#5)]
+ [!code-csharp[Conceptual.StringBuilder#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#5)]
+ [!code-vb[Conceptual.StringBuilder#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#5)]  
+  
+### <a name="insert"></a>Insert  
 
-通过利用其中一个重载的构造函数方法初始化变量，可以创建 [StringBuilder](xref:System.Text.StringBuilder) 类的新实例，如以下示例所示。
+ <xref:System.Text.StringBuilder.Insert%2A> 方法将字符串或对象添加到当前 <xref:System.Text.StringBuilder> 对象中的指定位置。 下面的示例使用此方法，将字词插入 <xref:System.Text.StringBuilder> 对象的第六个位置。  
+  
+ [!code-cpp[Conceptual.StringBuilder#6](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#6)]
+ [!code-csharp[Conceptual.StringBuilder#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#6)]
+ [!code-vb[Conceptual.StringBuilder#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#6)]  
+  
+### <a name="remove"></a>删除  
 
-```csharp
-StringBuilder MyStringBuilder = new StringBuilder("Hello World!");
-```
+ 可以使用 Remove方法，从当前 <xref:System.Text.StringBuilder> 对象中指定索引（从零开始编制）处开始删除指定数量的字符。 下面的示例使用 Remove 方法缩短 <xref:System.Text.StringBuilder> 对象。  
+  
+ [!code-cpp[Conceptual.StringBuilder#7](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#7)]
+ [!code-csharp[Conceptual.StringBuilder#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#7)]
+ [!code-vb[Conceptual.StringBuilder#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#7)]  
+  
+### <a name="replace"></a>替换  
 
-```vb
-Dim MyStringBuilder As New StringBuilder("Hello World!")
-```
+ Replace 方法可用于将 <xref:System.Text.StringBuilder> 对象内的字符替换为另一个指定的字符。 下面的示例使用 Replace 方法，在 <xref:System.Text.StringBuilder> 对象中搜索感叹号字符 (!) 的所有实例，并将它们替换为问号字符 (?)。  
+  
+ [!code-cpp[Conceptual.StringBuilder#8](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#8)]
+ [!code-csharp[Conceptual.StringBuilder#8](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#8)]
+ [!code-vb[Conceptual.StringBuilder#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#8)]  
+  
+## <a name="converting-a-stringbuilder-object-to-a-string"></a>将 StringBuilder 对象转换为字符串  
 
-## <a name="setting-the-capacity-and-length"></a>设置容量和长度
+ 必须先将 <xref:System.Text.StringBuilder> 对象转换为 <xref:System.String> 对象，然后才能将 <xref:System.Text.StringBuilder> 对象表示的字符串传递给包含 <xref:System.String> 参数的方法，或在用户界面中显示它。 可通过调用 <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> 方法来执行此转换。 下面的示例先调用许多 <xref:System.Text.StringBuilder> 方法，再调用 <xref:System.Text.StringBuilder.ToString?displayProperty=nameWithType> 方法来显示字符串。  
+  
+ [!code-csharp[Conceptual.StringBuilder#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/tostringexample1.cs#10)]
+ [!code-vb[Conceptual.StringBuilder#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/tostringexample1.vb#10)]  
+  
+## <a name="see-also"></a>请参阅
 
-虽然 [StringBuilder](xref:System.Text.StringBuilder) 是动态对象，允许增加其所封装字符串中的字符数，但也可以指定该对象可保留的最大字符数的值。 此值称为该对象的容量，切勿将它与当前 [StringBuilder](xref:System.Text.StringBuilder) 所保留的字符串长度相混淆。 例如，可以使用长度为 5 的字符串“Hello”创建 [StringBuilder](xref:System.Text.StringBuilder) 类的新实例，同时可以指定该对象的最大容量为 25。 修改 [StringBuilder](xref:System.Text.StringBuilder) 时，在达到容量之前，该对象不会为自己重新分配空间。 当达到容量时，将自动分配新的空间且容量翻倍。 可以使用重载的构造函数之一来指定 [StringBuilder](xref:System.Text.StringBuilder) 类的容量。 下面的示例指定可以将 `MyStringBuilder` 对象增加到最多 25 个空间。
-
-```csharp
-StringBuilder MyStringBuilder = new StringBuilder("Hello World!", 25);
-```
-
-```vb
-Dim MyStringBuilder As New StringBuilder("Hello World!", 25) 
-```
-
-另外，可以使用读/写 [Capacity](xref:System.Text.StringBuilder.Capacity) 属性来设置对象的最大长度。 下面的示例使用 [Capacity](xref:System.Text.StringBuilder.Capacity) 属性来定义对象的最大长度。
-
-```csharp
-MyStringBuilder.Capacity = 25;
-```
-
-```vb
-MyStringBuilder.Capacity = 25
-```
-
-[EnsureCapacity](xref:System.Text.StringBuilder.EnsureCapacity(System.Int32)) 方法可用来检查当前 [StringBuilder](xref:System.Text.StringBuilder) 的容量。 如果容量大于传递的值，则不进行任何更改；但是，如果容量小于传递的值，则会更改当前的容量以使其与传递的值匹配。
-
-也可以查看或设置 [Length](xref:System.Text.StringBuilder.Length) 属性。 如果将 [Length](xref:System.Text.StringBuilder.Length) 属性设置为大于 [Capacity](xref:System.Text.StringBuilder.Capacity) 属性的值，则自动将 [Capacity](xref:System.Text.StringBuilder.Capacity) 属性更改为与 [Length](xref:System.Text.StringBuilder.Length) 属性相同的值。 如果将 [Length](xref:System.Text.StringBuilder.Length) 属性设置为小于当前 [StringBuilder](xref:System.Text.StringBuilder) 对象内的字符串长度的值，则会缩短该字符串。
-
-## <a name="modifying-the-stringbuilder-string"></a>修改 StringBuilder 字符串
-
-下表列出了可用于修改 [StringBuilder](xref:System.Text.StringBuilder) 内容的方法。
-
-方法名称 | 使用
------------ | ---
-[StringBuilder.Append](xref:System.Text.StringBuilder.Append(System.Char)) | 将信息追加到当前 [StringBuilder](xref:System.Text.StringBuilder) 的末尾。
-[StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) | 用带格式文本替换字符串中传递的格式说明符。
-[StringBuilder.Insert](xref:System.Text.StringBuilder.Insert(System.Int32,System.Char)) | 将字符串或对象插入到当前 [StringBuilder](xref:System.Text.StringBuilder) 的指定索引中。
-[StringBuilder.Remove](xref:System.Text.StringBuilder.Remove(System.Int32,System.Int32)) | 从当前 [StringBuilder](xref:System.Text.StringBuilder) 中删除指定数量的字符。
-[StringBuilder.Replace](xref:System.Text.StringBuilder.Replace(System.Char,System.Char)) | 替换指定索引处的指定字符。
-
-### <a name="append"></a>追加
-
-[StringBuilder.Append](xref:System.Text.StringBuilder.Append(System.Char)) 方法可用来将文本或对象的字符串表示形式添加到由当前 [StringBuilder](xref:System.Text.StringBuilder) 表示的字符串的末尾。 下面的示例将 [StringBuilder](xref:System.Text.StringBuilder) 对象初始化为“Hello World”，然后将一些文本追加到该对象的末尾。 将根据需要自动分配空间。
-
-```csharp
-StringBuilder MyStringBuilder = new StringBuilder("Hello World!");
-MyStringBuilder.Append(" What a beautiful day.");
-Console.WriteLine(MyStringBuilder);
-// The example displays the following output:
-//       Hello World! What a beautiful day.
-```
-
-```vb
-Dim MyStringBuilder As New StringBuilder("Hello World!")
-MyStringBuilder.Append(" What a beautiful day.")
-Console.WriteLine(MyStringBuilder)
-' The example displays the following output:
-'       Hello World! What a beautiful day.
-```
-
-### <a name="appendformat"></a>AppendFormat
-
-[StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) 方法将文本添加到 [StringBuilder](xref:System.Text.StringBuilder) 对象的末尾。 该方法通过调用要设置格式的对象的 [IFormattable](xref:System.IFormattable) 实现来支持复合格式设置功能（有关详细信息，请参阅[复合格式设置](composite-format.md)）。 因此，它接受数字、日期和时间以及枚举值的标准格式字符串、数字以及日期和时间值的自定义格式字符串，以及为自定义类型定义的格式字符串。 （有关格式化的信息，请参阅[格式设置类型](formatting-types.md)。）可以使用此方法来自定义变量的格式并将这些值追加到 [StringBuilder](xref:System.Text.StringBuilder)。 下面的示例使用 AppendFormat 方法将设置为货币值格式的整数值放到 [StringBuilder](xref:System.Text.StringBuilder) 对象的末尾。
-
-```csharp
-int MyInt = 25; 
-StringBuilder MyStringBuilder = new StringBuilder("Your total is ");
-MyStringBuilder.AppendFormat("{0:C} ", MyInt);
-Console.WriteLine(MyStringBuilder);
-// The example displays the following output:
-//       Your total is $25.00
-```
-
-```vb
-Dim MyInt As Integer = 25
-Dim MyStringBuilder As New StringBuilder("Your total is ")
-MyStringBuilder.AppendFormat("{0:C} ", MyInt)
-Console.WriteLine(MyStringBuilder)
-' The example displays the following output:
-'     Your total is $25.00 
-```
-
-### <a name="insert"></a>Insert
-
-[StringBuilder.Insert](xref:System.Text.StringBuilder.Insert(System.Int32,System.Char)) 方法将字符串或对象添加到当前 [StringBuilder](xref:System.Text.StringBuilder) 对象中的指定位置。 下面的示例使用此方法将单词插入到 [StringBuilder](xref:System.Text.StringBuilder) 对象的第六个位置。
-
-```csharp
-StringBuilder MyStringBuilder = new StringBuilder("Hello World!");
-MyStringBuilder.Insert(6,"Beautiful ");
-Console.WriteLine(MyStringBuilder);
-// The example displays the following output:
-//       Hello Beautiful World!
-```
-
-```vb
-Dim MyStringBuilder As New StringBuilder("Hello World!")
-MyStringBuilder.Insert(6, "Beautiful ")
-Console.WriteLine(MyStringBuilder)
-' The example displays the following output:
-'      Hello Beautiful World!
-```
-
-### <a name="remove"></a>删除
-
-可以使用 [StringBuilder.Remove](xref:System.Text.StringBuilder.Remove(System.Int32,System.Int32)) 方法从当前 [StringBuilder](xref:System.Text.StringBuilder) 对象中删除指定数量的字符，删除过程从指定的从零开始的索引处开始。 下面的示例使用 [Remove](xref:System.Text.StringBuilder.Remove(System.Int32,System.Int32)) 方法缩短 [StringBuilder](xref:System.Text.StringBuilder) 对象。
-
-```csharp
-StringBuilder MyStringBuilder = new StringBuilder("Hello World!");
-MyStringBuilder.Remove(5,7);
-Console.WriteLine(MyStringBuilder);
-// The example displays the following output:
-//       Hello
-```
-
-```vb
-Dim MyStringBuilder As New StringBuilder("Hello World!")
-MyStringBuilder.Remove(5, 7)
-Console.WriteLine(MyStringBuilder)
-' The example displays the following output:
-'       Hello
-```
-
-### <a name="replace"></a>替换
-
-[StringBuilder.Replace](xref:System.Text.StringBuilder.Replace(System.Char,System.Char)) | 替换指定索引处的指定字符。
-方法可用于将 [StringBuilder](xref:System.Text.StringBuilder) 对象内的字符替换为其他指定字符。 以下示例使用 [Replace](xref:System.Text.StringBuilder.Replace(System.Char,System.Char)) | 替换指定索引处的指定字符。
-方法在 [StringBuilder](xref:System.Text.StringBuilder) 对象中搜索感叹号字符 (!) 的所有实例，并将其替换为问号字符 (?)。
- 
- ```csharp
- StringBuilder MyStringBuilder = new StringBuilder("Hello World!");
-MyStringBuilder.Replace('!', '?');
-Console.WriteLine(MyStringBuilder);
-// The example displays the following output:
-//       Hello World?
-```
-
-```vb
-Dim MyStringBuilder As New StringBuilder("Hello World!")
-MyStringBuilder.Replace("!"c, "?"c)
-Console.WriteLine(MyStringBuilder)
-' The example displays the following output:
-'       Hello World?
-```
-
-## <a name="converting-a-stringbuilder-object-to-a-string"></a>将 StringBuilder 对象转换为字符串
-
-必须先将 [StringBuilder](xref:System.Text.StringBuilder) 对象转换为 [String](xref:System.String) 对象，然后才能将 [StringBuilder](xref:System.Text.StringBuilder) 对象表示的字符串传递给具有 [String](xref:System.String) 参数的方法，或在用户界面中显示它。 通过调用 [StringBuilder.ToString](xref:System.Text.StringBuilder.ToString) 方法来执行此转换。 下面的示例调用多种 [StringBuilder](xref:System.Text.StringBuilder) 方法，然后调用 [StringBuilder.ToString](xref:System.Text.StringBuilder.ToString) 方法来显示字符串。
-
-```csharp
-using System;
-using System.Text;
-
-public class Example
-{
-   public static void Main()
-   {
-      StringBuilder sb = new StringBuilder();
-      bool flag = true;
-      string[] spellings = { "recieve", "receeve", "receive" };
-      sb.AppendFormat("Which of the following spellings is {0}:", flag);
-      sb.AppendLine();
-      for (int ctr = 0; ctr <= spellings.GetUpperBound(0); ctr++) {
-         sb.AppendFormat("   {0}. {1}", ctr, spellings[ctr]);
-         sb.AppendLine();
-      }
-      sb.AppendLine();
-      Console.WriteLine(sb.ToString());
-   }
-}
-// The example displays the following output:
-//       Which of the following spellings is True:
-//          0. recieve
-//          1. receeve
-//          2. receive
-```
-
-```vb
-Imports System.Text
-
-Module Example
-   Public Sub Main()
-      Dim sb As New StringBuilder()
-      Dim flag As Boolean = True
-      Dim spellings() As String = { "recieve", "receeve", "receive" }
-      sb.AppendFormat("Which of the following spellings is {0}:", flag)
-      sb.AppendLine()
-      For ctr As Integer = 0 To spellings.GetUpperBound(0)
-         sb.AppendFormat("   {0}. {1}", ctr, spellings(ctr))
-         sb.AppendLine()
-      Next
-      sb.AppendLine()
-      Console.WriteLine(sb.ToString())
-   End Sub
-End Module
-' The example displays the following output:
-'       Which of the following spellings is True:
-'          0. recieve
-'          1. receeve
-'          2. receive
-```
-
-## <a name="see-also"></a>另请参阅
-
-[System.Text.StringBuilder](xref:System.Text.StringBuilder)
-
-[基本字符串操作](basic-string-operations.md)
-
-[格式设置类型](formatting-types.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
-
+- <xref:System.Text.StringBuilder?displayProperty=nameWithType>
+- [基本字符串操作](basic-string-operations.md)
+- [格式设置类型](formatting-types.md)

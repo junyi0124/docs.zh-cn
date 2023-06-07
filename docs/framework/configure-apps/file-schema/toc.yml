@@ -1,0 +1,55 @@
+- name: 配置文件架构
+  href: index.md
+  items:
+    - name: <configuration> 元素
+      href: configuration-element.md
+    - name: <assemblyBinding> 元素
+      href: assemblybinding-element-for-configuration.md
+    - name: <linkedConfiguration> 元素
+      href: linkedconfiguration-element.md
+    - name: <configSections> 元素
+      href: configsections-element-for-configuration.md
+    - name: <sectionGroup> 元素
+      href: sectiongroup-element-for-configsections.md
+    - name: SingleTagSectionHandler 的自定义元素
+      href: custom-element-1.md
+    - name: NameValueSectionHandler 和 DictionarySectionHandler 的自定义元素
+      href: custom-element-2.md
+    - name: <add> 元素
+      href: add-element-for-custom-2.md
+    - name: NameValueSectionHandler 和 DictionarySectionHandler 的 <clear> 元素
+      href: clear-element-for-custom-2.md
+    - name: NameValueSectionHandler 和 DictionarySectionHandler 的 <remove> 元素
+      href: remove-element-for-custom-2.md
+    - name: <section> 元素
+      href: section-element.md
+    - name: 应用设置架构
+      href: appsettings/index.md
+    - name: 应用程序设置架构
+      href: application-settings-schema.md
+    - name: 编译器和语言提供程序设置架构
+      href: compiler/index.md
+    - name: 配置节架构
+      href: configuration-sections-schema.md
+    - name: 密码设置架构
+      href: cryptography/index.md
+    - name: 网络设置架构
+      href: network/index.md
+    - name: 运行时设置架构
+      href: runtime/index.md
+    - name: 启动设置架构
+      href: startup/index.md
+    - name: 跟踪和调试设置架构
+      href: trace-debug/index.md
+    - name: Web 设置架构
+      href: web/index.md
+    - name: WCF 配置架构
+      href: wcf/index.md
+    - name: WCF 指令语法
+      href: wcf-directive/index.md
+    - name: WIF 配置架构
+      href: windows-identity-foundation/index.md
+    - name: Windows 窗体配置节
+      href: winforms/index.md
+    - name: Windows Workflow Foundation 配置架构
+      href: windows-workflow-foundation/index.md

@@ -1,0 +1,49 @@
+- name: 应用程序域和程序集
+  href: index.md
+  items:
+    - name: 程序集位置
+      href: assembly-placement.md
+    - name: 全局程序集缓存
+      href: gac.md
+    - name: 使用程序集和全局程序集缓存
+      href: working-with-assemblies-and-the-gac.md
+      items:
+        - name: 如何：查看全局程序集缓存的内容
+          href: how-to-view-the-contents-of-the-gac.md
+        - name: 如何：将程序集安装到全局程序集缓存
+          href: install-assembly-into-gac.md
+        - name: 如何：从全局程序集缓存中删除程序集
+          href: how-to-remove-an-assembly-from-the-gac.md
+        - name: 在服务组件中使用全局程序集缓存
+          href: use-serviced-components-with-the-gac.md
+    - name: 应用程序域
+      href: application-domains.md
+    - name: 应用程序域和程序集帮助主题
+      href: application-domains-and-assemblies-how-to-topics.md
+    - name: 如何：生成单文件程序集
+      href: build-single-file-assembly.md
+    - name: 多文件程序集
+      href: multifile-assemblies.md
+    - name: 如何：生成多文件程序集
+      href: build-multifile-assembly.md
+    - name: 如何：与其他应用程序共享程序集
+      href: how-to-share-an-assembly-with-other-applications.md
+    - name: 使用应用程序域
+      href: use.md
+      items:
+        - name: 如何：创建应用程序域
+          href: how-to-create-an-application-domain.md
+        - name: 如何：卸载应用程序域
+          href: how-to-unload-an-application-domain.md
+        - name: 如何：配置应用程序域
+          href: how-to-configure-an-application-domain.md
+        - name: 从应用程序域中检索安装信息
+          href: retrieve-setup-information.md
+        - name: 如何：将程序集加载到应用程序域中
+          href: how-to-load-assemblies-into-an-application-domain.md
+        - name: 卷影复制程序集
+          href: shadow-copy-assemblies.md
+        - name: 如何：接收第一机会异常通知
+          href: how-to-receive-first-chance-exception-notifications.md
+    - name: 在完全信任环境中运行 Intranet 应用程序
+      href: running-intranet-applications-in-full-trust.md

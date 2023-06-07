@@ -1,0 +1,99 @@
+- name: 网络设置架构
+  href: index.md
+  items:
+    - name: <system.Net> 元素（网络设置）
+      href: system-net-element-network-settings.md
+      items:
+        - name: <authenticationModules> 元素
+          href: authenticationmodules-element-network-settings.md
+          items:
+            - name: authenticationModules 的 <add> 元素
+              href: add-element-for-authenticationmodules-network-settings.md
+            - name: authenticationModules 的 <remove> 元素
+              href: remove-element-for-authenticationmodules-network-settings.md
+            - name: authenticationModules 的 <clear> 元素
+              href: clear-element-for-authenticationmodules-network-settings.md
+        - name: <connectionManagement> 元素
+          href: connectionmanagement-element-network-settings.md
+          items:
+            - name: connectionManagement 的 <add> 元素
+              href: add-element-for-connectionmanagement-network-settings.md
+            - name: connectionManagement 的 <clear> 元素
+              href: clear-element-for-connectionmanagement-network-settings.md
+            - name: connectionManagement 的 <remove> 元素
+              href: remove-element-for-connectionmanagement-network-settings.md
+        - name: <defaultProxy> 元素
+          href: defaultproxy-element-network-settings.md
+          items:
+            - name: <bypasslist> 元素
+              href: bypasslist-element-network-settings.md
+              items:
+                - name: bypasslist 的 <add> 元素
+                  href: add-element-for-bypasslist-network-settings.md
+                - name: bypasslist 的 <clear> 元素
+                  href: clear-element-for-bypasslist-network-settings.md
+                - name: bypasslist 的 <remove> 元素
+                  href: remove-element-for-bypasslist-network-settings.md
+            - name: <module> 元素
+              href: module-element-network-settings.md
+            - name: <proxy> 元素
+              href: proxy-element-network-settings.md
+        - name: <mailSettings> 元素
+          href: mailsettings-element-network-settings.md
+          items:
+            - name: <smtp> 元素
+              href: smtp-element-network-settings.md
+              items:
+                - name: <specifiedPickupDirectory> 元素
+                  href: specifiedpickupdirectory-element-network-settings.md
+                - name: <network> 元素
+                  href: network-element-network-settings.md
+        - name: <requestCaching> 元素
+          href: requestcaching-element-network-settings.md
+          items:
+            - name: <defaultHttpCachePolicy> 元素
+              href: defaulthttpcachepolicy-element-network-settings.md
+            - name: <defaultFtpCachePolicy> 元素
+              href: defaultftpcachepolicy-element-network-settings.md
+        - name: <settings> 元素
+          href: settings-element-network-settings.md
+          items:
+            - name: <httpWebRequest> 元素
+              href: httpwebrequest-element-network-settings.md
+            - name: <ipv6> 元素
+              href: ipv6-element-network-settings.md
+            - name: <performanceCounter> 元素
+              href: performancecounter-element-network-settings.md
+            - name: <servicePointManager> 元素
+              href: servicepointmanager-element-network-settings.md
+            - name: <socket> 元素
+              href: socket-element-network-settings.md
+            - name: <webProxyScript> 元素
+              href: webproxyscript-element-network-settings.md
+            - name: <httpListener> 元素
+              href: httplistener-element-network-settings.md
+        - name: <webRequestModules> 元素
+          href: webrequestmodules-element-network-settings.md
+          items:
+            - name: webRequestModules 的 <add> 元素
+              href: add-element-for-webrequestmodules-network-settings.md
+            - name: webRequestModules 的 <remove> 元素
+              href: remove-element-for-webrequestmodules-network-settings.md
+            - name: webRequestModules 的 <clear> 元素
+              href: clear-element-for-webrequestmodules-network-settings.md
+    - name: <uri> 元素（Uri 设置）
+      href: uri-element-uri-settings.md
+      items:
+        - name: <idn> 元素
+          href: idn-element-uri-settings.md
+        - name: <iriParsing> 元素
+          href: iriparsing-element-uri-settings.md
+        - name: <schemeSettings> 元素
+          href: schemesettings-element-uri-settings.md
+          items:
+            - name: schemeSettings 的 <add> 元素
+              href: add-element-for-schemesettings-uri-settings.md
+            - name: schemeSettings 的 <clear> 元素
+              href: clear-element-for-schemesettings-uri-settings.md
+            - name: schemeSettings 的 <remove> 元素
+              href: remove-element-for-schemesettings-uri-settings.md

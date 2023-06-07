@@ -1,0 +1,9 @@
+- name: 委托
+  href: index.md
+  items:
+    - name: 如何：调用委托方法
+      href: how-to-invoke-a-delegate-method.md
+    - name: 如何：将过程传递给另一过程
+      href: how-to-pass-procedures-to-another-procedure.md
+    - name: 宽松委托转换
+      href: relaxed-delegate-conversion.md

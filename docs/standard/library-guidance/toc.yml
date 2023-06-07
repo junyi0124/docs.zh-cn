@@ -1,0 +1,23 @@
+- name: 开放源代码库指南
+  href: index.md
+  items:
+    - name: 入门
+      href: get-started.md
+    - name: 跨平台定位
+      href: cross-platform-targeting.md
+    - name: 强命名
+      href: strong-naming.md
+    - name: NuGet
+      href: nuget.md
+      items:
+        - name: 依赖项
+          href: dependencies.md
+        - name: 源链接
+          href: sourcelink.md
+        - name: 发布
+          href: publish-nuget-package.md
+    - name: 版本管理
+      href: versioning.md
+      items:
+        - name: 重大更改
+          href: breaking-changes.md

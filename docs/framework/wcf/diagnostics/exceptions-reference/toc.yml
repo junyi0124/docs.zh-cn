@@ -1,0 +1,51 @@
+- name: 关于异常的参考信息
+  href: index.md
+  items:
+    - name: COM+ 集成
+      href: com-integration.md
+    - name: Configuration
+      href: configuration.md
+    - name: 核心通信：通道框架
+      href: core-communications-channel-framework.md
+    - name: 核心通信：连接框架
+      href: core-communications-connection-framework.md
+    - name: 核心通信：HTTP/HTTPS 传输通道
+      href: core-communications-http-https-transport-channels.md
+    - name: 核心通信：内部双工传输通道
+      href: core-communications-internal-duplex-transport-channels.md
+    - name: 核心通信：命名管道传输通道
+      href: core-communications-named-pipe-transport-channels.md
+    - name: 核心通信：TCP 传输通道
+      href: core-communications-tcp-transport-channels.md
+    - name: 核心通信：传输框架
+      href: core-communications-transport-framework.md
+    - name: 核心通信：工具
+      href: core-communications-utilities.md
+    - name: 核心通信：Webhost 支持
+      href: core-communications-webhost-support.md
+    - name: 宿主
+      href: hosting-exceptions.md
+    - name: IdentityModel
+      href: identitymodel-exceptions.md
+    - name: MSMQ 集成传输
+      href: msmq-integration-transport.md
+    - name: MSMQ 传输
+      href: msmq-transport.md
+    - name: 对等通道
+      href: peer-channel.md
+    - name: 可靠消息传递
+      href: reliable-messaging.md
+    - name: 安全异常
+      href: security-exceptions.md
+    - name: 服务框架
+      href: service-framework.md
+    - name: 服务框架数据
+      href: service-framework-data.md
+    - name: 服务框架元数据
+      href: service-framework-metadata.md
+    - name: 事务
+      href: transaction-exceptions.md
+    - name: 事务格式化程序
+      href: transaction-formatter.md
+    - name: 工具
+      href: tools.md

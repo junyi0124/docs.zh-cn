@@ -1,0 +1,10 @@
+- name: 启动设置架构
+  href: index.md
+  items:
+    - name: <startup> 元素
+      href: startup-element.md
+      items:
+        - name: <requiredRuntime> 元素
+          href: requiredruntime-element.md
+        - name: <supportedRuntime> 元素
+          href: supportedruntime-element.md

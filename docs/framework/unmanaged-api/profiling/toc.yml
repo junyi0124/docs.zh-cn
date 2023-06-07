@@ -1,0 +1,612 @@
+- name: 分析
+  href: index.md
+  items:
+    - name: 分析概述
+      href: profiling-overview.md
+    - name: 设置分析环境
+      href: setting-up-a-profiling-environment.md
+    - name: CLR 探查器和 Windows 应用商店应用
+      href: clr-profilers-and-windows-store-apps.md
+    - name: CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT
+      href: corprof-e-unsupported-call-sequence-hresult.md
+    - name: 分析接口
+      href: profiling-interfaces.md
+      items:
+        - name: ICLRProfiling 接口
+          href: iclrprofiling-interface.md
+          items:
+            - name: AttachProfiler 方法
+              href: iclrprofiling-attachprofiler-method.md
+        - name: ICorProfilerAssemblyReferenceProvider 方法
+          href: icorprofilerassemblyreferenceprovider-interface.md
+          items:
+            - name: AddAssemblyReference 方法
+              href: icorprofilerassemblyreferenceprovider-addassemblyreference-method.md
+        - name: ICorProfilerCallback 接口
+          href: icorprofilercallback-interface.md
+          items:
+            - name: AppDomainCreationFinished 方法
+              href: icorprofilercallback-appdomaincreationfinished-method.md
+            - name: AppDomainCreationStarted 方法
+              href: icorprofilercallback-appdomaincreationstarted-method.md
+            - name: AppDomainShutdownFinished 方法
+              href: icorprofilercallback-appdomainshutdownfinished-method.md
+            - name: AppDomainShutdownStarted 方法
+              href: icorprofilercallback-appdomainshutdownstarted-method.md
+            - name: AssemblyLoadFinished 方法
+              href: icorprofilercallback-assemblyloadfinished-method.md
+            - name: AssemblyLoadStarted 方法
+              href: icorprofilercallback-assemblyloadstarted-method.md
+            - name: AssemblyUnloadFinished 方法
+              href: icorprofilercallback-assemblyunloadfinished-method.md
+            - name: AssemblyUnloadStarted 方法
+              href: icorprofilercallback-assemblyunloadstarted-method.md
+            - name: ClassLoadFinished 方法
+              href: icorprofilercallback-classloadfinished-method.md
+            - name: ClassLoadStarted 方法
+              href: icorprofilercallback-classloadstarted-method.md
+            - name: ClassUnloadFinished 方法
+              href: icorprofilercallback-classunloadfinished-method.md
+            - name: ClassUnloadStarted 方法
+              href: icorprofilercallback-classunloadstarted-method.md
+            - name: COMClassicVTableCreated 方法
+              href: icorprofilercallback-comclassicvtablecreated-method.md
+            - name: COMClassicVTableDestroyed 方法
+              href: icorprofilercallback-comclassicvtabledestroyed-method.md
+            - name: ExceptionCatcherEnter 方法
+              href: icorprofilercallback-exceptioncatcherenter-method.md
+            - name: ExceptionCatcherLeave 方法
+              href: icorprofilercallback-exceptioncatcherleave-method.md
+            - name: ExceptionCLRCatcherExecute 方法
+              href: icorprofilercallback-exceptionclrcatcherexecute-method.md
+            - name: ExceptionCLRCatcherFound 方法
+              href: icorprofilercallback-exceptionclrcatcherfound-method.md
+            - name: ExceptionOSHandlerEnter 方法
+              href: icorprofilercallback-exceptionoshandlerenter-method.md
+            - name: ExceptionOSHandlerLeave 方法
+              href: icorprofilercallback-exceptionoshandlerleave-method.md
+            - name: ExceptionSearchCatcherFound 方法
+              href: icorprofilercallback-exceptionsearchcatcherfound-method.md
+            - name: ExceptionSearchFilterEnter 方法
+              href: icorprofilercallback-exceptionsearchfilterenter-method.md
+            - name: ExceptionSearchFilterLeave 方法
+              href: icorprofilercallback-exceptionsearchfilterleave-method.md
+            - name: ExceptionSearchFunctionEnter 方法
+              href: icorprofilercallback-exceptionsearchfunctionenter-method.md
+            - name: ExceptionSearchFunctionLeave 方法
+              href: icorprofilercallback-exceptionsearchfunctionleave-method.md
+            - name: ExceptionThrown 方法
+              href: icorprofilercallback-exceptionthrown-method.md
+            - name: ExceptionUnwindFinallyEnter 方法
+              href: icorprofilercallback-exceptionunwindfinallyenter-method.md
+            - name: ExceptionUnwindFinallyLeave 方法
+              href: icorprofilercallback-exceptionunwindfinallyleave-method.md
+            - name: ExceptionUnwindFunctionEnter 方法
+              href: icorprofilercallback-exceptionunwindfunctionenter-method.md
+            - name: ExceptionUnwindFunctionLeave 方法
+              href: icorprofilercallback-exceptionunwindfunctionleave-method.md
+            - name: FunctionUnloadStarted 方法
+              href: icorprofilercallback-functionunloadstarted-method.md
+            - name: Initialize 方法
+              href: icorprofilercallback-initialize-method.md
+            - name: JITCachedFunctionSearchFinished 方法
+              href: icorprofilercallback-jitcachedfunctionsearchfinished-method.md
+            - name: JITCachedFunctionSearchStarted 方法
+              href: icorprofilercallback-jitcachedfunctionsearchstarted-method.md
+            - name: JITCompilationFinished 方法
+              href: icorprofilercallback-jitcompilationfinished-method.md
+            - name: JITCompilationStarted 方法
+              href: icorprofilercallback-jitcompilationstarted-method.md
+            - name: JITFunctionPitched 方法
+              href: icorprofilercallback-jitfunctionpitched-method.md
+            - name: JITInlining 方法
+              href: icorprofilercallback-jitinlining-method.md
+            - name: ManagedToUnmanagedTransition 方法
+              href: icorprofilercallback-managedtounmanagedtransition-method.md
+            - name: ModuleAttachedToAssembly 方法
+              href: icorprofilercallback-moduleattachedtoassembly-method.md
+            - name: ModuleLoadFinished 方法
+              href: icorprofilercallback-moduleloadfinished-method.md
+            - name: ModuleLoadStarted 方法
+              href: icorprofilercallback-moduleloadstarted-method.md
+            - name: ModuleUnloadFinished 方法
+              href: icorprofilercallback-moduleunloadfinished-method.md
+            - name: ModuleUnloadStarted 方法
+              href: icorprofilercallback-moduleunloadstarted-method.md
+            - name: MovedReferences 方法
+              href: icorprofilercallback-movedreferences-method.md
+            - name: ObjectAllocated 方法
+              href: icorprofilercallback-objectallocated-method.md
+            - name: ObjectReferences 方法
+              href: icorprofilercallback-objectreferences-method.md
+            - name: ObjectsAllocatedByClass 方法
+              href: icorprofilercallback-objectsallocatedbyclass-method.md
+            - name: RemotingClientInvocationFinished 方法
+              href: icorprofilercallback-remotingclientinvocationfinished-method.md
+            - name: RemotingClientInvocationStarted 方法
+              href: icorprofilercallback-remotingclientinvocationstarted-method.md
+            - name: RemotingClientReceivingReply 方法
+              href: icorprofilercallback-remotingclientreceivingreply-method.md
+            - name: RemotingClientSendingMessage 方法
+              href: icorprofilercallback-remotingclientsendingmessage-method.md
+            - name: RemotingServerInvocationReturned 方法
+              href: icorprofilercallback-remotingserverinvocationreturned-method.md
+            - name: RemotingServerInvocationStarted 方法
+              href: icorprofilercallback-remotingserverinvocationstarted-method.md
+            - name: RemotingServerReceivingMessage 方法
+              href: icorprofilercallback-remotingserverreceivingmessage-method.md
+            - name: RemotingServerSendingReply 方法
+              href: icorprofilercallback-remotingserversendingreply-method.md
+            - name: RootReferences 方法
+              href: icorprofilercallback-rootreferences-method.md
+            - name: RuntimeResumeFinished 方法
+              href: icorprofilercallback-runtimeresumefinished-method.md
+            - name: RuntimeResumeStarted 方法
+              href: icorprofilercallback-runtimeresumestarted-method.md
+            - name: RuntimeSuspendAborted 方法
+              href: icorprofilercallback-runtimesuspendaborted-method.md
+            - name: RuntimeSuspendFinished 方法
+              href: icorprofilercallback-runtimesuspendfinished-method.md
+            - name: RuntimeSuspendStarted 方法
+              href: icorprofilercallback-runtimesuspendstarted-method.md
+            - name: RuntimeThreadResumed 方法
+              href: icorprofilercallback-runtimethreadresumed-method.md
+            - name: RuntimeThreadSuspended 方法
+              href: icorprofilercallback-runtimethreadsuspended-method.md
+            - name: Shutdown 方法
+              href: icorprofilercallback-shutdown-method.md
+            - name: ThreadAssignedToOSThread 方法
+              href: icorprofilercallback-threadassignedtoosthread-method.md
+            - name: ThreadCreated 方法
+              href: icorprofilercallback-threadcreated-method.md
+            - name: ThreadDestroyed 方法
+              href: icorprofilercallback-threaddestroyed-method.md
+            - name: UnmanagedToManagedTransition 方法
+              href: icorprofilercallback-unmanagedtomanagedtransition-method.md
+        - name: ICorProfilerCallback2 接口
+          href: icorprofilercallback2-interface.md
+          items:
+            - name: FinalizeableObjectQueued 方法
+              href: icorprofilercallback2-finalizeableobjectqueued-method.md
+            - name: GarbageCollectionFinished 方法
+              href: icorprofilercallback2-garbagecollectionfinished-method.md
+            - name: GarbageCollectionStarted 方法
+              href: icorprofilercallback2-garbagecollectionstarted-method.md
+            - name: HandleCreated 方法
+              href: icorprofilercallback2-handlecreated-method.md
+            - name: HandleDestroyed 方法
+              href: icorprofilercallback2-handledestroyed-method.md
+            - name: RootReferences2 方法
+              href: icorprofilercallback2-rootreferences2-method.md
+            - name: SurvivingReferences 方法
+              href: icorprofilercallback2-survivingreferences-method.md
+            - name: ThreadNameChanged 方法
+              href: icorprofilercallback2-threadnamechanged-method.md
+        - name: ICorProfilerCallback3 接口
+          href: icorprofilercallback3-interface.md
+          items:
+            - name: InitializeForAttach 方法
+              href: icorprofilercallback3-initializeforattach-method.md
+            - name: ProfilerAttachComplete 方法
+              href: icorprofilercallback3-profilerattachcomplete-method.md
+            - name: ProfilerDetachSucceeded 方法
+              href: icorprofilercallback3-profilerdetachsucceeded-method.md
+        - name: ICorProfilerCallback4 接口
+          href: icorprofilercallback4-interface.md
+          items:
+            - name: GetReJITParameters 方法
+              href: icorprofilercallback4-getrejitparameters-method.md
+            - name: MovedReferences2 方法
+              href: icorprofilercallback4-movedreferences2-method.md
+            - name: ReJITCompilationFinished 方法
+              href: icorprofilercallback4-rejitcompilationfinished-method.md
+            - name: ReJITCompilationStarted 方法
+              href: icorprofilercallback4-rejitcompilationstarted-method.md
+            - name: ReJITError 方法
+              href: icorprofilercallback4-rejiterror-method.md
+            - name: SurvivingReferences2 方法
+              href: icorprofilercallback4-survivingreferences2-method.md
+        - name: ICorProfilerCallback5 接口
+          href: icorprofilercallback5-interface.md
+          items:
+            - name: ConditionalWeakTableElementReferences 方法
+              href: icorprofilercallback5-conditionalweaktableelementreferences-method.md
+        - name: ICorProfilerCallback6 接口
+          href: icorprofilercallback6-interface.md
+          items:
+            - name: GetAssemblyReferences 方法
+              href: icorprofilercallback6-getassemblyreferences-method.md
+        - name: ICorProfilerCallback7 接口
+          href: icorprofilercallback7-interface.md
+          items:
+            - name: ModuleInMemorySymbolsUpdated 方法
+              href: icorprofilercallback7-moduleinmemorysymbolsupdated-method.md
+        - name: ICorProfilerFunctionControl 接口
+          href: icorprofilerfunctioncontrol-interface.md
+          items:
+            - name: SetCodegenFlags 方法
+              href: icorprofilerfunctioncontrol-setcodegenflags-method.md
+            - name: SetILFunctionBody 方法
+              href: icorprofilerfunctioncontrol-setilfunctionbody-method.md
+            - name: SetILInstrumentedCodeMap 方法
+              href: icorprofilerfunctioncontrol-setilinstrumentedcodemap-method.md
+        - name: ICorProfilerCallback8 接口
+          href: icorprofilercallback8-interface.md
+          items:
+            - name: DynamicMethodJITCompilationStarted 方法
+              href: icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md
+            - name: DynamicMethodJITCompilationFinished 方法
+              href: icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md
+        - name: ICorProfilerCallback9 接口
+          href: icorprofilercallback9-interface.md
+          items:
+            - name: DynamicMethodUnloaded 方法
+              href: icorprofilercallback9-dynamicmethodunloaded-method.md
+        - name: ICorProfilerFunctionEnum 接口
+          href: icorprofilerfunctionenum-interface.md
+          items:
+            - name: Clone 方法
+              href: icorprofilerfunctionenum-clone-method.md
+            - name: GetCount 方法
+              href: icorprofilerfunctionenum-getcount-method.md
+            - name: Next 方法
+              href: icorprofilerfunctionenum-next-method.md
+            - name: Reset 方法
+              href: icorprofilerfunctionenum-reset-method.md
+            - name: Skip 方法
+              href: icorprofilerfunctionenum-skip-method.md
+        - name: ICorProfilerInfo 接口
+          href: icorprofilerinfo-interface.md
+          items:
+            - name: BeginInprocDebugging 方法
+              href: icorprofilerinfo-begininprocdebugging-method.md
+            - name: EndInprocDebugging 方法
+              href: icorprofilerinfo-endinprocdebugging-method.md
+            - name: ForceGC 方法
+              href: icorprofilerinfo-forcegc-method.md
+            - name: GetAppDomainInfo 方法
+              href: icorprofilerinfo-getappdomaininfo-method.md
+            - name: GetAssemblyInfo 方法
+              href: icorprofilerinfo-getassemblyinfo-method.md
+            - name: GetClassFromObject 方法
+              href: icorprofilerinfo-getclassfromobject-method.md
+            - name: GetClassFromToken 方法
+              href: icorprofilerinfo-getclassfromtoken-method.md
+            - name: GetClassIDInfo 方法
+              href: icorprofilerinfo-getclassidinfo-method.md
+            - name: GetCodeInfo 方法
+              href: icorprofilerinfo-getcodeinfo-method.md
+            - name: GetCurrentThreadID 方法
+              href: icorprofilerinfo-getcurrentthreadid-method.md
+            - name: GetEventMask 方法
+              href: icorprofilerinfo-geteventmask-method.md
+            - name: GetFunctionFromIP 方法
+              href: icorprofilerinfo-getfunctionfromip-method.md
+            - name: GetFunctionFromToken 方法
+              href: icorprofilerinfo-getfunctionfromtoken-method.md
+            - name: GetFunctionInfo 方法
+              href: icorprofilerinfo-getfunctioninfo-method.md
+            - name: GetHandleFromThread 方法
+              href: icorprofilerinfo-gethandlefromthread-method.md
+            - name: GetILFunctionBody 方法
+              href: icorprofilerinfo-getilfunctionbody-method.md
+            - name: GetILFunctionBodyAllocator 方法
+              href: icorprofilerinfo-getilfunctionbodyallocator-method.md
+            - name: GetILToNativeMapping 方法
+              href: icorprofilerinfo-getiltonativemapping-method.md
+            - name: GetInprocInspectionInterface 方法
+              href: icorprofilerinfo-getinprocinspectioninterface-method.md
+            - name: GetInprocInspectionIThisThread 方法
+              href: icorprofilerinfo-getinprocinspectionithisthread-method.md
+            - name: GetModuleInfo 方法
+              href: icorprofilerinfo-getmoduleinfo-method.md
+            - name: GetModuleMetaData 方法
+              href: icorprofilerinfo-getmodulemetadata-method.md
+            - name: GetObjectSize 方法
+              href: icorprofilerinfo-getobjectsize-method.md
+            - name: GetThreadContext 方法
+              href: icorprofilerinfo-getthreadcontext-method.md
+            - name: GetThreadInfo 方法
+              href: icorprofilerinfo-getthreadinfo-method.md
+            - name: GetTokenAndMetadataFromFunction 方法
+              href: icorprofilerinfo-gettokenandmetadatafromfunction-method.md
+            - name: IsArrayClass 方法
+              href: icorprofilerinfo-isarrayclass-method.md
+            - name: SetEnterLeaveFunctionHooks 方法
+              href: icorprofilerinfo-setenterleavefunctionhooks-method.md
+            - name: SetEventMask 方法
+              href: icorprofilerinfo-seteventmask-method.md
+            - name: SetFunctionIDMapper 方法
+              href: icorprofilerinfo-setfunctionidmapper-method.md
+            - name: SetFunctionReJIT 方法
+              href: icorprofilerinfo-setfunctionrejit-method.md
+            - name: SetILFunctionBody 方法
+              href: icorprofilerinfo-setilfunctionbody-method.md
+            - name: SetILInstrumentedCodeMap 方法
+              href: icorprofilerinfo-setilinstrumentedcodemap-method.md
+        - name: ICorProfilerInfo2 接口
+          href: icorprofilerinfo2-interface.md
+          items:
+            - name: DoStackSnapshot 方法
+              href: icorprofilerinfo2-dostacksnapshot-method.md
+            - name: EnumModuleFrozenObjects 方法
+              href: icorprofilerinfo2-enummodulefrozenobjects-method.md
+            - name: GetAppDomainStaticAddress 方法
+              href: icorprofilerinfo2-getappdomainstaticaddress-method.md
+            - name: GetArrayObjectInfo 方法
+              href: icorprofilerinfo2-getarrayobjectinfo-method.md
+            - name: GetBoxClassLayout 方法
+              href: icorprofilerinfo2-getboxclasslayout-method.md
+            - name: GetClassFromTokenAndTypeArgs 方法
+              href: icorprofilerinfo2-getclassfromtokenandtypeargs-method.md
+            - name: GetClassIDInfo2 方法
+              href: icorprofilerinfo2-getclassidinfo2-method.md
+            - name: GetClassLayout 方法
+              href: icorprofilerinfo2-getclasslayout-method.md
+            - name: GetCodeInfo2 方法
+              href: icorprofilerinfo2-getcodeinfo2-method.md
+            - name: GetContextStaticAddress 方法
+              href: icorprofilerinfo2-getcontextstaticaddress-method.md
+            - name: GetFunctionFromTokenAndTypeArgs 方法
+              href: icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md
+            - name: GetFunctionInfo2 方法
+              href: icorprofilerinfo2-getfunctioninfo2-method.md
+            - name: GetGenerationBounds 方法
+              href: icorprofilerinfo2-getgenerationbounds-method.md
+            - name: GetNotifiedExceptionClauseInfo 方法
+              href: icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md
+            - name: GetObjectGeneration 方法
+              href: icorprofilerinfo2-getobjectgeneration-method.md
+            - name: GetRVAStaticAddress 方法
+              href: icorprofilerinfo2-getrvastaticaddress-method.md
+            - name: GetStaticFieldInfo 方法
+              href: icorprofilerinfo2-getstaticfieldinfo-method.md
+            - name: GetStringLayout 方法
+              href: icorprofilerinfo2-getstringlayout-method.md
+            - name: GetThreadAppDomain 方法
+              href: icorprofilerinfo2-getthreadappdomain-method.md
+            - name: GetThreadStaticAddress 方法
+              href: icorprofilerinfo2-getthreadstaticaddress-method.md
+            - name: SetEnterLeaveFunctionHooks2 方法
+              href: icorprofilerinfo2-setenterleavefunctionhooks2-method.md
+        - name: ICorProfilerInfo3 接口
+          href: icorprofilerinfo3-interface.md
+          items:
+            - name: EnumJITedFunctions 方法
+              href: icorprofilerinfo3-enumjitedfunctions-method.md
+            - name: EnumModules 方法
+              href: icorprofilerinfo3-enummodules-method.md
+            - name: GetAppDomainsContainingModule 方法
+              href: icorprofilerinfo3-getappdomainscontainingmodule-method.md
+            - name: GetFunctionEnter3Info 方法
+              href: icorprofilerinfo3-getfunctionenter3info-method.md
+            - name: GetFunctionLeave3Info 方法
+              href: icorprofilerinfo3-getfunctionleave3info-method.md
+            - name: GetFunctionTailcall3Info 方法
+              href: icorprofilerinfo3-getfunctiontailcall3info-method.md
+            - name: GetModuleInfo2 方法
+              href: icorprofilerinfo3-getmoduleinfo2-method.md
+            - name: GetRuntimeInformation 方法
+              href: icorprofilerinfo3-getruntimeinformation-method.md
+            - name: GetStringLayout2 方法
+              href: icorprofilerinfo3-getstringlayout2-method.md
+            - name: GetThreadStaticAddress2 方法
+              href: icorprofilerinfo3-getthreadstaticaddress2-method.md
+            - name: RequestProfilerDetach 方法
+              href: icorprofilerinfo3-requestprofilerdetach-method.md
+            - name: SetEnterLeaveFunctionHooks3 方法
+              href: icorprofilerinfo3-setenterleavefunctionhooks3-method.md
+            - name: SetEnterLeaveFunctionHooks3WithInfo 方法
+              href: icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md
+            - name: SetFunctionIDMapper2 方法
+              href: icorprofilerinfo3-setfunctionidmapper2-method.md
+        - name: ICorProfilerInfo4 接口
+          href: icorprofilerinfo4-interface.md
+          items:
+            - name: EnumJITedFunctions2 方法
+              href: icorprofilerinfo4-enumjitedfunctions2-method.md
+            - name: EnumThreads 方法
+              href: icorprofilerinfo4-enumthreads-method.md
+            - name: GetCodeInfo3 方法
+              href: icorprofilerinfo4-getcodeinfo3-method.md
+            - name: GetFunctionFromIP2 方法
+              href: icorprofilerinfo4-getfunctionfromip2-method.md
+            - name: GetILToNativeMapping2 方法
+              href: icorprofilerinfo4-getiltonativemapping2-method.md
+            - name: GetObjectSize2 方法
+              href: icorprofilerinfo4-getobjectsize2-method.md
+            - name: GetReJITIDs 方法
+              href: icorprofilerinfo4-getrejitids-method.md
+            - name: InitializeCurrentThread 方法
+              href: icorprofilerinfo4-initializecurrentthread-method.md
+            - name: RequestReJIT 方法
+              href: icorprofilerinfo4-requestrejit-method.md
+            - name: RequestRevert 方法
+              href: icorprofilerinfo4-requestrevert-method.md
+        - name: ICorProfilerInfo5 接口
+          href: icorprofilerinfo5-interface.md
+          items:
+            - name: GetEventMask2 方法
+              href: icorprofilerinfo5-geteventmask2-method.md
+            - name: SetEventMask2 方法
+              href: icorprofilerinfo5-seteventmask2-method.md
+        - name: ICorProfilerInfo6 接口
+          href: icorprofilerinfo6-interface.md
+          items:
+            - name: 'ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod 方法'
+              href: icorprofilerinfo6-enumngenmodulemethodsinliningthismethod-method.md
+        - name: ICorProfilerInfo7 接口
+          href: icorprofilerinfo7-interface.md
+          items:
+            - name: ApplyMetaData 方法
+              href: icorprofilerinfo7-applymetadata-method.md
+            - name: GetInMemorySymbolsLength 方法
+              href: icorprofilerinfo7-getinmemorysymbolslength-method.md
+            - name: ReadInMemorySymbols
+              href: icorprofilerinfo7-readinmemorysymbols.md
+        - name: ICorProfilerInfo8 接口
+          href: icorprofilerinfo8-interface.md
+          items:
+            - name: GetDynamicFunctionInfo 方法
+              href: icorprofilerinfo8-getdynamicfunctioninfo-method.md
+            - name: GetFunctionFromIP3 方法
+              href: icorprofilerinfo8-getfunctionfromip3-method.md
+            - name: IsFunctionDynamic 方法
+              href: icorprofilerinfo8-isfunctiondynamic-method.md
+        - name: ICorProfilerInfo9 接口
+          href: icorprofilerinfo9-interface.md
+          items:
+            - name: GetCodeInfo4 方法
+              href: icorprofilerinfo9-getcodeinfo4-method.md
+            - name: GetILToNativeMapping3 方法
+              href: icorprofilerinfo9-getiltonativemapping3-method.md
+            - name: GetNativeCodeStartAddresses 方法
+              href: icorprofilerinfo9-getnativecodestartaddresses-method.md
+        - name: ICorProfilerInfo10 接口
+          href: icorprofilerinfo10-interface.md
+          items:
+            - name: EnumerateObjectReferences 方法
+              href: icorprofilerinfo10-enumerateobjectreferences-method.md
+            - name: IsFrozenObject 方法
+              href: icorprofilerinfo10-isfrozenobject-method.md
+            - name: GetLOHObjectSizeThreshold 方法
+              href: icorprofilerinfo10-getlohobjectsizethreshold-method.md
+            - name: RequestReJITWithInliners 方法
+              href: icorprofilerinfo10-requestrejitwithinliners-method.md
+            - name: ResumeRuntime 方法
+              href: icorprofilerinfo10-resumeruntime-method.md
+            - name: SuspendRuntime 方法
+              href: icorprofilerinfo10-suspendruntime-method.md
+        - name: ICorProfilerModuleEnum 接口
+          href: icorprofilermoduleenum-interface.md
+          items:
+            - name: Clone 方法
+              href: icorprofilermoduleenum-clone-method.md
+            - name: GetCount 方法
+              href: icorprofilermoduleenum-getcount-method.md
+            - name: Next 方法
+              href: icorprofilermoduleenum-next-method.md
+            - name: Reset 方法
+              href: icorprofilermoduleenum-reset-method.md
+            - name: Skip 方法
+              href: icorprofilermoduleenum-skip-method.md
+        - name: ICorProfilerObjectEnum 接口
+          href: icorprofilerobjectenum-interface.md
+          items:
+            - name: Clone 方法
+              href: icorprofilerobjectenum-clone-method.md
+            - name: GetCount 方法
+              href: icorprofilerobjectenum-getcount-method.md
+            - name: Next 方法
+              href: icorprofilerobjectenum-next-method.md
+            - name: Reset 方法
+              href: icorprofilerobjectenum-reset-method.md
+            - name: Skip 方法
+              href: icorprofilerobjectenum-skip-method.md
+        - name: ICorProfilerThreadEnum 接口
+          href: icorprofilerthreadenum-interface.md
+          items:
+            - name: Clone 方法
+              href: icorprofilerthreadenum-clone-method.md
+            - name: GetCount 方法
+              href: icorprofilerthreadenum-getcount-method.md
+            - name: Next 方法
+              href: icorprofilerthreadenum-next-method.md
+            - name: Reset 方法
+              href: icorprofilerthreadenum-reset-method.md
+            - name: Skip 方法
+              href: icorprofilerthreadenum-skip-method.md
+        - name: IMethodMalloc 接口
+          href: imethodmalloc-interface.md
+          items:
+            - name: Alloc 方法
+              href: imethodmalloc-alloc-method.md
+    - name: 分析全局静态函数
+      href: profiling-global-static-functions.md
+      items:
+        - name: FunctionEnter 函数
+          href: functionenter-function.md
+        - name: FunctionEnter2 函数
+          href: functionenter2-function.md
+        - name: FunctionEnter3 函数
+          href: functionenter3-function.md
+        - name: FunctionEnter3WithInfo 函数
+          href: functionenter3withinfo-function.md
+        - name: FunctionIDMapper 函数
+          href: functionidmapper-function.md
+        - name: FunctionIDMapper2 函数
+          href: functionidmapper2-function.md
+        - name: FunctionLeave 函数
+          href: functionleave-function.md
+        - name: FunctionLeave2 函数
+          href: functionleave2-function.md
+        - name: FunctionLeave3 函数
+          href: functionleave3-function.md
+        - name: FunctionLeave3WithInfo 函数
+          href: functionleave3withinfo-function.md
+        - name: FunctionTailcall 函数
+          href: functiontailcall-function.md
+        - name: FunctionTailcall2 函数
+          href: functiontailcall2-function.md
+        - name: FunctionTailcall3 函数
+          href: functiontailcall3-function.md
+        - name: FunctionTailcall3WithInfo 函数
+          href: functiontailcall3withinfo-function.md
+        - name: StackSnapshotCallback 函数
+          href: stacksnapshotcallback-function.md
+    - name: 分析枚举
+      href: profiling-enumerations.md
+      items:
+        - name: COR_PRF_CLAUSE_TYPE 枚举
+          href: cor-prf-clause-type-enumeration.md
+        - name: COR_PRF_CODEGEN_FLAGS 枚举
+          href: cor-prf-codegen-flags-enumeration.md
+        - name: COR_PRF_FINALIZER_FLAGS 枚举
+          href: cor-prf-finalizer-flags-enumeration.md
+        - name: COR_PRF_GC_GENERATION 枚举
+          href: cor-prf-gc-generation-enumeration.md
+        - name: COR_PRF_GC_REASON 枚举
+          href: cor-prf-gc-reason-enumeration.md
+        - name: COR_PRF_GC_ROOT_FLAGS 枚举
+          href: cor-prf-gc-root-flags-enumeration.md
+        - name: COR_PRF_GC_ROOT_KIND 枚举
+          href: cor-prf-gc-root-kind-enumeration.md
+        - name: COR_PRF_HIGH_MONITOR 枚举
+          href: cor-prf-high-monitor-enumeration.md
+        - name: COR_PRF_JIT_CACHE 枚举
+          href: cor-prf-jit-cache-enumeration.md
+        - name: COR_PRF_MISC 枚举
+          href: cor-prf-misc-enumeration.md
+        - name: COR_PRF_MODULE_FLAGS 枚举
+          href: cor-prf-module-flags-enumeration.md
+        - name: COR_PRF_MONITOR 枚举
+          href: cor-prf-monitor-enumeration.md
+        - name: COR_PRF_REJIT_FLAGS 枚举
+          href: cor-prf-rejit-flags-enumeration.md
+        - name: COR_PRF_RUNTIME_TYPE 枚举
+          href: cor-prf-runtime-type-enumeration.md
+        - name: COR_PRF_SNAPSHOT_INFO 枚举
+          href: cor-prf-snapshot-info-enumeration.md
+        - name: COR_PRF_STATIC_TYPE 枚举
+          href: cor-prf-static-type-enumeration.md
+        - name: COR_PRF_SUSPEND_REASON 枚举
+          href: cor-prf-suspend-reason-enumeration.md
+        - name: COR_PRF_TRANSITION_REASON 枚举
+          href: cor-prf-transition-reason-enumeration.md
+    - name: 分析结构
+      href: profiling-structures.md
+      items:
+        - name: COR_PRF_ASSEMBLY_REFERENCE_INFO 结构
+          href: cor-prf-assembly-reference-info-structure.md
+        - name: COR_PRF_CODE_INFO 结构
+          href: cor-prf-code-info-structure.md
+        - name: COR_PRF_EX_CLAUSE_INFO 结构
+          href: cor-prf-ex-clause-info-structure.md
+        - name: COR_PRF_FUNCTION 结构
+          href: cor-prf-function-structure.md
+        - name: COR_PRF_FUNCTION_ARGUMENT_INFO 结构
+          href: cor-prf-function-argument-info-structure.md
+        - name: COR_PRF_FUNCTION_ARGUMENT_RANGE 结构
+          href: cor-prf-function-argument-range-structure.md
+        - name: COR_PRF_GC_GENERATION_RANGE 结构
+          href: cor-prf-gc-generation-range-structure.md

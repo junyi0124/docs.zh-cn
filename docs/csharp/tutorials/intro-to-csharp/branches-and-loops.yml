@@ -1,0 +1,218 @@
+### YamlMime:Tutorial
+title: 通过分支和循环语句了解条件逻辑
+metadata:
+  title: 分支和循环 - C# 交互教程简介
+  description: 本教程介绍了分支和循环，读者可以使用浏览器通过交互方式了解 C#。 读者将可以直接在浏览器中编写 C# 代码，并查看代码编译和运行结果。
+  audience: Developer
+  level: Beginner
+  ms.custom: mvc
+  ms.date: 08/24/2018
+  ms.topic: interactive-tutorial
+  displayType: two-column
+  interactive: csharp
+  nextTutorialHref: list-collection.yml
+  nextTutorialTitle: 列表集合
+  ms.openlocfilehash: 596dfeca6e8910bd954b63364af958b7bef1580a
+  ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/17/2020
+  ms.locfileid: "88267537"
+items:
+- durationInMinutes: 1
+  content: >
+    本教程介绍了如何编写代码，从而检查变量，并根据这些变量更改执行路径。 读者可以使用浏览器通过交互方式编写 C#，并查看代码编译和运行结果。 本教程包含一系列课程，介绍了 C# 中的分支和循环构造。 这些课程介绍了 C# 语言的基础知识。
+- title: 使用 if 语句做出决定
+  durationInMinutes: 4
+  content: >
+    在交互式窗口中，运行以下代码。 选择“进入焦点模式”按钮。 然后，在交互式窗口中键入以下代码块，并选择“运行”：
+
+
+    ```csharp
+
+    int a = 5;
+
+    int b = 6;
+
+    if (a + b > 10)
+        Console.WriteLine("The answer is greater than 10.");
+    ```
+
+
+    如果在环境中运行此操作，则应改为按照[本地版本](branches-and-loops-local.md)的说明进行操作。
+
+
+    修改 `b` 的声明，让总和小于 10：
+
+
+    ```csharp
+
+    int b = 3;
+
+    ```
+
+
+    再次选择“运行”按钮。 由于答案小于 10，因此什么也没有打印出来。 要测试的条件为 false。 没有任何可供执行的代码，因为仅为 `if` 语句编写了一个可能分支，即 true 分支。
+
+
+    > [!TIP]
+
+    > 在探索 C#（或任何编程语言）的过程中，可能会在编写代码时犯错。 编译器会发现并报告这些错误。 如果输出中有错误消息，请仔细比对示例代码和交互式窗口中的代码，看看要纠正哪些代码。
+
+    > 这样做有助于了解 C# 代码结构。
+
+
+    第一个示例展示了 `if` 和布尔类型的用途。 布尔变量可以包含下列两个值之一：`true` 或 `false`。 C# 为布尔变量定义了特殊类型 `bool`。 `if` 语句检查 `bool` 的值。 如果值为 `true`，执行 `if` 后面的语句。 否则，跳过这些语句。
+
+
+    这种检查条件并根据条件执行语句的过程非常强大。 接下来，将进一步探索。
+- title: 让 if 和 else 完美配合
+  durationInMinutes: 10
+  content: "\n若要执行 true 和 false 分支中的不同代码，请创建在条件为 false 时执行的 `else` 分支。 试运行以下代码：\n\n```csharp\nint a = 5;\nint b = 3;\nif (a + b > 10)\n    Console.WriteLine(\"The answer is greater than 10\");\nelse\n    Console.WriteLine(\"The answer is not greater than 10\");\n```\n\n只有当条件的测试结果为 `false` 时，才执行 `else` 关键字后面的语句。 将 `if`、`else` 与布尔条件相结合，可以实现所需的一切目标。\n\n> [!IMPORTANT]\n> `if` 和 `else` 语句下的缩进是为了方便读者阅读。\n> C# 语言忽略缩进或空格。\n> `if` 或 `else` 关键字后面的语句根据条件决定是否执行。 本教程中的所有示例都遵循了常见做法，根据语句的控制流缩进代码行。\n\n由于缩进会被忽略，因此需要使用 `{` 和 `}` 指明何时要在根据条件决定是否执行的代码块中添加多个语句。 C# 程序员通常会对所有 `if` 和 `else` 子句使用这些大括号。 以下示例与创建的示例相同。 试运行看看。\n\n```csharp\nint a = 5;\nint b = 3;\nif (a + b > 10)\n{\n    Console.WriteLine(\"The answer is greater than 10\");\n}\nelse\n{\n    Console.WriteLine(\"The answer is not greater than 10\");\n}\n```\n\n> [!TIP]\n> 在本教程的其余部分中，代码示例全都遵循公认做法，添加了大括号。\n\n可以测试更复杂的条件：\n\n```csharp\nint a = 5;\nint b = 3;\nint c = 4;\nif ((a + b + c > 10) && (a == b))\n{\n    Console.WriteLine(\"The answer is greater than 10\");\n    Console.WriteLine(\"And the first number is equal to the second\");\n}\nelse\n{\n    Console.WriteLine(\"The answer is not greater than 10\");\n    Console.WriteLine(\"Or the first number is not equal to the second\");\n}\n```\n\n`==` 符号执行相等测试。 使用 `==` 将相等测试与赋值测试区分开来，如在 `a = 5` 中所见。\n\n`&&` 表示“且”。 也就是说，两个条件必须都为 true，才能执行 true 分支中的语句。  这些示例还表明，可以在每个条件分支中添加多个语句，前提是将它们用 `{` 和 `}` 括住。\n\n还可以使用 `||` 表示“或”：\n\n```csharp\nint a = 5;\nint b = 3;\nint c = 4;\nif ((a + b + c > 10) || (a == b))\n{\n    Console.WriteLine(\"The answer is greater than 10\");\n    Console.WriteLine(\"Or the first number is equal to the second\");\n}\nelse\n{\n    Console.WriteLine(\"The answer is not greater than 10\");\n    Console.WriteLine(\"And the first number is not equal to the second\");\n}\n```\n\n修改 `a`、`b` 和 `c` 的值，并在 `&&` 和 `||` 之间切换浏览。 你将进一步了解 `&&` 和 `||` 运算符的工作原理。\n"
+- title: 使用循环重复执行运算
+  durationInMinutes: 6
+  content: >
+    创建更大程序时，需要考虑的另一个重要概念是循环。 使用循环，可以重复执行要多次执行的语句。 在交互式窗口中，试运行以下代码：
+
+
+    ```csharp
+
+    int counter = 0;
+
+    while (counter < 10)
+
+    {
+      Console.WriteLine($"Hello World! The counter is {counter}");
+      counter++;
+    }
+
+    ```
+
+
+    `while` 语句检查条件，并执行 `while` 后面的语句。 除非条件为 false，否则它会重复检查条件，并重复执行这些语句。
+
+
+    此示例新引入了另外一个运算符。 `counter` 变量后面的 `++` 是增量运算符。 它负责用计数器值加 1，并将计算后的值存储在计数器变量中。
+
+
+    > [!IMPORTANT]
+
+    > 请确保 `while` 循环条件在代码执行时确实能够切换为 false。 否则，创建的就是无限循环，即程序永不结束。 我们就不进行演示了，因为运行代码的引擎将会超时，程序也不会有任何输出。
+
+
+    `while` 循环先测试条件，然后再执行 `while` 后面的代码。 `do` ... `while` 循环先执行代码，然后再检查条件。 代码如下所示：
+
+
+    ```csharp
+
+    int counter = 0;
+
+    do
+
+    {
+      Console.WriteLine($"Hello World! The counter is {counter}");
+      counter++;
+    } while (counter < 10);
+
+    ```
+
+
+    这个 `do` 循环和前面的 `while` 循环的工作原理相同。
+
+
+    接下来，将继续介绍最后一个循环语句。
+- title: 使用 for 循环
+  durationInMinutes: 5
+  content: >
+    C# 代码中的另一常见循环语句是 `for` 循环。 在交互式窗口中，试运行以下代码：
+
+
+    ```csharp
+
+    for(int counter = 0; counter < 10; counter++)
+
+    {
+      Console.WriteLine($"Hello World! The counter is {counter}");
+    }
+
+    ```
+
+
+    此循环的工作原理与已用过的 `while` 循环和 `do` 循环相同。 `for` 语句包含三个控制具体工作方式的部分。
+
+
+    第一部分是 for 初始值设定项：`int counter = 0;` 声明 `counter` 是循环变量，并将它的初始值设置为 `0`。
+
+
+    中间部分是 for 条件：`counter < 10` 声明只要计数器值小于 10，此 `for` 循环就会继续执行。
+
+
+    最后一部分是 for 迭代器：`counter++` 指定在执行 `for` 语句后面的代码块后，如何修改循环变量。 在此示例中，它指定 `counter` 应在代码块每次执行时递增 1。
+
+
+    亲自试运行这些部分的代码。 试着执行下列两项操作：
+
+
+    - 将初始值设定项更改为其他初始值。
+
+    - 将结束条件设定项更改为其他值。
+
+
+    完成后，继续利用所学知识，试着自己编写一些代码。
+
+
+    本教程中未介绍的另一个循环语句：`foreach` 语句。 `foreach` 语句为项序列中的每一项重复其语句。 它最常用于集合，因此将在下一教程中介绍。
+- title: 已创建嵌套循环
+  durationInMinutes: 10
+  content: "`while`、`do` 或 `for` 循环可以嵌套在另一个循环内，以使用外部循环中的各项与内部循环中的各项组合来创建矩阵。 我们来生成一组字母数字对以表示行和列。\n\n一个 `for` 循环可以生成行：\n\n```csharp\nfor (int row = 1; row < 11; row++)\n{\n  Console.WriteLine($\"The row is {row}\");\n}\n```\n\n另一个循环可以生成列：\n\n```csharp\nfor (char column = 'a'; column < 'k'; column++)\n{\n  Console.WriteLine($\"The column is {column}\");\n}\n```\n\n可以将一个循环嵌套在另一个循环中以形成各个对：\n  \n```csharp\nfor (int row = 1; row < 11; row++)\n{\n  for (char column = 'a'; column < 'k'; column++)\n  {\n    Console.WriteLine($\"The cell is ({row}, {column})\");\n  }\n}\n```\n\n可以看到，对于内部循环的每次完整运行，外部循环会递增一次。 反转行和列嵌套，自行查看变化。\n"
+- title: 结合使用分支和循环
+  durationInMinutes: 12
+  content: >
+    支持，大家已了解 C# 语言中的 `if` 语句和循环构造。看看能否编写 C# 代码，计算 1 到 20 中所有可被 3 整除的整数的总和。  下面提供了一些提示：
+
+
+    - `%` 运算符可用于获取除法运算的余数。
+
+    - `if` 语句中的条件可用于判断是否应将数字计入总和。
+
+    - `for` 循环有助于对 1 到 20 中的所有数字重复执行一系列步骤。
+
+
+    亲自试一试吧。 然后，看看自己是怎么做到的。 提示：你应获取的答案为 63。
+- title: 完成挑战
+  durationInMinutes: 1
+  content: >
+    最后是否生成如下代码？
+
+
+    ```csharp
+
+    int sum = 0;
+
+    for (int number = 1; number < 21; number++)
+
+    {
+      if (number % 3 == 0)
+      {
+        sum = sum + number;
+      }
+    }
+
+    Console.WriteLine($"The sum is {sum}");
+
+    ```
+- title: 祝贺你！
+  content: >-
+    已完成“分支和循环”交互式教程。 可以选择下方的“列表集合”链接开始下一个交互式教程，也可以访问 [.NET 站点](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)下载 .NET Core SDK，在计算机上创建项目，并继续编码。 请通过“后续步骤”部分返回到这些教程。
+
+
+    若要详细了解这些概念，请参阅下列文章：
+
+
+    - [If 和 else 语句](../../language-reference/keywords/if-else.md)
+
+    - [While 语句](../../language-reference/keywords/while.md)
+
+    - [Do 语句](../../language-reference/keywords/do.md)
+
+    - [For 语句](../../language-reference/keywords/for.md)

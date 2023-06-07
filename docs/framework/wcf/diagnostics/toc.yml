@@ -1,0 +1,31 @@
+- name: 管理和诊断
+  href: index.md
+- name: 消息日志记录
+  href: message-logging.md
+  items:
+    - name: 消息流概述
+      href: message-flow-overview.md
+    - name: 配置消息日志记录
+      href: configuring-message-logging.md
+    - name: 查看消息日志
+      href: viewing-message-logs.md
+    - name: 消息日志记录的安全问题
+      href: security-concerns-for-message-logging.md
+    - name: 跟踪
+      href: tracing/
+    - name: 使用 ETW 进行分析跟踪
+      href: etw/
+    - name: 性能计数器
+      href: performance-counters/
+    - name: 事件日志记录
+      href: event-logging/
+    - name: 使用 Windows Management Instrumentation 进行诊断
+      href: wmi/
+    - name: 关于异常的参考信息
+      href: exceptions-reference/
+- name: 配置应用程序
+  href: configuring-your-application.md
+- name: ServiceModel 注册工具
+  href: servicemodel-registration-tool.md
+- name: 部署服务
+  href: deploying-services.md

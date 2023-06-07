@@ -1,0 +1,40 @@
+- name: C# 6.0 草稿规范
+  items:
+    - name: 介绍
+      href: ../../../../_csharplang/spec/introduction.md
+    - name: 词法结构
+      href: ../../../../_csharplang/spec/lexical-structure.md
+    - name: 基本概念
+      href: ../../../../_csharplang/spec/basic-concepts.md
+    - name: 类型
+      href: ../../../../_csharplang/spec/types.md
+    - name: 变量
+      href: ../../../../_csharplang/spec/variables.md
+    - name: 转换
+      href: ../../../../_csharplang/spec/conversions.md
+    - name: 表达式
+      href: ../../../../_csharplang/spec/expressions.md
+    - name: 语句
+      href: ../../../../_csharplang/spec/statements.md
+    - name: 命名空间
+      href: ../../../../_csharplang/spec/namespaces.md
+    - name: 类
+      href: ../../../../_csharplang/spec/classes.md
+    - name: 结构
+      href: ../../../../_csharplang/spec/structs.md
+    - name: 数组
+      href: ../../../../_csharplang/spec/arrays.md
+    - name: 接口
+      href: ../../../../_csharplang/spec/interfaces.md
+    - name: 枚举
+      href: ../../../../_csharplang/spec/enums.md
+    - name: 委托
+      href: ../../../../_csharplang/spec/delegates.md
+    - name: 异常
+      href: ../../../../_csharplang/spec/exceptions.md
+    - name: 特性
+      href: ../../../../_csharplang/spec/attributes.md
+    - name: 不安全代码
+      href: ../../../../_csharplang/spec/unsafe-code.md
+    - name: 文档注释
+      href: ../../../../_csharplang/spec/documentation-comments.md

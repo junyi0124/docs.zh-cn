@@ -1,0 +1,124 @@
+- name: 最新功能规范
+  items:
+    - name: C# 7.0 规范建议
+      items:
+        - name: 模式匹配
+          href: ../../../../_csharplang/proposals/csharp-7.0/pattern-matching.md
+        - name: 本地函数
+          href: ../../../../_csharplang/proposals/csharp-7.0/local-functions.md
+        - name: Out 变量声明
+          href: ../../../../_csharplang/proposals/csharp-7.0/out-var.md
+        - name: 引发表达式
+          href: ../../../../_csharplang/proposals/csharp-7.0/throw-expression.md
+        - name: 二进制文本
+          href: ../../../../_csharplang/proposals/csharp-7.0/binary-literals.md
+        - name: 数字分隔符
+          href: ../../../../_csharplang/proposals/csharp-7.0/digit-separators.md
+        - name: 异步任务类型
+          href: ../../../../_csharplang/proposals/csharp-7.0/task-types.md
+    - name: C# 7.1 规范建议
+      items:
+        - name: 异步主方法
+          href: ../../../../_csharplang/proposals/csharp-7.1/async-main.md
+        - name: 默认表达式
+          href: ../../../../_csharplang/proposals/csharp-7.1/target-typed-default.md
+        - name: 推导元组名
+          href: ../../../../_csharplang/proposals/csharp-7.1/infer-tuple-names.md
+        - name: 使用泛型的模式匹配
+          href: ../../../../_csharplang/proposals/csharp-7.1/generics-pattern-match.md
+    - name: C# 7.2 规范建议
+      items:
+        - name: 只读引用
+          href: ../../../../_csharplang/proposals/csharp-7.2/readonly-ref.md
+        - name: ref-like 类型的编译时安全性
+          href: ../../../../_csharplang/proposals/csharp-7.2/span-safety.md
+        - name: 非尾随命名参数
+          href: ../../../../_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md
+        - name: 专用受保护
+          href: ../../../../_csharplang/proposals/csharp-7.2/private-protected.md
+        - name: 条件引用
+          href: ../../../../_csharplang/proposals/csharp-7.2/conditional-ref.md
+        - name: 前导数字分隔符
+          href: ../../../../_csharplang/proposals/csharp-7.2/leading-separator.md
+    - name: C# 7.3 规范建议
+      items:
+        - name: 非托管的泛型类型约束
+          href: ../../../../_csharplang/proposals/csharp-7.3/blittable.md
+        - name: 无论上下文是可移动还是不可移动，索引 `fixed` 字段都不应要求固定
+          href: ../../../../_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md
+        - name: 基于模式的 `fixed` 语句
+          href: ../../../../_csharplang/proposals/csharp-7.3/pattern-based-fixed.md
+        - name: Ref 局部重新分配
+          href: ../../../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md
+        - name: Stackalloc 数组初始值设定项
+          href: ../../../../_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md
+        - name: 面向自动实现的属性字段的特性
+          href: ../../../../_csharplang/proposals/csharp-7.3/auto-prop-field-attrs.md
+        - name: 初始化表达式中的表达式变量
+          href: ../../../../_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md
+        - name: 元组相等 (==) 和元组不等 (!=)
+          href: ../../../../_csharplang/proposals/csharp-7.3/tuple-equality.md
+        - name: 改进了重载候选项
+          href: ../../../../_csharplang/proposals/csharp-7.3/improved-overload-candidates.md
+    - name: C# 8.0 规范建议
+      items:
+        - name: 可为 null 的引用类型 - 建议
+          href: ../../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md
+        - name: 可为 null 的引用类型 - 规范
+          href: ../../../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
+        - name: 递归模式匹配
+          href: ../../../../_csharplang/proposals/csharp-8.0/patterns.md
+        - name: 默认接口方法
+          href: ../../../../_csharplang/proposals/csharp-8.0/default-interface-methods.md
+        - name: 异步流
+          href: ../../../../_csharplang/proposals/csharp-8.0/async-streams.md
+        - name: 范围
+          href: ../../../../_csharplang/proposals/csharp-8.0/ranges.md
+        - name: 基于模式的 using 和 using 声明
+          href: ../../../../_csharplang/proposals/csharp-8.0/using.md
+        - name: 静态本地函数
+          href: ../../../../_csharplang/proposals/csharp-8.0/static-local-functions.md
+        - name: Null 合并分配
+          href: ../../../../_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md
+        - name: 只读实例成员
+          href: ../../../../_csharplang/proposals/csharp-8.0/readonly-instance-members.md
+        - name: 嵌套 stackalloc
+          href: ../../../../_csharplang/proposals/csharp-8.0/nested-stackalloc.md
+    - name: C# 9.0 规范建议
+      items:
+        - name: 记录
+          href: ../../../../_csharplang/proposals/csharp-9.0/records.md
+        - name: 顶级语句
+          href: ../../../../_csharplang/proposals/csharp-9.0/top-level-statements.md
+        - name: 可为 null 的引用类型 - 规范
+          href: ../../../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
+        - name: 模式匹配增强功能
+          href: ../../../../_csharplang/proposals/csharp-9.0/patterns3.md
+        - name: 仅限 Init 的资源库
+          href: ../../../../_csharplang/proposals/csharp-9.0/init.md
+        - name: 目标类型的新表达式
+          href: ../../../../_csharplang/proposals/csharp-9.0/target-typed-new.md
+        - name: 模块初始值设定项
+          href: ../../../../_csharplang/proposals/csharp-9.0/module-initializers.md
+        - name: 扩展分部方法
+          href: ../../../../_csharplang/proposals/csharp-9.0/extending-partial-methods.md
+        - name: 静态匿名函数
+          href: ../../../../_csharplang/proposals/csharp-9.0/static-anonymous-functions.md
+        - name: 目标类型的条件表达式
+          href: ../../../../_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md
+        - name: 协变返回类型
+          href: ../../../../_csharplang/proposals/csharp-9.0/covariant-returns.md
+        - name: Foreach 循环中的扩展 GetEnumerator
+          href: ../../../../_csharplang/proposals/csharp-9.0/extension-getenumerator.md
+        - name: Lambda 弃元参数
+          href: ../../../../_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md
+        - name: 本地函数的属性
+          href: ../../../../_csharplang/proposals/csharp-9.0/local-function-attributes.md
+        - name: 本机大小的整数
+          href: ../../../../_csharplang/proposals/csharp-9.0/native-integers.md
+        - name: 函数指针
+          href: ../../../../_csharplang/proposals/csharp-9.0/function-pointers.md
+        - name: 发出 localsinit 标志的 Surpress
+          href: ../../../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
+        - name: 不受约束的类型参数批注
+          href: ../../../../_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md

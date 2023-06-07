@@ -1,0 +1,294 @@
+- name: F# 文档
+  href: index.yml
+- name: 什么是 F#
+  href: what-is-fsharp.md
+- name: 入门
+  href: get-started/index.md
+  items:
+    - name: 安装 F#
+      href: get-started/install-fsharp.md
+    - name: Visual Studio 中的 F#
+      href: get-started/get-started-visual-studio.md
+    - name: Visual Studio Code 中的 F#
+      href: get-started/get-started-vscode.md
+    - name: 具有 .NET Core CLI 的 F#
+      href: get-started/get-started-command-line.md
+    - name: Visual Studio for Mac 中的 F#
+      href: get-started/get-started-with-visual-studio-for-mac.md
+- name: F# 教程
+  href: tour.md
+- name: 教程
+  items:
+    - name: 功能编程的介绍
+      href: introduction-to-functional-programming/index.md
+      items:
+        - name: 第一类函数
+          href: introduction-to-functional-programming/first-class-functions.md
+    - name: 异步和并发编程
+      items:
+        - name: 异步编程
+          href: tutorials/asynchronous-and-concurrent-programming/async.md
+    - name: 类型提供程序
+      href: tutorials/type-providers/index.md
+      items:
+        - name: 创建类型提供程序
+          href: tutorials/type-providers/creating-a-type-provider.md
+        - name: 类型提供程序安全性
+          href: tutorials/type-providers/type-provider-security.md
+        - name: 类型提供程序疑难解答
+          href: tutorials/type-providers/troubleshooting-type-providers.md
+- name: F# 中的新增内容
+  items:
+    - name: F# 5.0
+      href: whats-new/fsharp-50.md
+    - name: F# 4.7
+      href: whats-new/fsharp-47.md
+    - name: F# 4.6
+      href: whats-new/fsharp-46.md
+    - name: F# 4.5
+      href: whats-new/fsharp-45.md
+- name: F# 语言参考
+  href: language-reference/index.md
+  items:
+    - name: 关键字参考
+      href: language-reference/keyword-reference.md
+    - name: 符号和运算符参考
+      href: language-reference/symbol-and-operator-reference/index.md
+      items:
+        - name: 算术运算符
+          href: language-reference/symbol-and-operator-reference/arithmetic-operators.md
+        - name: 布尔运算符
+          href: language-reference/symbol-and-operator-reference/boolean-operators.md
+        - name: 位运算符
+          href: language-reference/symbol-and-operator-reference/bitwise-operators.md
+        - name: 可以为 null 的运算符
+          href: language-reference/symbol-and-operator-reference/nullable-operators.md
+    - name: 函数
+      href: language-reference/functions/index.md
+      items:
+        - name: let 绑定
+          href: language-reference/functions/let-bindings.md
+        - name: do 绑定
+          href: language-reference/functions/do-bindings.md
+        - name: Lambda 表达式：fun 关键字
+          href: language-reference/functions/lambda-expressions-the-fun-keyword.md
+        - name: 递归函数：rec 关键字
+          href: language-reference/functions/recursive-functions-the-rec-keyword.md
+        - name: 入口点
+          href: language-reference/functions/entry-point.md
+        - name: 外部函数
+          href: language-reference/functions/external-functions.md
+        - name: 内联函数
+          href: language-reference/functions/inline-functions.md
+    - name: 值
+      href: language-reference/values/index.md
+      items:
+        - name: Null 值
+          href: language-reference/values/null-values.md
+    - name: 文本
+      href: language-reference/literals.md
+    - name: F# 类型
+      href: language-reference/fsharp-types.md
+    - name: 类型推断
+      href: language-reference/type-inference.md
+    - name: 基本类型
+      href: language-reference/basic-types.md
+    - name: unit 类型
+      href: language-reference/unit-type.md
+    - name: 字符串
+      href: language-reference/strings.md
+    - name: 内插字符串
+      href: language-reference/interpolated-strings.md
+    - name: 元组
+      href: language-reference/tuples.md
+    - name: F# 集合类型
+      href: language-reference/fsharp-collection-types.md
+    - name: 列表
+      href: language-reference/lists.md
+    - name: 数组
+      href: language-reference/arrays.md
+    - name: 序列
+      href: language-reference/sequences.md
+    - name: 切片
+      href: language-reference/slices.md
+    - name: 选项
+      href: language-reference/options.md
+    - name: 值选项
+      href: language-reference/value-options.md
+    - name: 结果
+      href: language-reference/results.md
+    - name: 泛型
+      href: language-reference/generics/index.md
+      items:
+        - name: 自动泛化
+          href: language-reference/generics/automatic-generalization.md
+        - name: 约束
+          href: language-reference/generics/constraints.md
+        - name: 静态解析的类型参数
+          href: language-reference/generics/statically-resolved-type-parameters.md
+    - name: 记录
+      href: language-reference/records.md
+    - name: 匿名记录
+      href: language-reference/anonymous-records.md
+    - name: 复制和更新记录表达式
+      href: language-reference/copy-and-update-record-expressions.md
+    - name: 可区分联合
+      href: language-reference/discriminated-unions.md
+    - name: 枚举
+      href: language-reference/enumerations.md
+    - name: 类型缩写
+      href: language-reference/type-abbreviations.md
+    - name: 类
+      href: language-reference/classes.md
+    - name: 结构
+      href: language-reference/structures.md
+    - name: 可以为 null 的值类型
+      href: language-reference/nullable-value-types.md
+    - name: 继承
+      href: language-reference/inheritance.md
+    - name: 接口
+      href: language-reference/interfaces.md
+    - name: 抽象类
+      href: language-reference/abstract-classes.md
+    - name: 成员
+      href: language-reference/members/index.md
+      items:
+        - name: 类中的 let 绑定
+          href: language-reference/members/let-bindings-in-classes.md
+        - name: 类中的 do 绑定
+          href: language-reference/members/do-bindings-in-classes.md
+        - name: 属性
+          href: language-reference/members/properties.md
+        - name: 索引属性
+          href: language-reference/members/indexed-properties.md
+        - name: 方法
+          href: language-reference/members/methods.md
+        - name: 构造函数
+          href: language-reference/members/constructors.md
+        - name: 事件
+          href: language-reference/members/events.md
+        - name: 显式字段：`val` 关键字
+          href: language-reference/members/explicit-fields-the-val-keyword.md
+    - name: 类型扩展
+      href: language-reference/type-extensions.md
+    - name: 形参和实参
+      href: language-reference/parameters-and-arguments.md
+    - name: 运算符重载
+      href: language-reference/operator-overloading.md
+    - name: 可变类型
+      href: language-reference/flexible-types.md
+    - name: 委托
+      href: language-reference/delegates.md
+    - name: 对象表达式
+      href: language-reference/object-expressions.md
+    - name: 强制转换和转换
+      href: language-reference/casting-and-conversions.md
+    - name: 访问控制
+      href: language-reference/access-control.md
+    - name: 条件表达式：if...then...else
+      href: language-reference/conditional-expressions-if-then-else.md
+    - name: Match 表达式
+      href: language-reference/match-expressions.md
+    - name: 模式匹配
+      href: language-reference/pattern-matching.md
+    - name: 活动模式
+      href: language-reference/active-patterns.md
+    - name: 循环：for...to 表达式
+      href: language-reference/loops-for-to-expression.md
+    - name: 循环：for...in 表达式
+      href: language-reference/loops-for-in-expression.md
+    - name: 循环：while...do 表达式
+      href: language-reference/loops-while-do-expression.md
+    - name: 断言
+      href: language-reference/assertions.md
+    - name: 异常处理
+      href: language-reference/exception-handling/index.md
+      items:
+        - name: 异常类型
+          href: language-reference/exception-handling/exception-types.md
+        - name: try...with 表达式
+          href: language-reference/exception-handling/the-try-with-expression.md
+        - name: try...finally 表达式
+          href: language-reference/exception-handling/the-try-finally-expression.md
+        - name: raise 函数
+          href: language-reference/exception-handling/the-raise-function.md
+        - name: failwith 函数
+          href: language-reference/exception-handling/the-failwith-function.md
+        - name: invalidArg 函数
+          href: language-reference/exception-handling/the-invalidArg-function.md
+    - name: 特性
+      href: language-reference/attributes.md
+    - name: 资源管理：use 关键字
+      href: language-reference/resource-management-the-use-keyword.md
+    - name: 命名空间
+      href: language-reference/namespaces.md
+    - name: 模块
+      href: language-reference/modules.md
+    - name: 导入声明：open 关键字
+      href: language-reference/import-declarations-the-open-keyword.md
+    - name: 签名文件
+      href: language-reference/signature-files.md
+    - name: 度量单位
+      href: language-reference/units-of-measure.md
+    - name: 纯文本格式
+      href: language-reference/plaintext-formatting.md
+    - name: XML 文档
+      href: language-reference/xml-documentation.md
+    - name: 延迟表达式
+      href: language-reference/lazy-expressions.md
+    - name: 计算表达式
+      href: language-reference/computation-expressions.md
+    - name: 异步工作流
+      href: language-reference/asynchronous-workflows.md
+    - name: 查询表达式
+      href: language-reference/query-expressions.md
+    - name: 代码引用
+      href: language-reference/code-quotations.md
+    - name: 已修复关键字
+      href: language-reference/fixed.md
+    - name: Byref
+      href: language-reference/byrefs.md
+    - name: 引用单元格
+      href: language-reference/reference-cells.md
+    - name: nameof
+      href: language-reference/nameof.md
+    - name: 编译器指令
+      href: language-reference/compiler-directives.md
+    - name: 编译器选项
+      href: language-reference/compiler-options.md
+    - name: F# Interactive 选项
+      href: language-reference/fsharp-interactive-options.md
+    - name: 源代码行标识符、文件标识符和路径标识符
+      href: language-reference/source-line-file-path-identifiers.md
+    - name: 调用方信息
+      href: language-reference/caller-information.md
+    - name: 详细语法
+      href: language-reference/verbose-syntax.md
+    - name: 编译器错误和警告
+      href: language-reference/compiler-messages/index.md
+- name: F# 工具
+  items:
+    - name: F# Interactive
+      href: tools/fsharp-interactive/index.md
+- name: F# 样式指南
+  href: style-guide/index.md
+  items:
+    - name: F# 代码格式设置准则
+      href: style-guide/formatting.md
+    - name: F# 编码约定
+      href: style-guide/conventions.md
+    - name: F# 组件设计准则
+      href: style-guide/component-design-guidelines.md
+- name: 在 Azure 上使用 F#
+  href: using-fsharp-on-azure/index.md
+  items:
+    - name: 通过 F# 实现 Azure Blob 入门
+      href: using-fsharp-on-azure/blob-storage.md
+    - name: 通过 F# 实现 Azure 文件存储入门
+      href: using-fsharp-on-azure/file-storage.md
+    - name: 通过 F# 实现 Azure 队列存储入门
+      href: using-fsharp-on-azure/queue-storage.md
+    - name: 通过 F# 实现 Azure 表格存储入门
+      href: using-fsharp-on-azure/table-storage.md
+    - name: F# Azure 依赖项的包管理
+      href: using-fsharp-on-azure/package-management.md

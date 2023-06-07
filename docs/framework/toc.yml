@@ -1,0 +1,744 @@
+items:
+  - name: .NET Framework 文档
+    href: index.yml
+  - name: .NET Framework 概述
+    href: get-started/overview.md
+  - name: 入门
+    items:
+      - name: 概述
+        href: get-started/index.md
+      - name: 带外版本
+        href: get-started/the-net-framework-and-out-of-band-releases.md
+      - name: 系统要求
+        href: get-started/system-requirements.md
+  - name: 安装指南
+    items:
+      - name: 概述
+        href: install/index.md
+      - name: 面向开发人员
+        href: install/guide-for-developers.md
+      - name: 按 OS 版本
+        items:
+          - name: Windows 10 和 Windows Server 2016
+            href: install/on-windows-10.md
+          - name: Windows 8.1 和 Windows Server 2012 R2
+            href: install/on-windows-8-1.md
+          - name: Windows 8 和 Windows Server 2012
+            href: install/on-windows-8.md
+          - name: Windows 7 SP1 和 Windows Server 2008 R2
+            href: install/on-windows-7.md
+          - name: Windows Vista 和 Windows Server 2008
+            href: install/on-windows-vista.md
+          - name: Windows XP 和 Windows Server 2003
+            href: install/on-windows-xp.md
+      - name: 修复 .NET Framework
+        href: install/repair.md
+      - name: 疑难解答
+        items:
+          - name: 排查安装和卸载问题
+            href: install/troubleshoot-blocked-installations-and-uninstallations.md
+          - name: 排查“无法启动此应用程序”
+            href: install/application-not-started.md
+      - name: Windows 8 到 Windows 10 上的 .NET Framework 3.5
+        href: install/dotnet-35-windows-10.md
+      - name: Windows 8 到 Windows 10 上的 .NET Framework 1.1
+        href: install/run-net-framework-1-1-apps.md
+  - name: 迁移指南
+    items:
+      - name: 概述
+        href: migration-guide/index.md
+      - name: 兼容性
+        items:
+          - name: 应用程序兼容性
+            items:
+              - name: 概述
+                displayName: App compatibility
+                href: migration-guide/application-compatibility.md
+              - name: 运行时更改
+                items:
+                  - name: 4.0 至 4.5
+                    href: migration-guide/runtime/4.0-4.5.md
+                  - name: 4.0 至 4.5.1
+                    href: migration-guide/runtime/4.0-4.5.1.md
+                  - name: 4.0 至 4.5.2
+                    href: migration-guide/runtime/4.0-4.5.2.md
+                  - name: 4.0 至 4.6
+                    href: migration-guide/runtime/4.0-4.6.md
+                  - name: 4.0 至 4.6.1
+                    href: migration-guide/runtime/4.0-4.6.1.md
+                  - name: 4.0 至 4.6.2
+                    href: migration-guide/runtime/4.0-4.6.2.md
+                  - name: 4.0 至 4.7
+                    href: migration-guide/runtime/4.0-4.7.md
+                  - name: 4.0 至 4.7.1
+                    href: migration-guide/runtime/4.0-4.7.1.md
+                  - name: 4.0 至 4.7.2
+                    href: migration-guide/runtime/4.0-4.7.2.md
+                  - name: 4.0 至 4.8
+                    href: migration-guide/runtime/4.0-4.8.md
+                  - name: 4.5 至 4.5.1
+                    href: migration-guide/runtime/4.5-4.5.1.md
+                  - name: 4.5 至 4.5.2
+                    href: migration-guide/runtime/4.5-4.5.2.md
+                  - name: 4.5 至 4.6
+                    href: migration-guide/runtime/4.5-4.6.md
+                  - name: 4.5 至 4.6.1
+                    href: migration-guide/runtime/4.5-4.6.1.md
+                  - name: 4.5 至 4.6.2
+                    href: migration-guide/runtime/4.5-4.6.2.md
+                  - name: 4.5 至 4.7
+                    href: migration-guide/runtime/4.5-4.7.md
+                  - name: 4.5 至 4.7.1
+                    href: migration-guide/runtime/4.5-4.7.1.md
+                  - name: 4.5 至 4.7.2
+                    href: migration-guide/runtime/4.5-4.7.2.md
+                  - name: 4.5 至 4.8
+                    href: migration-guide/runtime/4.5-4.8.md
+                  - name: 4.5.1 至 4.5.2
+                    href: migration-guide/runtime/4.5.1-4.5.2.md
+                  - name: 4.5.1 至 4.6
+                    href: migration-guide/runtime/4.5.1-4.6.md
+                  - name: 4.5.1 至 4.6.1
+                    href: migration-guide/runtime/4.5.1-4.6.1.md
+                  - name: 4.5.1 至 4.6.2
+                    href: migration-guide/runtime/4.5.1-4.6.2.md
+                  - name: 4.5.1 至 4.7
+                    href: migration-guide/runtime/4.5.1-4.7.md
+                  - name: 4.5.1 至 4.7.1
+                    href: migration-guide/runtime/4.5.1-4.7.1.md
+                  - name: 4.5.1 至 4.7.2
+                    href: migration-guide/runtime/4.5.1-4.7.2.md
+                  - name: 4.5.1 至 4.8
+                    href: migration-guide/runtime/4.5.1-4.8.md
+                  - name: 4.5.2 至 4.6
+                    href: migration-guide/runtime/4.5.2-4.6.md
+                  - name: 4.5.2 至 4.6.1
+                    href: migration-guide/runtime/4.5.2-4.6.1.md
+                  - name: 4.5.2 至 4.6.2
+                    href: migration-guide/runtime/4.5.2-4.6.2.md
+                  - name: 4.5.2 至 4.7
+                    href: migration-guide/runtime/4.5.2-4.7.md
+                  - name: 4.5.2 至 4.7.1
+                    href: migration-guide/runtime/4.5.2-4.7.1.md
+                  - name: 4.5.2 至 4.7.2
+                    href: migration-guide/runtime/4.5.2-4.7.2.md
+                  - name: 4.5.2 至 4.8
+                    href: migration-guide/runtime/4.5.2-4.8.md
+                  - name: 4.6 至 4.6.1
+                    href: migration-guide/runtime/4.6-4.6.1.md
+                  - name: 4.6 至 4.6.2
+                    href: migration-guide/runtime/4.6-4.6.2.md
+                  - name: 4.6 至 4.7
+                    href: migration-guide/runtime/4.6-4.7.md
+                  - name: 4.6 至 4.7.1
+                    href: migration-guide/runtime/4.6-4.7.1.md
+                  - name: 4.6 至 4.7.2
+                    href: migration-guide/runtime/4.6-4.7.2.md
+                  - name: 4.6 至 4.8
+                    href: migration-guide/runtime/4.6-4.8.md
+                  - name: 4.6.1 至 4.6.2
+                    href: migration-guide/runtime/4.6.1-4.6.2.md
+                  - name: 4.6.1 至 4.7
+                    href: migration-guide/runtime/4.6.1-4.7.md
+                  - name: 4.6.1 至 4.7.1
+                    href: migration-guide/runtime/4.6.1-4.7.1.md
+                  - name: 4.6.1 至 4.7.2
+                    href: migration-guide/runtime/4.6.1-4.7.2.md
+                  - name: 4.6.1 至 4.8
+                    href: migration-guide/runtime/4.6.1-4.8.md
+                  - name: 4.6.2 至 4.7
+                    href: migration-guide/runtime/4.6.2-4.7.md
+                  - name: 4.6.2 至 4.7.1
+                    href: migration-guide/runtime/4.6.2-4.7.1.md
+                  - name: 4.6.2 至 4.7.2
+                    href: migration-guide/runtime/4.6.2-4.7.2.md
+                  - name: 4.6.2 至 4.8
+                    href: migration-guide/runtime/4.6.2-4.8.md
+                  - name: 4.7 至 4.7.1
+                    href: migration-guide/runtime/4.7-4.7.1.md
+                  - name: 4.7 至 4.7.2
+                    href: migration-guide/runtime/4.7-4.7.2.md
+                  - name: 4.7 至 4.8
+                    href: migration-guide/runtime/4.7-4.8.md
+                  - name: 4.7.1 至 4.7.2
+                    href: migration-guide/runtime/4.7.1-4.7.2.md
+                  - name: 4.7.1 至 4.8
+                    href: migration-guide/runtime/4.7.1-4.8.md
+                  - name: 4.7.2 至 4.8
+                    href: migration-guide/runtime/4.7.2-4.8.md
+              - name: 重定目标更改
+                items:
+                  - name: 4.0 至 4.5
+                    href: migration-guide/retargeting/4.0-4.5.md
+                  - name: 4.0 至 4.5.1
+                    href: migration-guide/retargeting/4.0-4.5.1.md
+                  - name: 4.0 至 4.5.2
+                    href: migration-guide/retargeting/4.0-4.5.2.md
+                  - name: 4.0 至 4.6
+                    href: migration-guide/retargeting/4.0-4.6.md
+                  - name: 4.0 至 4.6.1
+                    href: migration-guide/retargeting/4.0-4.6.1.md
+                  - name: 4.0 至 4.6.2
+                    href: migration-guide/retargeting/4.0-4.6.2.md
+                  - name: 4.0 至 4.7
+                    href: migration-guide/retargeting/4.0-4.7.md
+                  - name: 4.0 至 4.7.1
+                    href: migration-guide/retargeting/4.0-4.7.1.md
+                  - name: 4.0 至 4.7.2
+                    href: migration-guide/retargeting/4.0-4.7.2.md
+                  - name: 4.0 至 4.8
+                    href: migration-guide/retargeting/4.0-4.8.md
+                  - name: 4.5 至 4.5.1
+                    href: migration-guide/retargeting/4.5-4.5.1.md
+                  - name: 4.5 至 4.5.2
+                    href: migration-guide/retargeting/4.5-4.5.2.md
+                  - name: 4.5 至 4.6
+                    href: migration-guide/retargeting/4.5-4.6.md
+                  - name: 4.5 至 4.6.1
+                    href: migration-guide/retargeting/4.5-4.6.1.md
+                  - name: 4.5 至 4.6.2
+                    href: migration-guide/retargeting/4.5-4.6.2.md
+                  - name: 4.5 至 4.7
+                    href: migration-guide/retargeting/4.5-4.7.md
+                  - name: 4.5 至 4.7.1
+                    href: migration-guide/retargeting/4.5-4.7.1.md
+                  - name: 4.5 至 4.7.2
+                    href: migration-guide/retargeting/4.5-4.7.2.md
+                  - name: 4.5 至 4.8
+                    href: migration-guide/retargeting/4.5-4.8.md
+                  - name: 4.5.1 至 4.5.2
+                    href: migration-guide/retargeting/4.5.1-4.5.2.md
+                  - name: 4.5.1 至 4.6
+                    href: migration-guide/retargeting/4.5.1-4.6.md
+                  - name: 4.5.1 至 4.6.1
+                    href: migration-guide/retargeting/4.5.1-4.6.1.md
+                  - name: 4.5.1 至 4.6.2
+                    href: migration-guide/retargeting/4.5.1-4.6.2.md
+                  - name: 4.5.1 至 4.7
+                    href: migration-guide/retargeting/4.5.1-4.7.md
+                  - name: 4.5.1 至 4.7.1
+                    href: migration-guide/retargeting/4.5.1-4.7.1.md
+                  - name: 4.5.1 至 4.7.2
+                    href: migration-guide/retargeting/4.5.1-4.7.2.md
+                  - name: 4.5.1 至 4.8
+                    href: migration-guide/retargeting/4.5.1-4.8.md
+                  - name: 4.5.2 至 4.6
+                    href: migration-guide/retargeting/4.5.2-4.6.md
+                  - name: 4.5.2 至 4.6.1
+                    href: migration-guide/retargeting/4.5.2-4.6.1.md
+                  - name: 4.5.2 至 4.6.2
+                    href: migration-guide/retargeting/4.5.2-4.6.2.md
+                  - name: 4.5.2 至 4.7
+                    href: migration-guide/retargeting/4.5.2-4.7.md
+                  - name: 4.5.2 至 4.7.1
+                    href: migration-guide/retargeting/4.5.2-4.7.1.md
+                  - name: 4.5.2 至 4.7.2
+                    href: migration-guide/retargeting/4.5.2-4.7.2.md
+                  - name: 4.5.2 至 4.8
+                    href: migration-guide/retargeting/4.5.2-4.8.md
+                  - name: 4.6 至 4.6.1
+                    href: migration-guide/retargeting/4.6-4.6.1.md
+                  - name: 4.6 至 4.6.2
+                    href: migration-guide/retargeting/4.6-4.6.2.md
+                  - name: 4.6 至 4.7
+                    href: migration-guide/retargeting/4.6-4.7.md
+                  - name: 4.6 至 4.7.1
+                    href: migration-guide/retargeting/4.6-4.7.1.md
+                  - name: 4.6 至 4.7.2
+                    href: migration-guide/retargeting/4.6-4.7.2.md
+                  - name: 4.6 至 4.8
+                    href: migration-guide/retargeting/4.6-4.8.md
+                  - name: 4.6.1 至 4.6.2
+                    href: migration-guide/retargeting/4.6.1-4.6.2.md
+                  - name: 4.6.1 至 4.7
+                    href: migration-guide/retargeting/4.6.1-4.7.md
+                  - name: 4.6.1 至 4.7.1
+                    href: migration-guide/retargeting/4.6.1-4.7.1.md
+                  - name: 4.6.1 至 4.7.2
+                    href: migration-guide/retargeting/4.6.1-4.7.2.md
+                  - name: 4.6.1 至 4.8
+                    href: migration-guide/retargeting/4.6.1-4.8.md
+                  - name: 4.6.2 至 4.7
+                    href: migration-guide/retargeting/4.6.2-4.7.md
+                  - name: 4.6.2 至 4.7.1
+                    href: migration-guide/retargeting/4.6.2-4.7.1.md
+                  - name: 4.6.2 至 4.7.2
+                    href: migration-guide/retargeting/4.6.2-4.7.2.md
+                  - name: 4.6.2 至 4.8
+                    href: migration-guide/retargeting/4.6.2-4.8.md
+                  - name: 4.7 至 4.7.1
+                    href: migration-guide/retargeting/4.7-4.7.1.md
+                  - name: 4.7 至 4.7.2
+                    href: migration-guide/retargeting/4.7-4.7.2.md
+                  - name: 4.7 至 4.8
+                    href: migration-guide/retargeting/4.7-4.8.md
+                  - name: 4.7.1 至 4.7.2
+                    href: migration-guide/retargeting/4.7.1-4.7.2.md
+                  - name: 4.7.1 至 4.8
+                    href: migration-guide/retargeting/4.7.1-4.8.md
+                  - name: 4.7.2 至 4.8
+                    href: migration-guide/retargeting/4.7.2-4.8.md
+          - name: 行为缓解
+            items:
+              - name: 概述
+                href: migration-guide/mitigations.md
+              - name: 自定义 IMessageFilter.PreFilterMessage 实现
+                href: migration-guide/mitigation-custom-imessagefilter-prefiltermessage-implementations.md
+              - name: 跨应用域进行对象反序列化
+                href: migration-guide/mitigation-deserialization-of-objects-across-app-domains.md
+              - name: 新的 64 位 JIT 编译器
+                href: migration-guide/mitigation-new-64-bit-jit-compiler.md
+              - name: 路径冒号检查
+                href: migration-guide/mitigation-path-colon-checks.md
+              - name: 路径规范化
+                href: migration-guide/mitigation-path-normalization.md
+              - name: 图标对象中的 PNG 帧
+                href: migration-guide/mitigation-png-frames-in-icon-objects.md
+              - name: 基于指针的触控和触笔支持
+                href: migration-guide/mitigation-pointer-based-touch-and-stylus-support.md
+              - name: 池阻止时间段
+                href: migration-guide/mitigation-pool-blocking-period.md
+              - name: 产品版本控制
+                href: migration-guide/mitigation-product-versioning.md
+              - name: 控制字符序列化
+                href: migration-guide/mitigation-serialization-control-characters.md
+              - name: TLS 协议
+                href: migration-guide/mitigation-tls-protocols.md
+              - name: WCF 服务和证书身份验证
+                href: migration-guide/mitigation-wcf-services-and-certificate-authentication.md
+              - name: WPF 布局
+                href: migration-guide/mitigation-wpf-layout.md
+              - name: WPF 窗口呈现
+                href: migration-guide/mitigation-wpf-window-rendering.md
+              - name: X509CertificateClaimSet.FindClaims 方法
+                href: migration-guide/mitigation-x509certificateclaimset-findclaims-method.md
+              - name: XML 架构验证
+                href: migration-guide/mitigation-xml-schema-validation.md
+              - name: ZipArchiveEntry.FullName 路径分隔符
+                href: migration-guide/mitigation-ziparchiveentry-fullname-path-separator.md
+          - name: 版本兼容性
+            href: migration-guide/version-compatibility.md
+      - name: .NET Framework 版本
+        items:
+          - name: 版本和依赖项
+            href: migration-guide/versions-and-dependencies.md
+          - name: 查找已安装的版本
+            href: migration-guide/how-to-determine-which-versions-are-installed.md
+          - name: 查找已安装的更新
+            href: migration-guide/how-to-determine-which-net-framework-updates-are-installed.md
+      - name: 配置应用以支持 .NET Framework 4 或更高版本
+        href: migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md
+      - name: 从 .NET Framework 1.1 迁移
+        href: migration-guide/migrating-from-the-net-framework-1-1.md
+      - name: .NET Framework 4 迁移问题
+        href: migration-guide/net-framework-4-migration-issues.md
+  - name: 开发指南
+    href: development-guide.md
+    items:
+      - name: 应用程序域和程序集
+        href: app-domains/
+      - name: 桌面应用中的资源
+        href: resources/
+      - name: 可访问性
+        href: ui-automation/
+      - name: 数据和建模
+        href: data/
+      - name: 客户端应用
+        items:
+          - name: 概述
+            href: develop-client-apps.md
+          - name: Windows Presentation Foundation
+            href: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
+          - name: Windows 窗体
+            href: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
+      - name: 使用 WCF 的面向服务的应用
+        href: wcf/
+      - name: Windows Workflow Foundation
+        href: windows-workflow-foundation/
+      - name: Windows 服务应用
+        href: windows-services/
+      - name: 64 位应用
+        href: 64-bit-apps.md
+      - name: 使用 ASP.NET 的 Web 应用
+        href: develop-web-apps-with-aspnet.md
+      - name: 网络编程
+        href: network-programming/
+      - name: 配置应用
+        href: configure-apps/
+      - name: 使用 .NET Native 编译应用
+        href: net-native/
+      - name: 调试、跟踪和分析
+        href: debug-trace-profile/
+      - name: 部署
+        href: deployment/
+      - name: 性能
+        href: performance/
+      - name: 动态编程
+        href: reflection-and-codedom/
+      - name: Managed Extensibility Framework (MEF)
+        href: mef/
+      - name: 与非托管代码交互操作
+        href: interop/
+      - name: 非托管 API 参考
+        href: unmanaged-api/
+  - name: 工具
+    items:
+      - name: 概述
+        href: tools/index.md
+      - name: Al.exe（程序集链接器）
+        href: tools/al-exe-assembly-linker.md
+      - name: Aximp.exe（Windows 窗体 ActiveX 控件导入程序）
+        href: tools/aximp-exe-windows-forms-activex-control-importer.md
+      - name: Caspol.exe（代码访问安全性策略工具）
+        href: tools/caspol-exe-code-access-security-policy-tool.md
+      - name: Cert2spc.exe（软件发行者证书测试工具）
+        href: tools/cert2spc-exe-software-publisher-certificate-test-tool.md
+      - name: Certmgr.exe（证书管理器工具）
+        href: tools/certmgr-exe-certificate-manager-tool.md
+      - name: Clrver.exe（CLR 版本工具）
+        href: tools/clrver-exe-clr-version-tool.md
+      - name: 命令提示符
+        href: tools/developer-command-prompt-for-vs.md
+      - name: CorFlags.exe（CorFlags 转换工具）
+        href: tools/corflags-exe-corflags-conversion-tool.md
+      - name: Fuslogvw.exe（程序集绑定日志查看器）
+        href: tools/fuslogvw-exe-assembly-binding-log-viewer.md
+      - name: Gacutil.exe（全局程序集缓存工具）
+        href: tools/gacutil-exe-gac-tool.md
+      - name: Ilasm.exe（IL 汇编程序）
+        href: tools/ilasm-exe-il-assembler.md
+      - name: Ildasm.exe（IL 反汇编程序）
+        href: tools/ildasm-exe-il-disassembler.md
+      - name: Installutil.exe（安装程序工具）
+        href: tools/installutil-exe-installer-tool.md
+      - name: Lc.exe（许可证编译器）
+        href: tools/lc-exe-license-compiler.md
+      - name: Mage.exe（清单生成和编辑工具）
+        href: tools/mage-exe-manifest-generation-and-editing-tool.md
+      - name: MageUI.exe（图形化客户端中的清单生成和编辑工具）
+        href: tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md
+      - name: MDbg.exe（.NET Framework 命令行调试程序）
+        href: tools/mdbg-exe.md
+      - name: Mgmtclassgen.exe（管理强类型类生成器）
+        href: tools/mgmtclassgen-exe.md
+      - name: Mpgo.exe（按托管配置文件优化工具）
+        href: tools/mpgo-exe-managed-profile-guided-optimization-tool.md
+      - name: Ngen.exe（本机映像生成器）
+        href: tools/ngen-exe-native-image-generator.md
+      - name: Peverify.exe（PEVerify 工具）
+        href: tools/peverify-exe-peverify-tool.md
+      - name: Regasm.exe（程序集注册工具）
+        href: tools/regasm-exe-assembly-registration-tool.md
+      - name: Regsvcs.exe（.NET 服务安装工具）
+        href: tools/regsvcs-exe-net-services-installation-tool.md
+      - name: Resgen.exe（资源文件生成器）
+        href: tools/resgen-exe-resource-file-generator.md
+      - name: SecAnnotate.exe（.NET 安全批注器工具）
+        href: tools/secannotate-exe-net-security-annotator-tool.md
+      - name: SignTool.exe（签名工具）
+        href: tools/signtool-exe.md
+      - name: Sn.exe（强名称工具）
+        href: tools/sn-exe-strong-name-tool.md
+      - name: SOS.dll（SOS 调试扩展）
+        href: tools/sos-dll-sos-debugging-extension.md
+      - name: SqlMetal.exe（代码生成工具）
+        href: tools/sqlmetal-exe-code-generation-tool.md
+      - name: Storeadm.exe（独立存储工具）
+        href: tools/storeadm-exe-isolated-storage-tool.md
+      - name: Tlbexp.exe（类型库导出程序）
+        href: tools/tlbexp-exe-type-library-exporter.md
+      - name: Tlbimp.exe（类型库导入程序）
+        href: tools/tlbimp-exe-type-library-importer.md
+      - name: Winmdexp.exe（Windows 运行时元数据导出工具）
+        href: tools/winmdexp-exe-windows-runtime-metadata-export-tool.md
+      - name: Winmdexp.exe 错误消息
+        href: tools/winmdexp-exe-error-messages.md
+      - name: Winres.exe（Windows 窗体资源编辑器）
+        href: tools/winres-exe-windows-forms-resource-editor.md
+  - name: 其他 API
+    items:
+      - name: 概述
+        href: additional-apis/index.md
+      - name: Microsoft.SqlServer.Server
+        items:
+          - name: SmiOrderProperty 类
+            items:
+              - name: Item 属性
+                href: additional-apis/microsoft.sqlserver.server.smiorderproperty.item.md
+      - name: System
+        items:
+          - name: Exception 类
+            items:
+              - name: PrepForRemoting 方法
+                href: additional-apis/system.exception.prepforremoting.md
+      - name: System.Data.SqlTypes
+        items:
+          - name: SqlChars 类
+            items:
+              - name: Stream 属性
+                href: additional-apis/system.data.sqltypes.sqlchars.stream.md
+          - name: SqlStreamChars 类
+            items:
+              - name: SqlStreamChars 构造函数
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.-ctor.md
+              - name: CanSeek 属性
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.canseek.md
+              - name: IsNull 属性
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.isnull.md
+              - name: length 属性
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.length.md
+              - name: Close 方法
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.close.md
+              - name: Dispose 方法
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.dispose.md
+              - name: Flush 方法
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.flush.md
+              - name: Read 方法
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.read.md
+              - name: Seek 方法
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.seek.md
+              - name: SetLength 方法
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.setlength.md
+              - name: Write 方法
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.write.md
+      - name: System.IO
+        items:
+          - name: MemoryStream 类
+            items:
+              - name: InternalGetOriginAndLength 方法
+                href: additional-apis/system.io.memorystream.internalgetoriginandlength.md
+      - name: System.Net
+        items:
+          - name: ComNetOS 类
+            href: additional-apis/system.net.comnetos.md
+          - name: Connection 类
+            href: additional-apis/connection.md
+            items:
+              - name: m_WriteList 字段
+                href: additional-apis/m_writelist.md
+          - name: ConnectionGroup 类
+            href: additional-apis/connectiongroup.md
+            items:
+              - name: m_ConnectionList 字段
+                href: additional-apis/m_connectionlist.md
+          - name: ConnectStream 类
+            items:
+              - name: 连接属性
+                href: additional-apis/system.net.connectstream.connection.md
+          - name: CoreResponseData 类
+            href: additional-apis/coreresponsedata.md
+            items:
+              - name: m_ResponseHeaders 字段
+                href: additional-apis/coreresponsedata_m_responseheaders.md
+              - name: m_StatusCode 字段
+                href: additional-apis/coreresponsedata_m_statuscode.md
+          - name: ExceptionHelper 类
+            href: additional-apis/system.net.exceptionhelper.md
+          - name: HttpStatusDescription 类
+            href: additional-apis/system.net.httpstatusdescription.md
+          - name: HttpWebRequest 类
+            items:
+              - name: _AutoRedirects 字段
+                href: additional-apis/_autoredirects.md
+              - name: _CoreResponse 字段
+                href: additional-apis/httpwebrequest__coreresponse.md
+              - name: _HttpResponse 字段
+                href: additional-apis/_httpresponse.md
+          - name: Logging 类
+            href: additional-apis/system.net.logging.md
+          - name: MailAddressParser 类
+            href: additional-apis/system.net.mail.mailaddressparser.md
+          - name: MailBnfHelper 类
+            href: additional-apis/system.net.mime.mailbnfhelper.md
+          - name: PooledStream 类
+            items:
+              - name: NetworkStream 属性
+                href: additional-apis/system.net.pooledstream.networkstream.md
+          - name: QuotedPairReader 类
+            href: additional-apis/system.net.mail.quotedpairreader.md
+          - name: RtcState 类
+            href: additional-apis/system.net.rtcstate.md
+          - name: ServicePoint 类
+            items:
+              - name: m_ConnectionGroupList 字段
+                href: additional-apis/m_connectiongrouplist.md
+          - name: ServicePointManager 类
+            items:
+              - name: CloseConnectionGroups 方法
+                href: additional-apis/system.net.servicepointmanager.closeconnectiongroups.md
+              - name: s_ServicePointTable 字段
+                href: additional-apis/s_servicepointtable.md
+          - name: TlsStream 类
+            items:
+              - name: m_Worker 字段
+                href: additional-apis/system.net.tlsstream.m_worker.md
+          - name: UnsafeNclNativeMethods 类
+            href: additional-apis/system.net.unsafenclnativemethods.md
+          - name: WebHeaderCollection 类
+            items:
+              - name: AddInternal 方法
+                href: additional-apis/system.net.webheadercollection.addinternal.md
+      - name: System.Net.Security
+        items:
+          - name: SslState 类
+            items:
+              - name: SslProtocol 属性
+                href: additional-apis/system.net.security.sslstate.sslprotocol.md
+      - name: System.ServiceModel.Channels
+        items:
+          - name: Message 类
+            items:
+              - name: BodyToString 方法
+                href: additional-apis/system.servicemodel.channels.message.bodytostring.md
+              - name: WriteStartHeaders 方法
+                href: additional-apis/system.servicemodel.channels.message.writestartheaders.md
+      - name: System.Web.Compilation
+        items:
+          - name: ControlBuilderInterceptor 类
+            href: additional-apis/controlbuilderinterceptor-class.md
+      - name: System.Windows.Controls
+        items:
+          - name: GridViewHeaderRowPresenter 类
+            items:
+              - name: FindHeaderByColumn 方法
+                href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.findheaderbycolumn.md
+              - name: MakeParentItemsControlGotFocus 方法
+                href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.makeparentitemscontrolgotfocus.md
+              - name: PrepareHeaderDrag 方法
+                href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.prepareheaderdrag.md
+      - name: System.Windows.Diagnostics
+        items:
+          - name: VisualDiagnostics 类
+            items:
+              - name: s_isDebuggerCheckDisabledForTestPurposes 字段
+                href: additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md
+      - name: System.Windows.Forms.Design
+        items:
+          - name: DataMemberFieldEditor 类
+            href: additional-apis/datamemberfieldeditor-class.md
+          - name: DataMemberListEditor 类
+            href: additional-apis/datamemberlisteditor-class.md
+      - name: System.Windows.Xps
+        items:
+          - name: XpsDocumentWriter 类
+            items:
+              - name: raise__WritingCancelled 方法
+                href: additional-apis/xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
+              - name: raise__WritingCompleted 方法
+                href: additional-apis/xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
+              - name: raise__WritingPrintTicketRequired 方法
+                href: additional-apis/xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md
+              - name: raise__WritingProgressChanged
+                href: additional-apis/xpsdocumentwriter-raise-writingprogresschanged-method-system-windows-xps.md
+              - name: _WritingCancelled
+                href: additional-apis/xpsdocumentwriter-writingcancelled-event-system-windows-xps.md
+              - name: _WritingCompleted
+                href: additional-apis/xpsdocumentwriter-writingcompleted-event-system-windows-xps.md
+              - name: _WritingProgressChanged
+                href: additional-apis/xpsdocumentwriter-writingprogresschanged-event-system-windows-xps.md
+      - name: System.Xml
+        items:
+          - name: XmlReader 类
+            items:
+              - name: CreateSqlReader 方法
+                href: additional-apis/system.xml.xmlreader.createsqlreader.md
+      - name: adodb 命名空间
+        items:
+          - name: Connection 接口
+            href: additional-apis/adodb.connection.md
+          - name: EventReason 枚举
+            href: additional-apis/adodb.eventreasonenum.md
+          - name: EventStatus 枚举
+            href: additional-apis/adodb.eventstatusenum.md
+      - name: stdole 命名空间
+        items:
+          - name: DISPPARAMS 结构
+            href: additional-apis/stdole.dispparams.md
+          - name: EXCEPINFO 结构
+            href: additional-apis/stdole.excepinfo.md
+          - name: IFont 类
+            items:
+              - name: Name 属性
+                href: additional-apis/stdole.ifont.name.md
+          - name: IFontDisp 接口
+            href: additional-apis/stdole.ifontdisp.md
+          - name: IPicture 类
+            items:
+              - name: Handle 属性
+                href: additional-apis/stdole.ipicture.handle.md
+          - name: IPictureDisp 接口
+            href: additional-apis/stdole.ipicturedisp.md
+          - name: IPictureDisp 类
+            items:
+              - name: Handle 属性
+                href: additional-apis/stdole.ipicturedisp.handle.md
+          - name: StdFont 接口
+            href: additional-apis/stdole.stdfont.md
+          - name: StdPicture 接口
+            href: additional-apis/stdole.stdpicture.md
+  - name: 新增和改进的内容
+    items:
+      - name: 新增功能
+        href: whats-new/index.md
+      - name: 辅助功能中的新增功能
+        href: whats-new/whats-new-in-accessibility.md
+      - name: API 参考中过时的内容
+        href: whats-new/whats-obsolete.md
+        items:
+          - name: 过时类型
+            href: whats-new/obsolete-types.md
+          - name: 过时成员
+            href: whats-new/obsolete-members.md
+  - name: 代码访问安全性
+    items:
+      - name: 概述
+        href: misc/code-access-security.md
+      - name: 代码访问安全性基础知识
+        href: misc/code-access-security-basics.md
+      - name: 代码访问安全策略兼容性和迁移
+        href: misc/code-access-security-policy-compatibility-and-migration.md
+      - name: 危险权限和策略管理
+        href: misc/dangerous-permissions-and-policy-administration.md
+      - name: 如何在沙盒中运行部分信任的代码
+        href: misc/how-to-run-partially-trusted-code-in-a-sandbox.md
+      - name: 链接需求
+        href: misc/link-demands.md
+      - name: 保护异常处理
+        href: misc/securing-exception-handling.md
+      - name: 保护方法访问
+        href: misc/securing-method-access.md
+      - name: 保护包装代码
+        href: misc/securing-wrapper-code.md
+      - name: 安全和公共只读数组字段
+        href: misc/security-and-public-read-only-array-fields.md
+      - name: 安全性和远程处理注意事项
+        href: misc/security-and-remoting-considerations.md
+      - name: 安全和序列化
+        href: misc/security-and-serialization.md
+      - name: 安全透明的代码，级别 1
+        href: misc/security-transparent-code-level-1.md
+      - name: 安全透明的代码，级别 2
+        href: misc/security-transparent-code-level-2.md
+      - name: 安全透明的代码
+        href: misc/security-transparent-code.md
+      - name: 通过部分受信任的代码使用库
+        href: misc/using-libraries-from-partially-trusted-code.md
+      - name: 使用 Assert 方法
+        href: misc/using-the-assert-method.md
+  - name: 代码分析
+    href: code-analyzers.md
+  - name: 多平台开发
+    items:
+      - name: 概述
+        href: cross-platform/index.md
+        displayName: cross platform
+      - name: 可移植类库
+        href: cross-platform/portable-class-library.md
+      - name: 将可移植类库与 MVVM 配合使用
+        href: cross-platform/using-portable-class-library-with-model-view-view-model.md
+      - name: 面向多个平台的库的应用程序资源
+        href: cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
+      - name: .NET Framework 对 Microsoft Store 应用和 Windows 运行时的支持
+        href: cross-platform/support-for-windows-store-apps-and-windows-runtime.md
+      - name: 向 Windows 运行时传递 URI
+        href: cross-platform/passing-a-uri-to-the-windows-runtime.md

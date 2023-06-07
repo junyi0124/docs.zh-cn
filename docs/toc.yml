@@ -1,0 +1,25 @@
+items:
+  - name: 欢迎使用
+    href: welcome.md
+  - name: .NET 文档中的新增功能
+    href: whats-new/index.yml
+  - name: .NET 基础知识
+    href: fundamentals/
+  - name: .NET Framework 指南
+    href: framework/
+  - name: .NET 桌面指南
+    href: /dotnet/desktop/
+  - name: C# 指南
+    href: csharp/index.yml
+  - name: F# 指南
+    href: fsharp/index.yml
+  - name: Visual Basic 指南
+    href: visual-basic/index.yml
+  - name: ML.NET 指南
+    href: machine-learning/index.yml
+  - name: .NET for Apache Spark 指南
+    href: spark/index.yml
+  - name: .NET 应用程序体系结构指南
+    href: architecture/index.yml
+  - name: 示例和教程
+    href: samples-and-tutorials/index.md

@@ -1,0 +1,24 @@
+- name: 密码设置架构
+  href: index.md
+  items:
+    - name: Cryptography 设置的 <mscorlib> 元素
+      href: mscorlib-element-for-cryptography-settings.md
+      items:
+        - name: <cryptographySettings> 元素
+          href: cryptographysettings-element.md
+          items:
+            - name: <cryptoNameMapping> 元素
+              href: cryptonamemapping-element.md
+              items:
+                - name: <cryptoClasses> 元素
+                  href: cryptoclasses-element.md
+                  items:
+                    - name: <cryptoClass> 元素
+                      href: cryptoclass-element.md
+                - name: <nameEntry> 元素
+                  href: nameentry-element.md
+            - name: <oidMap> 元素
+              href: oidmap-element.md
+              items:
+                - name: <oidEntry> 元素
+                  href: oidentry-element.md

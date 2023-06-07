@@ -1,0 +1,98 @@
+- name: ADO.NET 实体框架
+  href: index.md
+- name: 实体框架概述
+  href: overview.md
+- name: 建模和映射
+  href: modeling-and-mapping.md
+  items:
+    - name: EDM 生成器 (EdmGen.exe)
+      href: edm-generator-edmgen-exe.md
+      items:
+        - name: 如何：使用 EdmGen.exe 生成模型和映射文件
+          href: how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md
+        - name: 如何：使用 EdmGen.exe 生成对象层代码
+          href: how-to-use-edmgen-exe-to-generate-object-layer-code.md
+        - name: 如何：使用 EdmGen.exe 验证模型和映射文件
+          href: how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md
+    - name: 如何：定义连接字符串
+      href: how-to-define-the-connection-string.md
+    - name: 如何：创建模型及映射文件嵌入资源
+      href: how-to-make-model-and-mapping-files-embedded-resources.md
+    - name: 使用数据定义语言
+      href: working-with-data-definition-language.md
+- name: 查询概念模型
+  href: querying-a-conceptual-model.md
+- name: 使用对象
+  href: working-with-objects.md
+- name: 使用数据提供程序
+  href: working-with-data-providers.md
+  items:
+    - name: 连接字符串
+      href: connection-strings.md
+    - name: 实体框架数据提供程序
+      href: data-providers.md
+      items:
+        - name: 用于实体框架的 EntityClient 提供程序
+          href: entityclient-provider-for-the-entity-framework.md
+          items:
+            - name: 如何：生成 EntityConnection 连接字符串
+              href: how-to-build-an-entityconnection-connection-string.md
+            - name: 如何：执行返回 PrimitiveType 结果的查询
+              href: how-to-execute-a-query-that-returns-primitivetype-results.md
+            - name: 如何：执行返回 StructuralType 结果的查询
+              href: how-to-execute-a-query-that-returns-structuraltype-results.md
+            - name: 如何：执行返回 RefType 结果的查询
+              href: how-to-execute-a-query-that-returns-reftype-results.md
+            - name: 如何：执行返回复杂类型的查询
+              href: how-to-execute-a-query-that-returns-complex-types.md
+            - name: 如何：执行返回嵌套集合的查询
+              href: how-to-execute-a-query-that-returns-nested-collections.md
+            - name: 如何：使用 EntityCommand 执行参数化实体 SQL 查询
+              href: how-to-execute-a-parameterized-entity-sql-query-using-entitycommand.md
+            - name: 如何：使用 EntityCommand 执行参数化存储过程
+              href: how-to-execute-a-parameterized-stored-procedure-using-entitycommand.md
+            - name: 如何：执行多态查询
+              href: how-to-execute-a-polymorphic-query.md
+            - name: 如何：使用导航运算符导航关系
+              href: how-to-navigate-relationships-with-the-navigate-operator.md
+        - name: 用于实体框架的 SqlClient
+          href: sqlclient-for-the-entity-framework.md
+          items:
+            - name: 用于实体框架函数的 SqlClient
+              href: sqlclient-for-ef-functions.md
+              items:
+                - name: SQL Server 函数映射的规范化概念模型
+                  href: conceptual-model-canonical-to-sql-server-functions-mapping.md
+                - name: 聚合函数
+                  href: aggregate-functions-sqlclient-for-entity-framework.md
+                - name: 日期和时间函数
+                  href: date-and-time-functions.md
+                - name: 数学函数
+                  href: mathematical-functions.md
+                - name: 字符串函数
+                  href: string-functions.md
+                - name: 系统函数
+                  href: system-functions.md
+            - name: 用于实体框架的 SqlClient 类型
+              href: sqlclient-for-ef-types.md
+            - name: SqlClient 中的已知问题（实体框架）
+              href: known-issues-in-sqlclient-for-entity-framework.md
+    - name: 开发和部署注意事项
+      href: development-and-deployment-considerations.md
+      items:
+        - name: 安全注意事项
+          href: security-considerations.md
+        - name: 性能注意事项
+          href: performance-considerations.md
+        - name: 迁移注意事项
+          href: migration-considerations.md
+        - name: 部署注意事项
+          href: deployment-considerations.md
+- name: 实体框架资源
+  href: resources.md
+- name: 实体框架术语
+  href: terminology.md
+- name: 入门
+  href: getting-started.md
+- name: 语言参考
+  href: language-reference/index.md

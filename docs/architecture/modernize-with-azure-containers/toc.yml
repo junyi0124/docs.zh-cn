@@ -1,0 +1,42 @@
+- name: 介绍
+  href: index.md
+  items:
+    - name: 直接将现有的应用迁移到 Azure IaaS
+      href: lift-and-shift-existing-apps-azure-iaas.md
+    - name: 将关系数据库迁移到 Azure
+      href: migrate-your-relational-databases-to-azure.md
+    - name: 将现有 .NET 应用改造为云优化应用
+      href: ./modernize-existing-apps-to-cloud-optimized/index.md
+      items:
+        - name: 将现有 .NET 应用改造为云优化应用的原因
+          href: ./modernize-existing-apps-to-cloud-optimized/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications.md
+        - name: 云优化应用中的 Microsoft 技术
+          href: ./modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications.md
+        - name: 云本机应用程序呢？
+          href: ./modernize-existing-apps-to-cloud-optimized/what-about-cloud-native-applications.md
+        - name: 将现有 .NET 应用部署为 Windows 容器
+          href: ./modernize-existing-apps-to-cloud-optimized/deploy-existing-net-apps-as-windows-containers.md
+        - name: 何时不部署到 Windows 容器
+          href: ./modernize-existing-apps-to-cloud-optimized/when-not-to-deploy-to-windows-containers.md
+        - name: 何时在本地 IaaS VM 基础结构中部署 Windows 容器
+          href: ./modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md
+        - name: 何时将 Windows 容器部署到 Azure VM（IaaS 云）
+          href: ./modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md
+        - name: 何时将 Windows 容器部署到 Windows 容器实例 (ACI)
+          href: ./modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-instances-ACI.md
+        - name: 何时将 Windows 容器部署到 Azure 容器服务 (ACS-Kubernetes)
+          href: ./modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md
+        - name: 为基于容器的应用程序选择 Azure 计算平台
+          href: ./modernize-existing-apps-to-cloud-optimized/choosing-azure-compute-options-for-container-based-applications.md
+        - name: 生成适用于云的可复原服务：在云中处理暂时性故障
+          href: ./modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md
+        - name: 通过监视和遥测对应用进行现代化
+          href: ./modernize-existing-apps-to-cloud-optimized/modernize-your-apps-with-monitoring-and-telemetry.md
+        - name: 通过云中的 CI/CD 管道和 DevOps 工具保持对应用的生命周期进行现代化
+          href: ./modernize-existing-apps-to-cloud-optimized/life-cycle-ci-cd-pipelines-devops-tools.md
+        - name: 迁移到混合云方案
+          href: ./modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios.md
+    - name: 演练和技术入门概述
+      href: walkthroughs-technical-get-started-overview.md
+    - name: 结论
+      href: conclusions.md

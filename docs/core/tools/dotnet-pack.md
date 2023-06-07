@@ -1,95 +1,191 @@
 ---
-title: "dotnet-pack 命令 | .NET Core SDK"
-description: "dotnet-pack 命令可为 .NET Core 项目创建 NuGet 包。"
-keywords: "dotnet-pack, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
-ms.date: 10/12/2016
-ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
-ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
-translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: e83c8ad302590bcd77129c3ff325e498da751e69
-
+title: dotnet pack 命令
+description: dotnet pack 命令可为 .NET 项目创建 NuGet 包。
+ms.date: 04/28/2020
+ms.openlocfilehash: 3ca7947b4ed9902b163f09a7b57696f304610cce
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95674796"
 ---
+# <a name="dotnet-pack"></a>dotnet pack
 
-#<a name="dotnetpack"></a>dotnet-pack
+**本文适用于：** ✔️ .NET Core 2.x SDK 及更高版本
 
-## <a name="name"></a>名称
+## <a name="name"></a>“属性”
 
-`dotnet-pack` - 将代码打包到 NuGet 包
+`dotnet pack` - 将代码打包到 NuGet 包。
 
 ## <a name="synopsis"></a>摘要
 
-`dotnet pack [--help] [--output]  
-    [--no-build] [--build-base-path]  
-    [--configuration]  [--version-suffix]
-    [project]`  
+```dotnetcli
+dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+    [--force] [--include-source] [--include-symbols] [--interactive]
+    [--no-build] [--no-dependencies] [--no-restore] [--nologo]
+    [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
+    [-s|--serviceable] [-v|--verbosity <LEVEL>]
+    [--version-suffix <VERSION_SUFFIX>]
+
+dotnet pack -h|--help
+```
 
 ## <a name="description"></a>描述
 
-`dotnet pack` 命令生成项目并创建 NuGet 包。 此操作将生成两个含有 `nupkg` 扩展名的包。 一个包含有代码，另一个含有调试符号。 
+`dotnet pack` 命令生成项目并创建 NuGet 包。 该命令的结果是一个 NuGet 包，也就是一个 .nupkg 文件。
 
-将被打包项目的 NuGet 依赖项添加到 nuspec 文件，以便在安装包时可以将其解析。 项目到项目的引用不会打包到项目内。 目前，如果具有项目到项目的依赖项，则每个项目均应含一个包。
+如果要生成包含调试符号的包，可以使用以下两个选项：
 
-`dotnet pack` 默认首先生成项目。 如果希望避免此情况，则选择 `--no-build` 选项。 这在持续集成 (CI) 生成方案中非常有用，例如，在其中你可以知道代码是刚刚生成的。 
+- `--include-symbols`：该选项用于创建符号包。
+- `--include-source`：该选项用于创建带有 `src` 文件夹的符号包，该文件夹包含源文件。
+
+将被打包项目的 NuGet 依赖项添加到 *.nuspec* 文件，以便在安装包时可以进行正确解析。 项目到项目的引用不会打包到项目内。 目前，如果具有项目到项目的依赖项，则每个项目均必须包含一个包。
+
+默认情况下，`dotnet pack` 先构建项目。 如果希望避免此行为，则传递 `--no-build` 选项。 此选项在持续集成 (CI) 生成方案中通常非常有用，你可以知道代码是之前生成的。
+
+> [!NOTE]
+> 在某些情况下，无法执行隐式生成。 设置 `GeneratePackageOnBuild` 以避免生成目标和包目标之间的循环依赖关系时可能会发生这种情况。 如果存在锁定文件或其他问题，生成也可能失败。
+
+可向 `dotnet pack` 命令提供 MSBuild 属性，用于打包进程。 有关详细信息，请参阅 [NuGet 元数据属性](csproj.md#nuget-metadata-properties)和 [MSBuild 命令行引用](/visualstudio/msbuild/msbuild-command-line-reference)。 [示例](#examples)部分介绍了如何在不同的情况下使用 MSBuild -p 开关。
+
+默认情况下，Web 项目不可打包。 若要覆盖默认行为，请将以下属性添加到 .csproj 文件中：
+
+```xml
+<PropertyGroup>
+   <IsPackable>true</IsPackable>
+</PropertyGroup>
+```
+
+### <a name="implicit-restore"></a>隐式还原
+
+[!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
+
+## <a name="arguments"></a>自变量
+
+`PROJECT | SOLUTION`
+
+  要打包的项目或解决方案。 它可能是 [csproj 文件](csproj.md)、vbproj 文件、fsproj 文件、解决方案文件或目录的路径。 如果未指定，此命令会搜索当前目录，以获取项目文件或解决方案文件。
 
 ## <a name="options"></a>选项
 
-`-h|--help`
+- **`-c|--configuration <CONFIGURATION>`**
 
-打印出有关命令的简短帮助。  
+  定义生成配置。 大多数项目的默认配置为 `Debug`，但你可以覆盖项目中的生成配置设置。
 
-`[project]` 
-    
-要打包的项目。 它可能是 [project.json](project-json.md) 文件或目录的路径。 如果省略，则将默认为当前目录。 
+- **`--force`**
 
-`-o|--output <OUTPUT_DIRECTORY>`
+  强制解析所有依赖项，即使上次还原已成功，也不例外。 指定此标记等同于删除 project.assets.json 文件。
 
-将生成的包放置在指定目录。 
+- **`-h|--help`**
 
-`--no-build`
+  打印出有关命令的简短帮助。
 
-打包前不生成项目。 
+- **`--include-source`**
 
-`--build-base-path`
+  除输出目录中的常规 NuGet 包外，还包括调试符号 NuGet 包。 源文件包括在符号包内的 `src` 文件夹中。
 
-将临时生成项目放置在指定目录。 默认情况下，转到当前目录中的 `obj` 目录。 
+- **`--include-symbols`**
 
-`-c|--configuration <Debug|Release>`
+  除输出目录中的常规 NuGet 包外，还包括调试符号 NuGet 包。
 
-生成项目时要使用的配置。 如未指定，则默认为 `Debug`。
+- **`--interactive`**
 
-`--version-suffix`
+  允许命令停止并等待用户输入或操作（例如，完成身份验证）。 自 .NET Core 3.0 SDK 起可用。
 
-更新了含有指定字符串的 `-*` 包版本后缀中的星形。
+- **`--no-build`**
+
+  打包前不生成项目。 还将隐式设置 `--no-restore` 标记。
+
+- **`--no-dependencies`**
+
+  忽略项目间引用，仅还原根项目。
+
+- **`--no-restore`**
+
+  运行此命令时不执行隐式还原。
+
+- **`--nologo`**
+
+  不显示启动版权标志或版权消息。 自 .NET Core 3.0 SDK 起可用。
+
+- **`-o|--output <OUTPUT_DIRECTORY>`**
+
+  将生成的包放置在指定目录。
+
+- **`--runtime <RUNTIME_IDENTIFIER>`**
+
+  指定要为其还原包的目标运行时。 有关运行时标识符 (RID) 的列表，请参阅 [RID 目录](../rid-catalog.md)。
+
+- **`-s|--serviceable`**
+
+  设置包中可用的标志。 有关详细信息，请参阅 [.NET 博客：.NET Framework 4.5.1 支持 .NET NuGet 库的 Microsoft 安全更新](https://aka.ms/nupkgservicing)。
+
+- **`--version-suffix <VERSION_SUFFIX>`**
+
+  定义项目中 `$(VersionSuffix)` MSBuild 属性的值。
+
+- **`-v|--verbosity <LEVEL>`**
+
+  设置命令的详细级别。 允许使用的值为 `q[uiet]`、`m[inimal]`、`n[ormal]`、`d[etailed]` 和 `diag[nostic]`。
 
 ## <a name="examples"></a>示例
 
-打包当前目录中的项目：
+- 打包当前目录中的项目：
 
-`dotnet pack`
+  ```dotnetcli
+  dotnet pack
+  ```
 
-打包 app1 项目：
+- 打包 `app1` 项目：
 
-`dotnet pack ~/projects/app1/project.json`
-    
-打包当前目录中的项目并将生成的包放置到指定文件夹：
+  ```dotnetcli
+  dotnet pack ~/projects/app1/project.csproj
+  ```
 
-`dotnet pack --output nupkgs`
+- 打包当前目录中的项目并将生成的包放置到 `nupkgs` 文件夹：
 
-将当前目录中的项目打包到指定文件夹并跳过生成步骤：
+  ```dotnetcli
+  dotnet pack --output nupkgs
+  ```
 
-`dotnet pack --no-build --output nupkgs`
+- 将当前目录中的项目打包到 `nupkgs` 文件夹并跳过生成步骤：
 
-打包当前项目并更新生成的具有给定后缀的包版本。 例如，版本 `1.0.0-*` 将更新为 `1.0.0-ci-1234`。
+  ```dotnetcli
+  dotnet pack --no-build --output nupkgs
+  ```
 
-`dotnet pack --version-suffix "ci-1234"`
+- 将项目的版本后缀配置为 *.csproj* 文件中的 `<VersionSuffix>$(VersionSuffix)</VersionSuffix>`，使用给定的后缀打包当前项目，并更新生成的程序包版本：
 
+  ```dotnetcli
+  dotnet pack --version-suffix "ci-1234"
+  ```
 
-<!--HONumber=Nov16_HO1-->
+- 使用 `PackageVersion` MSBuild 属性将包版本设置为 `2.1.0`：
 
+  ```dotnetcli
+  dotnet pack -p:PackageVersion=2.1.0
+  ```
 
+- 打包特定[目标框架](../../standard/frameworks.md)的项目：
+
+  ```dotnetcli
+  dotnet pack -p:TargetFrameworks=net45
+  ```
+
+- 打包项目，并使用特定运行时 (Windows 10) 进行还原操作：
+
+  ```dotnetcli
+  dotnet pack --runtime win10-x64
+  ```
+
+- 使用 .nuspec 文件打包项目：
+
+  ```dotnetcli
+  dotnet pack ~/projects/app1/project.csproj -p:NuspecFile=~/projects/app1/project.nuspec -p:NuspecBasePath=~/projects/app1/nuget
+  ```
+
+  要了解如何使用 `NuspecFile`、`NuspecBasePath` 和 `NuspecProperties`，请参阅以下资源：
+
+  - [使用 .nuspec 打包](/nuget/reference/msbuild-targets#packing-using-a-nuspec)
+  - [用于创建自定义包的高级扩展点](/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
+  - [全局属性](/visualstudio/msbuild/msbuild-properties#global-properties)

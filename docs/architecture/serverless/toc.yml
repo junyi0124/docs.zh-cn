@@ -1,0 +1,35 @@
+- name: 无服务器应用电子书
+  href: index.md
+  items:
+    - name: 体系结构方法
+      href: architecture-approaches.md
+      items:
+        - name: 体系结构部署方法
+          href: architecture-deployment-approaches.md
+    - name: 无服务器体系结构
+      href: serverless-architecture.md
+      items:
+        - name: 无服务器体系结构注意事项
+          href: serverless-architecture-considerations.md
+        - name: 无服务器设计示例
+          href: serverless-design-examples.md
+    - name: Azure 无服务器平台
+      href: azure-serverless-platform.md
+      items:
+        - name: Azure Functions
+          href: azure-functions.md
+        - name: Application Insights
+          href: application-insights.md
+        - name: Azure 逻辑应用
+          href: logic-apps.md
+        - name: Azure 事件网格
+          href: event-grid.md
+    - name: 持久 Azure Functions
+      href: durable-azure-functions.md
+      items:
+        - name: 业务流程模式
+          href: orchestration-patterns.md
+    - name: 无服务器业务方案和用例
+      href: serverless-business-scenarios.md
+    - name: 结束语
+      href: serverless-conclusion.md

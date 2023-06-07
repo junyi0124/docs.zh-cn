@@ -1,0 +1,281 @@
+- name: XML 文档和数据
+  href: index.md
+  items:
+    - name: XML 处理选项
+      href: xml-processing-options.md
+    - name: 内存中 XML 数据处理
+      href: processing-xml-data-in-memory.md
+      items:
+        - name: 使用 DOM 模型处理 XML 数据
+          href: process-xml-data-using-the-dom-model.md
+          items:
+            - name: XML 文档对象模型 (DOM)
+              href: xml-document-object-model-dom.md
+            - name: XML 节点类型
+              href: types-of-xml-nodes.md
+            - name: XML 文档对象模型 (DOM) 层次结构
+              href: xml-document-object-model-dom-hierarchy.md
+            - name: 将对象层次结构映射到 XML 数据
+              href: mapping-the-object-hierarchy-to-xml-data.md
+            - name: 创建 XML 文档
+              href: xml-document-creation.md
+            - name: 将 XML 文档读入 DOM
+              href: reading-an-xml-document-into-the-dom.md
+              items:
+                - name: 嵌入到文档中的样式表指令
+                  href: style-sheet-directives-embedded-in-a-document.md
+                - name: 从读取器中加载数据
+                  href: load-data-from-a-reader.md
+                - name: 加载 DOM 时的空白和有效空白处理
+                  href: white-space-and-significant-white-space-handling-when-loading-the-dom.md
+                - name: 访问 DOM 中的属性
+                  href: accessing-attributes-in-the-dom.md
+                - name: 将实体声明和实体引用读入 DOM
+                  href: reading-entity-declarations-and-entity-references-into-the-dom.md
+                - name: 保留实体引用
+                  href: entity-references-are-preserved.md
+                - name: 扩展但不保留实体引用
+                  href: entity-references-are-expanded-and-not-preserved.md
+            - name: 将节点插入 XML 文档中
+              href: inserting-nodes-into-an-xml-document.md
+              items:
+                - name: 在 DOM 中创建新节点
+                  href: create-new-nodes-in-the-dom.md
+                  items:
+                    - name: 为 DOM 中的元素创建新属性
+                      href: creating-new-attributes-for-elements-in-the-dom.md
+                    - name: 创建新节点时的 XML 元素和属性名验证
+                      href: xml-element-and-attribute-name-verification-when-creating-new-nodes.md
+                    - name: 创建新实体引用
+                      href: creating-new-entity-references.md
+                    - name: 命名空间对包含元素和属性的新节点的实体引用扩展的影响
+                      href: namespace-affect-on-entity-ref-expansion-for-new-nodes.md
+                - name: 复制现有节点
+                  href: copy-existing-nodes.md
+                - name: 将现有节点从一个文档复制到另一个文档
+                  href: copying-existing-nodes-from-one-document-to-another.md
+                - name: 复制文档片段
+                  href: copying-document-fragments.md
+            - name: 移除 XML 文档中的节点、内容和值
+              href: removing-nodes-content-and-values-from-an-xml-document.md
+              items:
+                - name: 从 DOM 中移除节点
+                  href: removing-nodes-from-the-dom.md
+                - name: 移除 DOM 中元素节点的属性
+                  href: removing-attributes-from-an-element-node-in-the-dom.md
+                - name: 移除 DOM 中的节点内容
+                  href: removing-node-content-in-the-dom.md
+            - name: 修改 XML 文档中的节点、内容和值
+              href: modifying-nodes-content-and-values-in-an-xml-document.md
+            - name: 在 DOM 中验证 XML 文档
+              href: validating-an-xml-document-in-the-dom.md
+            - name: 保存和写出文档
+              href: saving-and-writing-a-document.md
+            - name: 使用 XPath 导航选择节点
+              href: select-nodes-using-xpath-navigation.md
+            - name: 解析外部资源
+              href: resolving-external-resources.md
+            - name: 使用 XmlNameTable 的对象比较
+              href: object-comparison-using-xmlnametable.md
+            - name: NamedNodeMap 和 NodeList 中的节点集合
+              href: node-collections-in-namednodemaps-and-nodelists.md
+              items:
+                - name: 按名称或索引检索未排序节点
+                  href: unordered-node-retrieval-by-name-or-index.md
+                - name: 按索引检索已排序节点
+                  href: ordered-node-retrieval-by-index.md
+            - name: NodeList 和 NamedNodeMap 的动态更新
+              href: dynamic-updates-to-nodelists-and-namednodemaps.md
+            - name: DOM 中的命名空间支持
+              href: namespace-support-in-the-dom.md
+              items:
+                - name: DOM 中的命名空间和 DTD
+                  href: namespaces-and-dtds-in-the-dom.md
+                - name: 更改 XML 文档中的命名空间声明
+                  href: changing-namespace-declarations-in-an-xml-document.md
+                - name: 更改命名空间前缀属性
+                  href: changing-namespace-prefix-properties.md
+            - name: 使用 mlNodeChangedEventArgs 的 XML 文档中的事件处理
+              href: event-handling-in-an-xml-document-using-the-xmlnodechangedeventargs.md
+            - name: 扩展 DOM
+              href: extending-the-dom.md
+        - name: 使用 XPath 数据模型处理 XML 数据
+          href: process-xml-data-using-the-xpath-data-model.md
+          items:
+            - name: 使用 XPathDocument 和 XmlDocument 读取 XML 数据
+              href: reading-xml-data-using-xpathdocument-and-xmldocument.md
+            - name: 使用 XPathNavigator 选择、计算和匹配 XML 数据
+              href: selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md
+              items:
+                - name: 使用 XPathNavigator 选择 XML 数据
+                  href: select-xml-data-using-xpathnavigator.md
+                - name: 使用 XPathNavigator 计算 XPath 表达式
+                  href: evaluate-xpath-expressions-using-xpathnavigator.md
+                - name: 使用 XPathNavigator 匹配节点
+                  href: matching-nodes-using-xpathnavigator.md
+                - name: XPath 查询识别的节点类型
+                  href: node-types-recognized-with-xpath-queries.md
+                - name: XPath 查询和命名空间
+                  href: xpath-queries-and-namespaces.md
+                - name: 已编译的 XPath 表达式
+                  href: compiled-xpath-expressions.md
+                - name: XPath 命名空间浏览
+                  href: xpath-namespace-navigation.md
+            - name: 使用 XPathNavigator 访问 XML 数据
+              href: accessing-xml-data-using-xpathnavigator.md
+              items:
+                - name: 使用 XPathNavigator 的节点集定位
+                  href: node-set-navigation-using-xpathnavigator.md
+                - name: 使用 XPathNavigator 的属性和命名空间节点定位
+                  href: attribute-and-namespace-node-navigation-using-xpathnavigator.md
+                - name: 使用 XPathNavigator 提取 XML 数据
+                  href: extract-xml-data-using-xpathnavigator.md
+                - name: 使用 XPathNavigator 访问强类型 XML 数据
+                  href: accessing-strongly-typed-xml-data-using-xpathnavigator.md
+                - name: 用户定义的函数和变量
+                  href: user-defined-functions-and-variables.md
+            - name: 使用 XPathNavigator 编辑 XML 数据
+              href: editing-xml-data-using-xpathnavigator.md
+              items:
+                - name: 使用 XPathNavigator 插入 XML 数据
+                  href: insert-xml-data-using-xpathnavigator.md
+                - name: 使用 XPathNavigator 修改 XML 数据
+                  href: modify-xml-data-using-xpathnavigator.md
+                - name: 使用 XPathNavigator 移除 XML 数据
+                  href: remove-xml-data-using-xpathnavigator.md
+            - name: 使用 XPathNavigator 验证架构
+              href: schema-validation-using-xpathnavigator.md
+        - name: 使用 LINQ to XML 处理 XML 数据
+          href: process-xml-data-using-linq-to-xml.md
+    - name: XSLT 转换
+      href: xslt-transformations.md
+      items:
+        - name: 使用 XslCompiledTransform 类
+          href: using-the-xslcompiledtransform-class.md
+          items:
+            - name: XslCompiledTransform 类的输入
+              href: inputs-to-the-xslcompiledtransform-class.md
+            - name: XslCompiledTransform 类的输出选项
+              href: output-options-on-the-xslcompiledtransform-class.md
+            - name: 在 XSLT 处理期间解析外部资源
+              href: resolving-external-resources-during-xslt-processing.md
+            - name: 扩展 XSLT 样式表
+              href: extending-xslt-style-sheets.md
+              items:
+                - name: XSLT 扩展对象
+                  href: xslt-extension-objects.md
+                - name: XSLT 参数
+                  href: xslt-parameters.md
+                - name: '使用 msxsl:script 的脚本块'
+                  href: script-blocks-using-msxsl-script.md
+            - name: 可恢复的 XSLT 错误
+              href: recoverable-xslt-errors.md
+            - name: 如何：转换节点片段
+              href: how-to-transform-a-node-fragment.md
+        - name: 从 XslTransform 类迁移
+          href: migrating-from-the-xsltransform-class.md
+          items:
+            - name: 如何：迁移 XslTransform 代码
+              href: how-to-migrate-your-xsltransform-code.md
+        - name: XSLT 安全注意事项
+          href: xslt-security-considerations.md
+        - name: XSLT 编译器 (xsltc.exe)
+          href: xslt-compiler-xsltc-exe.md
+          items:
+            - name: 如何：通过使用程序集执行 XSLT 转换
+              href: how-to-perform-an-xslt-transformation-by-using-an-assembly.md
+        - name: XslTransform 类的 XSLT 转换
+          href: xslt-transformations-with-the-xsltransform-class.md
+          items:
+            - name: XslTransform 类中任意行为的实现
+              href: implementation-of-discretionary-behaviors-in-the-xsltransform-class.md
+            - name: XslTransform 类实现 XSLT 处理器
+              href: xsltransform-class-implements-the-xslt-processor.md
+              items:
+                - name: XslTransform 的输出
+                  href: outputs-from-an-xsltransform.md
+                - name: 不同存储区的 XSLT 转换
+                  href: xslt-transformations-over-different-stores.md
+                - name: 解析外部 XSLT 样式表和文档
+                  href: resolving-external-xslt-style-sheets-and-documents.md
+                - name: 样式表参数和扩展对象的 XsltArgumentList
+                  href: xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md
+                - name: '使用 <msxsl:script> 编写 XSLT 样式表脚本'
+                  href: xslt-stylesheet-scripting-using-msxsl-script.md
+                - name: '对 msxsl:node-set() 函数的支持'
+                  href: support-for-the-msxsl-node-set-function.md
+                - name: 转换中的节点集
+                  href: node-sets-in-transformations.md
+                - name: 转换中的结果树片断
+                  href: result-tree-fragment-in-transformations.md
+            - name: 转换中的 XPathNavigator
+              href: xpathnavigator-in-transformations.md
+            - name: 转换中的 XPathNodeIterator
+              href: xpathnodeiterator-in-transformations.md
+            - name: XslTransform 的 XPathDocument 输入
+              href: xpathdocument-input-to-xsltransform.md
+            - name: XslTransform 的 XmlDataDocument 输入
+              href: xmldatadocument-input-to-xsltransform.md
+            - name: XslTransform 的 XmlDocument 输入
+              href: xmldocument-input-to-xsltransform.md
+    - name: 使用 XML 架构
+      href: working-with-xml-schemas.md
+      items:
+        - name: XML 架构对象模型 (SOM)
+          href: xml-schema-object-model-som.md
+          items:
+            - name: XML 架构对象模型概述
+              href: xml-schema-object-model-overview.md
+            - name: 读写 XML 架构
+              href: reading-and-writing-xml-schemas.md
+            - name: 生成 XML 架构
+              href: building-xml-schemas.md
+            - name: 遍历 XML 架构
+              href: traversing-xml-schemas.md
+            - name: 编辑 XML 架构
+              href: editing-xml-schemas.md
+            - name: 包含或导入 XML 架构
+              href: including-or-importing-xml-schemas.md
+        - name: 用于编译架构的 XmlSchemaSet
+          href: xmlschemaset-for-schema-compilation.md
+          items:
+            - name: 后架构编译信息集
+              href: post-schema-compilation-infoset.md
+            - name: 使用 XmlSchemaSet 进行 XML 架构 (XSD) 验证
+              href: xml-schema-xsd-validation-with-xmlschemaset.md
+            - name: XmlSchemaCollection 架构编译
+              href: xmlschemacollection-schema-compilation.md
+              items:
+                - name: 使用 XmlSchemaCollection 进行 XDR 验证
+                  href: xdr-validation-with-xmlschemacollection.md
+                - name: 使用 XmlSchemaCollection 进行 XML 架构 (XSD) 验证
+                  href: xml-schema-xsd-validation-with-xmlschemacollection.md
+        - name: XmlSchemaValidator 基于推送的验证
+          href: xmlschemavalidator-push-based-validation.md
+        - name: 推断 XML 架构
+          href: inferring-an-xml-schema.md
+          items:
+            - name: 从 XML 文档推断架构
+              href: inferring-schemas-from-xml-documents.md
+            - name: 推断架构节点类型和结构的规则
+              href: rules-for-inferring-schema-node-types-and-structure.md
+            - name: 推断简单类型的规则
+              href: rules-for-inferring-simple-types.md
+    - name: 关系数据和 ADO.NET 的 XML 集成
+      href: xml-integration-with-relational-data-and-adonet.md
+    - name: 管理 XML 文档中的命名空间
+      href: managing-namespaces-in-an-xml-document.md
+    - name: System.Xml 类中的类型支持
+      href: type-support-in-the-system-xml-classes.md
+      items:
+        - name: 将 XML 数据类型映射到 CLR 类型
+          href: mapping-xml-data-types-to-clr-types.md
+        - name: XML 类型支持实现说明
+          href: xml-type-support-implementation-notes.md
+        - name: XML 数据类型的转换
+          href: conversion-of-xml-data-types.md
+          items:
+            - name: 将字符串转换为 .NET Framework 数据类型
+              href: converting-strings-to-dotnet-data-types.md
+            - name: 将 .NET Framework 类型转换为字符串
+              href: converting-dotnet-types-to-strings.md

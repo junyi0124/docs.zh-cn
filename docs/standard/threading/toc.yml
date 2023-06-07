@@ -1,0 +1,78 @@
+- name: 线程
+  href: index.md
+  items:
+    - name: 托管线程处理基本知识
+      href: managed-threading-basics.md
+      items:
+        - name: 线程与线程处理
+          href: threads-and-threading.md
+        - name: 托管线程中的异常
+          href: exceptions-in-managed-threads.md
+        - name: 为多线程处理同步数据
+          href: synchronizing-data-for-multithreading.md
+        - name: 前台和后台线程
+          href: foreground-and-background-threads.md
+        - name: Windows 中的托管和非托管线程处理
+          href: managed-and-unmanaged-threading-in-windows.md
+        - name: 线程本地存储：线程相关的静态字段和数据槽
+          href: thread-local-storage-thread-relative-static-fields-and-data-slots.md
+    - name: 使用线程和线程处理
+      href: using-threads-and-threading.md
+      items:
+        - name: 启动时创建线程并传递数据
+          href: creating-threads-and-passing-data-at-start-time.md
+        - name: 暂停和中断线程
+          href: pausing-and-resuming-threads.md
+        - name: 销毁线程
+          href: destroying-threads.md
+        - name: 计划线程
+          href: scheduling-threads.md
+        - name: 托管线程中的取消
+          href: cancellation-in-managed-threads.md
+          items:
+            - name: 以协作方式取消线程
+              href: canceling-threads-cooperatively.md
+            - name: 如何：通过轮询侦听取消请求
+              href: how-to-listen-for-cancellation-requests-by-polling.md
+            - name: 如何：注册取消请求的回叫
+              href: how-to-register-callbacks-for-cancellation-requests.md
+            - name: 如何：侦听具有等待句柄的取消请求
+              href: how-to-listen-for-cancellation-requests-that-have-wait-handles.md
+            - name: 如何：侦听多个取消请求
+              href: how-to-listen-for-multiple-cancellation-requests.md
+    - name: 托管线程处理的最佳做法
+      href: managed-threading-best-practices.md
+    - name: 线程处理对象和功能
+      href: threading-objects-and-features.md
+      items:
+        - name: 托管线程池
+          href: the-managed-thread-pool.md
+        - name: 计时器
+          href: timers.md
+        - name: 同步基元概述
+          href: overview-of-synchronization-primitives.md
+        - name: EventWaitHandle
+          href: eventwaithandle.md
+        - name: CountdownEvent
+          href: countdownevent.md
+        - name: Mutexes
+          href: mutexes.md
+        - name: Semaphore 和 SemaphoreSlim
+          href: semaphore-and-semaphoreslim.md
+        - name: 屏障
+          href: barrier.md
+          items:
+            - name: 如何：使用屏障同步并发操作
+              href: how-to-synchronize-concurrent-operations-with-a-barrier.md
+        - name: SpinLock
+          href: spinlock.md
+          items:
+            - name: 如何：对低级别同步使用 SpinLock
+              href: how-to-use-spinlock-for-low-level-synchronization.md
+            - name: 如何：在 SpinLock 中启用线程跟踪模式
+              href: how-to-enable-thread-tracking-mode-in-spinlock.md
+        - name: SpinWait
+          href: spinwait.md
+          items:
+            - name: 如何：使用 SpinWait 实现两阶段等待操作
+              href: how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md

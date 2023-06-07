@@ -1,0 +1,145 @@
+- name: 合成
+  href: index.md
+  items:
+    - name: 合成接口
+      href: fusion-interfaces.md
+      items:
+        - name: IAppIdAuthority 接口
+          href: iappidauthority-interface.md
+        - name: IAssemblyCache 接口
+          href: iassemblycache-interface.md
+          items:
+            - name: CreateAssemblyCacheItem 方法
+              href: iassemblycache-createassemblycacheitem-method.md
+            - name: CreateAssemblyScavenger 方法
+              href: iassemblycache-createassemblyscavenger-method.md
+            - name: InstallAssembly 方法
+              href: iassemblycache-installassembly-method.md
+            - name: QueryAssemblyInfo 方法
+              href: iassemblycache-queryassemblyinfo-method.md
+            - name: UninstallAssembly 方法
+              href: iassemblycache-uninstallassembly-method.md
+        - name: IAssemblyCacheItem 接口
+          href: iassemblycacheitem-interface.md
+          items:
+            - name: AbortItem 方法
+              href: iassemblycacheitem-abortitem-method.md
+            - name: Commit 方法
+              href: iassemblycacheitem-commit-method.md
+            - name: CreateStream 方法
+              href: iassemblycacheitem-createstream-method.md
+        - name: IAssemblyEnum 接口
+          href: iassemblyenum-interface.md
+          items:
+            - name: Clone 方法
+              href: iassemblyenum-clone-method.md
+            - name: GetNextAssembly 方法
+              href: iassemblyenum-getnextassembly-method.md
+            - name: Reset 方法
+              href: iassemblyenum-reset-method.md
+        - name: IAssemblyName 接口
+          href: iassemblyname-interface.md
+          items:
+            - name: Clone 方法
+              href: iassemblyname-clone-method.md
+            - name: Finalize 方法
+              href: iassemblyname-finalize-method.md
+            - name: GetDisplayName 方法
+              href: iassemblyname-getdisplayname-method.md
+            - name: GetName 方法
+              href: iassemblyname-getname-method.md
+            - name: GetProperty 方法
+              href: iassemblyname-getproperty-method.md
+            - name: GetVersion 方法
+              href: iassemblyname-getversion-method.md
+            - name: IsEqual 方法
+              href: iassemblyname-isequal-method.md
+            - name: SetProperty 方法
+              href: iassemblyname-setproperty-method.md
+        - name: IDefinitionAppId 接口
+          href: idefinitionappid-interface.md
+        - name: IDefinitionIdentity 接口
+          href: idefinitionidentity-interface.md
+        - name: IEnumDefinitionIdentity 接口
+          href: ienumdefinitionidentity-interface.md
+        - name: IEnumIDENTITY_ATTRIBUTE 接口
+          href: ienumidentity-attribute-interface.md
+        - name: IEnumReferenceIdentity 接口
+          href: ienumreferenceidentity-interface.md
+        - name: IIdentityAuthority 接口
+          href: iidentityauthority-interface.md
+        - name: IInstallReferenceEnum 接口
+          href: iinstallreferenceenum-interface.md
+          items:
+            - name: GetNextInstallReferenceItem 方法
+              href: iinstallreferenceenum-getnextinstallreferenceitem-method.md
+        - name: IInstallReferenceItem 接口
+          href: iinstallreferenceitem-interface.md
+          items:
+            - name: GetReference 方法
+              href: iinstallreferenceitem-getreference-method.md
+        - name: IReferenceAppId 接口
+          href: ireferenceappid-interface.md
+        - name: IReferenceIdentity 接口
+          href: ireferenceidentity-interface.md
+    - name: 合成全局静态函数
+      href: fusion-global-static-functions.md
+      items:
+        - name: ClearDownloadCache 函数
+          href: cleardownloadcache-function.md
+        - name: CompareAssemblyIdentity 函数
+          href: compareassemblyidentity-function.md
+        - name: CreateApplicationContext 函数
+          href: createapplicationcontext-function.md
+        - name: CreateAssemblyCache 函数
+          href: createassemblycache-function.md
+        - name: CreateAssemblyEnum 函数
+          href: createassemblyenum-function.md
+        - name: CreateAssemblyNameObject 函数
+          href: createassemblynameobject-function.md
+        - name: CreateHistoryReader 函数
+          href: createhistoryreader-function.md
+        - name: CreateInstallReferenceEnum 函数
+          href: createinstallreferenceenum-function.md
+        - name: GetAppIdAuthority 函数
+          href: getappidauthority-function.md
+        - name: GetAssemblyIdentityFromFile 函数
+          href: getassemblyidentityfromfile-function.md
+        - name: GetCachePath 函数
+          href: getcachepath-function.md
+        - name: GetHistoryFileDirectory 函数
+          href: gethistoryfiledirectory-function.md
+        - name: GetIdentityAuthority 函数
+          href: getidentityauthority-function.md
+        - name: IsFrameworkAssembly 函数
+          href: isframeworkassembly-function.md
+        - name: NukeDownloadedCache 函数
+          href: nukedownloadedcache-function.md
+        - name: PreBindAssemblyEx 函数
+          href: prebindassemblyex-function.md
+    - name: 合成枚举
+      href: fusion-enumerations.md
+      items:
+        - name: ASM_CACHE_FLAGS 枚举
+          href: asm-cache-flags-enumeration.md
+        - name: ASM_CMP_FLAGS 枚举
+          href: asm-cmp-flags-enumeration.md
+        - name: ASM_DISPLAY_FLAGS 枚举
+          href: asm-display-flags-enumeration.md
+        - name: ASM_NAME 枚举
+          href: asm-name-enumeration.md
+        - name: AssemblyComparisonResult 枚举
+          href: assemblycomparisonresult-enumeration.md
+        - name: CREATE_ASM_NAME_OBJ_FLAGS 枚举
+          href: create-asm-name-obj-flags-enumeration.md
+    - name: 合成结构
+      href: fusion-structures.md
+      items:
+        - name: ASSEMBLY_INFO 结构
+          href: assembly-info-structure.md
+        - name: FUSION_INSTALL_REFERENCE 结构
+          href: fusion-install-reference-structure.md
+        - name: IDENTITY_ATTRIBUTE 结构
+          href: identity-attribute-structure.md
+        - name: IDENTITY_ATTRIBUTE_BLOB 结构
+          href: identity-attribute-blob-structure.md

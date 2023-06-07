@@ -1,0 +1,114 @@
+- name: Visual Basic 中的过程
+  href: index.md
+  items:
+    - name: 如何：创建过程
+      href: how-to-create-a-procedure.md
+    - name: Sub 过程
+      href: sub-procedures.md
+      items:
+        - name: 如何：调用不返回值的过程
+          href: how-to-call-a-procedure-that-does-not-return-a-value.md
+        - name: 如何：添加事件处理程序
+          href: how-to-call-an-event-handler.md
+    - name: Function 过程
+      href: function-procedures.md
+      items:
+        - name: 如何：创建返回值的过程
+          href: how-to-create-a-procedure-that-returns-a-value.md
+        - name: 如何：从过程返回值
+          href: how-to-return-a-value-from-a-procedure.md
+        - name: 如何：调用返回值的过程
+          href: how-to-call-a-procedure-that-returns-a-value.md
+    - name: Property 过程
+      href: property-procedures.md
+      items:
+        - name: 自动实现的属性
+          href: auto-implemented-properties.md
+        - name: 属性和变量之间的差异
+          href: differences-between-properties-and-variables.md
+        - name: 如何：创建属性
+          href: how-to-create-a-property.md
+        - name: 如何：声明具有混合访问级别的属性
+          href: how-to-declare-a-property-with-mixed-access-levels.md
+        - name: 如何：调用 Property 过程
+          href: how-to-call-a-property-procedure.md
+        - name: 如何：声明和调用默认属性
+          href: how-to-declare-and-call-a-default-property.md
+        - name: 如何：在属性中放置值
+          href: how-to-put-a-value-in-a-property.md
+        - name: 如何：从属性获取值
+          href: how-to-get-a-value-from-a-property.md
+    - name: 运算符过程
+      href: operator-procedures.md
+      items:
+        - name: 如何：定义运算符
+          href: how-to-define-an-operator.md
+        - name: 如何：定义转换运算符
+          href: how-to-define-a-conversion-operator.md
+        - name: 如何：调用运算符过程
+          href: how-to-call-an-operator-procedure.md
+        - name: 如何：使用定义运算符的类
+          href: how-to-use-a-class-that-defines-operators.md
+    - name: 过程形参和实参
+      href: procedure-parameters-and-arguments.md
+      items:
+        - name: 形参和实参之间的差异
+          href: differences-between-parameters-and-arguments.md
+        - name: 如何：为过程定义参数
+          href: how-to-define-a-parameter-for-a-procedure.md
+        - name: 如何：将参数传递给过程
+          href: how-to-pass-arguments-to-a-procedure.md
+        - name: 按值和按引用传递参数
+          href: passing-arguments-by-value-and-by-reference.md
+          items:
+            - name: 可修改和不可修改参数之间的差异
+              href: differences-between-modifiable-and-nonmodifiable-arguments.md
+            - name: 通过值传递参数和通过引用传递参数之间的差异
+              href: differences-between-passing-an-argument-by-value-and-by-reference.md
+            - name: 如何：更改过程参数的值
+              href: how-to-change-the-value-of-a-procedure-argument.md
+            - name: 如何：防止过程参数的值被更改
+              href: how-to-protect-a-procedure-argument-against-value-changes.md
+            - name: 如何：强制通过值传递参数
+              href: how-to-force-an-argument-to-be-passed-by-value.md
+        - name: 按位置和按名称传递参数
+          href: passing-arguments-by-position-and-by-name.md
+        - name: 可选参数
+          href: optional-parameters.md
+        - name: 参数数组
+          href: parameter-arrays.md
+    - name: 引用返回值
+      href: ref-return-values.md
+    - name: 递归过程
+      href: recursive-procedures.md
+    - name: 过程重载
+      href: procedure-overloading.md
+      items:
+        - name: 如何：定义一个过程的多个版本
+          href: how-to-define-multiple-versions-of-a-procedure.md
+        - name: 如何：调用重载过程
+          href: how-to-call-an-overloaded-procedure.md
+        - name: 如何：重载带有可选参数的过程
+          href: how-to-overload-a-procedure-that-takes-optional-parameters.md
+        - name: 如何：重载参数数量不确定的过程
+          href: how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md
+        - name: 重载过程注意事项
+          href: considerations-in-overloading-procedures.md
+        - name: 重载决策
+          href: overload-resolution.md
+    - name: 过程疑难解答
+      href: troubleshooting-procedures.md
+    - name: 扩展方法
+      href: extension-methods.md
+      items:
+        - name: 如何：编写扩展方法
+          href: how-to-write-an-extension-method.md
+        - name: 如何：调用扩展方法
+          href: how-to-call-an-extension-method.md
+    - name: Lambda 表达式
+      href: lambda-expressions.md
+      items:
+        - name: 如何：创建 lambda 表达式
+          href: how-to-create-a-lambda-expression.md
+    - name: 分部方法
+      href: partial-methods.md

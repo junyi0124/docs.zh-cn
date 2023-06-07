@@ -1,0 +1,77 @@
+### YamlMime:Landing
+title: 在 Windows、Linux 和 macOS 上安装 .NET
+summary: 了解如何在 Windows、Linux 和 macOS 上安装 .NET Core、.NET 5 及更高版本。 发现开发、部署和运行 .NET 应用所需的依赖项。
+metadata:
+  title: 在 Windows、Linux 和 macOS 上安装 .NET
+  description: 了解在哪里下载 NET Core、.NET 5 及更高版本并将其安装到 Windows、Linux 和 macOS 上。 发现开发、部署和运行 .NET 应用所需的依赖项。
+  ms.topic: landing-page
+  ms.date: 06/29/2020
+  ms.openlocfilehash: 4fdfa606c07105a5a0f966a4562732d150bd3d54
+  ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/10/2020
+  ms.locfileid: "97009503"
+landingContent:
+- title: Windows
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 在 Windows 上安装
+      url: windows.md
+    - text: 受支持的 Windows 版本
+      url: windows.md#supported-releases
+    - text: 依赖项
+      url: windows.md#dependencies
+    - text: 使用 Visual Studio 安装
+      url: windows.md#install-with-visual-studio
+    - text: 随 Visual Studio Code 一起安装
+      url: windows.md#install-alongside-visual-studio-code
+- title: macOS
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 在 macOS 上安装
+      url: macos.md
+    - text: 受支持的 macOS 版本
+      url: macos.md#supported-releases
+    - text: 依赖项
+      url: macos.md#dependencies
+    - text: 随 Visual Studio Code 一起安装
+      url: macos.md#install-alongside-visual-studio-code
+- title: Linux
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Linux 概述
+      url: linux.md
+    - text: Alpine
+      url: linux-alpine.md
+    - text: CentOS
+      url: linux-centos.md
+    - text: Debian
+      url: linux-debian.md
+    - text: Fedora
+      url: linux-fedora.md
+    - text: openSUSE
+      url: linux-opensuse.md
+    - text: Red Hat Enterprise Linux
+      url: linux-rhel.md
+    - text: SUSE Linux 企业服务器
+      url: linux-sles.md
+    - text: Ubuntu
+      url: linux-ubuntu.md
+- title: 问答
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 独立安装程序
+      url: /answers/topics/dotnet-ad-installer.html
+    - text: Visual Studio 安装程序
+      url: /answers/topics/dotnet-ad-vs.html
+    - text: Linux 源
+      url: /answers/topics/dotnet-ad-linux.html
+    - text: Docker
+      url: /answers/topics/dotnet-ad-docker.html
+    - text: 企业部署
+      url: /answers/topics/dotnet-ad-enterprise.html

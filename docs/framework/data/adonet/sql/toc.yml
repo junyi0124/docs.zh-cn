@@ -1,0 +1,147 @@
+- name: SQL Server 和 ADO.NET
+  href: index.md
+- name: SQL Server 安全性
+  href: sql-server-security.md
+  items:
+    - name: SQL Server 安全性概述
+      href: overview-of-sql-server-security.md
+      items:
+        - name: SQL Server 中的身份验证
+          href: authentication-in-sql-server.md
+        - name: SQL Server 中的服务器和数据库角色
+          href: server-and-database-roles-in-sql-server.md
+        - name: SQL Server 中的所有权和用户架构分离
+          href: ownership-and-user-schema-separation-in-sql-server.md
+        - name: SQL Server 中的授权和权限
+          href: authorization-and-permissions-in-sql-server.md
+        - name: SQL Server 中的数据加密
+          href: data-encryption-in-sql-server.md
+        - name: SQL Server 中的 CLR 集成安全性
+          href: clr-integration-security-in-sql-server.md
+    - name: SQL Server 中的应用程序安全性方案
+      href: application-security-scenarios-in-sql-server.md
+      items:
+        - name: 在 SQL Server 中使用存储过程管理权限
+          href: managing-permissions-with-stored-procedures-in-sql-server.md
+        - name: 在 SQL Server 中编写安全的动态 SQL
+          href: writing-secure-dynamic-sql-in-sql-server.md
+        - name: 在 SQL Server 中对存储过程签名
+          href: signing-stored-procedures-in-sql-server.md
+        - name: 在 SQL Server 中使用模拟自定义权限
+          href: customizing-permissions-with-impersonation-in-sql-server.md
+        - name: 在 SQL Server 中授予行级权限
+          href: granting-row-level-permissions-in-sql-server.md
+        - name: 在 SQL Server 中创建应用程序角色
+          href: creating-application-roles-in-sql-server.md
+        - name: 在 SQL Server 中启用跨数据库访问
+          href: enabling-cross-database-access-in-sql-server.md
+    - name: SQL Server Express 安全性
+      href: sql-server-express-security.md
+- name: SQL Server 数据类型和 ADO.NET
+  href: sql-server-data-types.md
+  items:
+    - name: SqlTypes 和数据集
+      href: sqltypes-and-the-dataset.md
+    - name: 处理 Null 值
+      href: handling-null-values.md
+    - name: 比较 GUID 和 uniqueidentifier 值
+      href: comparing-guid-and-uniqueidentifier-values.md
+    - name: 日期和时间数据
+      href: date-and-time-data.md
+    - name: 大型 UDT
+      href: large-udts.md
+    - name: SQL Server 中的 XML 数据
+      href: xml-data-in-sql-server.md
+      items:
+        - name: SQL XML 列值
+          href: sql-xml-column-values.md
+        - name: 将 XML 值指定为参数
+          href: specifying-xml-values-as-parameters.md
+- name: SQL Server 二进制和大值数据
+  href: sql-server-binary-and-large-value-data.md
+  items:
+    - name: 在 ADO.NET 中修改大值 (max) 数据
+      href: modifying-large-value-max-data.md
+    - name: FILESTREAM 数据
+      href: filestream-data.md
+    - name: 从文件中插入图像
+      href: inserting-an-image-from-a-file.md
+- name: ADO.NET 中的 SQL Server 数据操作
+  href: sql-server-data-operations.md
+  items:
+    - name: SQL Server 中的批量复制操作
+      href: bulk-copy-operations-in-sql-server.md
+      items:
+        - name: 批量复制示例设置
+          href: bulk-copy-example-setup.md
+        - name: 单个批量复制操作
+          href: single-bulk-copy-operations.md
+        - name: 多个批量复制操作
+          href: multiple-bulk-copy-operations.md
+        - name: 事务和批量复制操作
+          href: transaction-and-bulk-copy-operations.md
+    - name: 多个活动结果集 (MARS)
+      href: multiple-active-result-sets-mars.md
+      items:
+        - name: 启用多个活动结果集
+          href: enabling-multiple-active-result-sets.md
+        - name: 操作数据
+          href: manipulating-data.md
+    - name: 异步操作
+      href: asynchronous-operations.md
+      items:
+        - name: 使用回调的 Windows 应用程序
+          href: windows-applications-using-callbacks.md
+        - name: 使用等待句柄的 ASP.NET 应用程序
+          href: aspnet-apps-using-wait-handles.md
+        - name: 在控制台应用程序中轮询
+          href: polling-in-console-applications.md
+    - name: 表值参数
+      href: table-valued-parameters.md
+- name: SQL Server 功能和 ADO.NET
+  href: sql-server-features-and-adonet.md
+  items:
+    - name: 枚举 SQL Server 的实例 (ADO.NET)
+      href: enumerating-instances-of-sql-server.md
+    - name: 用于 SQL Server 的提供程序统计信息
+      href: provider-statistics-for-sql-server.md
+    - name: SQL Server Express 用户实例
+      href: sql-server-express-user-instances.md
+    - name: SQL Server 中的数据库镜像
+      href: database-mirroring-in-sql-server.md
+    - name: SQL Server 公共语言运行时集成
+      href: sql-server-common-language-runtime-integration.md
+      items:
+        - name: SQL Server CLR 集成简介
+          href: introduction-to-sql-server-clr-integration.md
+        - name: CLR 用户定义的函数
+          href: clr-user-defined-functions.md
+        - name: CLR 用户定义的类型
+          href: clr-user-defined-types.md
+        - name: CLR 存储过程
+          href: clr-stored-procedures.md
+        - name: CLR 触发器
+          href: clr-triggers.md
+        - name: 上下文连接
+          href: the-context-connection.md
+        - name: ADO.NET 的 SQL Server 进程内特定行为
+          href: sql-server-in-process-specific-behavior-of-adonet.md
+    - name: SQL Server 中的查询通知
+      href: query-notifications-in-sql-server.md
+      items:
+        - name: 启用查询通知
+          href: enabling-query-notifications.md
+        - name: ASP.NET 应用程序中的 SqlDependency
+          href: sqldependency-in-an-aspnet-app.md
+        - name: 使用 SqlDependency 检测更改
+          href: detecting-changes-with-sqldependency.md
+        - name: 使用 SqlNotificationRequest 执行 SqlCommand
+          href: sqlcommand-execution-with-a-sqlnotificationrequest.md
+    - name: SQL Server 中的快照隔离
+      href: snapshot-isolation-in-sql-server.md
+    - name: SqlClient 对高可用性的支持，灾难恢复
+      href: sqlclient-support-for-high-availability-disaster-recovery.md
+    - name: SqlClient 对 LocalDB 的支持
+      href: sqlclient-support-for-localdb.md
+- name: LINQ to SQL
+  href: linq/

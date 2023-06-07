@@ -1,0 +1,15 @@
+- name: 使用 .NET Core 3.1 在 Windows 10 上对桌面应用进行现代化改造
+  href: index.md
+  items:
+    - name: 为什么使用新式桌面应用程序
+      href: why-modern-applications.md
+    - name: .NET Core for Desktop 的新功能是什么？
+      href: whats-new-dotnet-core.md
+    - name: 迁移新式桌面应用程序
+      href: migrate-modern-applications.md
+    - name: Windows 10 迁移
+      href: windows-migration.md
+    - name: 迁移到 .NET Core 3.1 的示例
+      href: example-migration-core.md
+    - name: 部署新式桌面应用程序
+      href: deploy-modern-applications.md

@@ -1,0 +1,337 @@
+- name: LINQ to SQL
+  href: index.md
+  items:
+    - name: 入门
+      href: getting-started.md
+      items:
+        - name: 使用 LINQ to SQL 可执行的操作
+          href: what-you-can-do-with-linq-to-sql.md
+        - name: 使用 LINQ to SQL 的典型步骤
+          href: typical-steps-for-using-linq-to-sql.md
+        - name: 下载示例数据库和工具
+          href: downloading-sample-databases.md
+        - name: 通过演练学习
+          href: learning-by-walkthroughs.md
+          items:
+            - name: 演练：简单对象模型和查询 (Visual Basic)
+              href: walkthrough-simple-object-model-and-query-visual-basic.md
+            - name: 演练：跨关系查询 (Visual Basic)
+              href: walkthrough-querying-across-relationships-visual-basic.md
+            - name: 演练：操作数据 (Visual Basic)
+              href: walkthrough-manipulating-data-visual-basic.md
+            - name: 演练：仅使用存储过程 (Visual Basic)
+              href: walkthrough-using-only-stored-procedures-visual-basic.md
+            - name: 演练：简单对象模型和查询 (C#)
+              href: walkthrough-simple-object-model-and-query-csharp.md
+            - name: 演练：跨关系查询 (C#)
+              href: walkthrough-querying-across-relationships-csharp.md
+            - name: 演练：操作数据 (C#)
+              href: walkthrough-manipulating-data-csharp.md
+            - name: 演练：仅使用存储过程 (C#)
+              href: walkthrough-using-only-stored-procedures-csharp.md
+    - name: 编程指南
+      href: programming-guide.md
+      items:
+        - name: 创建对象模型
+          href: creating-the-object-model.md
+          items:
+            - name: 如何：在 Visual Basic 或 C# 中生成对象模型
+              href: how-to-generate-the-object-model-in-visual-basic-or-csharp.md
+            - name: 如何：将对象模型作为外部文件生成
+              href: how-to-generate-the-object-model-as-an-external-file.md
+            - name: 如何：通过修改 DBML 文件生成自定义代码
+              href: how-to-generate-customized-code-by-modifying-a-dbml-file.md
+            - name: 如何：验证 DBML 和外部映射文件
+              href: how-to-validate-dbml-and-external-mapping-files.md
+            - name: 如何：使实体可序列化
+              href: how-to-make-entities-serializable.md
+            - name: 如何：通过使用代码编辑器自定义实体类
+              href: how-to-customize-entity-classes-by-using-the-code-editor.md
+              items:
+                - name: 如何：指定数据库名称
+                  href: how-to-specify-database-names.md
+                - name: 如何：将表表示为类
+                  href: how-to-represent-tables-as-classes.md
+                - name: 如何：将列表示为类成员
+                  href: how-to-represent-columns-as-class-members.md
+                - name: 如何：表示主键
+                  href: how-to-represent-primary-keys.md
+                - name: 如何：映射数据库关系
+                  href: how-to-map-database-relationships.md
+                - name: 如何：将列表示为数据库生成的
+                  href: how-to-represent-columns-as-database-generated.md
+                - name: 如何：将列表示为时间戳列或版本列
+                  href: how-to-represent-columns-as-timestamp-or-version-columns.md
+                - name: 如何：指定数据库数据类型
+                  href: how-to-specify-database-data-types.md
+                - name: 如何：表示计算所得的列
+                  href: how-to-represent-computed-columns.md
+                - name: 如何：指定专用存储字段
+                  href: how-to-specify-private-storage-fields.md
+                - name: 如何：将列表示为允许 Null 值
+                  href: how-to-represent-columns-as-allowing-null-values.md
+                - name: 如何：映射继承层次结构
+                  href: how-to-map-inheritance-hierarchies.md
+                - name: 如何：指定并发冲突检查
+                  href: how-to-specify-concurrency-conflict-checking.md
+        - name: 与数据库通信
+          href: communicating-with-the-database.md
+          items:
+            - name: 如何：连接到数据库
+              href: how-to-connect-to-a-database.md
+            - name: 如何：直接执行 SQL 命令
+              href: how-to-directly-execute-sql-commands.md
+            - name: 如何：重复使用 ADO.NET 命令和 DataContext 之间的连接
+              href: how-to-reuse-a-connection-between-an-ado-net-command-and-a-datacontext.md
+        - name: 查询数据库
+          href: querying-the-database.md
+          items:
+            - name: 如何：查询信息
+              href: how-to-query-for-information.md
+            - name: 如何：将信息作为只读信息检索
+              href: how-to-retrieve-information-as-read-only.md
+            - name: 如何：控制检索的相关数据量
+              href: how-to-control-how-much-related-data-is-retrieved.md
+            - name: 如何：筛选相关数据
+              href: how-to-filter-related-data.md
+            - name: 如何：禁用推迟加载
+              href: how-to-turn-off-deferred-loading.md
+            - name: 如何：直接执行 SQL 查询
+              href: how-to-directly-execute-sql-queries.md
+            - name: 如何：存储和重复使用查询
+              href: how-to-store-and-reuse-queries.md
+            - name: 如何：处理查询中的复合键
+              href: how-to-handle-composite-keys-in-queries.md
+            - name: 如何：一次检索多个对象
+              href: how-to-retrieve-many-objects-at-once.md
+            - name: 如何：在 DataContext 级别进行筛选
+              href: how-to-filter-at-the-datacontext-level.md
+            - name: 查询示例
+              href: query-examples.md
+              items:
+                - name: 聚合查询
+                  href: aggregate-queries.md
+                  items:
+                    - name: 从数值序列中返回平均值
+                      href: return-the-average-value-from-a-numeric-sequence.md
+                    - name: 对序列中元素的数目进行计数
+                      href: count-the-number-of-elements-in-a-sequence.md
+                    - name: 查找数值序列中的最大值
+                      href: find-the-maximum-value-in-a-numeric-sequence.md
+                    - name: 查找数值序列中的最小值
+                      href: find-the-minimum-value-in-a-numeric-sequence.md
+                    - name: 计算数值序列中值的和
+                      href: compute-the-sum-of-values-in-a-numeric-sequence.md
+                - name: 返回序列中的第一个元素
+                  href: return-the-first-element-in-a-sequence.md
+                - name: 返回或跳过序列中的元素
+                  href: return-or-skip-elements-in-a-sequence.md
+                - name: 在序列中对元素进行排序
+                  href: sort-elements-in-a-sequence.md
+                - name: 对序列中的元素进行分组
+                  href: group-elements-in-a-sequence.md
+                - name: 从序列中消除重复的元素
+                  href: eliminate-duplicate-elements-from-a-sequence.md
+                - name: 确定序列中任何或所有元素是否满足某一条件
+                  href: determine-if-any-or-all-elements-in-a-sequence-satisfy-a-condition.md
+                - name: 连接两个序列
+                  href: concatenate-two-sequences.md
+                - name: 返回两个序列之间的差集
+                  href: return-the-set-difference-between-two-sequences.md
+                - name: 返回两个序列的交集
+                  href: return-the-set-intersection-of-two-sequences.md
+                - name: 返回两个序列的并集
+                  href: return-the-set-union-of-two-sequences.md
+                - name: 将序列转换为数组
+                  href: convert-a-sequence-to-an-array.md
+                - name: 将某一序列转换为泛型列表
+                  href: convert-a-sequence-to-a-generic-list.md
+                - name: 将某一类型转换为泛型 IEnumerable
+                  href: convert-a-type-to-a-generic-ienumerable.md
+                - name: 构建联接和跨产品查询
+                  href: formulate-joins-and-cross-product-queries.md
+                - name: 构建投影
+                  href: formulate-projections.md
+        - name: 进行和提交数据更改
+          href: making-and-submitting-data-changes.md
+          items:
+            - name: 如何：将行插入数据库中
+              href: how-to-insert-rows-into-the-database.md
+            - name: 如何：更新数据库中的行
+              href: how-to-update-rows-in-the-database.md
+            - name: 如何：从数据库中删除行
+              href: how-to-delete-rows-from-the-database.md
+            - name: 如何：将更改提交到数据库
+              href: how-to-submit-changes-to-the-database.md
+            - name: 如何：通过使用事务对数据提交进行分类
+              href: how-to-bracket-data-submissions-by-using-transactions.md
+            - name: 如何：动态创建数据库
+              href: how-to-dynamically-create-a-database.md
+            - name: 如何：管理更改冲突
+              href: how-to-manage-change-conflicts.md
+              items:
+                - name: 如何：检测到并解决冲突的提交
+                  href: how-to-detect-and-resolve-conflicting-submissions.md
+                - name: 如何：指定何时引发并发异常
+                  href: how-to-specify-when-concurrency-exceptions-are-thrown.md
+                - name: 如何：指定要对哪些成员进行并发冲突测试
+                  href: how-to-specify-which-members-are-tested-for-concurrency-conflicts.md
+                - name: 如何：检索实体冲突信息
+                  href: how-to-retrieve-entity-conflict-information.md
+                - name: 如何：检索成员冲突信息
+                  href: how-to-retrieve-member-conflict-information.md
+                - name: 如何：通过保留数据库值解决冲突
+                  href: how-to-resolve-conflicts-by-retaining-database-values.md
+                - name: 如何：通过重写数据库值解决冲突
+                  href: how-to-resolve-conflicts-by-overwriting-database-values.md
+                - name: 如何：通过与数据库值合并解决冲突
+                  href: how-to-resolve-conflicts-by-merging-with-database-values.md
+        - name: 调试支持
+          href: debugging-support.md
+          items:
+            - name: 如何：显示生成的 SQL
+              href: how-to-display-generated-sql.md
+            - name: 如何：显示变更集
+              href: how-to-display-a-changeset.md
+            - name: 如何：显示 LINQ to SQL 命令
+              href: how-to-display-linq-to-sql-commands.md
+            - name: 疑难解答
+              href: troubleshooting.md
+        - name: 背景信息
+          href: background-information.md
+          items:
+            - name: ADO.NET 和 LINQ to SQL
+              href: ado-net-and-linq-to-sql.md
+            - name: 分析 LINQ to SQL 源代码
+              href: analyzing-linq-to-sql-source-code.md
+            - name: 自定义插入、更新和删除操作
+              href: customizing-insert-update-and-delete-operations.md
+              items:
+                - name: 自定义操作：概述
+                  href: customizing-operations-overview.md
+                - name: 插入、更新和删除操作
+                  href: insert-update-and-delete-operations.md
+                - name: 开发人员在重写默认行为中的责任
+                  href: responsibilities-of-the-developer-in-overriding-default-behavior.md
+                - name: 通过使用分部方法添加业务逻辑
+                  href: adding-business-logic-by-using-partial-methods.md
+            - name: 数据绑定
+              href: data-binding.md
+            - name: 层次结构支持
+              href: inheritance-support.md
+            - name: 本地方法调用
+              href: local-method-calls.md
+            - name: 使用 LINQ to SQL 的 N 层和远程应用程序
+              href: n-tier-and-remote-applications-with-linq-to-sql.md
+              items:
+                - name: 具有 ASP.NET 的 LINQ to SQL N 层
+                  href: linq-to-sql-n-tier-with-aspnet.md
+                - name: 具有 Web 服务的 LINQ to SQL N 层
+                  href: linq-to-sql-n-tier-with-web-services.md
+                - name: 实现 N 层业务逻辑
+                  href: implementing-business-logic-linq-to-sql.md
+                - name: N 层应用程序中的数据检索和 CUD 操作 (LINQ to SQL)
+                  href: data-retrieval-and-cud-operations-in-n-tier-applications.md
+            - name: 对象标识
+              href: object-identity.md
+            - name: LINQ to SQL 对象模型
+              href: the-linq-to-sql-object-model.md
+            - name: 对象状态和更改跟踪
+              href: object-states-and-change-tracking.md
+            - name: 乐观并发：概述
+              href: optimistic-concurrency-overview.md
+            - name: 查询概念
+              href: query-concepts.md
+              items:
+                - name: LINQ to SQL 查询
+                  href: linq-to-sql-queries.md
+                - name: 跨关系查询
+                  href: querying-across-relationships.md
+                - name: 远程查询执行与本地执行
+                  href: remote-vs-local-execution.md
+                - name: 推迟加载与即时加载
+                  href: deferred-versus-immediate-loading.md
+            - name: 从实体缓存检索对象
+              href: retrieving-objects-from-the-identity-cache.md
+            - name: LINQ to SQL 中的安全性
+              href: security-in-linq-to-sql.md
+            - name: 序列化
+              href: serialization.md
+            - name: 存储过程
+              href: stored-procedures.md
+              items:
+                - name: 如何：返回行集
+                  href: how-to-return-rowsets.md
+                - name: 如何：使用采用参数的存储过程
+                  href: how-to-use-stored-procedures-that-take-parameters.md
+                - name: 如何：使用针对多个结果形状映射的存储过程
+                  href: how-to-use-stored-procedures-mapped-for-multiple-result-shapes.md
+                - name: 如何：使用针对顺序结果形状映射的存储过程
+                  href: how-to-use-stored-procedures-mapped-for-sequential-result-shapes.md
+                - name: 通过使用存储过程自定义操作
+                  href: customizing-operations-by-using-stored-procedures.md
+                - name: 通过仅使用存储过程自定义操作
+                  href: customizing-operations-by-using-stored-procedures-exclusively.md
+            - name: 事务支持
+              href: transaction-support.md
+            - name: SQL-CLR 类型不匹配
+              href: sql-clr-type-mismatches.md
+            - name: SQL-CLR 自定义类型映射
+              href: sql-clr-custom-type-mappings.md
+            - name: 用户定义的函数
+              href: user-defined-functions.md
+              items:
+                - name: 如何：使用标量值用户定义的函数
+                  href: how-to-use-scalar-valued-user-defined-functions.md
+                - name: 如何：使用表值用户定义的函数
+                  href: how-to-use-table-valued-user-defined-functions.md
+                - name: 如何：以内联方式调用用户定义的函数
+                  href: how-to-call-user-defined-functions-inline.md
+    - name: 参考
+      href: reference.md
+      items:
+        - name: 数据类型和函数
+          href: data-types-and-functions.md
+          items:
+            - name: SQL-CLR 类型映射
+              href: sql-clr-type-mapping.md
+            - name: 基本数据类型
+              href: basic-data-types.md
+            - name: Boolean 数据类型
+              href: boolean-data-types.md
+            - name: Null 语义
+              href: null-semantics.md
+            - name: 数值和比较运算符
+              href: numeric-and-comparison-operators.md
+            - name: 序列运算符
+              href: sequence-operators.md
+            - name: System.Convert 方法
+              href: system-convert-methods.md
+            - name: System.DateTime 方法
+              href: system-datetime-methods.md
+            - name: System.Math 方法
+              href: system-math-methods.md
+            - name: System.Object 方法
+              href: system-object-methods.md
+            - name: System.String 方法
+              href: system-string-methods.md
+            - name: System.TimeSpan 方法
+              href: system-timespan-methods.md
+            - name: 不支持的功能
+              href: unsupported-functionality.md
+            - name: System.DateTimeOffset 方法
+              href: system-datetimeoffset-methods.md
+        - name: 基于特性的映射
+          href: attribute-based-mapping.md
+        - name: LINQ to SQL 中的代码生成
+          href: code-generation-in-linq-to-sql.md
+        - name: 外部映射
+          href: external-mapping.md
+        - name: 常见问题
+          href: frequently-asked-questions.md
+        - name: SQL Server Compact 与 LINQ to SQL
+          href: sql-server-compact-and-linq-to-sql.md
+        - name: 标准查询运算符转换
+          href: standard-query-operator-translation.md
+    - name: 示例
+      href: samples.md

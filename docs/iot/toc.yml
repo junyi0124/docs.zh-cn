@@ -1,0 +1,26 @@
+- name: .NET IoT 库文档
+  href: index.yml
+- name: 概述
+  href: intro.md
+- name: 快速入门（感知 HAT）
+  href: quickstarts/sensehat.md
+- name: 教程
+  expanded: true
+  items:
+    - name: 闪烁 LED
+      href: tutorials/blink-led.md
+    - name: 从传感器读取环境条件
+      href: tutorials/temp-sensor.md
+    - name: 在 LCD 上显示文本
+      href: tutorials/lcd-display.md
+    - name: 从模拟到数字转换器读取值
+      href: tutorials/adc.md
+- name: 操作指南
+  expanded: true
+  items:
+    - name: 部署
+      href: deployment.md
+    - name: 调试
+      href: debugging.md
+- name: API 参考
+  href: /dotnet/api?view=iot-dotnet-1.1

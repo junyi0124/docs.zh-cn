@@ -1,0 +1,59 @@
+- name: 概述
+  href: index.md
+- name: 连接字符串
+  href: connection-strings.md
+- name: 数据类型
+  href: types.md
+- name: 参数
+  href: parameters.md
+- name: 数据库错误
+  displayName: 'Busy, locked, retries, timeouts'
+  href: database-errors.md
+- name: 事务
+  href: transactions.md
+- name: 批处理
+  href: batching.md
+- name: 元数据
+  href: metadata.md
+- name: SQLite 功能
+  items:
+    - name: 内存中数据库
+      href: in-memory-databases.md
+    - name: 加密
+      href: encryption.md
+    - name: 联机备份
+      href: backup.md
+    - name: 用户定义的函数
+      displayName: UDFs
+      href: user-defined-functions.md
+    - name: 自定义 SQLite 版本
+      href: custom-versions.md
+    - name: 排序规则
+      href: collation.md
+    - name: Blob I/O
+      displayName: Streams
+      href: blob-io.md
+    - name: 互操作性
+      href: interop.md
+    - name: 扩展
+      href: extensions.md
+- name: 限制
+  items:
+    - name: ADO.NET
+      href: adonet-limitations.md
+    - name: Async
+      href: async.md
+    - name: BULK INSERT
+      href: bulk-insert.md
+    - name: Entity Framework Core
+      href: /ef/core/providers/sqlite/limitations
+    - name: Dapper
+      href: dapper-limitations.md
+    - name: System.Data.SQLite
+      href: compare.md
+    - name: Xamarin
+      href: xamarin.md
+- name: API 参考 >>
+  href: ../../../../api/index.md?view=msdata-sqlite-3.1.0
+- name: SQL 语法 >>
+  href: 'https://www.sqlite.org/lang.html'

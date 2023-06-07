@@ -1,0 +1,106 @@
+- name: ALink API
+  href: index.md
+  items:
+    - name: AssemblyAttributesGoHere
+      href: assemblyattributesgohere.md
+    - name: AssemblyAttributesGoHereM
+      href: assemblyattributesgoherem.md
+    - name: AssemblyAttributesGoHereS
+      href: assemblyattributesgoheres.md
+    - name: AssemblyAttributesGoHereSM
+      href: assemblyattributesgoheresm.md
+    - name: AssemblyOptions 枚举
+      href: assemblyoptions-enumeration.md
+    - name: CreateALink 函数
+      href: createalink-function.md
+    - name: GetALinkMessageDll 函数
+      href: getalinkmessagedll-function.md
+    - name: IALink 接口
+      href: ialink-interface.md
+      items:
+        - name: Init 方法
+          href: init-method.md
+        - name: ImportFile 方法
+          href: importfile-method.md
+        - name: SetAssemblyFile 方法
+          href: setassemblyfile-method.md
+        - name: AddFile 方法
+          href: addfile-method.md
+        - name: AddImport 方法
+          href: addimport-method.md
+        - name: GetScope 方法
+          href: getscope-method.md
+        - name: GetAssemblyRefHash 方法
+          href: getassemblyrefhash-method.md
+        - name: ImportTypes 方法
+          href: importtypes-method.md
+        - name: EnumCustomAttributes 方法
+          href: enumcustomattributes-method.md
+        - name: EnumImportTypes 方法
+          href: enumimporttypes-method.md
+        - name: CloseEnum 方法
+          href: closeenum-method.md
+        - name: ExportType 方法
+          href: exporttype-method.md
+        - name: ExportNestedType 方法
+          href: exportnestedtype-method.md
+        - name: EmbedResource 方法
+          href: embedresource-method.md
+        - name: LinkResource 方法
+          href: linkresource-method.md
+        - name: GetResolutionScope 方法
+          href: getresolutionscope-method.md
+        - name: SetAssemblyProps 方法
+          href: setassemblyprops-method.md
+        - name: EmitAssemblyCustomAttribute 方法
+          href: emitassemblycustomattribute-method.md
+        - name: GetWin32ResBlob 方法
+          href: getwin32resblob-method.md
+        - name: FreeWin32ResBlob 方法
+          href: freewin32resblob-method.md
+        - name: EmitManifest 方法
+          href: emitmanifest-method.md
+        - name: PreCloseAssembly 方法
+          href: precloseassembly-method.md
+        - name: CloseAssembly 方法
+          href: closeassembly-method.md
+        - name: EndMerge 方法
+          href: endmerge-method.md
+        - name: SetNonAssemblyFlags 方法
+          href: setnonassemblyflags-method.md
+        - name: ImportFile2 方法
+          href: importfile2-method.md
+        - name: ExportTypeForwarder 方法
+          href: exporttypeforwarder-method.md
+        - name: ExportNestedTypeForwarder 方法
+          href: exportnestedtypeforwarder-method.md
+    - name: IALink2 接口
+      href: ialink2-interface.md
+      items:
+        - name: SetAssemblyFile2 方法
+          href: setassemblyfile2-method.md
+        - name: AddFile2 方法
+          href: addfile2-method.md
+        - name: GetScope2 方法
+          href: getscope2-method.md
+        - name: ImportTypes2 方法
+          href: importtypes2-method.md
+        - name: GetFileDef 方法
+          href: getfiledef-method.md
+        - name: GetPublicKeyToken 方法
+          href: getpublickeytoken-method.md
+        - name: EmitInternalExportedTypes 方法
+          href: emitinternalexportedtypes-method.md
+        - name: ImportFileEx 方法
+          href: importfileex-method.md
+        - name: ImportFileEx2 方法
+          href: importfileex2-method.md
+        - name: SetPEKind 方法
+          href: setpekind-method.md
+        - name: EmitAssembly 方法
+          href: emitassembly-method.md
+    - name: IALink3 接口
+      href: ialink3-interface.md
+      items:
+        - name: SetManifestFile 方法
+          href: setmanifestfile-method.md

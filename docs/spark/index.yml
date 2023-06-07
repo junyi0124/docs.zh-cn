@@ -1,0 +1,76 @@
+### YamlMime:Landing
+title: .NET for Apache Spark 文档
+summary: 了解如何在编写 .NET 代码的任何地方使用 .NET for Apache Spark（通过 Apache Spark）处理批量数据、实时流、机器学习和临时查询。
+metadata:
+  title: .NET for Apache Spark 文档
+  description: 了解如何在编写 .NET 代码的任何地方使用 .NET for Apache Spark（通过 Apache Spark）处理批量数据、实时流、机器学习和临时查询。
+  services: service
+  ms.prod: dotnet-spark
+  ms.topic: landing-page
+  ms.collection: collection
+  author: mamccrea
+  ms.author: mamccrea
+  ms.date: 09/11/2019
+  ms.openlocfilehash: 1ceb8e11d8a041db729113ec06674ade3646fd7a
+  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96599624"
+landingContent:
+- title: .NET for Apache Spark 基础
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: .NET 文档中的新增功能
+      url: ../whats-new/index.yml
+  - linkListType: overview
+    links:
+    - text: 什么是 .NET for Apache Spark？
+      url: what-is-apache-spark-dotnet.md
+  - linkListType: get-started
+    links:
+    - text: Q&A 上的 .NET for Apache Spark
+      url: /answers/topics/dotnet-apache-spark.html
+  - linkListType: reference
+    links:
+    - text: API 参考
+      url: ../../api/index.md?view=spark-dotnet
+    - text: GitHub
+      url: https://github.com/dotnet/spark
+- title: 10 分钟入门
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: .NET for Apache Spark 入门
+      url: tutorials/get-started.md
+  - linkListType: learn
+    links:
+    - text: Windows 或 Linux 上 10 分钟入门
+      url: https://dotnet.microsoft.com/learn/data/spark-tutorial/intro
+- title: 部署 .NET for Apache Spark 应用程序
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 部署到 Azure HDInsight
+      url: tutorials/hdinsight-deployment.md
+    - text: 部署到 AWS EMR Spark
+      url: tutorials/amazon-emr-spark-deployment.md
+    - text: 部署到 Databricks
+      url: tutorials/databricks-deployment.md
+  - linkListType: how-to-guide
+    links:
+    - text: 调试应用程序
+      url: how-to-guides/debug.md
+    - text: 部署辅助角色和 UDF 二进制文件
+      url: how-to-guides/deploy-worker-udf-binaries.md
+- title: 大数据处理
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 批处理
+      url: tutorials/batch-processing.md
+    - text: 结构化流式处理
+      url: tutorials/streaming.md
+    - text: 情绪分析
+      url: tutorials/ml-sentiment-analysis.md

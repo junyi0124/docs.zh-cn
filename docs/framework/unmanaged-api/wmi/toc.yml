@@ -1,0 +1,105 @@
+- name: WMI 和性能计数器
+  href: index.md
+  items:
+    - name: BeginEnumeration 函数
+      href: beginenumeration.md
+    - name: BeginMethodEnumeration 函数
+      href: beginmethodenumeration.md
+    - name: BlessIWbemServices 函数
+      href: blessiwbemservices.md
+    - name: BlessIWbemServicesObject 函数
+      href: blessiwbemservicesobject.md
+    - name: Clone 函数
+      href: clone.md
+    - name: CloneEnumWbemClassObject 函数
+      href: cloneenumwbemclassobject.md
+    - name: CompareTo 函数
+      href: compareto.md
+    - name: ConnectServerWmi
+      href: connectserverwmi.md
+    - name: CreateClassEnumWmi
+      href: createclassenumwmi.md
+    - name: CreateInstanceEnumWmi
+      href: createinstanceenumwmi.md
+    - name: Delete 函数
+      href: delete.md
+    - name: DeleteMethod 函数
+      href: deletemethod.md
+    - name: EndEnumeration 函数
+      href: endenumeration.md
+    - name: EndMethodEnumeration 函数
+      href: endmethodenumeration.md
+    - name: ExecQueryWmi 函数
+      href: execquerywmi.md
+    - name: ExecNotificationQueryWmi 函数
+      href: execnotificationquerywmi.md
+    - name: FormatFromRawValue 函数
+      href: formatfromrawvalue.md
+    - name: Get 函数
+      href: get.md
+    - name: GetCurrentApartmentType
+      href: getcurrentapartmenttype.md
+    - name: GetDemultiplexedStub
+      href: getdemultiplexedstub.md
+    - name: GetErrorInfo
+      href: geterrorinfo.md
+    - name: GetMethod 函数
+      href: getmethod.md
+    - name: GetMethodOrigin 函数
+      href: getmethodorigin.md
+    - name: GetMethodQualifierSet 函数
+      href: getmethodqualifierset.md
+    - name: GetNames 函数
+      href: getnames.md
+    - name: GetObjectText 函数
+      href: getobjecttext.md
+    - name: GetPropertyHandle 函数
+      href: getpropertyhandle.md
+    - name: GetPropertyOrigin 函数
+      href: getpropertyorigin.md
+    - name: GetPropertyQualifierSet
+      href: getpropertyqualifierset.md
+    - name: GetQualifierSet
+      href: getqualifierset.md
+    - name: InheritsFrom
+      href: inheritsfrom.md
+    - name: Initialize
+      href: initialize.md
+    - name: 下一步
+      href: next.md
+    - name: NextMethod
+      href: nextmethod.md
+    - name: Put
+      href: put.md
+    - name: PubClassWmi
+      href: putclasswmi.md
+    - name: PutInstanceWmi
+      href: putinstancewmi.md
+    - name: PutMethod
+      href: putmethod.md
+    - name: QualifierSet_BeginEnumeration
+      href: qualifierset-beginenumeration.md
+    - name: QualifierSet_Delete
+      href: qualifierset-delete.md
+    - name: QualifierSet_EndEnumeration
+      href: qualifierset-endenumeration.md
+    - name: QualifierSet_Get
+      href: qualifierset-get.md
+    - name: QualifierSet_GetNames
+      href: qualifierset-getnames.md
+    - name: QualifierSet_Next
+      href: qualifierset-next.md
+    - name: QualifierSet_Put
+      href: qualifierset-put.md
+    - name: ResetSecurity
+      href: resetsecurity.md
+    - name: SetSecurity
+      href: setsecurity.md
+    - name: SpawnDerivedClass
+      href: spawnderivedclass.md
+    - name: SpawnInstance
+      href: spawninstance.md
+    - name: VerifyClientKey
+      href: verifyclientkey.md
+    - name: WritePropertyValue
+      href: writepropertyvalue.md

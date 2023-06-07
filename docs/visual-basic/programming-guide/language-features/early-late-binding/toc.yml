@@ -1,0 +1,9 @@
+- name: 早期绑定和晚期绑定
+  href: index.md
+  items:
+    - name: 确定对象类型
+      href: determining-object-type.md
+    - name: 使用字符串名调用属性或方法
+      href: calling-a-property-or-method-using-a-string-name.md
+    - name: 使用动态对象
+      href: working-with-dynamic-objects.md

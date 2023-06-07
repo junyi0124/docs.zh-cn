@@ -1,0 +1,29 @@
+- name: 常量和枚举
+  href: index.md
+  items:
+    - name: 常量概述
+      href: constants-overview.md
+      items:
+        - name: 如何：声明常量
+          href: how-to-declare-a-constant.md
+        - name: 用户定义常数
+          href: user-defined-constants.md
+        - name: 常数和文本数据类型
+          href: constant-and-literal-data-types.md
+        - name: 如何：将相关的常量值组合在一起
+          href: how-to-group-related-constant-values-together.md
+    - name: 枚举概述
+      href: enumerations-overview.md
+      items:
+        - name: 如何：声明枚举
+          href: how-to-declare-enumerations.md
+        - name: 如何：引用枚举成员
+          href: how-to-refer-to-an-enumeration-member.md
+        - name: 枚举和名称限定
+          href: enumerations-and-name-qualification.md
+        - name: 如何：循环访问枚举
+          href: how-to-iterate-through-an-enumeration.md
+        - name: 如何：确定与枚举值关联的字符串
+          href: how-to-determine-the-string-associated-with-an-enumeration-value.md
+        - name: 何时使用枚举
+          href: when-to-use-an-enumeration.md

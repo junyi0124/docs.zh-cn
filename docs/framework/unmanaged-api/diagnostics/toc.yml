@@ -1,0 +1,399 @@
+- name: 诊断符号存储区
+  href: index.md
+  items:
+    - name: 诊断符号存储区接口
+      href: diagnostics-symbol-store-interfaces.md
+      items:
+        - name: IBindingDisplay 接口
+          href: ibindingdisplay-interface.md
+          items:
+            - name: GetCurrentDisplay 方法
+              href: ibindingdisplay-getcurrentdisplay-method.md
+            - name: InitializeForProcess 方法
+              href: ibindingdisplay-initializeforprocess-method.md
+        - name: IDebugAutoAttach 接口
+          href: idebugautoattach-interface.md
+          items:
+            - name: AutoAttach 方法
+              href: idebugautoattach-autoattach-method.md
+        - name: INotifyConnection2 接口
+          href: inotifyconnection2-interface.md
+          items:
+            - name: RegisterNotifySource 方法
+              href: inotifyconnection2-registernotifysource-method.md
+            - name: UnregisterNotifySource 方法
+              href: inotifyconnection2-unregisternotifysource-method.md
+        - name: INotifySink2 接口
+          href: inotifysink2-interface.md
+          items:
+            - name: OnSyncCallEnter 方法
+              href: inotifysink2-onsynccallenter-method.md
+            - name: OnSyncCallExit 方法
+              href: inotifysink2-onsynccallexit-method.md
+            - name: OnSyncCallOut 方法
+              href: inotifysink2-onsynccallout-method.md
+            - name: OnSyncCallReturn 方法
+              href: inotifysink2-onsynccallreturn-method.md
+        - name: INotifySource2 接口
+          href: inotifysource2-interface.md
+          items:
+            - name: SetNotifyFilter 方法
+              href: inotifysource2-setnotifyfilter-method.md
+        - name: ISymENCUnmanagedMethod 接口
+          href: isymencunmanagedmethod-interface.md
+          items:
+            - name: GetDocumentsForMethod 方法
+              href: isymencunmanagedmethod-getdocumentsformethod-method.md
+            - name: GetDocumentsForMethodCount 方法
+              href: isymencunmanagedmethod-getdocumentsformethodcount-method.md
+            - name: GetFileNameFromOffset 方法
+              href: isymencunmanagedmethod-getfilenamefromoffset-method.md
+            - name: GetLineFromOffset 方法
+              href: isymencunmanagedmethod-getlinefromoffset-method.md
+            - name: GetSourceExtentInDocument 方法
+              href: isymencunmanagedmethod-getsourceextentindocument-method.md
+        - name: ISymUnmanagedAsyncMethod 接口
+          href: isymunmanagedasyncmethod-interface.md
+          items:
+            - name: GetAsyncStepInfo 方法
+              href: isymunmanagedasyncmethod-getasyncstepinfo-method.md
+            - name: GetAsyncStepInfoCount 方法
+              href: isymunmanagedasyncmethod-getasyncstepinfocount-method.md
+            - name: GetCatchHandlerILOffset 方法
+              href: isymunmanagedasyncmethod-getcatchhandleriloffset-method.md
+            - name: GetKickoffMethod 方法
+              href: isymunmanagedasyncmethod-getkickoffmethod-method.md
+            - name: HasCatchHandlerILOffset 方法
+              href: isymunmanagedasyncmethod-hascatchhandleriloffset-method.md
+            - name: IsAsyncMethod 方法
+              href: isymunmanagedasyncmethod-isasyncmethod-method.md
+        - name: ISymUnmanagedAsyncMethodPropertiesWriter 接口
+          href: isymunmanagedasyncmethodpropertieswriter-interface.md
+          items:
+            - name: DefineAsyncStepInfo 方法
+              href: isymunmanagedasyncmethodpropertieswriter-defineasyncstepinfo-method.md
+            - name: DefineCatchHandlerILOffset 方法
+              href: isymunmanagedasyncmethodpropertieswriter-definecatchhandleriloffset-method.md
+            - name: DefineKickoffMethod 方法
+              href: isymunmanagedasyncmethodpropertieswriter-definekickoffmethod-method.md
+        - name: ISymUnmanagedBinder 接口
+          href: isymunmanagedbinder-interface.md
+          items:
+            - name: GetReaderForFile 方法
+              href: isymunmanagedbinder-getreaderforfile-method.md
+            - name: GetReaderFromStream 方法
+              href: isymunmanagedbinder-getreaderfromstream-method.md
+        - name: ISymUnmanagedBinder2 接口
+          href: isymunmanagedbinder2-interface.md
+          items:
+            - name: GetReaderForFile2 方法
+              href: isymunmanagedbinder2-getreaderforfile2-method.md
+        - name: ISymUnmanagedBinder3 接口
+          href: isymunmanagedbinder3-interface.md
+          items:
+            - name: GetReaderFromCallback 方法
+              href: isymunmanagedbinder3-getreaderfromcallback-method.md
+        - name: ISymUnmanagedConstant 接口
+          href: isymunmanagedconstant-interface.md
+          items:
+            - name: GetName 方法
+              href: isymunmanagedconstant-getname-method.md
+            - name: GetSignature 方法
+              href: isymunmanagedconstant-getsignature-method.md
+            - name: GetValue 方法
+              href: isymunmanagedconstant-getvalue-method.md
+        - name: ISymUnmanagedDispose 接口
+          href: isymunmanageddispose-interface.md
+          items:
+            - name: Destroy 方法
+              href: isymunmanageddispose-destroy-method.md
+        - name: ISymUnmanagedDocument 接口
+          href: isymunmanageddocument-interface.md
+          items:
+            - name: FindClosestLine 方法
+              href: isymunmanageddocument-findclosestline-method.md
+            - name: GetCheckSum 方法
+              href: isymunmanageddocument-getchecksum-method.md
+            - name: GetCheckSumAlgorithmId 方法
+              href: isymunmanageddocument-getchecksumalgorithmid-method.md
+            - name: GetDocumentType 方法
+              href: isymunmanageddocument-getdocumenttype-method.md
+            - name: GetLanguage 方法
+              href: isymunmanageddocument-getlanguage-method.md
+            - name: GetLanguageVendor 方法
+              href: isymunmanageddocument-getlanguagevendor-method.md
+            - name: GetSourceLength 方法
+              href: isymunmanageddocument-getsourcelength-method.md
+            - name: GetSourceRange 方法
+              href: isymunmanageddocument-getsourcerange-method.md
+            - name: GetURL 方法
+              href: isymunmanageddocument-geturl-method.md
+            - name: HasEmbeddedSource 方法
+              href: isymunmanageddocument-hasembeddedsource-method.md
+        - name: ISymUnmanagedDocumentWriter 接口
+          href: isymunmanageddocumentwriter-interface.md
+          items:
+            - name: SetCheckSum 方法
+              href: isymunmanageddocumentwriter-setchecksum-method.md
+            - name: SetSource 方法
+              href: isymunmanageddocumentwriter-setsource-method.md
+        - name: ISymUnmanagedENCUpdate 接口
+          href: isymunmanagedencupdate-interface.md
+          items:
+            - name: GetLocalVariableCount 方法
+              href: isymunmanagedencupdate-getlocalvariablecount-method.md
+            - name: GetLocalVariables 方法
+              href: isymunmanagedencupdate-getlocalvariables-method.md
+            - name: InitializeForEnc 方法
+              href: isymunmanagedencupdate-initializeforenc-method.md
+            - name: UpdateMethodLines 方法
+              href: isymunmanagedencupdate-updatemethodlines-method.md
+            - name: UpdateSymbolStore2 方法
+              href: isymunmanagedencupdate-updatesymbolstore2-method.md
+        - name: ISymUnmanagedMethod 接口
+          href: isymunmanagedmethod-interface.md
+          items:
+            - name: GetNamespace 方法
+              href: isymunmanagedmethod-getnamespace-method.md
+            - name: GetOffset 方法
+              href: isymunmanagedmethod-getoffset-method.md
+            - name: GetParameters 方法
+              href: isymunmanagedmethod-getparameters-method.md
+            - name: GetRanges 方法
+              href: isymunmanagedmethod-getranges-method.md
+            - name: GetRootScope 方法
+              href: isymunmanagedmethod-getrootscope-method.md
+            - name: GetScopeFromOffset 方法
+              href: isymunmanagedmethod-getscopefromoffset-method.md
+            - name: GetSequencePointCount 方法
+              href: isymunmanagedmethod-getsequencepointcount-method.md
+            - name: GetSequencePoints 方法
+              href: isymunmanagedmethod-getsequencepoints-method.md
+            - name: GetSourceStartEnd 方法
+              href: isymunmanagedmethod-getsourcestartend-method.md
+            - name: GetToken 方法
+              href: isymunmanagedmethod-gettoken-method.md
+        - name: ISymUnmanagedNamespace 接口
+          href: isymunmanagednamespace-interface.md
+          items:
+            - name: GetName 方法
+              href: isymunmanagednamespace-getname-method.md
+            - name: GetNamespaces 方法
+              href: isymunmanagednamespace-getnamespaces-method.md
+            - name: GetVariables 方法
+              href: isymunmanagednamespace-getvariables-method.md
+        - name: ISymUnmanagedReader 接口
+          href: isymunmanagedreader-interface.md
+          items:
+            - name: GetDocument 方法
+              href: isymunmanagedreader-getdocument-method.md
+            - name: GetDocuments 方法
+              href: isymunmanagedreader-getdocuments-method.md
+            - name: GetDocumentVersion 方法
+              href: isymunmanagedreader-getdocumentversion-method.md
+            - name: GetGlobalVariables 方法
+              href: isymunmanagedreader-getglobalvariables-method.md
+            - name: GetMethod 方法
+              href: isymunmanagedreader-getmethod-method.md
+            - name: GetMethodByVersion 方法
+              href: isymunmanagedreader-getmethodbyversion-method.md
+            - name: GetMethodFromDocumentPosition 方法
+              href: isymunmanagedreader-getmethodfromdocumentposition-method.md
+            - name: GetMethodsFromDocumentPosition 方法
+              href: isymunmanagedreader-getmethodsfromdocumentposition-method.md
+            - name: GetMethodVersion 方法
+              href: isymunmanagedreader-getmethodversion-method.md
+            - name: GetNamespaces 方法
+              href: isymunmanagedreader-getnamespaces-method.md
+            - name: GetSymAttribute 方法
+              href: isymunmanagedreader-getsymattribute-method.md
+            - name: GetSymbolStoreFileName 方法
+              href: isymunmanagedreader-getsymbolstorefilename-method.md
+            - name: GetUserEntryPoint 方法
+              href: isymunmanagedreader-getuserentrypoint-method.md
+            - name: GetVariables 方法
+              href: isymunmanagedreader-getvariables-method.md
+            - name: Initialize 方法
+              href: isymunmanagedreader-initialize-method.md
+            - name: ReplaceSymbolStore 方法
+              href: isymunmanagedreader-replacesymbolstore-method.md
+            - name: UpdateSymbolStore 方法
+              href: isymunmanagedreader-updatesymbolstore-method.md
+        - name: ISymUnmanagedReader2 接口
+          href: isymunmanagedreader2-interface.md
+          items:
+            - name: GetMethodByVersionPreRemap 方法
+              href: isymunmanagedreader2-getmethodbyversionpreremap-method.md
+            - name: GetMethodsInDocument 方法
+              href: isymunmanagedreader2-getmethodsindocument-method.md
+            - name: GetSymAttributePreRemap 方法
+              href: isymunmanagedreader2-getsymattributepreremap-method.md
+        - name: ISymUnmanagedReaderSymbolSearchInfo 接口
+          href: isymunmanagedreadersymbolsearchinfo-interface.md
+          items:
+            - name: GetSymbolSearchInfoCount 方法
+              href: isymunmanagedreadersymbolsearchinfo-getsymbolsearchinfocount-method.md
+            - name: GetSymbolSearchInfo 方法
+              href: isymunmanagedreadersymbolsearchinfo-getsymbolsearchinfo-method.md
+        - name: ISymUnmanagedScope 接口
+          href: isymunmanagedscope-interface.md
+          items:
+            - name: GetChildren 方法
+              href: isymunmanagedscope-getchildren-method.md
+            - name: GetEndOffset 方法
+              href: isymunmanagedscope-getendoffset-method.md
+            - name: GetLocalCount 方法
+              href: isymunmanagedscope-getlocalcount-method.md
+            - name: GetLocals 方法
+              href: isymunmanagedscope-getlocals-method.md
+            - name: GetMethod 方法
+              href: isymunmanagedscope-getmethod-method.md
+            - name: GetNamespaces 方法
+              href: isymunmanagedscope-getnamespaces-method.md
+            - name: GetParent 方法
+              href: isymunmanagedscope-getparent-method.md
+            - name: GetStartOffset 方法
+              href: isymunmanagedscope-getstartoffset-method.md
+        - name: ISymUnmanagedScope2 接口
+          href: isymunmanagedscope2-interface.md
+          items:
+            - name: GetConstantCount 方法
+              href: isymunmanagedscope2-getconstantcount-method.md
+            - name: GetConstants 方法
+              href: isymunmanagedscope2-getconstants-method.md
+        - name: ISymUnmanagedSourceServerModule 接口
+          href: isymunmanagedsourceservermodule-interface.md
+          items:
+            - name: GetSourceServerData 方法
+              href: isymunmanagedsourceservermodule-getsourceserverdata-method.md
+        - name: ISymUnmanagedSymbolSearchInfo 接口
+          href: isymunmanagedsymbolsearchinfo-interface.md
+          items:
+            - name: GetHRESULT 方法
+              href: isymunmanagedsymbolsearchinfo-gethresult-method.md
+            - name: GetSearchPath 方法
+              href: isymunmanagedsymbolsearchinfo-getsearchpath-method.md
+            - name: GetSearchPathLength 方法
+              href: isymunmanagedsymbolsearchinfo-getsearchpathlength-method.md
+        - name: ISymUnmanagedVariable 接口
+          href: isymunmanagedvariable-interface.md
+          items:
+            - name: GetAddressField1 方法
+              href: isymunmanagedvariable-getaddressfield1-method.md
+            - name: GetAddressField2 方法
+              href: isymunmanagedvariable-getaddressfield2-method.md
+            - name: GetAddressField3 方法
+              href: isymunmanagedvariable-getaddressfield3-method.md
+            - name: GetAddressKind 方法
+              href: isymunmanagedvariable-getaddresskind-method.md
+            - name: GetAttributes 方法
+              href: isymunmanagedvariable-getattributes-method.md
+            - name: GetEndOffset 方法
+              href: isymunmanagedvariable-getendoffset-method.md
+            - name: GetName 方法
+              href: isymunmanagedvariable-getname-method.md
+            - name: GetSignature 方法
+              href: isymunmanagedvariable-getsignature-method.md
+            - name: GetStartOffset 方法
+              href: isymunmanagedvariable-getstartoffset-method.md
+        - name: ISymUnmanagedWriter 接口
+          href: isymunmanagedwriter-interface.md
+          items:
+            - name: Abort 方法
+              href: isymunmanagedwriter-abort-method.md
+            - name: Close 方法
+              href: isymunmanagedwriter-close-method.md
+            - name: CloseMethod 方法
+              href: isymunmanagedwriter-closemethod-method.md
+            - name: CloseNamespace 方法
+              href: isymunmanagedwriter-closenamespace-method.md
+            - name: CloseScope 方法
+              href: isymunmanagedwriter-closescope-method.md
+            - name: DefineConstant 方法
+              href: isymunmanagedwriter-defineconstant-method.md
+            - name: DefineDocument 方法
+              href: isymunmanagedwriter-definedocument-method.md
+            - name: DefineField 方法
+              href: isymunmanagedwriter-definefield-method.md
+            - name: DefineGlobalVariable 方法
+              href: isymunmanagedwriter-defineglobalvariable-method.md
+            - name: DefineLocalVariable 方法
+              href: isymunmanagedwriter-definelocalvariable-method.md
+            - name: DefineParameter 方法
+              href: isymunmanagedwriter-defineparameter-method.md
+            - name: DefineSequencePoints 方法
+              href: isymunmanagedwriter-definesequencepoints-method.md
+            - name: GetDebugInfo 方法
+              href: isymunmanagedwriter-getdebuginfo-method.md
+            - name: Initialize 方法
+              href: isymunmanagedwriter-initialize-method.md
+            - name: Initialize2 方法
+              href: isymunmanagedwriter-initialize2-method.md
+            - name: OpenMethod 方法
+              href: isymunmanagedwriter-openmethod-method.md
+            - name: OpenNamespace 方法
+              href: isymunmanagedwriter-opennamespace-method.md
+            - name: OpenScope 方法
+              href: isymunmanagedwriter-openscope-method.md
+            - name: RemapToken 方法
+              href: isymunmanagedwriter-remaptoken-method.md
+            - name: SetMethodSourceRange 方法
+              href: isymunmanagedwriter-setmethodsourcerange-method.md
+            - name: SetScopeRange 方法
+              href: isymunmanagedwriter-setscoperange-method.md
+            - name: SetSymAttribute 方法
+              href: isymunmanagedwriter-setsymattribute-method.md
+            - name: SetUserEntryPoint 方法
+              href: isymunmanagedwriter-setuserentrypoint-method.md
+            - name: UsingNamespace 方法
+              href: isymunmanagedwriter-usingnamespace-method.md
+        - name: ISymUnmanagedWriter2 接口
+          href: isymunmanagedwriter2-interface.md
+          items:
+            - name: DefineConstant2 方法
+              href: isymunmanagedwriter2-defineconstant2-method.md
+            - name: DefineGlobalVariable2 方法
+              href: isymunmanagedwriter2-defineglobalvariable2-method.md
+            - name: DefineLocalVariable2 方法
+              href: isymunmanagedwriter2-definelocalvariable2-method.md
+        - name: ISymUnmanagedWriter3 接口
+          href: isymunmanagedwriter3-interface.md
+          items:
+            - name: Commit 方法
+              href: isymunmanagedwriter3-commit-method.md
+            - name: OpenMethod2 方法
+              href: isymunmanagedwriter3-openmethod2-method.md
+        - name: ISymUnmanagedWriter4 接口
+          href: isymunmanagedwriter4-interface.md
+          items:
+            - name: GetDebugInfoWithPadding 方法
+              href: isymunmanagedwriter4-getdebuginfowithpadding-method.md
+        - name: ISymUnmanagedWriter5 接口
+          href: isymunmanagedwriter5-interface.md
+          items:
+            - name: CloseMapTokensToSourceSpans 方法
+              href: isymunmanagedwriter5-closemaptokenstosourcespans-method.md
+            - name: MapTokenToSourceSpan 方法
+              href: isymunmanagedwriter5-maptokentosourcespan-method.md
+            - name: OpenMapTokensToSourceSpans 方法
+              href: isymunmanagedwriter5-openmaptokenstosourcespans-method.md
+    - name: 诊断符号存储区枚举
+      href: diagnostics-symbol-store-enumerations.md
+      items:
+        - name: CorSymAddrKind 枚举
+          href: corsymaddrkind-enumeration.md
+        - name: CorSymSearchPolicyAttributes 枚举
+          href: corsymsearchpolicyattributes-enumeration.md
+        - name: CorSymVarFlag 枚举
+          href: corsymvarflag-enumeration.md
+        - name: NOTIFY_FILTER 枚举
+          href: notify-filter-enumeration.md
+    - name: 诊断符号存储区结构
+      href: diagnostics-symbol-store-structures.md
+      items:
+        - name: CALL_ID 结构
+          href: call-id-structure.md
+        - name: SYMLINEDELTA 结构
+          href: symlinedelta-structure.md
+        - name: USER_THREAD 结构
+          href: user-thread-structure.md

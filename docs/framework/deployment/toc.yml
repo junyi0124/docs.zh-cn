@@ -1,0 +1,36 @@
+- name: 部署
+  href: index.md
+  items:
+    - name: 部署 .NET Framework
+      href: deploying-the-net-framework.md
+      items:
+        - name: 面向开发人员的部署指南
+          href: deployment-guide-for-developers.md
+        - name: 面向管理员的部署指南
+          href: guide-for-administrators.md
+        - name: 在 .NET Framework 4.5 安装期间减少系统重新启动
+          href: reducing-system-restarts.md
+        - name: 如何：获取 .NET Framework 4.5 安装程序的进度
+          href: how-to-get-progress-from-the-dotnet-installer.md
+        - name: .NET Framework 初始化错误：管理用户体验
+          href: initialization-errors-managing-the-user-experience.md
+        - name: 如何：调试 CLR 激活问题
+          href: how-to-debug-clr-activation-issues.md
+    - name: 部署 .NET Framework 应用程序
+      href: net-framework-applications.md
+      items:
+        - name: 运行时如何定位程序集
+          href: how-the-runtime-locates-assemblies.md
+        - name: 适用于程序集加载的最佳做法
+          href: best-practices-for-assembly-loading.md
+    - name: .NET Framework Client Profile
+      href: client-profile.md
+    - name: 并行执行
+      href: side-by-side-execution.md
+      items:
+        - name: 配置程序集绑定重定向
+          href: configuring-assembly-binding-redirection.md
+        - name: 并行执行的组件的创建指南
+          href: guidelines-for-creating-components-for-side-by-side-execution.md
+        - name: 进程内并行执行
+          href: in-process-side-by-side-execution.md

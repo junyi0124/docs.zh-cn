@@ -1,0 +1,68 @@
+- name: .NET 中的程序集
+  href: index.md
+- name: 程序集内容
+  href: contents.md
+- name: 'file:///'
+  href: manifest.md
+- name: 安全注意事项
+  href: security-considerations.md
+- name: 版本管理
+  href: versioning.md
+- name: 并行执行
+  href: side-by-side-execution.md
+- name: 程序集文件格式
+  href: file-format.md
+- name: .NET Core 中的可卸载性
+  href: unloadability.md
+- name: 引用程序集
+  href: reference-assemblies.md
+- name: 解析程序集加载
+  href: resolve-loads.md
+- name: 创建程序集
+  href: create.md
+- name: 程序集名称
+  href: names.md
+- name: 查找程序集的完全限定名
+  href: find-fully-qualified-name.md
+- name: 程序集位置
+  href: location.md
+- name: 设置程序集属性
+  href: set-attributes.md
+- name: 具有强名称的程序集
+  items:
+    - name: 概述
+      href: strong-named.md
+    - name: 创建和使用具有强名称的程序集
+      href: create-use-strong-named.md
+    - name: 创建公钥/私钥对
+      href: create-public-private-key-pair.md
+    - name: 使用强名称为程序集签名
+      href: sign-strong-name.md
+    - name: 改进的强命名
+      href: enhanced-strong-naming.md
+    - name: 引用具有强名称的程序集
+      href: reference-strong-named.md
+    - name: 禁用跳过强名称
+      href: disable-strong-name-bypass-feature.md
+- name: 延迟为程序集签名
+  href: delay-sign.md
+- name: 查看程序集内容
+  href: view-contents.md
+- name: CLR 中的类型转发
+  href: type-forwarding.md
+- name: 友元程序集
+  items:
+    - name: 概述
+      href: friend.md
+    - name: 创建未签名的友元程序集
+      href: create-unsigned-friend.md
+    - name: 创建已签名的友元程序集
+      href: create-signed-friend.md
+- name: 确定文件是否为程序集
+  href: identify.md
+- name: 加载和卸载程序集
+  href: load-unload.md
+- name: 演练：在 Visual Studio 中嵌入托管程序集中的类型
+  href: embed-types-visual-studio.md
+- name: 使用 MetadataLoadContext 检查程序集内容
+  href: inspect-contents-using-metadataloadcontext.md

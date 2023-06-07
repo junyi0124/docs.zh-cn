@@ -1,0 +1,164 @@
+- name: WCF 数据服务 4.5
+  href: index.md
+  items:
+    - name: 概述
+      href: wcf-data-services-overview.md
+    - name: 入门
+      href: getting-started-with-wcf-data-services.md
+      items:
+        - name: 将数据公开为服务
+          href: exposing-your-data-as-a-service-wcf-data-services.md
+        - name: 访问数据服务资源
+          href: accessing-data-service-resources-wcf-data-services.md
+        - name: 在客户端应用程序中使用数据服务
+          href: using-a-data-service-in-a-client-application-wcf-data-services.md
+        - name: 快速入门
+          href: quickstart-wcf-data-services.md
+          items:
+            - name: 创建数据服务
+              href: creating-the-data-service.md
+            - name: 从 Web 浏览器访问服务
+              href: accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md
+            - name: 创建 .NET Framework 客户端应用程序
+              href: creating-the-dotnet-client-application-wcf-data-services-quickstart.md
+        - name: 应用程序方案
+          href: application-scenarios-wcf-data-services.md
+        - name: 资源
+          href: wcf-data-services-resources.md
+    - name: 定义 WCF 数据服务
+      href: defining-wcf-data-services.md
+      items:
+        - name: 配置数据服务
+          href: configuring-the-data-service-wcf-data-services.md
+          items:
+            - name: 如何：开发在 IIS 上运行的 WCF 数据服务
+              href: how-to-develop-a-wcf-data-service-running-on-iis.md
+            - name: 如何：启用对数据服务的访问
+              href: how-to-enable-access-to-the-data-service-wcf-data-services.md
+            - name: 如何：启用数据服务结果分页
+              href: how-to-enable-paging-of-data-service-results-wcf-data-services.md
+        - name: 数据服务提供程序
+          href: data-services-providers-wcf-data-services.md
+          items:
+            - name: 实体框架提供程序
+              href: entity-framework-provider-wcf-data-services.md
+              items:
+                - name: 如何：使用 ADO.NET 实体框架数据源创建数据服务
+                  href: create-a-data-service-using-an-adonet-ef-data-wcf.md
+            - name: 反射提供程序
+              href: reflection-provider-wcf-data-services.md
+              items:
+                - name: 如何：使用反射提供程序创建数据服务
+                  href: create-a-data-service-using-rp-wcf-data-services.md
+                - name: 如何：使用 LINQ to SQL 数据源创建数据服务
+                  href: create-a-data-service-using-linq-to-sql-wcf.md
+            - name: 自定义数据服务提供程序
+              href: custom-data-service-providers-wcf-data-services.md
+            - name: 流提供程序
+              href: streaming-provider-wcf-data-services.md
+        - name: 服务操作
+          href: service-operations-wcf-data-services.md
+          items:
+            - name: 如何：定义服务操作
+              href: how-to-define-a-service-operation-wcf-data-services.md
+        - name: 源自定义
+          href: feed-customization-wcf-data-services.md
+          items:
+            - name: 如何：使用实体框架提供程序自定义源
+              href: how-to-customize-feeds-with-ef-provider-wcf-data-services.md
+            - name: 如何：使用反射提供程序自定义源
+              href: how-to-customize-feeds-with-the-reflection-provider-wcf-data-services.md
+        - name: 侦听器
+          href: interceptors-wcf-data-services.md
+          items:
+            - name: 如何：截断数据服务消息
+              href: how-to-intercept-data-service-messages-wcf-data-services.md
+        - name: 开发和部署 WCF 数据服务
+          href: developing-and-deploying-wcf-data-services.md
+        - name: WCF 数据服务的安全
+          href: securing-wcf-data-services.md
+        - name: 承载数据服务
+          href: hosting-the-data-service-wcf-data-services.md
+        - name: 数据服务版本控制
+          href: data-service-versioning-wcf-data-services.md
+        - name: WCF 数据服务协议实现详细信息
+          href: wcf-data-services-protocol-implementation-details.md
+        - name: 使用操作来实现服务器端行为
+          href: using-actions-to-implement-server-side-behavior.md
+    - name: WCF 数据服务客户端库
+      href: wcf-data-services-client-library.md
+      items:
+        - name: 生成数据服务客户端库
+          href: generating-the-data-service-client-library-wcf-data-services.md
+          items:
+            - name: WCF 数据服务客户端实用工具 (DataSvcUtil.exe)
+              href: wcf-data-service-client-utility-datasvcutil-exe.md
+            - name: 如何：添加数据服务引用
+              href: how-to-add-a-data-service-reference-wcf-data-services.md
+            - name: 如何：手动生成客户端数据服务类
+              href: how-to-manually-generate-client-data-service-classes-wcf-data-services.md
+        - name: 查询数据服务
+          href: querying-the-data-service-wcf-data-services.md
+          items:
+            - name: 查询投影
+              href: query-projections-wcf-data-services.md
+              items:
+                - name: 如何：投影查询结果
+                  href: how-to-project-query-results-wcf-data-services.md
+            - name: LINQ 注意事项
+              href: linq-considerations-wcf-data-services.md
+            - name: 对象具体化
+              href: object-materialization-wcf-data-services.md
+            - name: 如何：执行数据服务查询
+              href: how-to-execute-data-service-queries-wcf-data-services.md
+            - name: 如何：将查询选项添加到数据服务查询
+              href: how-to-add-query-options-to-a-data-service-query-wcf-data-services.md
+            - name: 如何：确定由查询返回的实体数
+              href: number-of-entities-returned-by-a-query-wcf.md
+            - name: 如何：为数据服务请求指定客户端凭据
+              href: specify-client-creds-for-a-data-service-request-wcf.md
+            - name: 如何：设置客户端请求中的标头
+              href: how-to-set-headers-in-the-client-request-wcf-data-services.md
+        - name: 加载延迟的内容
+          href: loading-deferred-content-wcf-data-services.md
+          items:
+            - name: 如何：加载相关实体
+              href: how-to-load-related-entities-wcf-data-services.md
+            - name: 如何：加载分页结果
+              href: how-to-load-paged-results-wcf-data-services.md
+        - name: 更新数据服务
+          href: updating-the-data-service-wcf-data-services.md
+          items:
+            - name: 如何：添加、修改和删除实体
+              href: how-to-add-modify-and-delete-entities-wcf-data-services.md
+            - name: 如何：定义实体关系
+              href: how-to-define-entity-relationships-wcf-data-services.md
+            - name: 如何：将现有实体附加到 DataServiceContext
+              href: attach-an-existing-entity-to-dc-wcf-data.md
+        - name: 异步操作
+          href: asynchronous-operations-wcf-data-services.md
+          items:
+            - name: 如何：执行异步数据服务查询
+              href: how-to-execute-asynchronous-data-service-queries-wcf-data-services.md
+            - name: 如何：创建异步 Windows Presentation Framework 应用程序
+              href: create-an-asynchronous-wpf-application-wcf-data-services.md
+        - name: 批处理操作
+          href: batching-operations-wcf-data-services.md
+          items:
+            - name: 如何：在一个批处理中执行查询
+              href: how-to-execute-queries-in-a-batch-wcf-data-services.md
+        - name: 将数据绑定到控件
+          href: binding-data-to-controls-wcf-data-services.md
+          items:
+            - name: 如何：将数据绑定到 Windows Presentation Foundation 元素
+              href: bind-data-to-wpf-elements-wcf-data-services.md
+            - name: 如何：使用项目数据源绑定数据
+              href: how-to-bind-data-using-a-project-data-source-wcf-data-services.md
+            - name: 如何：自定义数据绑定行为
+              href: how-to-customize-data-binding-behaviors-wcf-data-services.md
+        - name: 调用服务操作
+          href: calling-service-operations-wcf-data-services.md
+        - name: 管理数据服务上下文
+          href: managing-the-data-service-context-wcf-data-services.md
+        - name: 处理二进制数据
+          href: working-with-binary-data-wcf-data-services.md

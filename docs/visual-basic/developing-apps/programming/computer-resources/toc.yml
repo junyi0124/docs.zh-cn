@@ -1,0 +1,51 @@
+- name: 访问计算机资源
+  href: index.md
+  items:
+    - name: 播放声音
+      href: playing-sounds.md
+    - name: 将数据存储到剪贴板以及从剪贴板读取数据
+      href: storing-data-to-and-reading-from-the-clipboard.md
+    - name: 获取有关计算机的信息
+      href: getting-information-about-the-computer.md
+    - name: 访问键盘
+      href: accessing-the-keyboard.md
+      items:
+        - name: 如何：启动应用程序并向其发送击键
+          href: how-to-start-an-application-and-send-it-keystrokes.md
+    - name: 访问鼠标
+      href: accessing-the-mouse.md
+    - name: 执行网络操作
+      href: performing-network-operations.md
+      items:
+        - name: 如何：上传文件
+          href: how-to-upload-a-file.md
+        - name: 如何：下载文件
+          href: how-to-download-a-file.md
+        - name: 如何：检查连接状态
+          href: how-to-check-connection-status.md
+    - name: 访问计算机的端口
+      href: accessing-the-computer-s-ports.md
+      items:
+        - name: 如何：显示可用的串行端口
+          href: how-to-show-available-serial-ports.md
+        - name: 如何：使用连接到串行端口的调制解调器拨号
+          href: how-to-dial-modems-attached-to-serial-ports.md
+        - name: 如何：将字符串发送到串行端口
+          href: how-to-send-strings-to-serial-ports.md
+        - name: 如何：从串行端口接收字符串
+          href: how-to-receive-strings-from-serial-ports.md
+        - name: .NET Framework 中的端口操作
+          href: port-operations-in-the-net-framework.md
+    - name: 读取和写入注册表
+      href: reading-from-and-writing-to-the-registry.md
+      items:
+        - name: 如何：创建注册表项并设置其值
+          href: how-to-create-a-registry-key-and-set-its-value.md
+        - name: 如何：从注册表项读取值
+          href: how-to-read-a-value-from-a-registry-key.md
+        - name: 如何：删除注册表项
+          href: how-to-delete-a-registry-key.md
+        - name: 使用 Microsoft.Win32 命名空间读取和写入注册表
+          href: reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace.md
+        - name: 安全性与注册表
+          href: security-and-the-registry.md

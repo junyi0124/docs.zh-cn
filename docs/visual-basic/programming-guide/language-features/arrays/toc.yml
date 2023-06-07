@@ -1,0 +1,13 @@
+- name: Visual Basic 中的数组
+  href: index.md
+  items:
+    - name: 数组维度
+      href: array-dimensions.md
+    - name: 如何：初始化数组变量
+      href: how-to-initialize-an-array-variable.md
+    - name: 如何：对数组进行排序
+      href: how-to-sort-an-array.md
+    - name: 如何：将一个数组赋给另一个数组
+      href: how-to-assign-one-array-to-another-array.md
+    - name: 数组疑难解答
+      href: troubleshooting-arrays.md

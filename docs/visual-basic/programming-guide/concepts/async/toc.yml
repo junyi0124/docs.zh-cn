@@ -1,0 +1,28 @@
+- name: 使用 Async 和 Await 的异步编程
+  href: index.md
+  items:
+    - name: 演练：使用 Async 和 Await 访问 Web
+      href: walkthrough-accessing-the-web-by-using-async-and-await.md
+    - name: 如何：使用 Task.WhenAll 扩展异步演练
+      href: how-to-extend-the-async-walkthrough-by-using-task-whenall.md
+    - name: 如何：使用 Async 和 Await 并行发出多个 Web 请求
+      href: how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md
+    - name: 异步返回类型
+      href: async-return-types.md
+    - name: 异步程序中的控制流
+      href: control-flow-in-async-programs.md
+    - name: 微调异步应用程序
+      href: fine-tuning-your-async-application.md
+      items:
+        - name: 取消一个异步任务或一组任务
+          href: cancel-an-async-task-or-a-list-of-tasks.md
+        - name: 一段时间后取消异步任务
+          href: cancel-async-tasks-after-a-period-of-time.md
+        - name: 在完成一个异步任务后取消剩余任务
+          href: cancel-remaining-async-tasks-after-one-is-complete.md
+        - name: 启动多个异步任务并在其完成时进行处理
+          href: start-multiple-async-tasks-and-process-them-as-they-complete.md
+    - name: 处理异步应用程序中的可重入性
+      href: handling-reentrancy-in-async-apps.md
+    - name: 使用 Async 进行文件访问
+      href: using-async-for-file-access.md

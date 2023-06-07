@@ -1,0 +1,135 @@
+- name: ML.NET
+  href: index.yml
+- name: 概述
+  expanded: true
+  items:
+    - name: 模型生成器和 CLI
+      items:
+        - name: ML.NET 模型生成器工具
+          href: automate-training-with-model-builder.md
+        - name: ML.NET 命令行界面
+          href: automate-training-with-cli.md
+    - name: API
+      items:
+        - name: ML.NET API
+          href: how-does-mldotnet-work.md
+- name: 教程
+  items:
+    - name: 模型生成器和 CLI
+      items:
+        - name: 预测价格（模型生成器和回归）
+          href: tutorials/predict-prices-with-model-builder.md
+        - name: 使用 ML.NET CLI 分析情绪
+          href: tutorials/sentiment-analysis-cli.md
+        - name: 分析 Razor Pages 中的情绪（模型生成器和二进制分类器）
+          href: tutorials/sentiment-analysis-model-builder.md
+        - name: 对运行状况冲突分类（模型生成器和多类别分类）
+          href: tutorials/health-violation-classification-model-builder.md
+    - name: API
+      items:
+        - name: 概述
+          href: tutorials/index.md
+        - name: 分析情绪（二元分类）
+          href: tutorials/sentiment-analysis.md
+        - name: 对支持问题进行分类（多类分类）
+          href: tutorials/github-issue-classification.md
+        - name: 预测价格（回归）
+          href: tutorials/predict-prices.md
+        - name: 对鸢尾花进行分类（K 平均值聚类分析）
+          href: tutorials/iris-clustering.md
+        - name: 推荐影片（矩阵因子分解）
+          href: tutorials/movie-recommendation.md
+        - name: 图像分类（传输学习）
+          href: tutorials/image-classification-api-transfer-learning.md
+        - name: 对图像进行分类（模型组合）
+          href: tutorials/image-classification.md
+        - name: 预测自行车租赁需求（时序）
+          href: tutorials/time-series-demand-forecasting.md
+        - name: 调用量峰值（异常情况检测）
+          href: tutorials/phone-calls-anomaly-detection.md
+        - name: 产品销售分析（异常情况检测）
+          href: tutorials/sales-anomaly-detection.md
+        - name: 检测图像中的对象 (对象检测)
+          href: tutorials/object-detection-onnx.md
+        - name: 使用 TensorFlow 对情绪分类（文本分类）
+          href: tutorials/text-classification-tf.md
+    - name: Infer.NET
+      items:
+        - name: 使用 Infer.NET 进行概率编程
+          href: how-to-guides/matchup-app-infer-net.md
+- name: 概念
+  items:
+    - name: ML.NET 任务
+      href: resources/tasks.md
+    - name: 算法
+      href: how-to-choose-an-ml-net-algorithm.md
+    - name: 数据转换
+      href: resources/transforms.md
+    - name: 模型评估指标
+      href: resources/metrics.md
+    - name: 提高模型准确性
+      href: resources/improve-machine-learning-model-ml-net.md
+- name: 操作指南
+  items:
+    - name: 模型生成器和 CLI
+      items:
+        - name: 将数据加载到模型生成器中
+          href: how-to-guides/load-data-model-builder.md
+        - name: 安装模型生成器
+          href: how-to-guides/install-model-builder.md
+        - name: 在 Model Builder 中安装 GPU
+          href: how-to-guides/install-gpu-model-builder.md
+        - name: 安装 CLI
+          href: how-to-guides/install-ml-net-cli.md
+        - name: 使用自动化 ML API
+          href: how-to-guides/how-to-use-the-automl-api.md
+    - name: API
+      items:
+        - name: 安装额外的依赖项
+          href: how-to-guides/install-extra-dependencies.md
+        - name: 加载数据
+          href: how-to-guides/load-data-ml-net.md
+        - name: 准备数据
+          href: how-to-guides/prepare-data-ml-net.md
+        - name: 训练、评估和解释模型
+          items:
+            - name: 训练和评估模型
+              href: how-to-guides/train-machine-learning-model-ml-net.md
+            - name: 使用交叉验证训练模型
+              href: how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
+            - name: 检查中间管道数据值
+              href: how-to-guides/inspect-intermediate-data-ml-net.md
+            - name: 使用 PFI 确定模型特征的重要性
+              href: how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md
+        - name: 使用已定型的模型
+          items:
+            - name: 保存和加载模型
+              href: how-to-guides/save-load-machine-learning-models-ml-net.md
+            - name: 使用模型进行预测
+              href: how-to-guides/machine-learning-model-predictions-ml-net.md
+            - name: 重新训练模型
+              href: how-to-guides/retrain-model-ml-net.md
+            - name: 将模型部署到 Azure Functions
+              href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
+            - name: 将模型部署到 Web API
+              href: how-to-guides/serve-model-web-api-ml-net.md
+            - name: 使用 Azure 机器学习 ONNX 模型
+              href: /azure/machine-learning/how-to-use-automl-onnx-model-dotnet?toc=/dotnet/machine-learning/how-to-guides/toc.json&bc=/dotnet/machine-learning/how-to-guides/toc.json
+- name: 参考
+  items:
+    - name: ML.NET API 参考
+      href: ../../api/index.md?view=ml-dotnet
+    - name: ML.NET API 预览版 API 参考
+      href: ../../api/index.md?view=ml-dotnet-preview
+    - name: CLI 引用
+      href: reference/ml-net-cli-reference.md
+- name: 资源
+  items:
+    - name: 概述
+      href: resources/index.md
+    - name: 词汇表
+      href: resources/glossary.md
+    - name: Azure 训练资源
+      href: resources/azure-training-concepts-model-builder.md
+    - name: CLI 遥测
+      href: resources/ml-net-cli-telemetry.md

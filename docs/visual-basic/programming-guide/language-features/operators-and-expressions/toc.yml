@@ -1,0 +1,25 @@
+- name: 运算符和表达式
+  href: index.md
+  items:
+    - name: 使用运算符执行的常规任务
+      href: common-tasks-performed-with-visual-basic-operators.md
+    - name: 算术运算符
+      href: arithmetic-operators.md
+    - name: 比较运算符
+      href: comparison-operators.md
+    - name: 如何：测试两个对象是否相同
+      href: how-to-test-whether-two-objects-are-the-same.md
+    - name: 如何：将字符串与模式相匹配
+      href: how-to-match-a-string-against-a-pattern.md
+    - name: 串联运算符
+      href: concatenation-operators.md
+    - name: 逻辑运算符和位运算符
+      href: logical-and-bitwise-operators.md
+    - name: 运算符的有效组合
+      href: efficient-combination-of-operators.md
+    - name: 如何：计算数值
+      href: how-to-calculate-numeric-values.md
+    - name: 值的比较
+      href: value-comparisons.md
+    - name: 布尔表达式
+      href: boolean-expressions.md
